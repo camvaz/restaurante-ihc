@@ -16,6 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Mesa.cpp \
+    Platillo.cpp \
     main.cpp \
     MainWindow.cpp \
     observable.cpp \
@@ -23,6 +25,8 @@ SOURCES += \
 
 HEADERS += \
     MainWindow.h \
+    Mesa.h \
+    Platillo.h \
     observable.h \
     observer.h
 
