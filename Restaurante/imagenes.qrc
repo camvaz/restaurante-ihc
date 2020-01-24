@@ -1,3 +1,14 @@
 <RCC>
-    <qresource prefix="/"/>
+    <qresource prefix="/">
+        <file>imagenes menú/asado.ico</file>
+        <file>imagenes menú/chocolate-desserts-2373520.ico</file>
+        <file>imagenes menú/contel.ico</file>
+        <file>imagenes menú/ensalada.ico</file>
+        <file>imagenes menú/entrad.ico</file>
+        <file>imagenes menú/guarnicion.ico</file>
+        <file>imagenes menú/infantil.ico</file>
+        <file>imagenes menú/pescado.ico</file>
+        <file>imagenes menú/sopa.ico</file>
+        <file>imagenes menú/vino.ico</file>
+    </qresource>
 </RCC>
