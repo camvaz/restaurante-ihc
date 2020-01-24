@@ -13,3 +13,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_mesa1_clicked()
+{
+ui->Paginas->setCurrentIndex(1);
+}
