@@ -18,6 +18,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Mesa.cpp \
     Platillo.cpp \
+    administrador.cpp \
+    bartender.cpp \
+    cajero.cpp \
+    cocinero.cpp \
+    garrotero.cpp \
+    host.cpp \
     main.cpp \
     MainWindow.cpp \
     observable.cpp \
@@ -27,11 +33,23 @@ HEADERS += \
     MainWindow.h \
     Mesa.h \
     Platillo.h \
+    administrador.h \
+    bartender.h \
+    cajero.h \
+    cocinero.h \
+    garrotero.h \
+    host.h \
     observable.h \
     observer.h
 
 FORMS += \
-    MainWindow.ui
+    MainWindow.ui \
+    administrador.ui \
+    bartender.ui \
+    cajero.ui \
+    cocinero.ui \
+    garrotero.ui \
+    host.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
