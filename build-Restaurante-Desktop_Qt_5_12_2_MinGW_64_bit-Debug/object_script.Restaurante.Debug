@@ -1,0 +1,15 @@
+debug/principal_administrador.o
+debug/principal_bartender.o
+debug/principal_cajero.o
+debug/principal_cocinero.o
+debug/principal_hostess.o
+debug/principal_mesero.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_principal_administrador.o
+debug/moc_principal_bartender.o
+debug/moc_principal_cajero.o
+debug/moc_principal_cocinero.o
+debug/moc_principal_hostess.o
+debug/moc_principal_mesero.o
+debug/moc_mainwindow.o

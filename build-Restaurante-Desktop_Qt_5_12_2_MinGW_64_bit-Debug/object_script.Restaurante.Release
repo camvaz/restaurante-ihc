@@ -1,0 +1,15 @@
+release/principal_administrador.o
+release/principal_bartender.o
+release/principal_cajero.o
+release/principal_cocinero.o
+release/principal_hostess.o
+release/principal_mesero.o
+release/main.o
+release/mainwindow.o
+release/moc_principal_administrador.o
+release/moc_principal_bartender.o
+release/moc_principal_cajero.o
+release/moc_principal_cocinero.o
+release/moc_principal_hostess.o
+release/moc_principal_mesero.o
+release/moc_mainwindow.o
