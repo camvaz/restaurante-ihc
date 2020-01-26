@@ -36,6 +36,8 @@ private slots:
 
     void on_mesas_clicked();
 
+    void on_bebidas_clicked();
+
 private:
     Ui::Principal_Mesero *ui;
 };

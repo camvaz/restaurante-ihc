@@ -33,3 +33,6 @@ void Principal_Mesero::on_infantil_clicked(){ui->paginas->setCurrentIndex(9);}
 void Principal_Mesero::on_comanda_clicked(){ui->paginas->setCurrentIndex(1);}
 
 void Principal_Mesero::on_mesas_clicked(){ui->paginas->setCurrentIndex(0);}
+
+void Principal_Mesero::on_bebidas_clicked()
+{ui->paginas->setCurrentIndex(10);}

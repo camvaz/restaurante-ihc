@@ -117,7 +117,7 @@ border-radius: 20px  20px;;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>12</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -5920,6 +5920,241 @@ color: rgb(201, 37, 49);</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_11">
+     <widget class="Line" name="line_12">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>630</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_270">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>160</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Bebidas</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="coctel">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>190</y>
+        <width>121</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string> </string>
+      </property>
+      <property name="icon">
+       <iconset resource="../imagenes.qrc">
+        <normaloff>:/imagenes menú/bebidaNaranja.png</normaloff>:/imagenes menú/bebidaNaranja.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="vino">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>190</y>
+        <width>121</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string> </string>
+      </property>
+      <property name="icon">
+       <iconset resource="../imagenes.qrc">
+        <normaloff>:/imagenes menú/vino.png</normaloff>:/imagenes menú/vino.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_271">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>300</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cocteles</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_272">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>300</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Vinos</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_12">
+     <widget class="Line" name="line_13">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>630</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_273">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>160</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>UpArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cocteles</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_13">
+     <widget class="QLabel" name="label_540">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>160</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cocteles</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_26">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>630</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_17">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>361</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_17">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>359</width>
+         <height>169</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_541">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>190</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>de donde son los vinos</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_542">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>210</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>de donde son los vinos</string>
       </property>
      </widget>
     </widget>
