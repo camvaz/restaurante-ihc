@@ -15,6 +15,23 @@ public:
     explicit Principal_Mesero(QWidget *parent = nullptr);
     ~Principal_Mesero();
 
+private slots:
+    void on_parilla_clicked();
+
+    void on_ensalada_clicked();
+
+    void on_mar_clicked();
+
+    void on_sopa_clicked();
+
+    void on_entrada_clicked();
+
+    void on_guarnicion_clicked();
+
+    void on_reposteria_clicked();
+
+    void on_infantil_clicked();
+
 private:
     Ui::Principal_Mesero *ui;
 };
