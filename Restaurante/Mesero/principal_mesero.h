@@ -32,6 +32,10 @@ private slots:
 
     void on_infantil_clicked();
 
+    void on_comanda_clicked();
+
+    void on_mesas_clicked();
+
 private:
     Ui::Principal_Mesero *ui;
 };

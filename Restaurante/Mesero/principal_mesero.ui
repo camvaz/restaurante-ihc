@@ -100,14 +100,14 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border: 10px solid  rgb(255, 255, 255);
-border-radius: 2px;</string>
+     <string notr="true">border: 10px solid  ;
+border-radius: 20px  20px;;</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QStackedWidget" name="paginas">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -449,7 +449,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>60</x>
         <y>220</y>
         <width>55</width>
         <height>20</height>
@@ -465,7 +465,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>110</x>
         <y>220</y>
         <width>55</width>
         <height>20</height>
@@ -482,7 +482,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_14">
       <property name="geometry">
        <rect>
-        <x>260</x>
+        <x>250</x>
         <y>220</y>
         <width>71</width>
         <height>20</height>
@@ -498,7 +498,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>70</x>
         <y>430</y>
         <width>71</width>
         <height>20</height>
@@ -514,7 +514,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_16">
       <property name="geometry">
        <rect>
-        <x>390</x>
+        <x>400</x>
         <y>220</y>
         <width>55</width>
         <height>20</height>
@@ -530,7 +530,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_17">
       <property name="geometry">
        <rect>
-        <x>440</x>
+        <x>450</x>
         <y>220</y>
         <width>55</width>
         <height>20</height>
@@ -580,7 +580,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>560</x>
+        <x>570</x>
         <y>430</y>
         <width>55</width>
         <height>20</height>
@@ -596,7 +596,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_21">
       <property name="geometry">
        <rect>
-        <x>610</x>
+        <x>620</x>
         <y>430</y>
         <width>55</width>
         <height>20</height>
@@ -629,7 +629,7 @@ color: rgb(201, 37, 49);</string>
      <widget class="QLabel" name="label_23">
       <property name="geometry">
        <rect>
-        <x>420</x>
+        <x>410</x>
         <y>430</y>
         <width>71</width>
         <height>20</height>
@@ -3297,15 +3297,15 @@ color: rgb(201, 37, 49);</string>
        <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
-       <string>Guarniciones</string>
+       <string>Entradas</string>
       </property>
      </widget>
      <widget class="Line" name="line_8">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>140</x>
         <y>30</y>
-        <width>570</width>
+        <width>620</width>
         <height>16</height>
        </rect>
       </property>
@@ -3949,7 +3949,7 @@ color: rgb(201, 37, 49);</string>
        <rect>
         <x>0</x>
         <y>20</y>
-        <width>130</width>
+        <width>160</width>
         <height>31</height>
        </rect>
       </property>
@@ -3957,15 +3957,15 @@ color: rgb(201, 37, 49);</string>
        <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
-       <string>Repostería</string>
+       <string>Guarniciones</string>
       </property>
      </widget>
      <widget class="Line" name="line_9">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>190</x>
         <y>30</y>
-        <width>600</width>
+        <width>570</width>
         <height>16</height>
        </rect>
       </property>
@@ -4609,7 +4609,7 @@ color: rgb(201, 37, 49);</string>
        <rect>
         <x>0</x>
         <y>20</y>
-        <width>160</width>
+        <width>130</width>
         <height>31</height>
        </rect>
       </property>
@@ -4617,15 +4617,15 @@ color: rgb(201, 37, 49);</string>
        <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
-       <string>Menú infantil</string>
+       <string>Reposteria</string>
       </property>
      </widget>
      <widget class="Line" name="line_10">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>160</x>
         <y>30</y>
-        <width>570</width>
+        <width>600</width>
         <height>16</height>
        </rect>
       </property>
@@ -5261,6 +5261,666 @@ color: rgb(201, 37, 49);</string>
         </item>
        </layout>
       </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_10">
+     <widget class="QLabel" name="label_239">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>160</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Menú infantil</string>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>760</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>737</width>
+         <height>577</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_116">
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_117">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_118">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_240">
+              <property name="text">
+               <string>platillo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_241">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_242">
+              <property name="text">
+               <string>precio</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_145">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_73">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_146">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_119">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_243">
+              <property name="text">
+               <string>platillo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_244">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_245">
+              <property name="text">
+               <string>precio</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_147">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_74">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_148">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <layout class="QGridLayout" name="gridLayout_120">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_121">
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_75">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_246">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_149">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_247">
+              <property name="text">
+               <string>platillo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_150">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_248">
+              <property name="text">
+               <string>precio</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_122">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_249">
+              <property name="text">
+               <string>platillo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_250">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_251">
+              <property name="text">
+               <string>precio</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_151">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_76">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_152">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_123">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_124">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_252">
+              <property name="text">
+               <string>platillo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_253">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_254">
+              <property name="text">
+               <string>precio</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_153">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_77">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_154">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_125">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_255">
+              <property name="text">
+               <string>platillo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_256">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_257">
+              <property name="text">
+               <string>precio</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_155">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_78">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_156">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_126">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_127">
+              <item row="0" column="0" colspan="2">
+               <widget class="QLabel" name="label_258">
+                <property name="text">
+                 <string>platillo</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLabel" name="label_259">
+                <property name="text">
+                 <string>ingredientes</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_260">
+                <property name="text">
+                 <string>precio</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <spacer name="horizontalSpacer_157">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>78</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton_79">
+                <property name="text">
+                 <string>Agregar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <spacer name="horizontalSpacer_158">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>78</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <layout class="QGridLayout" name="gridLayout_128">
+              <item row="0" column="0" colspan="2">
+               <widget class="QLabel" name="label_261">
+                <property name="text">
+                 <string>platillo</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLabel" name="label_262">
+                <property name="text">
+                 <string>ingredientes</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_263">
+                <property name="text">
+                 <string>precio</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <spacer name="horizontalSpacer_159">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>78</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton_80">
+                <property name="text">
+                 <string>Agregar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <spacer name="horizontalSpacer_160">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>78</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QGridLayout" name="gridLayout_129">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_130">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_264">
+              <property name="text">
+               <string>platillo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_265">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_266">
+              <property name="text">
+               <string>precio</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_161">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_81">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_162">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_131">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_267">
+              <property name="text">
+               <string>platillo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_268">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_269">
+              <property name="text">
+               <string>precio</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_163">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_82">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_164">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="Line" name="line_11">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>570</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
      </widget>
     </widget>
    </widget>
