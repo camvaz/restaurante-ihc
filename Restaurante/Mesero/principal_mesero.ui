@@ -81,14 +81,18 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>500</y>
-      <width>91</width>
+      <x>30</x>
+      <y>470</y>
+      <width>51</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">border: 10px solid  rgb(255, 255, 255);
+border-radius: 2px;</string>
+    </property>
     <property name="text">
-     <string>imagen perfil</string>
+     <string> </string>
     </property>
    </widget>
    <widget class="QStackedWidget" name="stackedWidget">
@@ -101,27 +105,9 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
-     <widget class="QLabel" name="pisos">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>80</y>
-        <width>750</width>
-        <height>450</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#pisos{
-background-color: rgb(112, 112, 112);
-}</string>
-      </property>
-      <property name="text">
-       <string>mesas </string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
@@ -132,7 +118,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
        <string>Mapa de piso </string>
@@ -164,6 +150,30 @@ background-color: rgb(112, 112, 112);
        <string>mesa_1</string>
       </property>
      </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>90</y>
+        <width>770</width>
+        <height>440</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{background:rgba(112, 112, 112,0.5);}
+ </string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <zorder>frame</zorder>
+     <zorder>label_3</zorder>
+     <zorder>line_2</zorder>
+     <zorder>mesa_1</zorder>
     </widget>
     <widget class="QWidget" name="page_2">
      <widget class="Line" name="line_3">
@@ -189,7 +199,8 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
        <string>Platillos</string>
@@ -395,6 +406,202 @@ background-color: rgb(112, 112, 112);
        </size>
       </property>
      </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>220</y>
+        <width>55</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>De la </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>220</y>
+        <width>55</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(201, 37, 49);</string>
+      </property>
+      <property name="text">
+       <string>parrilla</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>220</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Ensalada</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>430</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Entradas</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>220</y>
+        <width>55</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Del </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>220</y>
+        <width>55</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(201, 37, 49);</string>
+      </property>
+      <property name="text">
+       <string>mar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>220</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sopas y</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>220</y>
+        <width>55</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(201, 37, 49);</string>
+      </property>
+      <property name="text">
+       <string>pastas</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>430</y>
+        <width>55</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Menú</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>430</y>
+        <width>55</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(201, 37, 49);</string>
+      </property>
+      <property name="text">
+       <string>infantil</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>430</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Guarniciones</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>430</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Repostería</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_3">
      <widget class="Line" name="line_4">
@@ -420,7 +627,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
        <string>De la parrilla</string>
@@ -451,7 +658,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
        <string>Ensaladas</string>
@@ -482,7 +689,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
        <string>Del mar</string>
@@ -500,7 +707,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
        <string>Sopas y pastas</string>
@@ -531,7 +738,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
        <string>Guarniciones</string>
@@ -562,7 +769,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
        <string>Repostería</string>
@@ -593,7 +800,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
        <string>Menú infantil</string>
