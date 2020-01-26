@@ -101,7 +101,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="pisos">
@@ -161,7 +161,7 @@ background-color: rgb(112, 112, 112);
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>mesa_1</string>
       </property>
      </widget>
     </widget>
@@ -201,11 +201,24 @@ background-color: rgb(112, 112, 112);
         <x>50</x>
         <y>100</y>
         <width>121</width>
-        <height>71</height>
+        <height>111</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string> </string>
+      </property>
+      <property name="icon">
+       <iconset resource="../imagenes.qrc">
+        <normaloff>:/imagenes menú/verduras quemadas idk.png</normaloff>:/imagenes menú/verduras quemadas idk.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="ensalada">
@@ -214,11 +227,24 @@ background-color: rgb(112, 112, 112);
         <x>230</x>
         <y>100</y>
         <width>121</width>
-        <height>71</height>
+        <height>111</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string> </string>
+      </property>
+      <property name="icon">
+       <iconset resource="../imagenes.qrc">
+        <normaloff>:/imagenes menú/ensalada.png</normaloff>:/imagenes menú/ensalada.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="mar">
@@ -227,11 +253,24 @@ background-color: rgb(112, 112, 112);
         <x>390</x>
         <y>100</y>
         <width>121</width>
-        <height>71</height>
+        <height>111</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string> </string>
+      </property>
+      <property name="icon">
+       <iconset resource="../imagenes.qrc">
+        <normaloff>:/imagenes menú/pasta2.png</normaloff>:/imagenes menú/pasta2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="sopa">
@@ -240,11 +279,24 @@ background-color: rgb(112, 112, 112);
         <x>550</x>
         <y>100</y>
         <width>121</width>
-        <height>71</height>
+        <height>111</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string> </string>
+      </property>
+      <property name="icon">
+       <iconset resource="../imagenes.qrc">
+        <normaloff>:/imagenes menú/camaroncio.png</normaloff>:/imagenes menú/camaroncio.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="guarnicion">
@@ -253,11 +305,20 @@ background-color: rgb(112, 112, 112);
         <x>230</x>
         <y>310</y>
         <width>121</width>
-        <height>71</height>
+        <height>111</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="reposteria">
@@ -266,11 +327,24 @@ background-color: rgb(112, 112, 112);
         <x>390</x>
         <y>310</y>
         <width>121</width>
-        <height>71</height>
+        <height>111</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string> </string>
+      </property>
+      <property name="icon">
+       <iconset resource="../imagenes.qrc">
+        <normaloff>:/imagenes menú/frutas.png</normaloff>:/imagenes menú/frutas.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="infantil">
@@ -279,11 +353,20 @@ background-color: rgb(112, 112, 112);
         <x>550</x>
         <y>310</y>
         <width>121</width>
-        <height>71</height>
+        <height>111</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="entrada">
@@ -292,11 +375,24 @@ background-color: rgb(112, 112, 112);
         <x>50</x>
         <y>310</y>
         <width>121</width>
-        <height>71</height>
+        <height>111</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string> </string>
+      </property>
+      <property name="icon">
+       <iconset resource="../imagenes.qrc">
+        <normaloff>:/imagenes menú/molletito.png</normaloff>:/imagenes menú/molletito.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
     </widget>
@@ -304,9 +400,9 @@ background-color: rgb(112, 112, 112);
      <widget class="Line" name="line_4">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>180</x>
         <y>30</y>
-        <width>651</width>
+        <width>580</width>
         <height>16</height>
        </rect>
       </property>
@@ -319,7 +415,7 @@ background-color: rgb(112, 112, 112);
        <rect>
         <x>0</x>
         <y>20</y>
-        <width>71</width>
+        <width>150</width>
         <height>31</height>
        </rect>
       </property>
@@ -327,7 +423,7 @@ background-color: rgb(112, 112, 112);
        <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
-       <string>Piso</string>
+       <string>De la parrilla</string>
       </property>
      </widget>
     </widget>
@@ -335,9 +431,9 @@ background-color: rgb(112, 112, 112);
      <widget class="Line" name="line_5">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>150</x>
         <y>30</y>
-        <width>651</width>
+        <width>610</width>
         <height>16</height>
        </rect>
       </property>
@@ -350,7 +446,7 @@ background-color: rgb(112, 112, 112);
        <rect>
         <x>0</x>
         <y>20</y>
-        <width>71</width>
+        <width>130</width>
         <height>31</height>
        </rect>
       </property>
@@ -358,7 +454,7 @@ background-color: rgb(112, 112, 112);
        <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
-       <string>Piso</string>
+       <string>Ensaladas</string>
       </property>
      </widget>
     </widget>
@@ -366,9 +462,9 @@ background-color: rgb(112, 112, 112);
      <widget class="Line" name="line_6">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>130</x>
         <y>30</y>
-        <width>651</width>
+        <width>630</width>
         <height>16</height>
        </rect>
       </property>
@@ -381,7 +477,7 @@ background-color: rgb(112, 112, 112);
        <rect>
         <x>0</x>
         <y>20</y>
-        <width>71</width>
+        <width>100</width>
         <height>31</height>
        </rect>
       </property>
@@ -389,7 +485,131 @@ background-color: rgb(112, 112, 112);
        <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
-       <string>Piso</string>
+       <string>Del mar</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>180</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sopas y pastas</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>30</y>
+        <width>550</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>160</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Guarniciones</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>570</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>130</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Repostería</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>30</y>
+        <width>600</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_9">
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>160</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Menú infantil</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_10">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>570</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </widget>
@@ -420,6 +640,8 @@ background-color: rgb(112, 112, 112);
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../imagenes.qrc"/>
+ </resources>
  <connections/>
 </ui>
