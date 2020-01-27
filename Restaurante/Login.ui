@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>352</width>
-    <height>467</height>
+    <width>854</width>
+    <height>966</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -67,11 +67,10 @@
      <item row="2" column="0">
       <widget class="QLineEdit" name="ln_contrasena">
        <property name="styleSheet">
-        <string notr="true">
-</string>
+        <string notr="true"/>
        </property>
        <property name="placeholderText">
-        <string>       CONTRASEÑA</string>
+        <string>                                 CONTRASEÑA</string>
        </property>
       </widget>
      </item>
@@ -89,11 +88,10 @@ color:blue;</string>
      <item row="1" column="0">
       <widget class="QLineEdit" name="ln_usuario">
        <property name="styleSheet">
-        <string notr="true">
-</string>
+        <string notr="true"/>
        </property>
        <property name="placeholderText">
-        <string>          USUARIO</string>
+        <string>                                     USUARIO</string>
        </property>
       </widget>
      </item>
