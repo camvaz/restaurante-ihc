@@ -1,10 +1,3 @@
 
-*.9-pre1
-*.stash
-*.o
-*.Release
-*.Debug
-*.user
-*.user
-Restaurante/Restaurante.pro.user
-Restaurante/Restaurante.pro.user
+build-*
+
