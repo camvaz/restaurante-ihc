@@ -87,7 +87,7 @@
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>cunetas</string>
+     <string>cuentas</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -117,7 +117,7 @@ border-radius: 20px  20px;;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>12</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -6049,7 +6049,7 @@ color: rgb(201, 37, 49);</string>
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>40</y>
+        <y>30</y>
         <width>630</width>
         <height>16</height>
        </rect>
@@ -6062,8 +6062,8 @@ color: rgb(201, 37, 49);</string>
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>30</y>
-        <width>160</width>
+        <y>20</y>
+        <width>110</width>
         <height>31</height>
        </rect>
       </property>
@@ -6077,14 +6077,628 @@ color: rgb(201, 37, 49);</string>
        <string>Cocteles</string>
       </property>
      </widget>
+     <widget class="QScrollArea" name="scrollArea_27">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>751</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_27">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>728</width>
+         <height>619</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_408">
+        <item row="6" column="0">
+         <layout class="QGridLayout" name="gridLayout_425">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_426">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_886">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_887">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_265">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_507">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_427">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_888">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_889">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_266">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_508">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_416">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_417">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_874">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_875">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_259">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_501">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_418">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_876">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_877">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_260">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_502">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_412">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_410">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_866">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_867">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_255">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_497">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_411">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_868">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_869">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_256">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_498">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QGridLayout" name="gridLayout_413">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_414">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_870">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_871">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_257">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_499">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_415">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_872">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_873">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_258">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_500">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_26"/>
+        </item>
+        <item row="4" column="0">
+         <layout class="QGridLayout" name="gridLayout_419">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_420">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_878">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_879">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_261">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_503">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_421">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_880">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_881">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_262">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_504">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="5" column="0">
+         <layout class="QGridLayout" name="gridLayout_422">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_423">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_882">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_883">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_263">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_505">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_424">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_884">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_885">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_264">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_506">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="7" column="0">
+         <layout class="QGridLayout" name="gridLayout_428">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_429">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_890">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_891">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_267">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_509">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_430">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_892">
+              <property name="text">
+               <string>Nombre del coctel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_893">
+              <property name="text">
+               <string>ingredientes</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_268">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <spacer name="horizontalSpacer_510">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>188</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>740</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_409">
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_865">
+         <property name="text">
+          <string>                                 sin alchol</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_864">
+         <property name="text">
+          <string>                               Con alchol</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_13">
      <widget class="QLabel" name="label_540">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>30</y>
-        <width>160</width>
+        <y>20</y>
+        <width>71</width>
         <height>31</height>
        </rect>
       </property>
@@ -6092,15 +6706,15 @@ color: rgb(201, 37, 49);</string>
        <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="text">
-       <string>Cocteles</string>
+       <string>Vinos</string>
       </property>
      </widget>
      <widget class="Line" name="line_26">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>40</y>
-        <width>630</width>
+        <x>110</x>
+        <y>30</y>
+        <width>640</width>
         <height>16</height>
        </rect>
       </property>
@@ -6111,10 +6725,10 @@ color: rgb(201, 37, 49);</string>
      <widget class="QScrollArea" name="scrollArea_17">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>90</y>
-        <width>361</width>
-        <height>171</height>
+        <x>10</x>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
        </rect>
       </property>
       <property name="widgetResizable">
@@ -6125,36 +6739,569 @@ color: rgb(201, 37, 49);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>359</width>
-         <height>169</height>
+         <width>727</width>
+         <height>557</height>
         </rect>
        </property>
+       <layout class="QGridLayout" name="gridLayout_389">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_392">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_388">
+              <item row="0" column="0" colspan="2">
+               <widget class="QLabel" name="label_541">
+                <property name="text">
+                 <string>de donde son los vinos</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLabel" name="label_542">
+                <property name="text">
+                 <string>de donde son los vinos</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_543">
+                <property name="text">
+                 <string>nombre del vino</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLabel" name="label_544">
+                <property name="text">
+                 <string>cantidad</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton_243">
+                <property name="text">
+                 <string>Agregar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <spacer name="horizontalSpacer_485">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>58</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <layout class="QGridLayout" name="gridLayout_391">
+              <item row="0" column="0" colspan="2">
+               <widget class="QLabel" name="label_820">
+                <property name="text">
+                 <string>de donde son los vinos</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLabel" name="label_821">
+                <property name="text">
+                 <string>de donde son los vinos</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_822">
+                <property name="text">
+                 <string>nombre del vino</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLabel" name="label_823">
+                <property name="text">
+                 <string>cantidad</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton_244">
+                <property name="text">
+                 <string>Agregar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <spacer name="horizontalSpacer_486">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>58</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QGridLayout" name="gridLayout_399">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_400">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_840">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_841">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_842">
+              <property name="text">
+               <string>nombre del vino</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_843">
+              <property name="text">
+               <string>cantidad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_249">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_491">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_401">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_844">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_845">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_846">
+              <property name="text">
+               <string>nombre del vino</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_847">
+              <property name="text">
+               <string>cantidad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_250">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_492">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_395">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_393">
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_826">
+              <property name="text">
+               <string>nombre del vino</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_245">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_487">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_827">
+              <property name="text">
+               <string>cantidad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_824">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_825">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_394">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_828">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_829">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_830">
+              <property name="text">
+               <string>nombre del vino</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_831">
+              <property name="text">
+               <string>cantidad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_246">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_488">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <layout class="QGridLayout" name="gridLayout_396">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_397">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_832">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_833">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_834">
+              <property name="text">
+               <string>nombre del vino</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_835">
+              <property name="text">
+               <string>cantidad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_247">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_489">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_398">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_836">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_837">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_838">
+              <property name="text">
+               <string>nombre del vino</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_839">
+              <property name="text">
+               <string>cantidad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_248">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_490">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_402">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_403">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_848">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_849">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_850">
+              <property name="text">
+               <string>nombre del vino</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_851">
+              <property name="text">
+               <string>cantidad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_251">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_493">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_404">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_852">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLabel" name="label_853">
+              <property name="text">
+               <string>de donde son los vinos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_854">
+              <property name="text">
+               <string>nombre del vino</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_855">
+              <property name="text">
+               <string>cantidad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_252">
+              <property name="text">
+               <string>Agregar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_494">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
       </widget>
      </widget>
-     <widget class="QLabel" name="label_541">
+     <widget class="Line" name="line_27">
       <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>190</y>
-        <width>191</width>
-        <height>21</height>
+        <x>180</x>
+        <y>372</y>
+        <width>16</width>
+        <height>18</height>
        </rect>
       </property>
-      <property name="text">
-       <string>de donde son los vinos</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_542">
-      <property name="geometry">
-       <rect>
-        <x>450</x>
-        <y>210</y>
-        <width>191</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>de donde son los vinos</string>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
      </widget>
     </widget>

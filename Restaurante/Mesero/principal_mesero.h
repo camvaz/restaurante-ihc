@@ -38,6 +38,10 @@ private slots:
 
     void on_bebidas_clicked();
 
+    void on_coctel_clicked();
+
+    void on_vino_clicked();
+
 private:
     Ui::Principal_Mesero *ui;
 };
