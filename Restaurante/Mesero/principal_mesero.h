@@ -15,6 +15,8 @@ public:
     explicit Principal_Mesero(QWidget *parent = nullptr);
     ~Principal_Mesero();
 
+    void CargarImagenes();
+
 private slots:
     void on_parilla_clicked();
 

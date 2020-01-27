@@ -117,7 +117,7 @@ border-radius: 20px  20px;;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>10</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -607,7 +607,7 @@ color: rgb(201, 37, 49);</string>
        <rect>
         <x>410</x>
         <y>430</y>
-        <width>71</width>
+        <width>90</width>
         <height>20</height>
        </rect>
       </property>

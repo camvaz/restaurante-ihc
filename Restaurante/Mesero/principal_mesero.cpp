@@ -6,12 +6,34 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
     ui(new Ui::Principal_Mesero)
 {
     ui->setupUi(this);
+    //METODO QUE CARGA LAS IMAGENES
+    CargarImagenes();
 }
 
 Principal_Mesero::~Principal_Mesero()
 {
     delete ui;
 }
+
+//METODO QUE CARGA IMAGENES DEL MENU
+void Principal_Mesero::CargarImagenes(){
+    QString ruta;
+    ruta="C:/Imagenes tamaño pequeño/verduras quemadas idk";QIcon parilla(ruta);ui->parilla->setIcon(parilla);
+    ruta="C:/Imagenes tamaño pequeño/ensalada";QIcon ensalada(ruta);ui->ensalada->setIcon(ensalada);
+    ruta="C:/Imagenes tamaño pequeño/pasta2";QIcon mar(ruta);ui->mar->setIcon(mar);
+    ruta="C:/Imagenes tamaño pequeño/camaroncio";QIcon sopa(ruta);ui->sopa->setIcon(sopa);
+    ruta="C:/Imagenes tamaño pequeño/molletito";QIcon entrada(ruta);ui->entrada->setIcon(entrada);
+    ruta="C:/Imagenes tamaño pequeño/ensalada2";QIcon guarnicio(ruta);ui->guarnicion->setIcon(guarnicio);
+    ruta="C:/Imagenes tamaño pequeño/frutas";QIcon reposteria(ruta);ui->reposteria->setIcon(reposteria);
+    ruta="C:/Imagenes tamaño pequeño/potato&burger";QIcon infantil(ruta);ui->infantil->setIcon(infantil);
+
+    //BEBIDAS
+    ruta="C:/Imagenes tamaño pequeño/bebidaNaranja";QIcon cocte(ruta);ui->coctel->setIcon(cocte);
+    ruta="C:/Imagenes tamaño pequeño/vino";QIcon vino(ruta);ui->vino->setIcon(vino);
+
+}
+
+
 //SLOT DE PLATILLOS
 void Principal_Mesero::on_parilla_clicked(){ui->paginas->setCurrentIndex(2);}
 
