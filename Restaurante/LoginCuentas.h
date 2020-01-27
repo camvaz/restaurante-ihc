@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QSqlQuery>
+#include <TarjetaCuentas.h>
 
 namespace Ui {
 class LoginCuentas;

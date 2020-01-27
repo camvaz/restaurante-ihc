@@ -34,6 +34,7 @@ SOURCES += \
     Login.cpp \
     LoginCuentas.cpp \
         Mesero/principal_mesero.cpp \
+    TarjetaCuentas.cpp \
         main.cpp \
         mainwindow.cpp \
 
@@ -47,6 +48,7 @@ HEADERS += \
     Login.h \
     LoginCuentas.h \
         Mesero/principal_mesero.h \
+    TarjetaCuentas.h \
         mainwindow.h \
 
 FORMS += \
@@ -59,6 +61,7 @@ FORMS += \
     Login.ui \
     LoginCuentas.ui \
         Mesero/principal_mesero.ui \
+    TarjetaCuentas.ui \
         mainwindow.ui \
 
 # Default rules for deployment.

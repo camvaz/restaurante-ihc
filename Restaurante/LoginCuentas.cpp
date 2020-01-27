@@ -30,10 +30,25 @@ void LoginCuentas::clearLayout(QLayout *layout) {
 void LoginCuentas::recargar(){
     int contadorc=0,contadorf=0;
     clearLayout(ui->LayLogin);
+
+    // Consulta BD
     QSqlQuery cuentas;
     cuentas.prepare("select * from Usuario");
     cuentas.exec();
+
+    //Llenandotela toda de tarjetas
     while (cuentas.next()){
+        //Creando tarjetas
+        TarjetaCuentas *tarjeta = new TarjetaCuentas(cuentas.value(0).toString());
+        tarjeta->setFixedSize(100,129);
+        ui->LayLogin->addWidget(tarjeta,contadorf,contadorc,1,1);
+        //Contando columnas y arreglando
+        if(contadorc==1){
+            contadorf++;
+            contadorc=0;
+        }else{
+            contadorc++;
+        }
 
     }
 }
