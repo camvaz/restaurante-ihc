@@ -31,6 +31,7 @@ SOURCES += \
         Cocinero/principal_cocinero.cpp \
     Garrotero/principal_garrotero.cpp \
         Hostess/principal_hostess.cpp \
+    Mesero/confirmacion_comanda.cpp \
         Mesero/principal_mesero.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -42,6 +43,7 @@ HEADERS += \
         Cocinero/principal_cocinero.h \
     Garrotero/principal_garrotero.h \
         Hostess/principal_hostess.h \
+    Mesero/confirmacion_comanda.h \
         Mesero/principal_mesero.h \
         mainwindow.h \
 
@@ -52,6 +54,7 @@ FORMS += \
         Cocinero/principal_cocinero.ui \
     Garrotero/principal_garrotero.ui \
         Hostess/principal_hostess.ui \
+    Mesero/confirmacion_comanda.ui \
         Mesero/principal_mesero.ui \
         mainwindow.ui \
 
