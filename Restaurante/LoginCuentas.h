@@ -5,6 +5,8 @@
 #include <QSqlQuery>
 #include <TarjetaCuentas.h>
 
+#include "Login.h"
+
 namespace Ui {
 class LoginCuentas;
 }
@@ -20,8 +22,12 @@ public:
     void clearLayout(QLayout *layout);
     void recargar();
 
+private slots:
+    void on_btn_OtraCuenta_clicked();
+
 private:
     Ui::LoginCuentas *ui;
+    Login *log;
 };
 
 #endif // LOGINCUENTAS_H

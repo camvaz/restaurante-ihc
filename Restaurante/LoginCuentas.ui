@@ -61,6 +61,12 @@
    </item>
    <item row="1" column="2">
     <widget class="QLabel" name="IMG">
+     <property name="minimumSize">
+      <size>
+       <width>270</width>
+       <height>200</height>
+      </size>
+     </property>
      <property name="text">
       <string>[ IMG LOGO NOMBRE ]</string>
      </property>
@@ -102,8 +108,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>492</width>
-        <height>291</height>
+        <width>552</width>
+        <height>231</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_3">

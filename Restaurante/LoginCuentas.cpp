@@ -6,6 +6,14 @@ LoginCuentas::LoginCuentas(QWidget *parent) :
     ui(new Ui::LoginCuentas)
 {
     ui->setupUi(this);
+
+    log     = new Login;
+    QPixmap imagen;
+    imagen.load("C:/imagenes/logo.jpg");
+    ui->IMG->setFixedSize(ui->IMG->width(),ui->IMG->height());
+    ui->IMG->setPixmap(imagen);
+    ui->IMG->setScaledContents(true);
+
 }
 
 LoginCuentas::~LoginCuentas()
@@ -51,4 +59,13 @@ void LoginCuentas::recargar(){
         }
 
     }
+}
+
+void LoginCuentas::on_btn_OtraCuenta_clicked()
+{
+ //   QWidget *centralWidget  = this->parentWidget();
+    QWidget *LoginW         = this;
+
+    LoginW->close();
+    log->show();
 }
