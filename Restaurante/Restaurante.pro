@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -31,7 +31,10 @@ SOURCES += \
         Cocinero/principal_cocinero.cpp \
     Garrotero/principal_garrotero.cpp \
         Hostess/principal_hostess.cpp \
+    Login.cpp \
+    LoginCuentas.cpp \
         Mesero/principal_mesero.cpp \
+    TarjetaCuentas.cpp \
         main.cpp \
         mainwindow.cpp \
 
@@ -42,7 +45,10 @@ HEADERS += \
         Cocinero/principal_cocinero.h \
     Garrotero/principal_garrotero.h \
         Hostess/principal_hostess.h \
+    Login.h \
+    LoginCuentas.h \
         Mesero/principal_mesero.h \
+    TarjetaCuentas.h \
         mainwindow.h \
 
 FORMS += \
@@ -52,7 +58,10 @@ FORMS += \
         Cocinero/principal_cocinero.ui \
     Garrotero/principal_garrotero.ui \
         Hostess/principal_hostess.ui \
+    Login.ui \
+    LoginCuentas.ui \
         Mesero/principal_mesero.ui \
+    TarjetaCuentas.ui \
         mainwindow.ui \
 
 # Default rules for deployment.
