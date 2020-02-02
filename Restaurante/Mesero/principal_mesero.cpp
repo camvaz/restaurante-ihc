@@ -1032,7 +1032,6 @@ void Principal_Mesero::on_comanda_clicked()
 
 void Principal_Mesero::on_mesas_clicked(){ui->paginas->setCurrentIndex(0);}
 
-
 void Principal_Mesero::on_bebidas_clicked()
 { 
     //codigo agregado joaquin
