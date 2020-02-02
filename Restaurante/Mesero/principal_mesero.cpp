@@ -1,9 +1,6 @@
 #include "principal_mesero.h"
 #include "ui_principal_mesero.h"
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlQuery>
-#include <QtSql/QSqlError>
-#include <QDebug>
+
 
 Principal_Mesero::Principal_Mesero(QWidget *parent) :
     QMainWindow(parent),
@@ -489,15 +486,95 @@ void Principal_Mesero::on_sopa_clicked()
     }
 }
 
-void Principal_Mesero::on_entrada_clicked(){ui->paginas->setCurrentIndex(6);}
+void Principal_Mesero::on_entrada_clicked(){
 
-void Principal_Mesero::on_guarnicion_clicked(){ui->paginas->setCurrentIndex(7);}
+     clearLayout(ui->menuEntradas);
+     ui->paginas->setCurrentIndex(6);
 
-void Principal_Mesero::on_reposteria_clicked(){ui->paginas->setCurrentIndex(8);}
+     QString entradas;             QSqlQuery QslEntradas;
+     entradas="select *from Platillo where idCategoriaMenu=1;";
+     QslEntradas.exec(entradas);
+     int Cr;
+     Cr=0;
 
-void Principal_Mesero::on_infantil_clicked(){ui->paginas->setCurrentIndex(9);}
+     while(QslEntradas.next()){
 
-void Principal_Mesero::on_coctel_clicked(){ui->paginas->setCurrentIndex(11);}
+         //primera columna
+         QLabel *nomPlat=new QLabel;
+         nomPlat->setText(QslEntradas.value(1).toString());
+
+         QLabel *precio = new QLabel;
+         precio->setText(QslEntradas.value(2).toString());
+
+         QLabel *tiempo = new QLabel;
+         tiempo->setText(QslEntradas.value(3).toString());
+
+         QLabel *ingredientes = new QLabel;
+         ingredientes->setText(QslEntradas.value(4).toString());
+
+         QLabel *esp=new QLabel;
+         esp->setFixedSize(QSize(50,25));
+
+         QLabel *esp2=new QLabel;
+         esp2->setFixedSize(QSize(50,25));
+
+         QLabel *esp3=new QLabel();
+         esp3->setFixedSize(QSize(50,50));
+
+         ui->menuEntradas->addWidget(nomPlat,Cr,1,1,1);
+         ui->menuEntradas->addWidget(precio,Cr+4,1,1,1);
+         ui->menuEntradas->addWidget(tiempo,Cr+5,1,1,1);
+         ui->menuEntradas->addWidget(ingredientes,Cr+7,1,1,1);
+
+
+         //ui->menuEntradas->addWidget(esp,Cr,1,1,1);
+         //ui->menuEntradas->addWidget(esp2,Cr+1,1,1,1);
+         //ui->menuEntradas->addWidget(esp3,Cr+2,1,1,1);
+
+
+         /*
+         QLabel *nomPlat2=new QLabel;
+         nomPlat2->setText(QslEntradas.value(1).toString());
+
+         QLabel *precio2= new QLabel;
+         precio2->setText(QslEntradas.value(2).toString());
+
+         QLabel *tiempo2= new QLabel;
+         tiempo2->setText(QslEntradas.value(3).toString());
+
+         QLabel *ingredientes2= new QLabel;
+         ingredientes2->setText(QslEntradas.value(4).toString());
+
+         ui->menuEntradas->addWidget(nomPlat2,Cr,2,1,1);
+         ui->menuEntradas->addWidget(precio2,Cr+1,2,1,1);
+*/
+
+           Cr=Cr+4;
+     }
+
+}
+
+void Principal_Mesero::on_guarnicion_clicked(){
+    ui->paginas->setCurrentIndex(7);
+    clearLayout(ui->menuSopa);
+}
+
+void Principal_Mesero::on_reposteria_clicked(){
+    ui->paginas->setCurrentIndex(8);
+    clearLayout(ui->menuReposteria);
+
+
+}
+
+void Principal_Mesero::on_infantil_clicked(){
+    ui->paginas->setCurrentIndex(9);
+    clearLayout(ui->menuInfantil);
+}
+
+void Principal_Mesero::on_coctel_clicked(){
+    ui->paginas->setCurrentIndex(11);
+clearLayout(ui->menuCoteles);
+}
 
 void Principal_Mesero::on_vino_clicked()
 {

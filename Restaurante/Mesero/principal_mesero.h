@@ -2,6 +2,10 @@
 #define PRINCIPAL_MESERO_H
 
 #include <QMainWindow>
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSqlQuery>
+#include <QtSql/QSqlError>
+#include <QDebug>
 
 namespace Ui {
 class Principal_Mesero;

@@ -113,11 +113,11 @@ border-radius: 20px  20px;;</string>
       <x>130</x>
       <y>10</y>
       <width>760</width>
-      <height>531</height>
+      <height>530</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>10</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -940,9 +940,9 @@ color: rgb(201, 37, 49);</string>
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>50</y>
-        <width>751</width>
-        <height>481</height>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
        </rect>
       </property>
       <property name="widgetResizable">
@@ -953,8 +953,8 @@ color: rgb(201, 37, 49);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>749</width>
-         <height>479</height>
+         <width>748</width>
+         <height>468</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
@@ -998,10 +998,10 @@ color: rgb(201, 37, 49);</string>
      <widget class="QScrollArea" name="scrollArea_2">
       <property name="geometry">
        <rect>
-        <x>-10</x>
-        <y>61</y>
-        <width>771</width>
-        <height>471</height>
+        <x>0</x>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
        </rect>
       </property>
       <property name="widgetResizable">
@@ -1012,8 +1012,8 @@ color: rgb(201, 37, 49);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>769</width>
-         <height>469</height>
+         <width>748</width>
+         <height>468</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_3">
@@ -1058,9 +1058,9 @@ color: rgb(201, 37, 49);</string>
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>61</y>
-        <width>751</width>
-        <height>471</height>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
        </rect>
       </property>
       <property name="widgetResizable">
@@ -1071,8 +1071,8 @@ color: rgb(201, 37, 49);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>749</width>
-         <height>469</height>
+         <width>748</width>
+         <height>468</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
@@ -1117,9 +1117,9 @@ color: rgb(201, 37, 49);</string>
       <property name="geometry">
        <rect>
         <x>1</x>
-        <y>61</y>
-        <width>751</width>
-        <height>471</height>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
        </rect>
       </property>
       <property name="widgetResizable">
@@ -1130,8 +1130,8 @@ color: rgb(201, 37, 49);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>749</width>
-         <height>469</height>
+         <width>748</width>
+         <height>468</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_5">
@@ -1172,6 +1172,34 @@ color: rgb(201, 37, 49);</string>
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
+     <widget class="QScrollArea" name="scrollArea_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>748</width>
+         <height>468</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuEntradas"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_8">
      <widget class="QLabel" name="label_11">
@@ -1202,6 +1230,34 @@ color: rgb(201, 37, 49);</string>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>748</width>
+         <height>468</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuGuarnicion"/>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_9">
@@ -1234,6 +1290,34 @@ color: rgb(201, 37, 49);</string>
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
+     <widget class="QScrollArea" name="scrollArea_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>748</width>
+         <height>468</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuReposteria"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_10">
      <widget class="QLabel" name="label_239">
@@ -1264,6 +1348,34 @@ color: rgb(201, 37, 49);</string>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>748</width>
+         <height>468</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuInfantil"/>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_11">
@@ -1412,6 +1524,34 @@ color: rgb(201, 37, 49);</string>
        <string>Cocteles</string>
       </property>
      </widget>
+     <widget class="QScrollArea" name="scrollArea_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>748</width>
+         <height>468</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuCoteles"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_13">
      <widget class="QLabel" name="label_540">
@@ -1460,9 +1600,9 @@ color: rgb(201, 37, 49);</string>
       <property name="geometry">
        <rect>
         <x>1</x>
-        <y>61</y>
-        <width>751</width>
-        <height>461</height>
+        <y>60</y>
+        <width>750</width>
+        <height>470</height>
        </rect>
       </property>
       <property name="widgetResizable">
@@ -1473,8 +1613,8 @@ color: rgb(201, 37, 49);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>749</width>
-         <height>459</height>
+         <width>748</width>
+         <height>468</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_6">
@@ -1506,7 +1646,7 @@ color: rgb(201, 37, 49);</string>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
