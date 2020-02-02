@@ -117,7 +117,7 @@ border-radius: 20px  20px;;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>10</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -165,7 +165,7 @@ border-radius: 20px  20px;;</string>
        <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string> </string>
+       <string/>
       </property>
       <property name="iconSize">
        <size>
@@ -936,6 +936,34 @@ color: rgb(201, 37, 49);</string>
        <string>De la parrilla</string>
       </property>
      </widget>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>751</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>749</width>
+         <height>479</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuParrila1"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_4">
      <widget class="Line" name="line_5">
@@ -966,6 +994,34 @@ color: rgb(201, 37, 49);</string>
       <property name="text">
        <string>Ensaladas</string>
       </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>61</y>
+        <width>771</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>769</width>
+         <height>469</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuEnsalada"/>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_5">
@@ -998,6 +1054,34 @@ color: rgb(201, 37, 49);</string>
        <string>Del mar</string>
       </property>
      </widget>
+     <widget class="QScrollArea" name="scrollArea_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>61</y>
+        <width>751</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>749</width>
+         <height>469</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuMar"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_6">
      <widget class="QLabel" name="label_9">
@@ -1028,6 +1112,34 @@ color: rgb(201, 37, 49);</string>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_4">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>61</y>
+        <width>751</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>749</width>
+         <height>469</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuSopa"/>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_7">
@@ -1344,6 +1456,34 @@ color: rgb(201, 37, 49);</string>
        <enum>Qt::Vertical</enum>
       </property>
      </widget>
+     <widget class="QScrollArea" name="scrollArea_5">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>61</y>
+        <width>751</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>749</width>
+         <height>459</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuVinos"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </widget>
    </widget>
    <widget class="Line" name="line">
@@ -1366,7 +1506,7 @@ color: rgb(201, 37, 49);</string>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
