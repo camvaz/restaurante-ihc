@@ -88,7 +88,6 @@ void Principal_Mesero::CargarImagenes(){
 
 }
 
-
 //SLOT DE PLATILLOS
 void Principal_Mesero::on_parilla_clicked()
 {
@@ -494,8 +493,7 @@ void Principal_Mesero::on_entrada_clicked(){
      QString entradas;             QSqlQuery QslEntradas;
      entradas="select *from Platillo where idCategoriaMenu=1;";
      QslEntradas.exec(entradas);
-     int Cr;
-     Cr=0;
+     int Cr=0;
 
      while(QslEntradas.next()){
 
@@ -512,44 +510,53 @@ void Principal_Mesero::on_entrada_clicked(){
          QLabel *ingredientes = new QLabel;
          ingredientes->setText(QslEntradas.value(4).toString());
 
-         QLabel *esp=new QLabel;
-         esp->setFixedSize(QSize(50,25));
 
-         QLabel *esp2=new QLabel;
-         esp2->setFixedSize(QSize(50,25));
-
-         QLabel *esp3=new QLabel();
-         esp3->setFixedSize(QSize(50,50));
+         QPushButton *agregar1=new QPushButton();
+         agregar1->setText("Agregar");
+         agregar1->setFixedSize(QSize(180,50));
 
          ui->menuEntradas->addWidget(nomPlat,Cr,1,1,1);
-         ui->menuEntradas->addWidget(precio,Cr+4,1,1,1);
-         ui->menuEntradas->addWidget(tiempo,Cr+5,1,1,1);
-         ui->menuEntradas->addWidget(ingredientes,Cr+7,1,1,1);
+         ui->menuEntradas->addWidget(ingredientes,Cr+1,1,1,1);
+         ui->menuEntradas->addWidget(precio,Cr+2,1,1,1);
+         ui->menuEntradas->addWidget(tiempo,Cr+3,1,1,1);
+         ui->menuEntradas->addWidget(agregar1,Cr+4,1,1,1);
 
+         QLabel *esp2=new QLabel;
+         esp2->setFixedSize(QSize(50,15));
+         //esp2->setStyleSheet("background-color: rgb(138,198,242)");
 
-         //ui->menuEntradas->addWidget(esp,Cr,1,1,1);
-         //ui->menuEntradas->addWidget(esp2,Cr+1,1,1,1);
-         //ui->menuEntradas->addWidget(esp3,Cr+2,1,1,1);
+         //CENTRO
+         ui->menuEntradas->addWidget(esp2,Cr+1,2,1,1);
 
+         if(!QslEntradas.next())
+     {
 
-         /*
-         QLabel *nomPlat2=new QLabel;
-         nomPlat2->setText(QslEntradas.value(1).toString());
+       }else {
+        //seguna columna
 
-         QLabel *precio2= new QLabel;
-         precio2->setText(QslEntradas.value(2).toString());
+             QLabel *nomPlat2=new QLabel;
+             nomPlat2->setText(QslEntradas.value(1).toString());
 
-         QLabel *tiempo2= new QLabel;
-         tiempo2->setText(QslEntradas.value(3).toString());
+             QLabel *precio2= new QLabel;
+             precio2->setText(QslEntradas.value(2).toString());
 
-         QLabel *ingredientes2= new QLabel;
-         ingredientes2->setText(QslEntradas.value(4).toString());
+             QLabel *tiempo2 = new QLabel;
+             tiempo2->setText(QslEntradas.value(3).toString());
 
-         ui->menuEntradas->addWidget(nomPlat2,Cr,2,1,1);
-         ui->menuEntradas->addWidget(precio2,Cr+1,2,1,1);
-*/
+             QLabel *ingredientes2 = new QLabel;
+             ingredientes2->setText(QslEntradas.value(4).toString());
 
-           Cr=Cr+4;
+             QPushButton *agregar2=new QPushButton();
+             agregar2->setText("Agregar");
+             agregar2->setFixedSize(QSize(180,50));
+
+             ui->menuEntradas->addWidget(nomPlat2,Cr,3,1,1);
+              ui->menuEntradas->addWidget(ingredientes2,Cr+1,3,1,1);
+             ui->menuEntradas->addWidget(precio2,Cr+2,3,1,1);
+             ui->menuEntradas->addWidget(tiempo2,Cr+3,3,1,1);
+             ui->menuEntradas->addWidget(agregar2,Cr+4,3,1,1);
+            }
+           Cr=Cr+5;
      }
 
 }
@@ -557,23 +564,250 @@ void Principal_Mesero::on_entrada_clicked(){
 void Principal_Mesero::on_guarnicion_clicked(){
     ui->paginas->setCurrentIndex(7);
     clearLayout(ui->menuSopa);
+    QString guarni;             QSqlQuery QslGuarni;
+    guarni="select *from Platillo where idCategoriaMenu=7;";
+    QslGuarni.exec(guarni);
+    int Cr=0;
+
+    while (QslGuarni.next()) {
+
+        QLabel *nomPlat=new QLabel;
+        nomPlat->setText(QslGuarni.value(1).toString());
+
+        QLabel *precio = new QLabel;
+        precio->setText(QslGuarni.value(2).toString());
+
+        QLabel *tiempo = new QLabel;
+        tiempo->setText(QslGuarni.value(3).toString());
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(170,50));
+
+        ui->menuGuarnicion->addWidget(nomPlat,Cr,1,1,1);
+        ui->menuGuarnicion->addWidget(precio,Cr+1,1,1,1);
+        ui->menuGuarnicion->addWidget(tiempo,Cr+2,1,1,1);
+        ui->menuGuarnicion->addWidget(agregar,Cr+3,1,1,1);
+
+
+        QLabel *esp=new QLabel;
+        esp->setFixedSize(QSize(50,15));
+        //esp->setStyleSheet("background-color: rgb(138,198,242)");
+
+        QLabel *esp2=new QLabel;
+        esp2->setFixedSize(QSize(190,15));
+        //esp2->setStyleSheet("background-color: rgb(138,198,242)");
+
+
+
+        //IZQUIERDA
+         ui->menuGuarnicion->addWidget(esp,Cr,0,1,1);
+
+         //CENTRO
+         ui->menuGuarnicion->addWidget(esp2,Cr+1,2,1,1);
+
+
+        //seguna columna
+        if(!QslGuarni.next())
+        {
+
+        }
+        else {
+
+            QLabel *nomPlat2=new QLabel;
+            nomPlat2->setText(QslGuarni.value(1).toString());
+
+            QLabel *precio2 = new QLabel;
+            precio2->setText(QslGuarni.value(2).toString());
+
+            QLabel *tiempo2 = new QLabel;
+            tiempo2->setText(QslGuarni.value(3).toString());
+
+            QPushButton *agregar2=new QPushButton();
+            agregar2->setText("Agregar");
+            agregar2->setFixedSize(QSize(180,50));
+
+            ui->menuGuarnicion->addWidget(nomPlat2,Cr,3,1,1);
+            ui->menuGuarnicion->addWidget(precio2,Cr+1,3,1,1);
+            ui->menuGuarnicion->addWidget(tiempo2,Cr+2,3,1,1);
+            ui->menuGuarnicion->addWidget(agregar2,Cr+3,3,1,1);
+
+        }
+
+     Cr+=4;
+    }
+
 }
 
 void Principal_Mesero::on_reposteria_clicked(){
     ui->paginas->setCurrentIndex(8);
     clearLayout(ui->menuReposteria);
 
+    QString postres;             QSqlQuery QslPostres;
+    postres="select *from Platillo where idCategoriaMenu=4;";
+    QslPostres.exec(postres);
+    int Cr=0;
+
+    while(QslPostres.next()){
+
+        //primera columna
+        QLabel *nomPlat=new QLabel;
+        nomPlat->setText(QslPostres.value(1).toString());
+
+        QLabel *precio = new QLabel;
+        precio->setText(QslPostres.value(2).toString());
+
+        QLabel *tiempo = new QLabel;
+        tiempo->setText(QslPostres.value(3).toString());
+
+        QLabel *ingredientes = new QLabel;
+        ingredientes->setText(QslPostres.value(4).toString());
+
+
+        QPushButton *agregar1=new QPushButton();
+        agregar1->setText("Agregar");
+        agregar1->setFixedSize(QSize(180,50));
+
+        ui->menuReposteria->addWidget(nomPlat,Cr,1,1,1);
+        ui->menuReposteria->addWidget(ingredientes,Cr+1,1,1,1);
+        ui->menuReposteria->addWidget(precio,Cr+2,1,1,1);
+        ui->menuReposteria->addWidget(tiempo,Cr+3,1,1,1);
+        ui->menuReposteria->addWidget(agregar1,Cr+4,1,1,1);
+
+        QLabel *esp2=new QLabel;
+        esp2->setFixedSize(QSize(50,15));
+        esp2->setStyleSheet("background-color: rgb(138,198,242)");
+
+        //CENTRO
+        ui->menuReposteria->addWidget(esp2,Cr+1,2,1,1);
+
+        if(!QslPostres.next())
+    {
+
+      }else {
+       //seguna columna
+
+            QLabel *nomPlat2=new QLabel;
+            nomPlat2->setText(QslPostres.value(1).toString());
+
+            QLabel *precio2= new QLabel;
+            precio2->setText(QslPostres.value(2).toString());
+
+            QLabel *tiempo2 = new QLabel;
+            tiempo2->setText(QslPostres.value(3).toString());
+
+            QLabel *ingredientes2 = new QLabel;
+            ingredientes2->setText(QslPostres.value(4).toString());
+
+            QPushButton *agregar2=new QPushButton();
+            agregar2->setText("Agregar");
+            agregar2->setFixedSize(QSize(180,50));
+
+            ui->menuReposteria->addWidget(nomPlat2,Cr,3,1,1);
+             ui->menuReposteria->addWidget(ingredientes2,Cr+1,3,1,1);
+            ui->menuReposteria->addWidget(precio2,Cr+2,3,1,1);
+            ui->menuReposteria->addWidget(tiempo2,Cr+3,3,1,1);
+            ui->menuReposteria->addWidget(agregar2,Cr+4,3,1,1);
+           }
+          Cr=Cr+5;
+    }
 
 }
 
 void Principal_Mesero::on_infantil_clicked(){
-    ui->paginas->setCurrentIndex(9);
+
     clearLayout(ui->menuInfantil);
+    ui->paginas->setCurrentIndex(9);
+    QString infantil;             QSqlQuery QslInfantil;
+    infantil="select *from Platillo where idCategoriaMenu=8;";
+    QslInfantil.exec(infantil);
+    int Cr=0;
+
+    while (QslInfantil.next()) {
+
+        QLabel *nomPlat=new QLabel;
+        nomPlat->setText(QslInfantil.value(1).toString());
+
+        QLabel *precio = new QLabel;
+        precio->setText(QslInfantil.value(2).toString());
+
+        QLabel *tiempo = new QLabel;
+        tiempo->setText(QslInfantil.value(3).toString());
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(180,50));
+
+        ui->menuInfantil->addWidget(nomPlat,Cr,1,1,1);
+        ui->menuInfantil->addWidget(precio,Cr+1,1,1,1);
+        ui->menuInfantil->addWidget(tiempo,Cr+2,1,1,1);
+        ui->menuInfantil->addWidget(agregar,Cr+3,1,1,1);
+
+
+        QLabel *esp=new QLabel;
+        esp->setFixedSize(QSize(50,15));
+        //esp->setStyleSheet("background-color: rgb(138,198,242)");
+
+        QLabel *esp2=new QLabel;
+        esp2->setFixedSize(QSize(190,15));
+        //esp2->setStyleSheet("background-color: rgb(138,198,242)");
+
+        QLabel *esp3=new QLabel();
+        esp3->setFixedSize(QSize(50,15));
+        //esp3->setStyleSheet("background-color: rgb(138,198,242)");
+
+
+
+
+        //IZQUIERDA
+         ui->menuInfantil->addWidget(esp,Cr,0,1,1);
+
+         //CENTRO
+         ui->menuInfantil->addWidget(esp2,Cr+1,2,1,1);
+
+         //DERECHA
+         ui->menuInfantil->addWidget(esp3,Cr+2,4,1,1);
+
+
+
+        //seguna columna
+        if(!QslInfantil.next())
+        {
+
+        }
+        else {
+
+            QLabel *nomPlat2=new QLabel;
+            nomPlat2->setText(QslInfantil.value(1).toString());
+
+            QLabel *precio2 = new QLabel;
+            precio2->setText(QslInfantil.value(2).toString());
+
+            QLabel *tiempo2 = new QLabel;
+            tiempo2->setText(QslInfantil.value(3).toString());
+
+            QPushButton *agregar2=new QPushButton();
+            agregar2->setText("Agregar");
+            agregar2->setFixedSize(QSize(180,50));
+
+            ui->menuInfantil->addWidget(nomPlat2,Cr,3,1,1);
+            ui->menuInfantil->addWidget(precio2,Cr+1,3,1,1);
+            ui->menuInfantil->addWidget(tiempo2,Cr+2,3,1,1);
+            ui->menuInfantil->addWidget(agregar2,Cr+3,3,1,1);
+
+        }
+
+     Cr+=4;
+    }
+
+
 }
 
 void Principal_Mesero::on_coctel_clicked(){
     ui->paginas->setCurrentIndex(11);
-clearLayout(ui->menuCoteles);
+    clearLayout(ui->menuCoteles);
+
+
 }
 
 void Principal_Mesero::on_vino_clicked()
@@ -713,17 +947,23 @@ void Principal_Mesero::on_comanda_clicked()
     clearLayout(ui->menuMar);
     clearLayout(ui->menuSopa);
     clearLayout(ui->menuEnsalada);
+    clearLayout(ui->menuEntradas);
+    clearLayout(ui->menuInfantil);
+    clearLayout(ui->menuGuarnicion);
+    clearLayout(ui->menuReposteria);
     //agrego joaquin
     ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesas_clicked(){ui->paginas->setCurrentIndex(0);}
 
+
 void Principal_Mesero::on_bebidas_clicked()
-{
-    ui->paginas->setCurrentIndex(10);
+{ 
     //codigo agregado joaquin
     clearLayout(ui->menuVinos);
+     clearLayout(ui->menuCoteles);
+     ui->paginas->setCurrentIndex(10);
 }
 
 
