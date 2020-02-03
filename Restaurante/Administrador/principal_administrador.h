@@ -15,6 +15,17 @@ public:
     explicit principal_administrador(QWidget *parent = nullptr);
     ~principal_administrador();
 
+private slots:
+    void on_perfiles_clicked();
+
+    void on_inventario_clicked();
+
+    void on_mapa_de_piso_clicked();
+
+    void on_Reportes_clicked();
+
+    void on_perfil_admi_clicked();
+
 private:
     Ui::principal_administrador *ui;
 };
