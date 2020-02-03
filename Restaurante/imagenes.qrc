@@ -1,7 +1,20 @@
 <RCC>
     <qresource prefix="/">
         <file>imagenes menú/asado.ico</file>
-        <file>imagenes menú/chocolate-desserts-2373520.ico</file>
+        <file>imagenes menú/chocolate-desserts-237
+        <file>imagenes menú/bebidaNaranja.png</file>
+        <file>imagenes menú/camaroncio.png</file>
+        <file>imagenes menú/carnita_platoAzul.png</file>
+        <file>imagenes menú/ensalada.png</file>
+        <file>imagenes menú/frutas.png</file>
+        <file>imagenes menú/heladoGalleta.png</file>
+        <file>imagenes menú/molletito.png</file>
+        <file>imagenes menú/pasta.png</file>
+        <file>imagenes menú/pasta2.png</file>
+        <file>imagenes menú/plusCarne.png</file>
+        <file>imagenes menú/potato&amp;burger.png</file>
+        <file>imagenes menú/verduras quemadas idk.png</file>
+        <file>imagenes menú/vino.png</file>3520.ico</file>
         <file>imagenes menú/contel.ico</file>
         <file>imagenes menú/ensalada.ico</file>
         <file>imagenes menú/entrad.ico</file>
@@ -10,5 +23,13 @@
         <file>imagenes menú/pescado.ico</file>
         <file>imagenes menú/sopa.ico</file>
         <file>imagenes menú/vino.ico</file>
+        <file>IconosGuiAdmi/account.png</file>
+        <file>IconosGuiAdmi/comedor.png</file>
+        <file>IconosGuiAdmi/money.png</file>
+        <file>IconosGuiAdmi/trolley.png</file>
+        <file>IconosGuiAdmiBlancos/account.png</file>
+        <file>IconosGuiAdmiBlancos/dining-table.png</file>
+        <file>IconosGuiAdmiBlancos/money.png</file>
+        <file>IconosGuiAdmiBlancos/trolley.png</file>
     </qresource>
 </RCC>
