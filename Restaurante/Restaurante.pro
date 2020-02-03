@@ -32,6 +32,8 @@ SOURCES += \
     Garrotero/principal_garrotero.cpp \
         Hostess/principal_hostess.cpp \
     Login/Login.cpp \
+    Login/LoginCuentas.cpp \
+    Login/TarjetaCuentas.cpp \
     Mesero/confirmacion_comanda.cpp \
         Mesero/principal_mesero.cpp \
         main.cpp \
@@ -45,6 +47,8 @@ HEADERS += \
     Garrotero/principal_garrotero.h \
         Hostess/principal_hostess.h \
     Login/Login.h \
+    Login/LoginCuentas.h \
+    Login/TarjetaCuentas.h \
     Mesero/confirmacion_comanda.h \
         Mesero/principal_mesero.h \
         mainwindow.h \
@@ -57,6 +61,8 @@ FORMS += \
     Garrotero/principal_garrotero.ui \
         Hostess/principal_hostess.ui \
     Login/Login.ui \
+    Login/LoginCuentas.ui \
+    Login/TarjetaCuentas.ui \
     Mesero/confirmacion_comanda.ui \
         Mesero/principal_mesero.ui \
         mainwindow.ui \
