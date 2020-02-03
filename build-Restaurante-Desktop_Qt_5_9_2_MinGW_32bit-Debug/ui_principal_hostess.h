@@ -24,21 +24,22 @@ QT_BEGIN_NAMESPACE
 class Ui_principal_hostess
 {
 public:
-    QMenuBar *menubar;
     QWidget *centralwidget;
+    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *principal_hostess)
     {
         if (principal_hostess->objectName().isEmpty())
             principal_hostess->setObjectName(QStringLiteral("principal_hostess"));
-        principal_hostess->resize(800, 600);
-        menubar = new QMenuBar(principal_hostess);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        principal_hostess->setMenuBar(menubar);
+        principal_hostess->resize(854, 966);
         centralwidget = new QWidget(principal_hostess);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         principal_hostess->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(principal_hostess);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 854, 21));
+        principal_hostess->setMenuBar(menubar);
         statusbar = new QStatusBar(principal_hostess);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         principal_hostess->setStatusBar(statusbar);

@@ -24,21 +24,22 @@ QT_BEGIN_NAMESPACE
 class Ui_principal_cajero
 {
 public:
-    QMenuBar *menubar;
     QWidget *centralwidget;
+    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *principal_cajero)
     {
         if (principal_cajero->objectName().isEmpty())
             principal_cajero->setObjectName(QStringLiteral("principal_cajero"));
-        principal_cajero->resize(800, 600);
-        menubar = new QMenuBar(principal_cajero);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        principal_cajero->setMenuBar(menubar);
+        principal_cajero->resize(854, 966);
         centralwidget = new QWidget(principal_cajero);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         principal_cajero->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(principal_cajero);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 854, 21));
+        principal_cajero->setMenuBar(menubar);
         statusbar = new QStatusBar(principal_cajero);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         principal_cajero->setStatusBar(statusbar);
