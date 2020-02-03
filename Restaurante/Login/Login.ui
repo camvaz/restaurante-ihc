@@ -13,17 +13,66 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#0c0c0c;
+color:white;</string>
+  </property>
   <widget class="QLabel" name="IMG">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>80</y>
-     <width>81</width>
-     <height>51</height>
+     <x>300</x>
+     <y>120</y>
+     <width>261</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="text">
     <string>[ Foto de  Cuenta Seleccionadala  ]</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_password">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>390</y>
+     <width>291</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>                          CONTRASEÑA</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_user">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>350</y>
+     <width>291</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>                              USUARIO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_inicioSesion">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>430</y>
+     <width>291</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Iniciar Sesión</string>
    </property>
   </widget>
  </widget>

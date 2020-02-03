@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QIcon>
+#include <QSqlDatabase>
+#include <QDebug>
+#include <QSqlError>
 
 namespace Ui {
 class MainWindow;

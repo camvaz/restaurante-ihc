@@ -21,6 +21,8 @@ public:
 private slots:
     void on_btn_OtraCuenta_clicked();
 
+    void on_OtraCuenta_clicked();
+
 private:
     Ui::LoginCuentas *ui;
     Login *log;
