@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>169</width>
-    <height>174</height>
+    <width>173</width>
+    <height>176</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,25 +21,31 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>20</y>
-     <width>71</width>
+     <y>10</y>
+     <width>81</width>
      <height>71</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../../../../../imagen/account (1).png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>110</y>
-     <width>21</width>
-     <height>16</height>
+     <x>70</x>
+     <y>90</y>
+     <width>41</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -54,16 +60,16 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>ID</string>
+    <string>    ID</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>130</y>
-     <width>51</width>
-     <height>16</height>
+     <x>20</x>
+     <y>110</y>
+     <width>141</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
@@ -77,24 +83,20 @@ color: rgb(255, 255, 255);</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Nombre</string>
+    <string>                Nombre</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>10</y>
-     <width>21</width>
-     <height>21</height>
+     <x>50</x>
+     <y>140</y>
+     <width>75</width>
+     <height>23</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">border:none;
-</string>
-   </property>
    <property name="text">
-    <string>X</string>
+    <string>Visualizar</string>
    </property>
   </widget>
  </widget>

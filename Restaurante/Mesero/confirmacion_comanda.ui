@@ -19,7 +19,7 @@
   <widget class="QLabel" name="lbl_img_platillo">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>80</x>
      <y>30</y>
      <width>121</width>
      <height>111</height>
@@ -121,6 +121,10 @@ border:none;</string>
       <property name="text">
        <string/>
       </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../../../../../imagen/less.png</normaloff>../../../../../../../imagen/less.png</iconset>
+      </property>
       <property name="iconSize">
        <size>
         <width>25</width>
@@ -210,6 +214,10 @@ border:none;</string>
       <property name="text">
        <string/>
       </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../../../../../imagen/plus.png</normaloff>../../../../../../../imagen/plus.png</iconset>
+      </property>
       <property name="iconSize">
        <size>
         <width>25</width>
@@ -219,6 +227,9 @@ border:none;</string>
      </widget>
     </item>
    </layout>
+   <zorder>lbl_cantidad_platillo</zorder>
+   <zorder>btn_menos</zorder>
+   <zorder>btn_mas</zorder>
   </widget>
   <zorder>label</zorder>
   <zorder>layoutWidget</zorder>
