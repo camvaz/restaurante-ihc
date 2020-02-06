@@ -1,5 +1,9 @@
 INPUT(
+./release\crear_usuario.o
 ./release\principal_administrador.o
+./release\tarjeta_perfil_empleado.o
+./release\ver_info_usuario.o
+./release\widget_perfiles_usuarios.o
 ./release\principal_bartender.o
 ./release\principal_cajero.o
 ./release\principal_cocinero.o
@@ -9,7 +13,11 @@ INPUT(
 ./release\principal_mesero.o
 ./release\main.o
 ./release\mainwindow.o
+./release\moc_crear_usuario.o
 ./release\moc_principal_administrador.o
+./release\moc_tarjeta_perfil_empleado.o
+./release\moc_ver_info_usuario.o
+./release\moc_widget_perfiles_usuarios.o
 ./release\moc_principal_bartender.o
 ./release\moc_principal_cajero.o
 ./release\moc_principal_cocinero.o

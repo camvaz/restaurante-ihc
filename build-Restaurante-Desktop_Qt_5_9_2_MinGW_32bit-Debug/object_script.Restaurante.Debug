@@ -1,5 +1,9 @@
 INPUT(
+./debug\crear_usuario.o
 ./debug\principal_administrador.o
+./debug\tarjeta_perfil_empleado.o
+./debug\ver_info_usuario.o
+./debug\widget_perfiles_usuarios.o
 ./debug\principal_bartender.o
 ./debug\principal_cajero.o
 ./debug\principal_cocinero.o
@@ -9,7 +13,11 @@ INPUT(
 ./debug\principal_mesero.o
 ./debug\main.o
 ./debug\mainwindow.o
+./debug\moc_crear_usuario.o
 ./debug\moc_principal_administrador.o
+./debug\moc_tarjeta_perfil_empleado.o
+./debug\moc_ver_info_usuario.o
+./debug\moc_widget_perfiles_usuarios.o
 ./debug\moc_principal_bartender.o
 ./debug\moc_principal_cajero.o
 ./debug\moc_principal_cocinero.o

@@ -25,7 +25,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    Administrador/crear_usuario.cpp \
         Administrador/principal_administrador.cpp \
+    Administrador/tarjeta_perfil_empleado.cpp \
+    Administrador/ver_info_usuario.cpp \
+    Administrador/widget_perfiles_usuarios.cpp \
         Bartender/principal_bartender.cpp \
         Cajero/principal_cajero.cpp \
         Cocinero/principal_cocinero.cpp \
@@ -40,7 +44,11 @@ SOURCES += \
         mainwindow.cpp \
 
 HEADERS += \
+    Administrador/crear_usuario.h \
         Administrador/principal_administrador.h \
+    Administrador/tarjeta_perfil_empleado.h \
+    Administrador/ver_info_usuario.h \
+    Administrador/widget_perfiles_usuarios.h \
         Bartender/principal_bartender.h \
         Cajero/principal_cajero.h \
         Cocinero/principal_cocinero.h \
@@ -54,7 +62,11 @@ HEADERS += \
         mainwindow.h \
 
 FORMS += \
+    Administrador/crear_usuario.ui \
         Administrador/principal_administrador.ui \
+    Administrador/tarjeta_perfil_empleado.ui \
+    Administrador/ver_info_usuario.ui \
+    Administrador/widget_perfiles_usuarios.ui \
         Bartender/principal_bartender.ui \
         Cajero/principal_cajero.ui \
         Cocinero/principal_cocinero.ui \
