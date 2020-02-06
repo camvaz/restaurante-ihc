@@ -26,6 +26,9 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
            qDebug()<<"Base de datos conectada";
        }
 
+
+
+
 }
 
 Principal_Mesero::~Principal_Mesero()
@@ -82,6 +85,13 @@ void Principal_Mesero::CargarImagenes(){
      mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_10(mesa);ui->mesa_10->setIcon(mesas_10);
      mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_11(mesa);ui->mesa_11->setIcon(mesas_11);
      mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_12(mesa);ui->mesa_12->setIcon(mesas_12);
+
+     //BOTONES
+     QString botones;
+     botones="C:/Imagenes tamaño pequeño/bebidas";QIcon boton_bebidas(botones);ui->bebidas->setIcon(boton_bebidas);
+     botones="C:/Imagenes tamaño pequeño/Buscar Mesas";QIcon boton_menu(botones);ui->mesas->setIcon(boton_menu);
+     botones="C:/Imagenes tamaño pequeño/Platillos";QIcon boton_comida(botones);ui->comanda->setIcon(boton_comida);
+
 }
 
 //SLOT DE PLATILLOS
