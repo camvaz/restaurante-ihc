@@ -42,7 +42,7 @@ public:
         if (principal_administrador->objectName().isEmpty())
             principal_administrador->setObjectName(QStringLiteral("principal_administrador"));
         principal_administrador->setWindowModality(Qt::NonModal);
-        principal_administrador->resize(854, 746);
+        principal_administrador->resize(900, 600);
         principal_administrador->setContextMenuPolicy(Qt::NoContextMenu);
         principal_administrador->setAutoFillBackground(true);
         principal_administrador->setStyleSheet(QLatin1String("\n"
@@ -65,14 +65,14 @@ public:
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         line = new QFrame(centralwidget);
         line->setObjectName(QStringLiteral("line"));
-        line->setGeometry(QRect(0, 0, 181, 741));
+        line->setGeometry(QRect(0, 0, 181, 631));
         line->setStyleSheet(QLatin1String("color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(12, 12, 12, 255), stop:1 rgba(255, 255, 255, 255));"));
+" background-color:#0c0c0c;"));
         line->setFrameShape(QFrame::VLine);
         line->setFrameShadow(QFrame::Sunken);
         widget = new QWidget(centralwidget);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(0, 0, 90, 751));
+        widget->setGeometry(QRect(0, 0, 90, 631));
         widget->setStyleSheet(QStringLiteral(""));
         perfiles = new QPushButton(widget);
         perfiles->setObjectName(QStringLiteral("perfiles"));
@@ -93,11 +93,11 @@ public:
         Reportes->setStyleSheet(QStringLiteral("image: url(:/IconosGuiAdmiBlancos/money.png);"));
         perfil_admi = new QPushButton(widget);
         perfil_admi->setObjectName(QStringLiteral("perfil_admi"));
-        perfil_admi->setGeometry(QRect(0, 660, 90, 85));
+        perfil_admi->setGeometry(QRect(0, 520, 90, 85));
         perfil_admi->setStyleSheet(QStringLiteral(""));
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
-        stackedWidget->setGeometry(QRect(90, 0, 761, 741));
+        stackedWidget->setGeometry(QRect(90, 0, 811, 600));
         page = new QWidget();
         page->setObjectName(QStringLiteral("page"));
         stackedWidget->addWidget(page);

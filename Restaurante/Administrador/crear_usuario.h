@@ -15,8 +15,13 @@ public:
     explicit crear_usuario(QWidget *parent = nullptr);
     ~crear_usuario();
 
+private slots:
+    void on_btn_InfoPersonal1_clicked();
+
 private:
     Ui::crear_usuario *ui;
+    bool bandera_info_personal;
+    bool bandera_datos_empleado;
 };
 
 #endif // CREAR_USUARIO_H
