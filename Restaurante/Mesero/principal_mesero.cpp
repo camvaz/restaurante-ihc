@@ -17,7 +17,9 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
        database.setPort(3306);
        database.setDatabaseName("restaurante");
        database.setUserName("root");
-       database.setPassword("");
+       database.setPassword("1234");
+       //USADO POR DANIEL TIENE CONTRASEÑA
+      // database.setPassword("1234");
        if(!database.open()){
            qDebug()<<database.lastError().text();
 
@@ -497,7 +499,7 @@ void Principal_Mesero::on_entrada_clicked(){
      ui->paginas->setCurrentIndex(6);
 
      QString entradas;             QSqlQuery QslEntradas;
-     entradas="select *from Platillo where idCategoriaMenu=1;";
+     entradas="select *from Platillos where idCategoriaMenu=1;";
      QslEntradas.exec(entradas);
      int Cr=0;
 
@@ -571,7 +573,7 @@ void Principal_Mesero::on_guarnicion_clicked(){
     ui->paginas->setCurrentIndex(7);
     clearLayout(ui->menuSopa);
     QString guarni;             QSqlQuery QslGuarni;
-    guarni="select *from Platillo where idCategoriaMenu=7;";
+    guarni="select *from Platillos where idCategoriaMenu=7;";
     QslGuarni.exec(guarni);
     int Cr=0;
 
@@ -650,7 +652,7 @@ void Principal_Mesero::on_reposteria_clicked(){
     clearLayout(ui->menuReposteria);
 
     QString postres;             QSqlQuery QslPostres;
-    postres="select *from Platillo where idCategoriaMenu=4;";
+    postres="select *from Platillos where idCategoriaMenu=4;";
     QslPostres.exec(postres);
     int Cr=0;
 
@@ -725,7 +727,7 @@ void Principal_Mesero::on_infantil_clicked(){
     clearLayout(ui->menuInfantil);
     ui->paginas->setCurrentIndex(9);
     QString infantil;             QSqlQuery QslInfantil;
-    infantil="select *from Platillo where idCategoriaMenu=8;";
+    infantil="select *from Platillos where idCategoriaMenu=8;";
     QslInfantil.exec(infantil);
     int Cr=0;
 
