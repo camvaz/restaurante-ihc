@@ -2,6 +2,7 @@
 #define INVENTARIO_H
 
 #include <QWidget>
+#include <QSqlRelationalTableModel>
 
 namespace Ui {
 class Inventario;
@@ -17,6 +18,7 @@ public:
 
 private:
     Ui::Inventario *ui;
+    QSqlRelationalTableModel *tabla_inventario;
 };
 
 #endif // INVENTARIO_H
