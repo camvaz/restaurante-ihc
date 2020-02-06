@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <Login/LoginCuentas.h>
+#include <Administrador/inventario/Inventario.h>
 #include <Login/Login.h>
 #include <QSqlDatabase>
 
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
     else {
         qDebug()<<"Base de datos conectada";
     }
-    Login w;
+    Inventario w;
     w.show();
 
     return a.exec();
