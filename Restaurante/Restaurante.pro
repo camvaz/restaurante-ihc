@@ -26,6 +26,7 @@ CONFIG += c++11
 
 SOURCES += \
     Administrador/crear_usuario.cpp \
+    Administrador/inventario/Inventario.cpp \
         Administrador/principal_administrador.cpp \
     Administrador/tarjeta_perfil_empleado.cpp \
     Administrador/ver_info_usuario.cpp \
@@ -45,6 +46,7 @@ SOURCES += \
 
 HEADERS += \
     Administrador/crear_usuario.h \
+    Administrador/inventario/Inventario.h \
         Administrador/principal_administrador.h \
     Administrador/tarjeta_perfil_empleado.h \
     Administrador/ver_info_usuario.h \
@@ -63,6 +65,7 @@ HEADERS += \
 
 FORMS += \
     Administrador/crear_usuario.ui \
+    Administrador/inventario/Inventario.ui \
         Administrador/principal_administrador.ui \
     Administrador/tarjeta_perfil_empleado.ui \
     Administrador/ver_info_usuario.ui \
