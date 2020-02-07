@@ -28,8 +28,7 @@
   <property name="styleSheet">
    <string notr="true">/*background-color: rgb(12, 12, 12);*/
 background-color: #0c0c0c;
-
-
+ 
 
 </string>
   </property>

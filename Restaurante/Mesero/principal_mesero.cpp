@@ -854,6 +854,7 @@ void Principal_Mesero::on_coctel_clicked(){
         agregar->setText("Agregar");
         agregar->setFixedSize(QSize(80,25));
         agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
 
         ui->menuCoteles->addWidget(nomPlat,Cr,1,1,1);
         ui->menuCoteles->addWidget(precio,Cr+1,1,1,1);
@@ -883,6 +884,7 @@ void Principal_Mesero::on_coctel_clicked(){
             agregar2->setText("Agregar");
             agregar2->setFixedSize(QSize(80,25));
             agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+            //agregar2->setStyleSheet("color:rgb(241, 241, 241)");
 
             ui->menuCoteles->addWidget(nomPlat2,cr,2,1,1);
             ui->menuCoteles->addWidget(precio2,cr+1,2,1,1);
