@@ -24,21 +24,22 @@ QT_BEGIN_NAMESPACE
 class Ui_principal_bartender
 {
 public:
-    QMenuBar *menubar;
     QWidget *centralwidget;
+    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *principal_bartender)
     {
         if (principal_bartender->objectName().isEmpty())
             principal_bartender->setObjectName(QStringLiteral("principal_bartender"));
-        principal_bartender->resize(800, 600);
-        menubar = new QMenuBar(principal_bartender);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        principal_bartender->setMenuBar(menubar);
+        principal_bartender->resize(854, 966);
         centralwidget = new QWidget(principal_bartender);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         principal_bartender->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(principal_bartender);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 854, 21));
+        principal_bartender->setMenuBar(menubar);
         statusbar = new QStatusBar(principal_bartender);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         principal_bartender->setStatusBar(statusbar);

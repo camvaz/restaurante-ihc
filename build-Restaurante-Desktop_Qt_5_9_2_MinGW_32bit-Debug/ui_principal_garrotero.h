@@ -24,21 +24,22 @@ QT_BEGIN_NAMESPACE
 class Ui_principal_garrotero
 {
 public:
-    QMenuBar *menubar;
     QWidget *centralwidget;
+    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *principal_garrotero)
     {
         if (principal_garrotero->objectName().isEmpty())
             principal_garrotero->setObjectName(QStringLiteral("principal_garrotero"));
-        principal_garrotero->resize(800, 600);
-        menubar = new QMenuBar(principal_garrotero);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        principal_garrotero->setMenuBar(menubar);
+        principal_garrotero->resize(854, 966);
         centralwidget = new QWidget(principal_garrotero);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         principal_garrotero->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(principal_garrotero);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 854, 21));
+        principal_garrotero->setMenuBar(menubar);
         statusbar = new QStatusBar(principal_garrotero);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         principal_garrotero->setStatusBar(statusbar);
