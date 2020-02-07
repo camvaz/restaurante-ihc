@@ -39,7 +39,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="label_id">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -63,7 +63,7 @@ color: rgb(255, 255, 255);</string>
     <string>    ID</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="label_nombre">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -86,7 +86,7 @@ color: rgb(255, 255, 255);</string>
     <string>                Nombre</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btn_visualizar">
    <property name="geometry">
     <rect>
      <x>50</x>

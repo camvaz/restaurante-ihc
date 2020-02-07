@@ -18,6 +18,12 @@ public:
 private slots:
     void on_btn_InfoPersonal1_clicked();
 
+    void on_btn_InfoPersonal2_clicked();
+
+    void on_btn_datosEmpleado_clicked();
+
+    void on_btn_datosEmpleado2_clicked();
+
 private:
     Ui::crear_usuario *ui;
     bool bandera_info_personal;

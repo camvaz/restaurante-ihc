@@ -143,7 +143,7 @@
             </spacer>
            </item>
            <item alignment="Qt::AlignHCenter">
-            <widget class="QLineEdit" name="edad">
+            <widget class="QLineEdit" name="ID">
              <property name="maximumSize">
               <size>
                <width>55</width>
@@ -367,7 +367,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-141</y>
           <width>364</width>
           <height>486</height>
          </rect>
@@ -1141,7 +1141,7 @@ background-color: rgb(255, 255, 255);</string>
    </item>
   </layout>
   <zorder>lbl_imagen</zorder>
-  <zorder>edad</zorder>
+  <zorder>ID</zorder>
   <zorder>nombre</zorder>
   <zorder>line</zorder>
   <zorder>scrollArea</zorder>
