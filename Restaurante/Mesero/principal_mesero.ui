@@ -217,7 +217,7 @@ background-color:#F1F1F1;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -241,7 +241,7 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
       <property name="geometry">
        <rect>
         <x>149</x>
-        <y>30</y>
+        <y>37</y>
         <width>601</width>
         <height>1</height>
        </rect>
@@ -586,11 +586,14 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
      <widget class="Line" name="line_3">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>30</y>
-        <width>640</width>
-        <height>16</height>
+        <x>90</x>
+        <y>37</y>
+        <width>671</width>
+        <height>1</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#707070;</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -1021,10 +1024,13 @@ font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
       <property name="geometry">
        <rect>
         <x>180</x>
-        <y>30</y>
+        <y>37</y>
         <width>580</width>
-        <height>16</height>
+        <height>1</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#707070;</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -1079,11 +1085,14 @@ font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
      <widget class="Line" name="line_5">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>30</y>
-        <width>610</width>
-        <height>16</height>
+        <x>119</x>
+        <y>37</y>
+        <width>641</width>
+        <height>1</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#707070;</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -1138,11 +1147,14 @@ font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
      <widget class="Line" name="line_6">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>30</y>
-        <width>630</width>
-        <height>16</height>
+        <x>89</x>
+        <y>37</y>
+        <width>671</width>
+        <height>1</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#707070;</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -1213,11 +1225,14 @@ font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
      <widget class="Line" name="line_7">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>30</y>
-        <width>550</width>
-        <height>16</height>
+        <x>159</x>
+        <y>37</y>
+        <width>601</width>
+        <height>1</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#707070;</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -1866,7 +1881,7 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
