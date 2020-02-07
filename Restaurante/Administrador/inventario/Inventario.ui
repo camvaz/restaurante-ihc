@@ -31,6 +31,7 @@ background-color:#0c0c0c;
 QStacketWidget{
 background-color:#0c0cfc;
 }
+/*
 QTableView{
 tr:nth-child(odd) background-color:#f2f2f2;
  tr:nth-child(even) background-color:#fbfbfb;
@@ -88,7 +89,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#707070;</string>
+    <string notr="true">background-color:#1d1d1d;
+color:white;</string>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QTableView" name="TV_inventario">
@@ -107,10 +109,11 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
      </property>
      <property name="styleSheet">
       <string notr="true">QTableView{
-background-color:#707070;
+  background-color:#313030;
+  color:#f1f1f1;
 }
 
-th {
+#th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -126,15 +129,12 @@ th, td {
 */
 
 tr:hover {background-color: #f5f5f5;}
-table {
-  border-collapse: collapse;
-  width: 100%;
-  color:#F1f1f1;
+
+tr:nth-child(even) {
+    background-color: #313030;
 }
 
-
-tr:nth-child(even) {background-color: #313030;}
-tr:nth-child(odd) {background-color: #0c0c0c;}</string>
+#tr:nth-child(odd) {background-color: #0c0c0c;}</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="label_filtro">
@@ -174,6 +174,10 @@ color: rgb(186, 189, 182);</string>
        <family>Serif</family>
        <pointsize>12</pointsize>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+</string>
      </property>
      <property name="text">
       <string>Almacén</string>
