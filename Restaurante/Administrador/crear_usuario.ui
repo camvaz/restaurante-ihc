@@ -545,7 +545,9 @@ border-radius: 15px;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border:none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;
+</string>
                      </property>
                     </widget>
                    </item>
@@ -582,7 +584,8 @@ border-bottom:2px solid #707070;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border:none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;</string>
                      </property>
                     </widget>
                    </item>
@@ -625,7 +628,8 @@ border-bottom:2px solid #707070;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border:none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;</string>
                      </property>
                     </widget>
                    </item>
@@ -662,7 +666,8 @@ border-bottom:2px solid #707070;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border:none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;</string>
                      </property>
                     </widget>
                    </item>
@@ -699,7 +704,8 @@ border-bottom:2px solid #707070;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border:none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;</string>
                      </property>
                     </widget>
                    </item>
@@ -903,8 +909,44 @@ border-radius: 15px;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border-top: none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;</string>
                      </property>
+                     <item>
+                      <property name="text">
+                       <string>Seleccione uno</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mesero</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Cocinero</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Bartender</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Garrotero</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Hostess</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Cajero</string>
+                      </property>
+                     </item>
                     </widget>
                    </item>
                   </layout>
@@ -952,7 +994,8 @@ border-bottom:2px solid #707070;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border:none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;</string>
                      </property>
                     </widget>
                    </item>
@@ -995,7 +1038,8 @@ border-bottom:2px solid #707070;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border:none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;</string>
                      </property>
                     </widget>
                    </item>
@@ -1044,7 +1088,8 @@ border-bottom:2px solid #707070;</string>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">border:none;
-border-bottom:2px solid #707070;</string>
+border-bottom:2px solid #707070;
+color: #909090;</string>
                      </property>
                     </widget>
                    </item>

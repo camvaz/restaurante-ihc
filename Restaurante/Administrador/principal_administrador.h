@@ -2,6 +2,7 @@
 #define PRINCIPAL_ADMINISTRADOR_H
 
 #include <QMainWindow>
+#include <Administrador/widget_perfiles_usuarios.h>
 
 namespace Ui {
 class principal_administrador;
@@ -28,6 +29,7 @@ private slots:
 
 private:
     Ui::principal_administrador *ui;
+    widget_perfiles_usuarios perfiles;
 };
 
 #endif // PRINCIPAL_ADMINISTRADOR_H

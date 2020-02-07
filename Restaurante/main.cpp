@@ -1,9 +1,9 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <Login/LoginCuentas.h>
-#include <Administrador/inventario/Inventario.h>
 #include <Login/Login.h>
 #include <QSqlDatabase>
+#include <Administrador/principal_administrador.h>
 
 int main(int argc, char *argv[])
 {
@@ -21,13 +21,11 @@ int main(int argc, char *argv[])
     if(!database.open()){
         qDebug()<<database.lastError().text();
     }
-    else {
+    else{
         qDebug()<<"Base de datos conectada";
     }
-    Inventario w;
-    w.show();
 
-   Principal_Mesero l;
-   l.show();
+    principal_administrador w;
+    w.show();
     return a.exec();
 }

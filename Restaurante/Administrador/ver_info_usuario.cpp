@@ -1,7 +1,10 @@
 #include "ver_info_usuario.h"
 #include "ui_ver_info_usuario.h"
+#include <QSqlDatabase>
+#include <QDebug>
+#include "crear_usuario.h"
 
-ver_info_usuario::ver_info_usuario(QWidget *parent) :
+ver_info_usuario::ver_info_usuario(QString id,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ver_info_usuario)
 {
@@ -12,6 +15,24 @@ ver_info_usuario::ver_info_usuario(QWidget *parent) :
     ui->frame_info_personal->hide();
     ui->frame_info_personal->hide();
     ui->frame_actividades->hide();
+
+    idUsuario=id;
+
+    QSqlDatabase database;
+    database = QSqlDatabase::addDatabase("QMYSQL");
+    database.setHostName("localhost");
+    database.setPort(3306);
+    database.setDatabaseName("restaurante");
+    database.setUserName("root");
+    database.setPassword("");
+    if(!database.open()){
+        qDebug()<<"Base de datos no conectada";
+    }
+    else{
+        qDebug()<<"Base de datos conectada";
+    }
+
+    actualizarDatos();
 
 }
 
@@ -98,4 +119,44 @@ void ver_info_usuario::on_btn_actividad2_clicked()
         bandera_actividades=0;
 
     }
+}
+
+void ver_info_usuario::on_btn_editar_clicked()
+{
+    crear_usuario *u=new crear_usuario();
+    u->setID(idUsuario);
+    u->cargarDatos();
+    u->exec();
+    actualizarDatos();
+}
+
+void ver_info_usuario::actualizarDatos()
+{
+    ui->lbl_ID->setText(idUsuario);
+    QSqlQuery query;
+    query.prepare("select * from informacionpersonal where Usuario_idUsuario="+idUsuario);
+    query.exec();
+    while(query.next())
+    {
+        ui->lbl_nombre->setText(query.value(0).toString());
+        ui->lbl_rfc->setText(query.value(1).toString());
+        ui->lbl_curp->setText(query.value(2).toString());
+        ui->lbl_telefono->setText(query.value(3).toString());
+        ui->lbl_direccion->setText(query.value(4).toString());
+        ui->lbl_email->setText(query.value(5).toString());
+
+    }
+    query.prepare("select * from nomina where Usuario_idUsuario="+idUsuario);
+    query.exec();
+    while(query.next())
+    {
+        ui->lbl_salario->setText(query.value(0).toString());
+        ui->lbl_hr_entrada->setText(query.value(1).toString());
+        ui->lbl_hr_salida->setText(query.value(2).toString());
+    }
+
+    query.prepare("SELECT Rol FROM usuario WHERE idUsuario="+idUsuario);
+    query.exec();
+    query.next();
+    ui->lbl_puesto->setText(query.value(0).toString());
 }

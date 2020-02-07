@@ -407,7 +407,8 @@ border-radius: 15px;</string>
                        <property name="styleSheet">
                         <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                        </property>
                        <property name="text">
                         <string/>
@@ -458,7 +459,8 @@ border-radius: 0px;</string>
                        <property name="styleSheet">
                         <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                        </property>
                        <property name="text">
                         <string/>
@@ -515,7 +517,8 @@ border-radius: 0px;</string>
                        <property name="styleSheet">
                         <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                        </property>
                        <property name="text">
                         <string/>
@@ -566,7 +569,8 @@ border-radius: 0px;</string>
                        <property name="styleSheet">
                         <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                        </property>
                        <property name="text">
                         <string/>
@@ -617,7 +621,8 @@ border-radius: 0px;</string>
                        <property name="styleSheet">
                         <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                        </property>
                        <property name="text">
                         <string/>
@@ -824,7 +829,8 @@ border-radius: 15px;</string>
                      <property name="styleSheet">
                       <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                      </property>
                      <property name="text">
                       <string/>
@@ -874,7 +880,8 @@ border-radius: 0px;</string>
                      <property name="styleSheet">
                       <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                      </property>
                      <property name="text">
                       <string/>
@@ -915,7 +922,8 @@ border-radius: 0px;</string>
                      <property name="styleSheet">
                       <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                      </property>
                      <property name="text">
                       <string/>
@@ -962,7 +970,8 @@ border-radius: 0px;</string>
                      <property name="styleSheet">
                       <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
-border-radius: 0px;</string>
+border-radius: 0px;
+color: #909090;</string>
                      </property>
                      <property name="text">
                       <string/>
@@ -1173,12 +1182,12 @@ border:none;
                   </column>
                   <item row="0" column="0">
                    <property name="text">
-                    <string>agregó popo #2</string>
+                    <string/>
                    </property>
                   </item>
                   <item row="0" column="2">
                    <property name="text">
-                    <string>4/02/2020</string>
+                    <string/>
                    </property>
                   </item>
                  </widget>
@@ -1271,7 +1280,7 @@ border:none;
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="btn_guardar">
+        <widget class="QPushButton" name="btn_editar">
          <property name="minimumSize">
           <size>
            <width>110</width>
