@@ -27,5 +27,7 @@ int main(int argc, char *argv[])
     Inventario w;
     w.show();
 
+   Principal_Mesero l;
+   l.show();
     return a.exec();
 }

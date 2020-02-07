@@ -26,62 +26,125 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"> </string>
+   <string notr="true">/*background-color: rgb(12, 12, 12);*/</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="mesas">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>20</y>
-      <width>93</width>
-      <height>28</height>
+      <width>60</width>
+      <height>60</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
     </property>
     <property name="cursor">
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
     <property name="text">
-     <string>mesas</string>
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="comanda">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>70</y>
-      <width>93</width>
-      <height>28</height>
+      <x>20</x>
+      <y>90</y>
+      <width>60</width>
+      <height>60</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
     </property>
     <property name="cursor">
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
     <property name="text">
-     <string>comanda</string>
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="bebidas">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>130</y>
-      <width>93</width>
-      <height>28</height>
+      <x>20</x>
+      <y>160</y>
+      <width>60</width>
+      <height>60</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
     </property>
     <property name="cursor">
      <cursorShape>OpenHandCursor</cursorShape>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
     <property name="text">
-     <string>bebidas</string>
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="cuenta">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>190</y>
+      <y>250</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -91,6 +154,12 @@
     </property>
     <property name="text">
      <string>cuentas</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -120,7 +189,7 @@ border-radius: 20px  20px;;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>10</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -1675,7 +1744,7 @@ color: rgb(201, 37, 49);</string>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

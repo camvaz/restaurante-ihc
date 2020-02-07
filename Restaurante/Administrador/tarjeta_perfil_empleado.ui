@@ -23,7 +23,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
      <x>50</x>
      <y>10</y>
      <width>81</width>
-     <height>71</height>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -91,9 +91,12 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>50</x>
      <y>140</y>
-     <width>75</width>
+     <width>81</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Visualizar</string>
