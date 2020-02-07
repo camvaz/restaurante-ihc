@@ -26,6 +26,7 @@ CONFIG += c++11
 
 SOURCES += \
     Administrador/crear_usuario.cpp \
+    Administrador/inventario/Inventario.cpp \
         Administrador/principal_administrador.cpp \
     Administrador/tarjeta_perfil_empleado.cpp \
     Administrador/ver_info_usuario.cpp \
@@ -35,6 +36,9 @@ SOURCES += \
         Cocinero/principal_cocinero.cpp \
     Garrotero/principal_garrotero.cpp \
         Hostess/principal_hostess.cpp \
+    Login/Login.cpp \
+    Login/LoginCuentas.cpp \
+    Login/TarjetaCuentas.cpp \
     Mesero/confirmacion_comanda.cpp \
         Mesero/principal_mesero.cpp \
         main.cpp \
@@ -42,6 +46,7 @@ SOURCES += \
 
 HEADERS += \
     Administrador/crear_usuario.h \
+    Administrador/inventario/Inventario.h \
         Administrador/principal_administrador.h \
     Administrador/tarjeta_perfil_empleado.h \
     Administrador/ver_info_usuario.h \
@@ -51,12 +56,16 @@ HEADERS += \
         Cocinero/principal_cocinero.h \
     Garrotero/principal_garrotero.h \
         Hostess/principal_hostess.h \
+    Login/Login.h \
+    Login/LoginCuentas.h \
+    Login/TarjetaCuentas.h \
     Mesero/confirmacion_comanda.h \
         Mesero/principal_mesero.h \
         mainwindow.h \
 
 FORMS += \
     Administrador/crear_usuario.ui \
+    Administrador/inventario/Inventario.ui \
         Administrador/principal_administrador.ui \
     Administrador/tarjeta_perfil_empleado.ui \
     Administrador/ver_info_usuario.ui \
@@ -66,6 +75,9 @@ FORMS += \
         Cocinero/principal_cocinero.ui \
     Garrotero/principal_garrotero.ui \
         Hostess/principal_hostess.ui \
+    Login/Login.ui \
+    Login/LoginCuentas.ui \
+    Login/TarjetaCuentas.ui \
     Mesero/confirmacion_comanda.ui \
         Mesero/principal_mesero.ui \
         mainwindow.ui \
