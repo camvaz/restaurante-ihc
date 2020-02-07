@@ -27,10 +27,6 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
        else {
            qDebug()<<"Base de datos conectada";
        }
-
-
-
-
 }
 
 Principal_Mesero::~Principal_Mesero()
@@ -93,6 +89,7 @@ void Principal_Mesero::CargarImagenes(){
      botones="C:/Imagenes tamaño pequeño/bebidas";QIcon boton_bebidas(botones);ui->bebidas->setIcon(boton_bebidas);
      botones="C:/Imagenes tamaño pequeño/Buscar Mesas";QIcon boton_menu(botones);ui->mesas->setIcon(boton_menu);
      botones="C:/Imagenes tamaño pequeño/Platillos";QIcon boton_comida(botones);ui->comanda->setIcon(boton_comida);
+     botones="C:/Imagenes tamaño pequeño/Ordenes";QIcon boton_comanda(botones);ui->cuenta->setIcon(boton_comanda);
 
 }
 

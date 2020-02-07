@@ -178,12 +178,12 @@ QPushButton:hover {
 }</string>
     </property>
     <property name="text">
-     <string>cuentas</string>
+     <string> </string>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
-      <height>100</height>
+      <width>50</width>
+      <height>50</height>
      </size>
     </property>
    </widget>
@@ -217,7 +217,7 @@ background-color:#F1F1F1;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -1858,7 +1858,7 @@ color: rgb(201, 37, 49);</string>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

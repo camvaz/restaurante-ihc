@@ -5,12 +5,14 @@
 #include <Administrador/principal_administrador.h>
 #include <Login/Login.h>
 #include <QSqlDatabase>
+#include <Mesero/principal_mesero.h>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
    // MainWindow w;
    // w.show();
+    /*
     QSqlDatabase database;
 
     database = QSqlDatabase::addDatabase("QMYSQL");
@@ -28,8 +30,8 @@ int main(int argc, char *argv[])
 
     principal_administrador w;
     w.show();
-
-
-
+    */
+    Principal_Mesero l;
+    l.show();
     return a.exec();
 }
