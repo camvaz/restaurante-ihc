@@ -12,3 +12,8 @@ LoginCuentas::~LoginCuentas()
 {
     delete ui;
 }
+
+void LoginCuentas::on_btn_OtraCuenta_clicked()
+{
+    return;
+}

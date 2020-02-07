@@ -2,6 +2,7 @@
 #include <QApplication>
 #include <Login/LoginCuentas.h>
 #include <Administrador/inventario/Inventario.h>
+#include <Administrador/principal_administrador.h>
 #include <Login/Login.h>
 #include <QSqlDatabase>
 
@@ -24,10 +25,11 @@ int main(int argc, char *argv[])
     else {
         qDebug()<<"Base de datos conectada";
     }
-    Inventario w;
+
+    principal_administrador w;
     w.show();
 
-   Principal_Mesero l;
-   l.show();
+
+
     return a.exec();
 }
