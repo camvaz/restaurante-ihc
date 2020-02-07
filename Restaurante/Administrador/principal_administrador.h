@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+
+#include "Administrador/inventario/Inventario.h"
+
 namespace Ui {
 class principal_administrador;
 }
@@ -28,6 +31,7 @@ private slots:
 
 private:
     Ui::principal_administrador *ui;
+    Inventario *Winventario;
 };
 
 #endif // PRINCIPAL_ADMINISTRADOR_H
