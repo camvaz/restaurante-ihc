@@ -86,17 +86,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="widget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>80</y>
-     <width>361</width>
-     <height>311</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QWidget" name="widget_2" native="true">
+  <widget class="QWidget" name="widgetPlatillos" native="true">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -105,6 +95,18 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
      <height>311</height>
     </rect>
    </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>391</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="page"/>
+   <widget class="QWidget" name="page_2"/>
   </widget>
  </widget>
  <resources/>

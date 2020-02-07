@@ -3,6 +3,8 @@
 #include <Login/LoginCuentas.h>
 #include <Administrador/inventario/Inventario.h>
 #include <Administrador/principal_administrador.h>
+#include "Administrador/Reportes/GraficaVentas.h"
+#include "Administrador/Reportes/Reportes.h"
 #include <Login/Login.h>
 #include <QSqlDatabase>
 
@@ -27,8 +29,11 @@ int main(int argc, char *argv[])
         qDebug()<<"Base de datos conectada";
     }
 
-    principal_administrador w;
+    Reportes w;
     w.show();
+
+    GraficaVentas u;
+    u.show();
 
 
 

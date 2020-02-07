@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    Administrador/Reportes/GraficaVentas.cpp \
     Administrador/Reportes/Reportes.cpp \
     Administrador/crear_usuario.cpp \
     Administrador/inventario/Inventario.cpp \
@@ -46,6 +47,7 @@ SOURCES += \
         mainwindow.cpp \
 
 HEADERS += \
+    Administrador/Reportes/GraficaVentas.h \
     Administrador/Reportes/Reportes.h \
     Administrador/crear_usuario.h \
     Administrador/inventario/Inventario.h \
@@ -66,6 +68,7 @@ HEADERS += \
         mainwindow.h \
 
 FORMS += \
+    Administrador/Reportes/GraficaVentas.ui \
     Administrador/Reportes/Reportes.ui \
     Administrador/crear_usuario.ui \
     Administrador/inventario/Inventario.ui \
@@ -84,6 +87,13 @@ FORMS += \
     Mesero/confirmacion_comanda.ui \
         Mesero/principal_mesero.ui \
         mainwindow.ui \
+
+
+INCLUDEPATH += "C:\Users\rober\Downloads\OChart\include"
+
+LIBS += -L"C:\Users\rober\Downloads\OChart\lib"
+
+LIBS += -lopenchartplugin
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
