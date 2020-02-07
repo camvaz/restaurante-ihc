@@ -28,9 +28,7 @@ Inventario::Inventario(QWidget *parent) :
     ui->TV_inventario->hideColumn(5);
 */
     //aqui introducimos el stylesheet
-    QString estilo;
-    estilo = "tr:nth-child(odd) {background-color:#f2f2f2;} tr:nth-child(even) {background-color:#fbfbfb;}";
-    ui->TV_inventario->setStyleSheet(estilo);
+
 
 }
 
