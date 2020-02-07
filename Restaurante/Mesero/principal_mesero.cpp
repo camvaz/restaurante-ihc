@@ -548,6 +548,7 @@ void Principal_Mesero::on_entrada_clicked(){
              nomPlat2->setText(QslEntradas.value(1).toString());
              nomPlat2->setStyleSheet("color:rgb(201, 37, 49)");
 
+
              QLabel *precio2= new QLabel;
              precio2->setText(QslEntradas.value(2).toString());
              precio2->setStyleSheet("color:rgb(241, 241, 241)");
@@ -566,10 +567,11 @@ void Principal_Mesero::on_entrada_clicked(){
              agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
 
              ui->menuEntradas->addWidget(nomPlat2,Cr,3,1,1);
-              ui->menuEntradas->addWidget(ingredientes2,Cr+1,3,1,1);
+             ui->menuEntradas->addWidget(ingredientes2,Cr+1,3,1,1);
              ui->menuEntradas->addWidget(precio2,Cr+2,3,1,1);
              ui->menuEntradas->addWidget(tiempo2,Cr+3,3,1,1);
              ui->menuEntradas->addWidget(agregar2,Cr+4,3,1,1);
+
             }
            Cr=Cr+5;
      }

@@ -230,7 +230,8 @@ background-color:#F1F1F1;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;
+font: 75 16pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Mapa de piso </string>
@@ -606,6 +607,7 @@ background-color:#F1F1F1;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+font: 75 16pt &quot;Noto Serif&quot;;
 color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
@@ -822,7 +824,7 @@ color: rgb(201, 37, 49);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+       <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
 color: rgb(241, 241, 241);</string>
       </property>
       <property name="text">
@@ -839,7 +841,7 @@ color: rgb(241, 241, 241);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+       <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
 color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
@@ -857,7 +859,8 @@ color: rgb(201, 37, 49);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(241, 241, 241);</string>
+color: rgb(241, 241, 241);
+font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Ensalada</string>
@@ -873,7 +876,7 @@ color: rgb(241, 241, 241);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(241, 241, 241);font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(241, 241, 241);font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Entradas</string>
@@ -889,7 +892,7 @@ color: rgb(241, 241, 241);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(241, 241, 241);font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(241, 241, 241);font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Del </string>
@@ -905,7 +908,7 @@ color: rgb(241, 241, 241);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+       <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
 color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
@@ -922,7 +925,7 @@ color: rgb(201, 37, 49);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(241, 241, 241);font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(241, 241, 241);font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Sopas y</string>
@@ -938,7 +941,7 @@ color: rgb(201, 37, 49);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+       <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
 color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
@@ -955,7 +958,7 @@ color: rgb(201, 37, 49);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(241, 241, 241);font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(241, 241, 241);font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Menú</string>
@@ -971,7 +974,7 @@ color: rgb(201, 37, 49);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+       <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
 color: rgb(201, 37, 49);</string>
       </property>
       <property name="text">
@@ -989,7 +992,7 @@ color: rgb(201, 37, 49);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(241, 241, 241);
-font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Guarniciones</string>
@@ -1006,7 +1009,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(241, 241, 241);
-font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 75 italic 10pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Repostería</string>
@@ -1260,7 +1263,8 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;
+font: 75 16pt &quot;Noto Serif&quot;;</string>
       </property>
       <property name="text">
        <string>Entradas</string>
