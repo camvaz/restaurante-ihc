@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    Administrador/Reportes/Reportes.cpp \
     Administrador/crear_usuario.cpp \
     Administrador/inventario/Inventario.cpp \
         Administrador/principal_administrador.cpp \
@@ -45,6 +46,7 @@ SOURCES += \
         mainwindow.cpp \
 
 HEADERS += \
+    Administrador/Reportes/Reportes.h \
     Administrador/crear_usuario.h \
     Administrador/inventario/Inventario.h \
         Administrador/principal_administrador.h \
@@ -64,6 +66,7 @@ HEADERS += \
         mainwindow.h \
 
 FORMS += \
+    Administrador/Reportes/Reportes.ui \
     Administrador/crear_usuario.ui \
     Administrador/inventario/Inventario.ui \
         Administrador/principal_administrador.ui \
