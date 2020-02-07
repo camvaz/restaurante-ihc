@@ -88,7 +88,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#707070;</string>
+    <string notr="true">background-color:#1D1D1D;</string>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QTableView" name="TV_inventario">
@@ -107,7 +107,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
      </property>
      <property name="styleSheet">
       <string notr="true">QTableView{
-background-color:#707070;
+background-color:#313030;
 }
 
 th {
