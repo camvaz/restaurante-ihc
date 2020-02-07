@@ -25,33 +25,48 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    Administrador/crear_usuario.cpp \
         Administrador/principal_administrador.cpp \
+    Administrador/tarjeta_perfil_empleado.cpp \
+    Administrador/ver_info_usuario.cpp \
+    Administrador/widget_perfiles_usuarios.cpp \
         Bartender/principal_bartender.cpp \
         Cajero/principal_cajero.cpp \
         Cocinero/principal_cocinero.cpp \
     Garrotero/principal_garrotero.cpp \
         Hostess/principal_hostess.cpp \
+    Mesero/confirmacion_comanda.cpp \
         Mesero/principal_mesero.cpp \
         main.cpp \
         mainwindow.cpp \
 
 HEADERS += \
+    Administrador/crear_usuario.h \
         Administrador/principal_administrador.h \
+    Administrador/tarjeta_perfil_empleado.h \
+    Administrador/ver_info_usuario.h \
+    Administrador/widget_perfiles_usuarios.h \
         Bartender/principal_bartender.h \
         Cajero/principal_cajero.h \
         Cocinero/principal_cocinero.h \
     Garrotero/principal_garrotero.h \
         Hostess/principal_hostess.h \
+    Mesero/confirmacion_comanda.h \
         Mesero/principal_mesero.h \
         mainwindow.h \
 
 FORMS += \
+    Administrador/crear_usuario.ui \
         Administrador/principal_administrador.ui \
+    Administrador/tarjeta_perfil_empleado.ui \
+    Administrador/ver_info_usuario.ui \
+    Administrador/widget_perfiles_usuarios.ui \
         Bartender/principal_bartender.ui \
         Cajero/principal_cajero.ui \
         Cocinero/principal_cocinero.ui \
     Garrotero/principal_garrotero.ui \
         Hostess/principal_hostess.ui \
+    Mesero/confirmacion_comanda.ui \
         Mesero/principal_mesero.ui \
         mainwindow.ui \
 

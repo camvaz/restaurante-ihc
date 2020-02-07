@@ -24,21 +24,22 @@ QT_BEGIN_NAMESPACE
 class Ui_principal_cocinero
 {
 public:
-    QMenuBar *menubar;
     QWidget *centralwidget;
+    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *principal_cocinero)
     {
         if (principal_cocinero->objectName().isEmpty())
             principal_cocinero->setObjectName(QStringLiteral("principal_cocinero"));
-        principal_cocinero->resize(800, 600);
-        menubar = new QMenuBar(principal_cocinero);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        principal_cocinero->setMenuBar(menubar);
+        principal_cocinero->resize(854, 966);
         centralwidget = new QWidget(principal_cocinero);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         principal_cocinero->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(principal_cocinero);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 854, 21));
+        principal_cocinero->setMenuBar(menubar);
         statusbar = new QStatusBar(principal_cocinero);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         principal_cocinero->setStatusBar(statusbar);
