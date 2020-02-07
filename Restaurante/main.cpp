@@ -32,9 +32,9 @@ int main(int argc, char *argv[])
     principal_administrador w;
     w.show();
     */
-    //Principal_Mesero l;
-    //l.show();
-    confirmacion_comanda l;
+    Principal_Mesero l;
     l.show();
+    //confirmacion_comanda l;
+    //l.show();
     return a.exec();
 }

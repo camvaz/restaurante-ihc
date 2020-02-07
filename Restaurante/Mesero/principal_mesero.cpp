@@ -841,8 +841,14 @@ void Principal_Mesero::on_coctel_clicked(){
         precio->setStyleSheet("color:rgb(241, 241, 241)");
 
         QLabel *ingredientes = new QLabel;
-        ingredientes->setText(QslCoctel.value(3).toString());
+        QString ing=QslCoctel.value(3).toString();
+        qDebug()<<ing.size();
+        if(ing.size()>100){
+          ing.remove(1,61);
+        }
+        ingredientes->setText(ing);
         ingredientes->setStyleSheet("color:rgb(241, 241, 241)");
+
 
         QPushButton *agregar=new QPushButton();
         agregar->setText("Agregar");
@@ -867,7 +873,10 @@ void Principal_Mesero::on_coctel_clicked(){
             precio2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QLabel *ingredientes2 = new QLabel;
-            ingredientes2->setText(QslCoctel.value(3).toString());
+            QString ing2=QslCoctel.value(3).toString();
+            qDebug()<<ing2.size();
+            qDebug()<<ing2.remove(1,35);
+            ingredientes2->setText(ing2);
             ingredientes2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QPushButton *agregar2=new QPushButton();
