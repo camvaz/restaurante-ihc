@@ -6,6 +6,7 @@
 #include <Login/Login.h>
 #include <QSqlDatabase>
 #include <Mesero/principal_mesero.h>
+#include <Mesero/confirmacion_comanda.h>
 
 int main(int argc, char *argv[])
 {
@@ -31,7 +32,9 @@ int main(int argc, char *argv[])
     principal_administrador w;
     w.show();
     */
-    Principal_Mesero l;
+    //Principal_Mesero l;
+    //l.show();
+    confirmacion_comanda l;
     l.show();
     return a.exec();
 }

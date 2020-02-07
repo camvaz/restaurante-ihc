@@ -831,62 +831,49 @@ void Principal_Mesero::on_coctel_clicked(){
 
     while (QslCoctel.next()) {
      if(QslCoctel.value(5).toInt()==1){
-         qDebug()<<"con alcohol";
+         //qDebug()<<"con alcohol";
         QLabel *nomPlat=new QLabel;
         nomPlat->setText(QslCoctel.value(1).toString());
+        nomPlat->setStyleSheet("color:rgb(201, 37, 49)");
 
         QLabel *precio = new QLabel;
         precio->setText(QslCoctel.value(2).toString());
+        precio->setStyleSheet("color:rgb(241, 241, 241)");
 
         QLabel *ingredientes = new QLabel;
         ingredientes->setText(QslCoctel.value(3).toString());
+        ingredientes->setStyleSheet("color:rgb(241, 241, 241)");
 
         QPushButton *agregar=new QPushButton();
         agregar->setText("Agregar");
-        agregar->setFixedSize(QSize(180,50));
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         ui->menuCoteles->addWidget(nomPlat,Cr,1,1,1);
         ui->menuCoteles->addWidget(precio,Cr+1,1,1,1);
         ui->menuCoteles->addWidget(ingredientes,Cr+2,1,1,1);
         ui->menuCoteles->addWidget(agregar,Cr+3,1,1,1);
 
-    }/*
-        QLabel *esp=new QLabel;
-        esp->setFixedSize(QSize(50,15));
-        //esp->setStyleSheet("background-color: rgb(138,198,242)");
-
-        QLabel *esp2=new QLabel;
-        esp2->setFixedSize(QSize(190,15));
-        //esp2->setStyleSheet("background-color: rgb(138,198,242)");
-
-        QLabel *esp3=new QLabel();
-        esp3->setFixedSize(QSize(50,15));
-        //esp3->setStyleSheet("background-color: rgb(138,198,242)");
-        //IZQUIERDA
-         //ui->menuCoteles->addWidget(esp,Cr,0,1,1);
-
-         //CENTRO
-         //ui->menuCoteles->addWidget(esp2,Cr+1,2,1,1);
-
-         //DERECHA
-         //ui->menuCoteles->addWidget(esp3,Cr+2,4,1,1);
-*/
-        //if(QslCoctel.value(5).toInt()==0){
+    }
      else {
 
-                 qDebug()<<"sin alcohol";
+                // qDebug()<<"sin alcohol";
             QLabel *nomPlat2=new QLabel;
             nomPlat2->setText(QslCoctel.value(1).toString());
+            nomPlat2->setStyleSheet("color:rgb(201, 37, 49)");
 
             QLabel *precio2 = new QLabel;
             precio2->setText(QslCoctel.value(2).toString());
+            precio2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QLabel *ingredientes2 = new QLabel;
             ingredientes2->setText(QslCoctel.value(3).toString());
+            ingredientes2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QPushButton *agregar2=new QPushButton();
             agregar2->setText("Agregar");
-            agregar2->setFixedSize(QSize(180,50));
+            agregar2->setFixedSize(QSize(80,25));
+            agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
 
             ui->menuCoteles->addWidget(nomPlat2,cr,2,1,1);
             ui->menuCoteles->addWidget(precio2,cr+1,2,1,1);

@@ -217,7 +217,7 @@ background-color:#F1F1F1;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>10</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -1537,8 +1537,8 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
      <widget class="QPushButton" name="coctel">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>190</y>
+        <x>150</x>
+        <y>210</y>
         <width>121</width>
         <height>111</height>
        </rect>
@@ -1562,8 +1562,8 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
      <widget class="QPushButton" name="vino">
       <property name="geometry">
        <rect>
-        <x>420</x>
-        <y>190</y>
+        <x>500</x>
+        <y>210</y>
         <width>121</width>
         <height>111</height>
        </rect>
@@ -1587,14 +1587,15 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
      <widget class="QLabel" name="label_271">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>310</y>
+        <x>190</x>
+        <y>330</y>
         <width>70</width>
         <height>20</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
+color: rgb(241, 241, 241);</string>
       </property>
       <property name="text">
        <string>Cocteles</string>
@@ -1603,14 +1604,15 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
      <widget class="QLabel" name="label_272">
       <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>310</y>
+        <x>550</x>
+        <y>330</y>
         <width>40</width>
         <height>20</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+       <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
+color: rgb(241, 241, 241);</string>
       </property>
       <property name="text">
        <string>Vinos</string>
@@ -1690,6 +1692,10 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
         <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
+color: rgb(241, 241, 241);</string>
+         </property>
          <property name="text">
           <string>                                      Con alcohol</string>
          </property>
@@ -1697,6 +1703,10 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="label_24">
+         <property name="styleSheet">
+          <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
+color: rgb(241, 241, 241);</string>
+         </property>
          <property name="text">
           <string>                                      Sin alcohol</string>
          </property>
@@ -1881,7 +1891,7 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
