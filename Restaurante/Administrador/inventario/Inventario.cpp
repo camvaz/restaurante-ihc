@@ -28,6 +28,7 @@ Inventario::Inventario(QWidget *parent) :
     ui->TV_inventario->hideColumn(5);
 */
     //aqui introducimos el stylesheet
+    ui->TV_inventario->setStyleSheet("QTableView{ background-color:#313030;color:#f1f1f1;}#th {padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #C92531;color: white;}tr:hover {background-color: #f5f5f5;}tr:nth-child(even) {  background-color: #313030;}#tr:nth-child(odd) {background-color: #0c0c0c;}");
 
 
 }

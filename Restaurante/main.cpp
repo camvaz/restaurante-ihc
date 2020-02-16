@@ -17,11 +17,11 @@ int main(int argc, char *argv[])
     QSqlDatabase database;
 
     database = QSqlDatabase::addDatabase("QMYSQL");
-    database.setHostName("localhost");
-    database.setPort(3306);
     database.setDatabaseName("restaurante");
+    database.setHostName("localhost");
     database.setUserName("root");
-    database.setPassword("password");
+    database.setPassword("");
+    database.setPort(3306);
     if(!database.open()){
         qDebug()<<database.lastError().text();
     }
@@ -29,12 +29,8 @@ int main(int argc, char *argv[])
         qDebug()<<"Base de datos conectada";
     }
 
-    Reportes w;
+    Login w;
     w.show();
-
-    GraficaVentas u;
-    u.show();
-
 
 
     return a.exec();
