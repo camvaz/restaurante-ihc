@@ -17,6 +17,7 @@ class Login : public QWidget
 
 public:
     explicit Login(QWidget *parent = nullptr);
+    Login(QString img, QWidget *parent = nullptr);
     ~Login();
 
 private slots:

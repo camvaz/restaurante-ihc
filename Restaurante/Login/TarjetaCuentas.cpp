@@ -30,6 +30,7 @@ TarjetaCuentas::TarjetaCuentas(QString id,QWidget *parent):QWidget(parent), ui(n
 
 }
 
+
 TarjetaCuentas::~TarjetaCuentas()
 {
     delete ui;

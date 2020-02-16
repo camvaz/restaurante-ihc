@@ -3,6 +3,8 @@
 #include <Login/LoginCuentas.h>
 #include <Administrador/inventario/Inventario.h>
 #include <Administrador/principal_administrador.h>
+#include "Administrador/Reportes/GraficaVentas.h"
+#include "Administrador/Reportes/Reportes.h"
 #include <Login/Login.h>
 #include <QSqlDatabase>
 #include <Mesero/principal_mesero.h>
@@ -11,17 +13,18 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    a.setStyle("fusion");
    // MainWindow w;
    // w.show();
     /*
     QSqlDatabase database;
 
     database = QSqlDatabase::addDatabase("QMYSQL");
-    database.setHostName("localhost");
-    database.setPort(3306);
     database.setDatabaseName("restaurante");
+    database.setHostName("localhost");
     database.setUserName("root");
-    database.setPassword("password");
+    database.setPassword("");
+    database.setPort(3306);
     if(!database.open()){
         qDebug()<<database.lastError().text();
     }
@@ -29,12 +32,9 @@ int main(int argc, char *argv[])
         qDebug()<<"Base de datos conectada";
     }
 
-    principal_administrador w;
+    Login w;
     w.show();
-    */
-    Principal_Mesero l;
-    l.show();
-    //confirmacion_comanda l;
-    //l.show();
+
+
     return a.exec();
 }
