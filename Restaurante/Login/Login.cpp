@@ -90,6 +90,11 @@ void Login::on_btn_inicioSesion_clicked()
                 Hostes->show();
                 break;
             }
+            case 7:
+            {
+                principal_garrotero *Garrotero = new principal_garrotero(query.value(2).toString());
+                Garrotero->show();
+            }
         }
     }
     else{
