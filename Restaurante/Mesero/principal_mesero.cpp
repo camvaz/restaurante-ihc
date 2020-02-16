@@ -10,28 +10,19 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
     //METODO QUE CARGA LAS IMAGENES
     CargarImagenes();
 
-    QSqlDatabase database;
+}
 
-       database= QSqlDatabase::addDatabase("QMYSQL");
-       database.setHostName("localhost");
-       database.setPort(3306);
-       database.setDatabaseName("restaurante");
-       database.setUserName("root");
-       database.setPassword("1234");
-       //USADO POR DANIEL TIENE CONTRASEÑA
-      // database.setPassword("1234");
-       if(!database.open()){
-           qDebug()<<database.lastError().text();
-
-       }
-       else {
-           qDebug()<<"Base de datos conectada";
-       }
-
-
-
+Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::Principal_Mesero)
+{
+    ui->setupUi(this);
+    //METODO QUE CARGA LAS IMAGENES
+    CargarImagenes();
+    identifier = id;
 
 }
+
 
 Principal_Mesero::~Principal_Mesero()
 {

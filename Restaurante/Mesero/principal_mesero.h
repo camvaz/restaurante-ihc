@@ -17,6 +17,7 @@ class Principal_Mesero : public QMainWindow
 
 public:
     explicit Principal_Mesero(QWidget *parent = nullptr);
+    Principal_Mesero(QString id,QWidget *parent = nullptr);
     ~Principal_Mesero();
 
     void CargarImagenes();
@@ -50,6 +51,7 @@ private slots:
 
 private:
     Ui::Principal_Mesero *ui;
+    QString identifier = "";
 };
 
 #endif // PRINCIPAL_MESERO_H

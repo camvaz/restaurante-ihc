@@ -13,10 +13,12 @@ class principal_hostess : public QMainWindow
 
 public:
     explicit principal_hostess(QWidget *parent = nullptr);
+    principal_hostess(QString id, QWidget *parent = nullptr);
     ~principal_hostess();
 
 private:
     Ui::principal_hostess *ui;
+    QString identifier = "";
 };
 
 #endif // PRINCIPAL_HOSTESS_H

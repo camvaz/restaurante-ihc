@@ -13,10 +13,12 @@ class principal_bartender : public QMainWindow
 
 public:
     explicit principal_bartender(QWidget *parent = nullptr);
+    principal_bartender(QString id, QWidget *parent = nullptr);
     ~principal_bartender();
 
 private:
     Ui::principal_bartender *ui;
+    QString identifier = "";
 };
 
 #endif // PRINCIPAL_BARTENDER_H

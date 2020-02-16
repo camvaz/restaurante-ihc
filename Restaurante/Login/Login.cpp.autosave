@@ -68,25 +68,25 @@ void Login::on_btn_inicioSesion_clicked()
             }
             case 3:
             {//Case Cajero
-                principal_cajero *Cajero = new principal_cajero();
+                principal_cajero *Cajero = new principal_cajero(query.value(2).toString());
                 Cajero->show();
                 break;
             }
             case 4:
             {// Case Cocinero
-                principal_bartender *Bartender = new principal_bartender();
+                principal_bartender *Bartender = new principal_bartender(query.value(2).toString());
                 Bartender->show();
                 break;
             }
             case 5:
             {// Case Bartender
-                principal_cocinero *Cocinero = new principal_cocinero();
+                principal_cocinero *Cocinero = new principal_cocinero(query.value(2).toString());
                 Cocinero->show();
                 break;
             }
             case 6:
             {// Case Hostes
-                principal_hostess *Hostes = new principal_hostess();
+                principal_hostess *Hostes = new principal_hostess(query.value(2).toString());
                 Hostes->show();
                 break;
             }
