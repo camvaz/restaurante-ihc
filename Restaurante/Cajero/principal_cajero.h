@@ -13,10 +13,12 @@ class principal_cajero : public QMainWindow
 
 public:
     explicit principal_cajero(QWidget *parent = nullptr);
+    principal_cajero(QString id, QWidget *parent = nullptr);
     ~principal_cajero();
 
 private:
     Ui::principal_cajero *ui;
+    QString identifier = "";
 };
 
 #endif // PRINCIPAL_CAJERO_H

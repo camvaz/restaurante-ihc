@@ -13,10 +13,12 @@ class principal_cocinero : public QMainWindow
 
 public:
     explicit principal_cocinero(QWidget *parent = nullptr);
+    principal_cocinero(QString id, QWidget *parent = nullptr);
     ~principal_cocinero();
 
 private:
     Ui::principal_cocinero *ui;
+    QString identifier = "";
 };
 
 #endif // PRINCIPAL_COCINERO_H
