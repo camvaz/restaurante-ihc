@@ -89,11 +89,11 @@ FORMS += \
         mainwindow.ui \
 
 
-INCLUDEPATH += "C:/Users/rober/Downloads/OChart/include"
+#INCLUDEPATH += "C:/Users/rober/Downloads/OChart/include"
 
-LIBS += -L"C:/Users/rober/Downloads/OChart/lib"
+#LIBS += -L"C:/Users/rober/Downloads/OChart/lib"
 
-LIBS += -lopenchartplugin
+#LIBS += -lopenchartplugin
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

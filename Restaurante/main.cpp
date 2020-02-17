@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     a.setStyle("fusion");
    // MainWindow w;
    // w.show();
-    /*
+
     QSqlDatabase database;
 
     database = QSqlDatabase::addDatabase("QMYSQL");
