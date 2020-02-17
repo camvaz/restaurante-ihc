@@ -585,16 +585,20 @@ void Principal_Mesero::on_guarnicion_clicked(){
 
         QLabel *nomPlat=new QLabel;
         nomPlat->setText(QslGuarni.value(1).toString());
+        nomPlat->setStyleSheet("color:rgb(201, 37, 49)");
 
         QLabel *precio = new QLabel;
         precio->setText(QslGuarni.value(2).toString());
+        precio->setStyleSheet("color:rgb(241, 241, 241)");
 
         QLabel *tiempo = new QLabel;
         tiempo->setText(QslGuarni.value(3).toString());
+        tiempo->setStyleSheet("color:rgb(241, 241, 241)");
 
         QPushButton *agregar=new QPushButton();
         agregar->setText("Agregar");
         agregar->setFixedSize(QSize(170,50));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         ui->menuGuarnicion->addWidget(nomPlat,Cr,1,1,1);
         ui->menuGuarnicion->addWidget(precio,Cr+1,1,1,1);
@@ -628,16 +632,20 @@ void Principal_Mesero::on_guarnicion_clicked(){
 
             QLabel *nomPlat2=new QLabel;
             nomPlat2->setText(QslGuarni.value(1).toString());
+            nomPlat2->setStyleSheet("color:rgb(201, 37, 49)");
 
             QLabel *precio2 = new QLabel;
             precio2->setText(QslGuarni.value(2).toString());
+            precio2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QLabel *tiempo2 = new QLabel;
             tiempo2->setText(QslGuarni.value(3).toString());
+            tiempo2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QPushButton *agregar2=new QPushButton();
             agregar2->setText("Agregar");
             agregar2->setFixedSize(QSize(180,50));
+            agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
 
             ui->menuGuarnicion->addWidget(nomPlat2,Cr,3,1,1);
             ui->menuGuarnicion->addWidget(precio2,Cr+1,3,1,1);
@@ -665,20 +673,26 @@ void Principal_Mesero::on_reposteria_clicked(){
         //primera columna
         QLabel *nomPlat=new QLabel;
         nomPlat->setText(QslPostres.value(1).toString());
+        nomPlat->setStyleSheet("color:rgb(201, 37, 49)");
+
 
         QLabel *precio = new QLabel;
         precio->setText(QslPostres.value(2).toString());
+        precio->setStyleSheet("color:rgb(241, 241, 241)");
 
         QLabel *tiempo = new QLabel;
         tiempo->setText(QslPostres.value(3).toString());
+        tiempo->setStyleSheet("color:rgb(241, 241, 241)");
 
         QLabel *ingredientes = new QLabel;
         ingredientes->setText(QslPostres.value(4).toString());
+        ingredientes->setStyleSheet("color:rgb(241, 241, 241)");
 
 
         QPushButton *agregar1=new QPushButton();
         agregar1->setText("Agregar");
         agregar1->setFixedSize(QSize(180,50));
+        agregar1->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         ui->menuReposteria->addWidget(nomPlat,Cr,1,1,1);
         ui->menuReposteria->addWidget(ingredientes,Cr+1,1,1,1);
@@ -688,7 +702,7 @@ void Principal_Mesero::on_reposteria_clicked(){
 
         QLabel *esp2=new QLabel;
         esp2->setFixedSize(QSize(50,15));
-        esp2->setStyleSheet("background-color: rgb(138,198,242)");
+        //esp2->setStyleSheet("background-color: rgb(201,37,49)");
 
         //CENTRO
         ui->menuReposteria->addWidget(esp2,Cr+1,2,1,1);
@@ -701,19 +715,24 @@ void Principal_Mesero::on_reposteria_clicked(){
 
             QLabel *nomPlat2=new QLabel;
             nomPlat2->setText(QslPostres.value(1).toString());
+            nomPlat2->setStyleSheet("color:rgb(201, 37, 49)");
 
             QLabel *precio2= new QLabel;
             precio2->setText(QslPostres.value(2).toString());
+            precio2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QLabel *tiempo2 = new QLabel;
             tiempo2->setText(QslPostres.value(3).toString());
+            tiempo2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QLabel *ingredientes2 = new QLabel;
             ingredientes2->setText(QslPostres.value(4).toString());
+            ingredientes2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QPushButton *agregar2=new QPushButton();
             agregar2->setText("Agregar");
             agregar2->setFixedSize(QSize(180,50));
+            agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
 
             ui->menuReposteria->addWidget(nomPlat2,Cr,3,1,1);
              ui->menuReposteria->addWidget(ingredientes2,Cr+1,3,1,1);
@@ -739,16 +758,20 @@ void Principal_Mesero::on_infantil_clicked(){
 
         QLabel *nomPlat=new QLabel;
         nomPlat->setText(QslInfantil.value(1).toString());
+        nomPlat->setStyleSheet("color:rgb(201, 37, 49)");
 
         QLabel *precio = new QLabel;
         precio->setText(QslInfantil.value(2).toString());
+        precio->setStyleSheet("color:rgb(241, 241, 241)");
 
         QLabel *tiempo = new QLabel;
         tiempo->setText(QslInfantil.value(3).toString());
+        tiempo->setStyleSheet("color:rgb(241, 241, 241)");
 
         QPushButton *agregar=new QPushButton();
         agregar->setText("Agregar");
         agregar->setFixedSize(QSize(180,50));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         ui->menuInfantil->addWidget(nomPlat,Cr,1,1,1);
         ui->menuInfantil->addWidget(precio,Cr+1,1,1,1);
@@ -791,16 +814,20 @@ void Principal_Mesero::on_infantil_clicked(){
 
             QLabel *nomPlat2=new QLabel;
             nomPlat2->setText(QslInfantil.value(1).toString());
+            nomPlat2->setStyleSheet("color:rgb(201, 37, 49)");
 
             QLabel *precio2 = new QLabel;
             precio2->setText(QslInfantil.value(2).toString());
+            precio2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QLabel *tiempo2 = new QLabel;
             tiempo2->setText(QslInfantil.value(3).toString());
+            tiempo2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QPushButton *agregar2=new QPushButton();
             agregar2->setText("Agregar");
             agregar2->setFixedSize(QSize(180,50));
+            agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
 
             ui->menuInfantil->addWidget(nomPlat2,Cr,3,1,1);
             ui->menuInfantil->addWidget(precio2,Cr+1,3,1,1);
