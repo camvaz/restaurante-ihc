@@ -82,7 +82,8 @@ padding-top:1px;
       </rect>
      </property>
      <property name="toolTip">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>
+</string>
      </property>
      <property name="styleSheet">
       <string notr="true">border:none;

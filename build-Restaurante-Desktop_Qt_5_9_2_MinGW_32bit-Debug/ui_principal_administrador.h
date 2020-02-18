@@ -132,7 +132,7 @@ public:
     {
         principal_administrador->setWindowTitle(QApplication::translate("principal_administrador", "MainWindow", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        perfiles->setToolTip(QApplication::translate("principal_administrador", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        perfiles->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
         perfiles->setText(QString());
         inventario->setText(QString());
