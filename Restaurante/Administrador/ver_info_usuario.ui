@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>401</width>
-    <height>600</height>
+    <height>635</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -210,6 +210,11 @@
          <height>345</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <stylestrategy>PreferAntialias</stylestrategy>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">border:none;</string>
        </property>
@@ -220,9 +225,9 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-439</y>
           <width>364</width>
-          <height>636</height>
+          <height>784</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_2">
@@ -404,6 +409,12 @@ border-radius: 15px;</string>
                          <height>0</height>
                         </size>
                        </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>18</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
@@ -454,6 +465,12 @@ color: #909090;</string>
                         <size>
                          <width>145</width>
                          <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>18</height>
                         </size>
                        </property>
                        <property name="styleSheet">
@@ -514,6 +531,12 @@ color: #909090;</string>
                          <height>0</height>
                         </size>
                        </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>18</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
@@ -566,6 +589,12 @@ color: #909090;</string>
                          <height>0</height>
                         </size>
                        </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>18</height>
+                        </size>
+                       </property>
                        <property name="styleSheet">
                         <string notr="true">border-top:none;
 border-bottom:2px solid #707070;
@@ -616,6 +645,12 @@ color: #909090;</string>
                         <size>
                          <width>145</width>
                          <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>18</height>
                         </size>
                        </property>
                        <property name="styleSheet">
@@ -823,7 +858,13 @@ border-radius: 15px;</string>
                      <property name="minimumSize">
                       <size>
                        <width>145</width>
-                       <height>29</height>
+                       <height>18</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>18</height>
                       </size>
                      </property>
                      <property name="styleSheet">
@@ -868,13 +909,13 @@ color: #909090;</string>
                      <property name="minimumSize">
                       <size>
                        <width>145</width>
-                       <height>29</height>
+                       <height>18</height>
                       </size>
                      </property>
                      <property name="maximumSize">
                       <size>
                        <width>16777215</width>
-                       <height>29</height>
+                       <height>18</height>
                       </size>
                      </property>
                      <property name="styleSheet">
@@ -916,7 +957,13 @@ color: #909090;</string>
                      <property name="minimumSize">
                       <size>
                        <width>145</width>
-                       <height>29</height>
+                       <height>18</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>18</height>
                       </size>
                      </property>
                      <property name="styleSheet">
@@ -964,7 +1011,13 @@ color: #909090;</string>
                      <property name="minimumSize">
                       <size>
                        <width>145</width>
-                       <height>29</height>
+                       <height>18</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>18</height>
                       </size>
                      </property>
                      <property name="styleSheet">
@@ -988,6 +1041,259 @@ color: #909090;</string>
            </item>
            <item>
             <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_4">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>320</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 1px solid #1d1d1d;
+background-color: #1d1d1d;
+border-radius: 15px;
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QWidget" name="layoutWidget_13">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>0</y>
+                <width>302</width>
+                <height>32</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_35">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="btn_datosEmpleado_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>289</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">text-align:left;
+border:none;
+background-color: transparent;
+color:white;</string>
+                 </property>
+                 <property name="text">
+                  <string>Credenciales del empleado</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_datosEmpleado2_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+border: none;
+background-color: transparent;
+color:white;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../../../../../../../imagen/menu.png</normaloff>../../../../../../../imagen/menu.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_datos_empleado_2">
+             <property name="minimumSize">
+              <size>
+               <width>321</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>321</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #1d1d1d;
+border-radius: 15px;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_36">
+                  <item>
+                   <widget class="QLabel" name="label_18">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: #909090;</string>
+                    </property>
+                    <property name="text">
+                     <string>Usuario</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="lbl_puesto_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>145</width>
+                      <height>18</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>18</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-top:none;
+border-bottom:2px solid #707070;
+border-radius: 0px;
+color: #909090;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_37">
+                  <item>
+                   <widget class="QLabel" name="label_19">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: #909090;</string>
+                    </property>
+                    <property name="text">
+                     <string>Contraseña</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="lbl_hr_entrada_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>145</width>
+                      <height>18</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>18</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border-top:none;
+border-bottom:2px solid #707070;
+border-radius: 0px;
+color: #909090;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_9">
              <property name="orientation">
               <enum>Qt::Vertical</enum>
              </property>
