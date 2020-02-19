@@ -9,8 +9,6 @@
 #include <QSqlDatabase>
 #include <Mesero/principal_mesero.h>
 #include <Mesero/confirmacion_comanda.h>
-#include <Login/Login.h>
-#include <Administrador/principal_administrador.h>
 
 int main(int argc, char *argv[])
 {
@@ -30,7 +28,7 @@ int main(int argc, char *argv[])
     if(!database.open()){
         qDebug()<<database.lastError().text();
     }
-    else{
+    else {
         qDebug()<<"Base de datos conectada";
     }
 

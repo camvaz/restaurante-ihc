@@ -82,25 +82,14 @@ padding-top:1px;
       </rect>
      </property>
      <property name="toolTip">
-      <string>
-</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="styleSheet">
-      <string notr="true">border:none;
+      <string notr="true">image: url(:/IconosGuiAdmiBlancos/account.png);
 </string>
      </property>
      <property name="text">
       <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../../../../../../../Imagenes tamaño pequeño/account.png</normaloff>../../../../../../../Imagenes tamaño pequeño/account.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="inventario">
@@ -113,20 +102,10 @@ padding-top:1px;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">border:none;</string>
+      <string notr="true">image: url(:/IconosGuiAdmiBlancos/trolley.png);</string>
      </property>
      <property name="text">
       <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../../../../../../../Imagenes tamaño pequeño/trolley.png</normaloff>../../../../../../../Imagenes tamaño pequeño/trolley.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="mapa_de_piso">
@@ -139,20 +118,10 @@ padding-top:1px;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">border:none;</string>
+      <string notr="true">image: url(:/IconosGuiAdmiBlancos/dining-table.png);</string>
      </property>
      <property name="text">
       <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../../../../../../../Imagenes tamaño pequeño/dining-table.png</normaloff>../../../../../../../Imagenes tamaño pequeño/dining-table.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="Reportes">
@@ -165,20 +134,10 @@ padding-top:1px;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">border:none;</string>
+      <string notr="true">image: url(:/IconosGuiAdmiBlancos/money.png);</string>
      </property>
      <property name="text">
       <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../../../../../../../Imagenes tamaño pequeño/money.png</normaloff>../../../../../../../Imagenes tamaño pequeño/money.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>60</width>
-       <height>60</height>
-      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="perfil_admi">
@@ -191,7 +150,7 @@ padding-top:1px;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">border:none</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>Perfil Admi</string>
@@ -207,13 +166,8 @@ padding-top:1px;
       <height>600</height>
      </rect>
     </property>
-<<<<<<< HEAD
     <property name="currentIndex">
      <number>1</number>
-=======
-    <property name="styleSheet">
-     <string notr="true">background-color:#0c0c0c;</string>
->>>>>>> 05995e46a998f35e2e9258d487070f6c6f5a5b0a
     </property>
     <widget class="QWidget" name="page"/>
     <widget class="QWidget" name="page_2"/>
