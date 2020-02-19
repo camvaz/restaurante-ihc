@@ -47,17 +47,56 @@ Login::~Login(){
 void Login::on_btn_inicioSesion_clicked()
 {
     QSqlQuery query;
+    QString rola;
     int rol;
 
     query.prepare("select idUsuario, contrasena,rol from Usuario where idUsuario = '" + ui->ln_user->text() + "' and contrasena = '" + ui->ln_password->text() + "'");
     query.exec();
     if(query.next()){
+
         qDebug()<<"felicidades entraste";
-        rol     =   query.value(2).toInt();
+        rola    =   query.value(2).toString();
+
+        if(rola == "Administrador")
+        {
+            rol = 1;
+        }
+        else{
+            if(rola == "Mesero"){
+                rol = 2;
+            }
+            else{
+                if(rola == "Cajero"){
+                    rol = 3;
+                }
+                else{
+                    if(rola == "Cocinero"){
+                        rol = 4;
+                    }
+                    else{
+                        if(rola == "Bartender"){
+                            rol = 5;
+                        }
+                        else{
+                            if(rola == "Hostess")
+                            {
+                                rol = 6;
+                            }
+                            else{
+                                if(rola == "Garrotero"){
+                                    rol = 7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         switch (rol) {
             case 1:{ //Case ADministrador
-                    LoginCuentas w;
-                    w.show();
+            qDebug()<<"Entro admin";
+                    principal_administrador *admin= new principal_administrador();
+                    admin->show();
                     break;
                 }
             case 2:
@@ -68,25 +107,25 @@ void Login::on_btn_inicioSesion_clicked()
             }
             case 3:
             {//Case Cajero
-                principal_cajero *Cajero = new principal_cajero();
+                principal_cajero *Cajero = new principal_cajero(query.value(2).toString());
                 Cajero->show();
                 break;
             }
             case 4:
             {// Case Cocinero
-                principal_bartender *Bartender = new principal_bartender();
-                Bartender->show();
+                //principal_bartender *Bartender = new principal_bartender(query.value(2).toString());
+                //Bartender->show();
                 break;
             }
             case 5:
             {// Case Bartender
-                principal_cocinero *Cocinero = new principal_cocinero();
+                principal_cocinero *Cocinero = new principal_cocinero(query.value(2).toString());
                 Cocinero->show();
                 break;
             }
             case 6:
-            {// Case Hostes
-                principal_hostess *Hostes = new principal_hostess();
+            {// Case Hostess
+                principal_hostess *Hostes = new principal_hostess(query.value(2).toString());
                 Hostes->show();
                 break;
             }
@@ -94,11 +133,12 @@ void Login::on_btn_inicioSesion_clicked()
             {
                 principal_garrotero *Garrotero = new principal_garrotero(query.value(2).toString());
                 Garrotero->show();
+                break;
             }
         }
     }
     else{
         qDebug()<<"YOU'RE AN INTRUDER";
     }
-    this->hide();
+    this->close();
     }

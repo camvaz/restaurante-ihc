@@ -32,9 +32,7 @@ int main(int argc, char *argv[])
         qDebug()<<"Base de datos conectada";
     }
 
-    principal_administrador w;
-
-    //Login w;
+    Login w;
     w.show();
 
 
