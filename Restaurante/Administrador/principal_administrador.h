@@ -2,6 +2,7 @@
 #define PRINCIPAL_ADMINISTRADOR_H
 
 #include <QMainWindow>
+#include <Administrador/widget_perfiles_usuarios.h>
 
 
 #include "Administrador/inventario/Inventario.h"
@@ -32,6 +33,7 @@ private slots:
 private:
     Ui::principal_administrador *ui;
     Inventario *Winventario;
+    widget_perfiles_usuarios perfiles;
 };
 
 #endif // PRINCIPAL_ADMINISTRADOR_H

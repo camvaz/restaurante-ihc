@@ -3,6 +3,8 @@
 #include "crear_usuario.h"
 #include "Administrador/inventario/Inventario.h"
 
+#include "widget_perfiles_usuarios.h"
+#include "Administrador/crear_usuario.h"
 principal_administrador::principal_administrador(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::principal_administrador)
@@ -10,6 +12,8 @@ principal_administrador::principal_administrador(QWidget *parent) :
     ui->setupUi(this);
     Winventario = new Inventario(nullptr);
     ui->stackedWidget->insertWidget(1,Winventario);
+    ui->stackedWidget->insertWidget(0,&perfiles);
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 principal_administrador::~principal_administrador()
@@ -19,9 +23,9 @@ principal_administrador::~principal_administrador()
 
 void principal_administrador::on_perfiles_clicked()
 {
-    crear_usuario *u1=new crear_usuario();
-    u1->exec();
-    u1->show();
+    ui->stackedWidget->setCurrentIndex(0);
+    crear_usuario *u=new crear_usuario();
+    u->exec();
 
 }
 

@@ -1,5 +1,6 @@
 INPUT(
 ./release\crear_usuario.o
+./release\Inventario.o
 ./release\principal_administrador.o
 ./release\tarjeta_perfil_empleado.o
 ./release\ver_info_usuario.o
@@ -9,11 +10,15 @@ INPUT(
 ./release\principal_cocinero.o
 ./release\principal_garrotero.o
 ./release\principal_hostess.o
+./release\Login.o
+./release\LoginCuentas.o
+./release\TarjetaCuentas.o
 ./release\confirmacion_comanda.o
 ./release\principal_mesero.o
 ./release\main.o
 ./release\mainwindow.o
 ./release\moc_crear_usuario.o
+./release\moc_Inventario.o
 ./release\moc_principal_administrador.o
 ./release\moc_tarjeta_perfil_empleado.o
 ./release\moc_ver_info_usuario.o
@@ -23,6 +28,9 @@ INPUT(
 ./release\moc_principal_cocinero.o
 ./release\moc_principal_garrotero.o
 ./release\moc_principal_hostess.o
+./release\moc_Login.o
+./release\moc_LoginCuentas.o
+./release\moc_TarjetaCuentas.o
 ./release\moc_confirmacion_comanda.o
 ./release\moc_principal_mesero.o
 ./release\moc_mainwindow.o
