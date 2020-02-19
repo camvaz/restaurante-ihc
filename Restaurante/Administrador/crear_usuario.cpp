@@ -12,23 +12,11 @@ crear_usuario::crear_usuario(QWidget *parent) :
 
     bandera_info_personal=0;
     bandera_datos_empleado=0;
+    bandera_datos_credencial=0;
     ui->frame_info_personal->hide();
     ui->frame_datos_empleado->hide();
+    ui->frame_credenciales->hide();
     id="";
-
-    QSqlDatabase database;
-    database = QSqlDatabase::addDatabase("QMYSQL");
-    database.setHostName("localhost");
-    database.setPort(3306);
-    database.setDatabaseName("restaurante");
-    database.setUserName("root");
-    database.setPassword("");
-    if(!database.open()){
-        qDebug()<<"Base de datos no conectada";
-    }
-    else{
-        qDebug()<<"Base de datos conectada";
-    }
 }
 
 crear_usuario::~crear_usuario()
@@ -97,6 +85,7 @@ void crear_usuario::setID(QString id)
 
 void crear_usuario::cargarDatos()
 {
+    ui->ID->setEnabled(false);
     ui->ID->setText(id);
     QSqlQuery query;
     query.prepare("select * from informacionpersonal where Usuario_idUsuario="+id);
@@ -120,10 +109,16 @@ void crear_usuario::cargarDatos()
         ui->lineEdit_hr_salida->setText(query.value(2).toString());
     }
 
-    query.prepare("SELECT Rol FROM usuario WHERE idUsuario="+id);
+    query.prepare("SELECT * FROM usuario WHERE idUsuario="+id);
     query.exec();
-    query.next();
-    ui->comboBox->setCurrentText(query.value(0).toString());
+    while(query.next())
+    {
+        ui->comboBox->setCurrentText(query.value(2).toString());
+        ui->lineEdit_password->setText(query.value(1).toString());
+        ui->lineEdit_usuario->setText(query.value(3).toString());
+        ui->lineEdit_confirmaPass->setText(query.value(1).toString());
+    }
+
 
 
 }
@@ -131,6 +126,7 @@ void crear_usuario::cargarDatos()
 
 void crear_usuario::on_btn_guardar_clicked()
 {
+
     QString ide=ui->ID->text();
     QString nom=ui->nombre->text();
     QString tel=ui->lineEdit_telefono->text();
@@ -142,43 +138,81 @@ void crear_usuario::on_btn_guardar_clicked()
     QString hrEntrada=ui->lineEdit_hr_entrada_2->text();
     QString hrSalida=ui->lineEdit_hr_salida->text();
     QString pago=ui->lineEdit_salario->text();
-    if(ide!="" && nom!=""&& tel!="" && dir!="" && email!="" && rfc!="" && curp!="" && puesto!="Seleccione uno" && hrEntrada!="" && hrSalida!="" && pago!="")
+    QString usuario=ui->lineEdit_usuario->text();
+    QString contrasena=ui->lineEdit_password->text();
+    QString contrasena2=ui->lineEdit_confirmaPass->text();
+
+    if(ide!="" && nom!=""&& tel!="" && dir!="" && email!="" && rfc!="" && curp!="" && puesto!="Seleccione uno" && hrEntrada!="" && hrSalida!="" && pago!="" && usuario!="" && contrasena!="" && contrasena2!="")
     {
-        QMessageBox msgBox(QMessageBox::Question,"Confimacion","¿Estas seguro de guardar los datos de este usuario?",QMessageBox::Yes|QMessageBox::No);
-        msgBox.setButtonText(QMessageBox::Yes,"Sí");
-        msgBox.setButtonText(QMessageBox::No,"No");
+        if(ui->lineEdit_password->text() == ui->lineEdit_confirmaPass->text())
+        {
+           QMessageBox msgBox(QMessageBox::Question,"Confimacion","¿Estas seguro de guardar los datos de este usuario?",QMessageBox::Yes|QMessageBox::No);
+            msgBox.setButtonText(QMessageBox::Yes,"Sí");
+            msgBox.setButtonText(QMessageBox::No,"No");
 
-         if(msgBox.exec()==QMessageBox::Yes){
-             if(id=="")
-             {
-                 //Es Crear
-                 QMessageBox info;
-                 info.setWindowTitle("Información");
-                 info.setText("Tu usuario fue agregado con éxito.");
-                 info.setStandardButtons(QMessageBox::Ok);
-                 info.setDefaultButton(QMessageBox::Ok);
-                 info.setButtonText(QMessageBox::Ok,"Aceptar");
-                 info.exec();
+             if(msgBox.exec()==QMessageBox::Yes){
+                 if(id=="")
+                 {
+                     qDebug()<<"Crear";
+                     //Es Crear
 
-                 this->close();
+                     QSqlQuery query;
+                     query.prepare("INSERT INTO usuario(idUsuario, Contrasena, Rol, NombreUsuario) VALUES ('"+ide+"','"+ contrasena+"','"+puesto+"','"+usuario+"')");
+                     query.exec();
 
-             }else
-             {
-                 //Es Editar
+                     query.prepare("INSERT INTO informacionpersonal(Nombre, rfc, curp, Telefono, Direccion, Email, Usuario_idUsuario) VALUES('"+nom+"','"+rfc+"','"+curp+"','"+tel+"','"+dir+"','"+email+"','"+ide+"')");
+                     query.exec();
 
-                 QMessageBox info;
-                 info.setWindowTitle("Información");
-                 info.setText("Los datos han sido guardados con éxito.");
-                 info.setStandardButtons(QMessageBox::Ok);
-                 info.setDefaultButton(QMessageBox::Ok);
-                 info.setButtonText(QMessageBox::Ok,"Aceptar");
-                 info.exec();
-                 this->close();
+                     query.prepare("INSERT INTO nomina(PagoHora, HoraEntrada, HoraSalida, Usuario_idUsuario) VALUES ('"+pago+"','"+hrEntrada+"','"+hrSalida+"','"+ide+"')");
+                     query.exec();
 
+                     QMessageBox info;
+                     info.setWindowTitle("Información");
+                     info.setText("Tu usuario fue agregado con éxito.");
+                     info.setStandardButtons(QMessageBox::Ok);
+                     info.setDefaultButton(QMessageBox::Ok);
+                     info.setButtonText(QMessageBox::Ok,"Aceptar");
+                     info.exec();
+
+                     this->close();
+
+                 }else
+                 {
+                     //Es Editar
+
+                     QSqlQuery query;
+                     query.prepare("UPDATE usuario SET Contrasena='"+contrasena+"',Rol='"+puesto+"',NombreUsuario='"+usuario+"' WHERE idUsuario="+id);
+                     query.exec();
+
+                     query.prepare("UPDATE informacionpersonal SET Nombre='"+nom+"',rfc='"+rfc+"',curp='"+curp+"',Telefono='"+tel+"',Direccion='"+dir+"',Email='"+email+"' WHERE Usuario_idUsuario="+id);
+                     query.exec();
+
+                     query.prepare("UPDATE nomina SET PagoHora='"+pago+"',HoraEntrada='"+hrEntrada+"',HoraSalida='"+hrSalida+"' WHERE Usuario_idUsuario="+id);
+                     query.exec();
+
+                     QMessageBox info;
+                     info.setWindowTitle("Información");
+                     info.setText("Los datos han sido guardados con éxito.");
+                     info.setStandardButtons(QMessageBox::Ok);
+                     info.setDefaultButton(QMessageBox::Ok);
+                     info.setButtonText(QMessageBox::Ok,"Aceptar");
+                     info.exec();
+                     this->close();
+
+
+                 }
 
              }
-
-         }
+         }else
+        {
+            QMessageBox info;
+            info.setWindowTitle("Información");
+            info.setText("Las contraseñas no coinciden, ingresalas nuevamente.");
+            info.setStandardButtons(QMessageBox::Ok);
+            info.setDefaultButton(QMessageBox::Ok);
+            info.setButtonText(QMessageBox::Ok,"Aceptar");
+            info.exec();
+        }
 
     }else
     {
@@ -189,5 +223,32 @@ void crear_usuario::on_btn_guardar_clicked()
         info.setDefaultButton(QMessageBox::Ok);
         info.setButtonText(QMessageBox::Ok,"Aceptar");
         info.exec();
+    }
+}
+
+void crear_usuario::on_btn_credenciales_clicked()
+{
+    if(bandera_datos_credencial==0)
+    {
+        ui->frame_credenciales->show();
+        bandera_datos_credencial=1;
+    }else
+    {
+        ui->frame_credenciales->hide();
+        bandera_datos_credencial=0;
+    }
+
+}
+
+void crear_usuario::on_btn_credenciales_2_clicked()
+{
+    if(bandera_datos_credencial==0)
+    {
+        ui->frame_credenciales->show();
+        bandera_datos_credencial=1;
+    }else
+    {
+        ui->frame_credenciales->hide();
+        bandera_datos_credencial=0;
     }
 }

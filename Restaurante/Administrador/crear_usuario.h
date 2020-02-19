@@ -31,10 +31,15 @@ private slots:
 
     void on_btn_guardar_clicked();
 
+    void on_btn_credenciales_clicked();
+
+    void on_btn_credenciales_2_clicked();
+
 private:
     Ui::crear_usuario *ui;
     bool bandera_info_personal;
     bool bandera_datos_empleado;
+    bool bandera_datos_credencial;
     QString id;
 };
 

@@ -144,6 +144,9 @@
            </item>
            <item alignment="Qt::AlignHCenter">
             <widget class="QLineEdit" name="ID">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
              <property name="maximumSize">
               <size>
                <width>55</width>
@@ -367,7 +370,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-309</y>
+          <y>-314</y>
           <width>373</width>
           <height>659</height>
          </rect>
@@ -1157,7 +1160,7 @@ border-radius: 15px;
                 <number>0</number>
                </property>
                <item>
-                <widget class="QPushButton" name="btn_datosEmpleado_4">
+                <widget class="QPushButton" name="btn_credenciales">
                  <property name="minimumSize">
                   <size>
                    <width>270</width>
@@ -1182,7 +1185,7 @@ color:white;</string>
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="btn_datosEmpleado2_4">
+                <widget class="QPushButton" name="btn_credenciales_2">
                  <property name="minimumSize">
                   <size>
                    <width>30</width>
@@ -1221,7 +1224,7 @@ color:white;</string>
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_datos_empleado_2">
+            <widget class="QFrame" name="frame_credenciales">
              <property name="minimumSize">
               <size>
                <width>321</width>

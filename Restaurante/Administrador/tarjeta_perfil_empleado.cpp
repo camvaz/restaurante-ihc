@@ -10,20 +10,6 @@ tarjeta_perfil_empleado::tarjeta_perfil_empleado(QString id,QWidget *parent) :
 {
     ui->setupUi(this);
     idUsuario=id;
-    QSqlDatabase database;
-
-    database = QSqlDatabase::addDatabase("QMYSQL");
-    database.setHostName("localhost");
-    database.setPort(3306);
-    database.setDatabaseName("restaurante");
-    database.setUserName("root");
-    database.setPassword("");
-    if(!database.open()){
-        qDebug()<<"Base de datos no conectada";
-    }
-    else{
-        qDebug()<<"Base de datos conectada";
-    }
 
     QSqlQuery query;
     query.prepare("SELECT Nombre FROM `informacionpersonal` WHERE Usuario_idUsuario="+idUsuario);

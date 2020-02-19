@@ -300,6 +300,11 @@ release/moc_crear_usuario.cpp: D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QDialog 
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/qfiledevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qvector2d.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		../Restaurante/Administrador/crear_usuario.h \
 		release/moc_predefs.h \
 		D:/Qt/5.9.2/mingw53_32/bin/moc.exe
@@ -520,6 +525,13 @@ release/moc_principal_administrador.cpp: D:/Qt/5.9.2/mingw53_32/include/QtWidget
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qicon.h \
+		../Restaurante/Administrador/widget_perfiles_usuarios.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QWidget \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		../Restaurante/Administrador/principal_administrador.h \
 		release/moc_predefs.h \
 		D:/Qt/5.9.2/mingw53_32/bin/moc.exe
@@ -626,6 +638,11 @@ release/moc_tarjeta_perfil_empleado.cpp: D:/Qt/5.9.2/mingw53_32/include/QtWidget
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/qfiledevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qvector2d.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		../Restaurante/Administrador/tarjeta_perfil_empleado.h \
 		release/moc_predefs.h \
 		D:/Qt/5.9.2/mingw53_32/bin/moc.exe
@@ -732,6 +749,11 @@ release/moc_ver_info_usuario.cpp: D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QDial
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/qfiledevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qvector2d.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		../Restaurante/Administrador/ver_info_usuario.h \
 		release/moc_predefs.h \
 		D:/Qt/5.9.2/mingw53_32/bin/moc.exe
@@ -837,6 +859,11 @@ release/moc_widget_perfiles_usuarios.cpp: D:/Qt/5.9.2/mingw53_32/include/QtWidge
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/qfiledevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qvector2d.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		../Restaurante/Administrador/widget_perfiles_usuarios.h \
 		release/moc_predefs.h \
 		D:/Qt/5.9.2/mingw53_32/bin/moc.exe
@@ -2251,6 +2278,11 @@ release/crear_usuario.o: ../Restaurante/Administrador/crear_usuario.cpp ../Resta
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/qfiledevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qvector2d.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		ui_crear_usuario.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/QVariant \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QAction \
@@ -2308,7 +2340,9 @@ release/crear_usuario.o: ../Restaurante/Administrador/crear_usuario.cpp ../Resta
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qscrollarea.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QSpacerItem \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QWidget
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QWidget \
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\crear_usuario.o ..\Restaurante\Administrador\crear_usuario.cpp
 
 release/Inventario.o: ../Restaurante/Administrador/inventario/Inventario.cpp ../Restaurante/Administrador/inventario/Inventario.h \
@@ -2570,6 +2604,13 @@ release/principal_administrador.o: ../Restaurante/Administrador/principal_admini
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qicon.h \
+		../Restaurante/Administrador/widget_perfiles_usuarios.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QWidget \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		ui_principal_administrador.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/QVariant \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QAction \
@@ -2607,7 +2648,6 @@ release/principal_administrador.o: ../Restaurante/Administrador/principal_admini
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QStackedWidget \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qstackedwidget.h \
-		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QWidget \
 		../Restaurante/Administrador/crear_usuario.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QDialog \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qdialog.h
@@ -2715,6 +2755,11 @@ release/tarjeta_perfil_empleado.o: ../Restaurante/Administrador/tarjeta_perfil_e
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/qfiledevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qvector2d.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		ui_tarjeta_perfil_empleado.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/QVariant \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QAction \
@@ -2752,7 +2797,9 @@ release/tarjeta_perfil_empleado.o: ../Restaurante/Administrador/tarjeta_perfil_e
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qlabel.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QPushButton \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qabstractbutton.h
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		../Restaurante/Administrador/ver_info_usuario.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\tarjeta_perfil_empleado.o ..\Restaurante\Administrador\tarjeta_perfil_empleado.cpp
 
 release/ver_info_usuario.o: ../Restaurante/Administrador/ver_info_usuario.cpp ../Restaurante/Administrador/ver_info_usuario.h \
@@ -2857,6 +2904,11 @@ release/ver_info_usuario.o: ../Restaurante/Administrador/ver_info_usuario.cpp ..
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/qfiledevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qvector2d.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		ui_ver_info_usuario.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/QVariant \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QAction \
@@ -2909,7 +2961,9 @@ release/ver_info_usuario.o: ../Restaurante/Administrador/ver_info_usuario.cpp ..
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qtablewidget.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qtableview.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QWidget
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QWidget \
+		D:/Qt/5.9.2/mingw53_32/include/QtCore/QDebug \
+		../Restaurante/Administrador/crear_usuario.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ver_info_usuario.o ..\Restaurante\Administrador\ver_info_usuario.cpp
 
 release/widget_perfiles_usuarios.o: ../Restaurante/Administrador/widget_perfiles_usuarios.cpp ../Restaurante/Administrador/widget_perfiles_usuarios.h \
@@ -3013,6 +3067,11 @@ release/widget_perfiles_usuarios.o: ../Restaurante/Administrador/widget_perfiles
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/qfiledevice.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qvector2d.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlQuery \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/qsqlquery.h \
 		ui_widget_perfiles_usuarios.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/QVariant \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QAction \
@@ -3064,7 +3123,11 @@ release/widget_perfiles_usuarios.o: ../Restaurante/Administrador/widget_perfiles
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QScrollArea \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qscrollarea.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QVBoxLayout
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QVBoxLayout \
+		D:/Qt/5.9.2/mingw53_32/include/QtCore/QDebug \
+		../Restaurante/Administrador/tarjeta_perfil_empleado.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/QDialog \
+		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\widget_perfiles_usuarios.o ..\Restaurante\Administrador\widget_perfiles_usuarios.cpp
 
 release/principal_bartender.o: ../Restaurante/Bartender/principal_bartender.cpp ../Restaurante/Bartender/principal_bartender.h \
@@ -3937,9 +4000,10 @@ release/Login.o: ../Restaurante/Login/Login.cpp ../Restaurante/Login/Login.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../Restaurante/Administrador/principal_administrador.h \
+		../Restaurante/Administrador/widget_perfiles_usuarios.h \
+		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase \
 		../Restaurante/Login/LoginCuentas.h \
-		../Restaurante/Login/TarjetaCuentas.h \
-		D:/Qt/5.9.2/mingw53_32/include/QtSql/QSqlDatabase
+		../Restaurante/Login/TarjetaCuentas.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Login.o ..\Restaurante\Login\Login.cpp
 
 release/LoginCuentas.o: ../Restaurante/Login/LoginCuentas.cpp ../Restaurante/Login/LoginCuentas.h \
@@ -4679,7 +4743,8 @@ release/main.o: ../Restaurante/main.cpp ../Restaurante/mainwindow.h \
 		../Restaurante/Login/Login.h \
 		D:/Qt/5.9.2/mingw53_32/include/QtGui/QPixmap \
 		D:/Qt/5.9.2/mingw53_32/include/QtCore/QString \
-		../Restaurante/Administrador/principal_administrador.h
+		../Restaurante/Administrador/principal_administrador.h \
+		../Restaurante/Administrador/widget_perfiles_usuarios.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\Restaurante\main.cpp
 
 release/mainwindow.o: ../Restaurante/mainwindow.cpp ../Restaurante/mainwindow.h \

@@ -8,20 +8,6 @@ widget_perfiles_usuarios::widget_perfiles_usuarios(QWidget *parent) :
     ui(new Ui::widget_perfiles_usuarios)
 {
     ui->setupUi(this);
-    QSqlDatabase database;
-    database = QSqlDatabase::addDatabase("QMYSQL");
-    database.setHostName("localhost");
-    database.setPort(3306);
-    database.setDatabaseName("restaurante");
-    database.setUserName("root");
-    database.setPassword("");
-    if(!database.open()){
-        qDebug()<<"Base de datos no conectada";
-    }
-    else{
-        qDebug()<<"Base de datos conectada";
-    }
-
     cargarPerfiles();
 }
 

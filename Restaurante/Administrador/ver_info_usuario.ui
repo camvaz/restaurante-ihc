@@ -1095,7 +1095,7 @@ border-radius: 15px;
                 <number>0</number>
                </property>
                <item alignment="Qt::AlignLeft">
-                <widget class="QPushButton" name="btn_datosEmpleado_4">
+                <widget class="QPushButton" name="btn_credenciales">
                  <property name="minimumSize">
                   <size>
                    <width>270</width>
@@ -1120,7 +1120,7 @@ color:white;</string>
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="btn_datosEmpleado2_4">
+                <widget class="QPushButton" name="btn_credenciales_2">
                  <property name="minimumSize">
                   <size>
                    <width>30</width>
@@ -1159,7 +1159,7 @@ color:white;</string>
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_datos_empleado_2">
+            <widget class="QFrame" name="frame_credenciales">
              <property name="minimumSize">
               <size>
                <width>321</width>
@@ -1204,7 +1204,7 @@ border-radius: 15px;</string>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLabel" name="lbl_puesto_4">
+                   <widget class="QLabel" name="lbl_usuario">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                       <horstretch>0</horstretch>
@@ -1255,7 +1255,7 @@ color: #909090;</string>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLabel" name="lbl_hr_entrada_4">
+                   <widget class="QLabel" name="lbl_contrasena">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                       <horstretch>0</horstretch>

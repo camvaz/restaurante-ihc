@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     database.setPort(3306);
     database.setDatabaseName("restaurante");
     database.setUserName("root");
-    database.setPassword("password");
+    database.setPassword("marifer96");
     if(!database.open()){
         qDebug()<<database.lastError().text();
     }

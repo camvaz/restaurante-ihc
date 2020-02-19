@@ -12,25 +12,12 @@ ver_info_usuario::ver_info_usuario(QString id,QWidget *parent) :
     bandera_info_personal=0;
     bandera_datos_empleado=0;
     bandera_actividades=0;
+    bandera_credenciales=0;
     ui->frame_info_personal->hide();
-    ui->frame_info_personal->hide();
+    ui->frame_datos_empleado->hide();
     ui->frame_actividades->hide();
-
+    ui->frame_credenciales->hide();
     idUsuario=id;
-
-    QSqlDatabase database;
-    database = QSqlDatabase::addDatabase("QMYSQL");
-    database.setHostName("localhost");
-    database.setPort(3306);
-    database.setDatabaseName("restaurante");
-    database.setUserName("root");
-    database.setPassword("");
-    if(!database.open()){
-        qDebug()<<"Base de datos no conectada";
-    }
-    else{
-        qDebug()<<"Base de datos conectada";
-    }
 
     actualizarDatos();
 
@@ -155,8 +142,40 @@ void ver_info_usuario::actualizarDatos()
         ui->lbl_hr_salida->setText(query.value(2).toString());
     }
 
-    query.prepare("SELECT Rol FROM usuario WHERE idUsuario="+idUsuario);
+    query.prepare("SELECT * FROM usuario where idUsuario="+idUsuario);
     query.exec();
-    query.next();
-    ui->lbl_puesto->setText(query.value(0).toString());
+    while(query.next())
+    {
+        ui->lbl_usuario->setText(query.value(3).toString());
+        ui->lbl_puesto->setText(query.value(2).toString());
+        ui->lbl_contrasena->setText(query.value(1).toString());
+
+    }
+}
+
+void ver_info_usuario::on_btn_credenciales_clicked()
+{
+    if(bandera_credenciales==0)
+    {
+        ui->frame_credenciales->show();
+        bandera_credenciales=1;
+    }else
+    {
+        ui->frame_credenciales->hide();
+        bandera_credenciales=0;
+    }
+}
+
+void ver_info_usuario::on_btn_credenciales_2_clicked()
+{
+    if(bandera_credenciales==0)
+    {
+        ui->frame_credenciales->show();
+        bandera_credenciales=1;
+    }else
+    {
+        ui->frame_credenciales->hide();
+         bandera_credenciales=0;
+    }
+
 }
