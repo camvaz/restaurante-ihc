@@ -77,27 +77,44 @@ public:
         perfiles = new QPushButton(widget);
         perfiles->setObjectName(QStringLiteral("perfiles"));
         perfiles->setGeometry(QRect(0, 0, 90, 85));
-        perfiles->setStyleSheet(QLatin1String("image: url(:/IconosGuiAdmiBlancos/account.png);\n"
+        perfiles->setStyleSheet(QLatin1String("border:none;\n"
 ""));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../../../../../../../Imagenes tama\303\261o peque\303\261o/account.png"), QSize(), QIcon::Normal, QIcon::Off);
+        perfiles->setIcon(icon);
+        perfiles->setIconSize(QSize(60, 60));
         inventario = new QPushButton(widget);
         inventario->setObjectName(QStringLiteral("inventario"));
         inventario->setGeometry(QRect(0, 80, 90, 85));
-        inventario->setStyleSheet(QStringLiteral("image: url(:/IconosGuiAdmiBlancos/trolley.png);"));
+        inventario->setStyleSheet(QStringLiteral("border:none;"));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8("../../../../../../../Imagenes tama\303\261o peque\303\261o/trolley.png"), QSize(), QIcon::Normal, QIcon::Off);
+        inventario->setIcon(icon1);
+        inventario->setIconSize(QSize(60, 60));
         mapa_de_piso = new QPushButton(widget);
         mapa_de_piso->setObjectName(QStringLiteral("mapa_de_piso"));
         mapa_de_piso->setGeometry(QRect(0, 160, 90, 85));
-        mapa_de_piso->setStyleSheet(QStringLiteral("image: url(:/IconosGuiAdmiBlancos/dining-table.png);"));
+        mapa_de_piso->setStyleSheet(QStringLiteral("border:none;"));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8("../../../../../../../Imagenes tama\303\261o peque\303\261o/dining-table.png"), QSize(), QIcon::Normal, QIcon::Off);
+        mapa_de_piso->setIcon(icon2);
+        mapa_de_piso->setIconSize(QSize(60, 60));
         Reportes = new QPushButton(widget);
         Reportes->setObjectName(QStringLiteral("Reportes"));
         Reportes->setGeometry(QRect(0, 240, 90, 85));
-        Reportes->setStyleSheet(QStringLiteral("image: url(:/IconosGuiAdmiBlancos/money.png);"));
+        Reportes->setStyleSheet(QStringLiteral("border:none;"));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8("../../../../../../../Imagenes tama\303\261o peque\303\261o/money.png"), QSize(), QIcon::Normal, QIcon::Off);
+        Reportes->setIcon(icon3);
+        Reportes->setIconSize(QSize(60, 60));
         perfil_admi = new QPushButton(widget);
         perfil_admi->setObjectName(QStringLiteral("perfil_admi"));
         perfil_admi->setGeometry(QRect(0, 520, 90, 85));
-        perfil_admi->setStyleSheet(QStringLiteral(""));
+        perfil_admi->setStyleSheet(QStringLiteral("border:none"));
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
         stackedWidget->setGeometry(QRect(90, 0, 811, 600));
+        stackedWidget->setStyleSheet(QStringLiteral("background-color:#0c0c0c;"));
         page = new QWidget();
         page->setObjectName(QStringLiteral("page"));
         stackedWidget->addWidget(page);
@@ -115,7 +132,7 @@ public:
     {
         principal_administrador->setWindowTitle(QApplication::translate("principal_administrador", "MainWindow", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        perfiles->setToolTip(QApplication::translate("principal_administrador", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        perfiles->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
         perfiles->setText(QString());
         inventario->setText(QString());

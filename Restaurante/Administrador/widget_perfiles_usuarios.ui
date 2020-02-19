@@ -176,6 +176,9 @@ text-align:center;</string>
         <height>431</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
@@ -184,8 +187,8 @@ text-align:center;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>749</width>
-         <height>429</height>
+         <width>751</width>
+         <height>431</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
