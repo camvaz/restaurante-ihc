@@ -32,13 +32,13 @@ public:
     {
         if (principal_garrotero->objectName().isEmpty())
             principal_garrotero->setObjectName(QStringLiteral("principal_garrotero"));
-        principal_garrotero->resize(854, 966);
+        principal_garrotero->resize(854, 643);
         centralwidget = new QWidget(principal_garrotero);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         principal_garrotero->setCentralWidget(centralwidget);
         menubar = new QMenuBar(principal_garrotero);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 854, 21));
+        menubar->setGeometry(QRect(0, 0, 854, 26));
         principal_garrotero->setMenuBar(menubar);
         statusbar = new QStatusBar(principal_garrotero);
         statusbar->setObjectName(QStringLiteral("statusbar"));

@@ -47,58 +47,60 @@ Login::~Login(){
 void Login::on_btn_inicioSesion_clicked()
 {
     QSqlQuery query;
-    int rol;
+    QString rola;
 
     query.prepare("select idUsuario, contrasena,rol from Usuario where idUsuario = '" + ui->ln_user->text() + "' and contrasena = '" + ui->ln_password->text() + "'");
     query.exec();
     if(query.next()){
+
         qDebug()<<"felicidades entraste";
-        rol     =   query.value(2).toInt();
-        switch (rol) {
-            case 1:{ //Case ADministrador
-                    LoginCuentas w;
-                    w.show();
-                    break;
-                }
-            case 2:
-            {//Case Mesero
+        rola    =   query.value(2).toString();
+
+        if(rola == "Administrador")
+        {
+            qDebug()<<"Entro admin";
+            principal_administrador *admin= new principal_administrador();
+            admin->show();
+        }
+        else{
+            if(rola == "Mesero"){
                 Principal_Mesero *Mesero = new Principal_Mesero(query.value(2).toString());
                 Mesero->show();
-                break;
             }
-            case 3:
-            {//Case Cajero
-                principal_cajero *Cajero = new principal_cajero();
-                Cajero->show();
-                break;
-            }
-            case 4:
-            {// Case Cocinero
-                principal_bartender *Bartender = new principal_bartender();
-                Bartender->show();
-                break;
-            }
-            case 5:
-            {// Case Bartender
-                principal_cocinero *Cocinero = new principal_cocinero();
-                Cocinero->show();
-                break;
-            }
-            case 6:
-            {// Case Hostes
-                principal_hostess *Hostes = new principal_hostess();
-                Hostes->show();
-                break;
-            }
-            case 7:
-            {
-                principal_garrotero *Garrotero = new principal_garrotero(query.value(2).toString());
-                Garrotero->show();
+            else{
+                if(rola == "Cajero"){
+                    principal_cajero *Cajero = new principal_cajero(query.value(2).toString());
+                    Cajero->show();
+                }
+                else{
+                    if(rola == "Cocinero"){
+                        principal_cocinero *Cocinero = new principal_cocinero(query.value(2).toString());
+                        Cocinero->show();
+                    }
+                    else{
+                        if(rola == "Bartender"){
+                            principal_bartender *Bartender = new principal_bartender();
+                            Bartender->show();
+                        }
+                        else{
+                            if(rola == "Hostess")
+                            {
+                                principal_hostess *Hostes = new principal_hostess(query.value(2).toString());
+                                Hostes->show();
+                            }
+                            else{
+                                if(rola == "Garrotero"){
+                                    principal_garrotero *Garrotero = new principal_garrotero(query.value(2).toString());
+                                    Garrotero->show();
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
-    }
-    else{
+    }else{
         qDebug()<<"YOU'RE AN INTRUDER";
     }
-    this->hide();
-    }
+    this->close();
+}

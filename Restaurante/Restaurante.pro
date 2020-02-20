@@ -29,6 +29,7 @@ SOURCES += \
     Administrador/Reportes/Reportes.cpp \
     Administrador/crear_usuario.cpp \
     Administrador/inventario/Inventario.cpp \
+    Administrador/mapa_piso_admin.cpp \
         Administrador/principal_administrador.cpp \
     Administrador/tarjeta_perfil_empleado.cpp \
     Administrador/ver_info_usuario.cpp \
@@ -37,6 +38,7 @@ SOURCES += \
         Cajero/principal_cajero.cpp \
         Cocinero/principal_cocinero.cpp \
     Garrotero/principal_garrotero.cpp \
+    Hostess/mapa_de_piso.cpp \
         Hostess/principal_hostess.cpp \
     Login/Login.cpp \
     Login/LoginCuentas.cpp \
@@ -51,6 +53,7 @@ HEADERS += \
     Administrador/Reportes/Reportes.h \
     Administrador/crear_usuario.h \
     Administrador/inventario/Inventario.h \
+    Administrador/mapa_piso_admin.h \
         Administrador/principal_administrador.h \
     Administrador/tarjeta_perfil_empleado.h \
     Administrador/ver_info_usuario.h \
@@ -59,6 +62,7 @@ HEADERS += \
         Cajero/principal_cajero.h \
         Cocinero/principal_cocinero.h \
     Garrotero/principal_garrotero.h \
+    Hostess/mapa_de_piso.h \
         Hostess/principal_hostess.h \
     Login/Login.h \
     Login/LoginCuentas.h \
@@ -72,6 +76,7 @@ FORMS += \
     Administrador/Reportes/Reportes.ui \
     Administrador/crear_usuario.ui \
     Administrador/inventario/Inventario.ui \
+    Administrador/mapa_piso_admin.ui \
         Administrador/principal_administrador.ui \
     Administrador/tarjeta_perfil_empleado.ui \
     Administrador/ver_info_usuario.ui \
@@ -80,6 +85,7 @@ FORMS += \
         Cajero/principal_cajero.ui \
         Cocinero/principal_cocinero.ui \
     Garrotero/principal_garrotero.ui \
+    Hostess/mapa_de_piso.ui \
         Hostess/principal_hostess.ui \
     Login/Login.ui \
     Login/LoginCuentas.ui \
