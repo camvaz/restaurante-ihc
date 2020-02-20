@@ -48,7 +48,6 @@ void Login::on_btn_inicioSesion_clicked()
 {
     QSqlQuery query;
     QString rola;
-    int rol;
 
     query.prepare("select idUsuario, contrasena,rol from Usuario where idUsuario = '" + ui->ln_user->text() + "' and contrasena = '" + ui->ln_password->text() + "'");
     query.exec();
@@ -59,32 +58,40 @@ void Login::on_btn_inicioSesion_clicked()
 
         if(rola == "Administrador")
         {
-            rol = 1;
+            qDebug()<<"Entro admin";
+            principal_administrador *admin= new principal_administrador();
+            admin->show();
         }
         else{
             if(rola == "Mesero"){
-                rol = 2;
+                Principal_Mesero *Mesero = new Principal_Mesero(query.value(2).toString());
+                Mesero->show();
             }
             else{
                 if(rola == "Cajero"){
-                    rol = 3;
+                    principal_cajero *Cajero = new principal_cajero(query.value(2).toString());
+                    Cajero->show();
                 }
                 else{
                     if(rola == "Cocinero"){
-                        rol = 4;
+                        principal_cocinero *Cocinero = new principal_cocinero(query.value(2).toString());
+                        Cocinero->show();
                     }
                     else{
                         if(rola == "Bartender"){
-                            rol = 5;
+                            principal_bartender *Bartender = new principal_bartender();
+                            Bartender->show();
                         }
                         else{
                             if(rola == "Hostess")
                             {
-                                rol = 6;
+                                principal_hostess *Hostes = new principal_hostess(query.value(2).toString());
+                                Hostes->show();
                             }
                             else{
                                 if(rola == "Garrotero"){
-                                    rol = 7;
+                                    principal_garrotero *Garrotero = new principal_garrotero(query.value(2).toString());
+                                    Garrotero->show();
                                 }
                             }
                         }
@@ -92,53 +99,8 @@ void Login::on_btn_inicioSesion_clicked()
                 }
             }
         }
-        switch (rol) {
-            case 1:{ //Case ADministrador
-            qDebug()<<"Entro admin";
-                    principal_administrador *admin= new principal_administrador();
-                    admin->show();
-                    break;
-                }
-            case 2:
-            {//Case Mesero
-                Principal_Mesero *Mesero = new Principal_Mesero(query.value(2).toString());
-                Mesero->show();
-                break;
-            }
-            case 3:
-            {//Case Cajero
-                principal_cajero *Cajero = new principal_cajero(query.value(2).toString());
-                Cajero->show();
-                break;
-            }
-            case 4:
-            {// Case Cocinero
-                //principal_bartender *Bartender = new principal_bartender(query.value(2).toString());
-                //Bartender->show();
-                break;
-            }
-            case 5:
-            {// Case Bartender
-                principal_cocinero *Cocinero = new principal_cocinero(query.value(2).toString());
-                Cocinero->show();
-                break;
-            }
-            case 6:
-            {// Case Hostess
-                principal_hostess *Hostes = new principal_hostess(query.value(2).toString());
-                Hostes->show();
-                break;
-            }
-            case 7:
-            {
-                principal_garrotero *Garrotero = new principal_garrotero(query.value(2).toString());
-                Garrotero->show();
-                break;
-            }
-        }
-    }
-    else{
+    }else{
         qDebug()<<"YOU'RE AN INTRUDER";
     }
     this->close();
-    }
+}

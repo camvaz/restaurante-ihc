@@ -3,6 +3,7 @@ INPUT(
 ./release\Reportes.o
 ./release\crear_usuario.o
 ./release\Inventario.o
+./release\mapa_piso_admin.o
 ./release\principal_administrador.o
 ./release\tarjeta_perfil_empleado.o
 ./release\ver_info_usuario.o
@@ -11,6 +12,7 @@ INPUT(
 ./release\principal_cajero.o
 ./release\principal_cocinero.o
 ./release\principal_garrotero.o
+./release\mapa_de_piso.o
 ./release\principal_hostess.o
 ./release\Login.o
 ./release\LoginCuentas.o
@@ -23,6 +25,7 @@ INPUT(
 ./release\moc_Reportes.o
 ./release\moc_crear_usuario.o
 ./release\moc_Inventario.o
+./release\moc_mapa_piso_admin.o
 ./release\moc_principal_administrador.o
 ./release\moc_tarjeta_perfil_empleado.o
 ./release\moc_ver_info_usuario.o
@@ -31,6 +34,7 @@ INPUT(
 ./release\moc_principal_cajero.o
 ./release\moc_principal_cocinero.o
 ./release\moc_principal_garrotero.o
+./release\moc_mapa_de_piso.o
 ./release\moc_principal_hostess.o
 ./release\moc_Login.o
 ./release\moc_LoginCuentas.o
