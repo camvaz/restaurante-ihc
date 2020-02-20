@@ -51,7 +51,6 @@ void clearLayout(QLayout *layout) {
 }
 
 
-
 //METODO QUE CARGA IMAGENES DEL MENU
 void Principal_Mesero::CargarImagenes(){
     QString ruta;
@@ -100,6 +99,7 @@ void Principal_Mesero::mesasEstado(){
     QSqlQuery mesa;
     mesa1="select *from mesas where idMesa=1";
     mesa.exec(mesa1);
+    mesa.next();
    // while(mesa.next()){
     estado=mesa.value(1).toInt();
     qDebug()<<estado;
@@ -114,7 +114,7 @@ void Principal_Mesero::mesasEstado(){
         QIcon mesas_1(imagen);
         ui->mesa_1->setIcon(mesas_1);
 
-     }else {
+     }if(estado==3) {
         qDebug()<<"mesa sucuia";
         imagen="C:/Imagenes tamaño pequeño/sucia";
         QIcon mesas_1(imagen);
@@ -565,8 +565,8 @@ void Principal_Mesero::on_entrada_clicked(){
          ui->menuEntradas->addWidget(agregar1,Cr+4,1,1,1);
 
          QLabel *esp2=new QLabel;
-         esp2->setFixedSize(QSize(50,15));
-
+         esp2->setFixedSize(QSize(20,15));
+        // esp2->setStyleSheet("background-color:rgb(201, 37, 49)");
 
          //CENTRO
          ui->menuEntradas->addWidget(esp2,Cr+1,2,1,1);
@@ -591,7 +591,12 @@ void Principal_Mesero::on_entrada_clicked(){
              tiempo2->setStyleSheet("color:rgb(241, 241, 241)");
 
              QLabel *ingredientes2 = new QLabel;
-             ingredientes2->setText(QslEntradas.value(4).toString());
+             QString ing=QslEntradas.value(4).toString();
+             //qDebug()<<ing.size();
+             if(ing.size()>60){
+               ing.remove(1,43);
+             }
+             ingredientes2->setText(ing);
              ingredientes2->setStyleSheet("color:rgb(241, 241, 241)");
 
              QPushButton *agregar2=new QPushButton();
@@ -723,7 +728,12 @@ void Principal_Mesero::on_reposteria_clicked(){
         tiempo->setStyleSheet("color:rgb(241, 241, 241)");
 
         QLabel *ingredientes = new QLabel;
-        ingredientes->setText(QslPostres.value(4).toString());
+        QString ing=QslPostres.value(4).toString();
+       // qDebug()<<ing.size();
+        if(ing.size()>75){
+          ing.remove(1,63);
+        }
+        ingredientes->setText(ing);
         ingredientes->setStyleSheet("color:rgb(241, 241, 241)");
 
 
@@ -739,8 +749,8 @@ void Principal_Mesero::on_reposteria_clicked(){
         ui->menuReposteria->addWidget(agregar1,Cr+4,1,1,1);
 
         QLabel *esp2=new QLabel;
-        esp2->setFixedSize(QSize(50,15));
-        //esp2->setStyleSheet("background-color: rgb(201,37,49)");
+        esp2->setFixedSize(QSize(20,15));
+        esp2->setStyleSheet("background-color: rgb(201,37,49)");
 
         //CENTRO
         ui->menuReposteria->addWidget(esp2,Cr+1,2,1,1);
@@ -764,7 +774,12 @@ void Principal_Mesero::on_reposteria_clicked(){
             tiempo2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QLabel *ingredientes2 = new QLabel;
-            ingredientes2->setText(QslPostres.value(4).toString());
+            QString ing=QslPostres.value(4).toString();
+           // qDebug()<<"h"<<ing.size();
+            if(ing.size()>60){
+              ing.remove(1,80);
+            }
+            ingredientes2->setText(ing);
             ingredientes2->setStyleSheet("color:rgb(241, 241, 241)");
 
             QPushButton *agregar2=new QPushButton();
@@ -1120,60 +1135,60 @@ void Principal_Mesero::on_bebidas_clicked()
 void Principal_Mesero::on_mesa_1_clicked()
 {
 
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_2_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_3_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_4_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_5_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_6_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_7_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_8_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_9_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_10_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_11_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }
 
 void Principal_Mesero::on_mesa_12_clicked()
 {
-
+ui->paginas->setCurrentIndex(1);
 }

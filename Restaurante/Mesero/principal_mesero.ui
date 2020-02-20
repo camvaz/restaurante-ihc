@@ -300,31 +300,6 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QPushButton" name="mesa_2">
-       <property name="geometry">
-        <rect>
-         <x>210</x>
-         <y>50</y>
-         <width>111</width>
-         <height>81</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>OpenHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: transparent;</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>80</width>
-         <height>80</height>
-        </size>
-       </property>
-      </widget>
       <widget class="QPushButton" name="mesa_3">
        <property name="geometry">
         <rect>
@@ -555,6 +530,31 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
         <rect>
          <x>570</x>
          <y>310</y>
+         <width>111</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="mesa_2">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>50</y>
          <width>111</width>
          <height>81</height>
         </rect>
