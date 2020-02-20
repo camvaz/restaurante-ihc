@@ -19,7 +19,11 @@ Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
     ui->setupUi(this);
     //METODO QUE CARGA LAS IMAGENES
     CargarImagenes();
+    mesasEstado();
     identifier = id;
+    ui->comanda->hide();
+    ui->bebidas->hide();
+    ui->cuenta->hide();
 
 }
 
@@ -85,6 +89,40 @@ void Principal_Mesero::CargarImagenes(){
      botones="C:/Imagenes tamaño pequeño/Buscar Mesas";QIcon boton_menu(botones);ui->mesas->setIcon(boton_menu);
      botones="C:/Imagenes tamaño pequeño/Platillos";QIcon boton_comida(botones);ui->comanda->setIcon(boton_comida);
      botones="C:/Imagenes tamaño pequeño/Ordenes";QIcon boton_comanda(botones);ui->cuenta->setIcon(boton_comanda);
+
+}
+
+void Principal_Mesero::mesasEstado(){
+
+
+    QString mesa1,imagen;
+    int estado;
+    QSqlQuery mesa;
+    mesa1="select *from mesas where idMesa=1";
+    mesa.exec(mesa1);
+   // while(mesa.next()){
+    estado=mesa.value(1).toInt();
+    qDebug()<<estado;
+    if(estado==1){
+        qDebug()<<"mesa libre";
+      imagen="C:/Imagenes tamaño pequeño/disponible";
+      QIcon mesas_1(imagen);
+      ui->mesa_1->setIcon(mesas_1);
+    }if(estado==2){
+        qDebug()<<"mesa ocupada";
+        imagen="C:/Imagenes tamaño pequeño/ocupada";
+        QIcon mesas_1(imagen);
+        ui->mesa_1->setIcon(mesas_1);
+
+     }else {
+        qDebug()<<"mesa sucuia";
+        imagen="C:/Imagenes tamaño pequeño/sucia";
+        QIcon mesas_1(imagen);
+        ui->mesa_1->setIcon(mesas_1);
+     }
+
+    //}
+
 
 }
 
@@ -1079,3 +1117,63 @@ void Principal_Mesero::on_bebidas_clicked()
 
 
 
+void Principal_Mesero::on_mesa_1_clicked()
+{
+
+
+}
+
+void Principal_Mesero::on_mesa_2_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_3_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_4_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_5_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_6_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_7_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_8_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_9_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_10_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_11_clicked()
+{
+
+}
+
+void Principal_Mesero::on_mesa_12_clicked()
+{
+
+}

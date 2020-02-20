@@ -216,7 +216,7 @@ background-color:#F1F1F1;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>11</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_3">
@@ -328,7 +328,7 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
       <widget class="QPushButton" name="mesa_3">
        <property name="geometry">
         <rect>
-         <x>590</x>
+         <x>390</x>
          <y>50</y>
          <width>111</width>
          <height>81</height>
@@ -353,8 +353,8 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
       <widget class="QPushButton" name="mesa_4">
        <property name="geometry">
         <rect>
-         <x>240</x>
-         <y>170</y>
+         <x>560</x>
+         <y>50</y>
          <width>111</width>
          <height>81</height>
         </rect>
@@ -378,8 +378,8 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
       <widget class="QPushButton" name="mesa_5">
        <property name="geometry">
         <rect>
-         <x>390</x>
-         <y>50</y>
+         <x>50</x>
+         <y>170</y>
          <width>111</width>
          <height>81</height>
         </rect>
@@ -403,7 +403,7 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
       <widget class="QPushButton" name="mesa_6">
        <property name="geometry">
         <rect>
-         <x>70</x>
+         <x>230</x>
          <y>170</y>
          <width>111</width>
          <height>81</height>
@@ -1688,7 +1688,7 @@ color: rgb(241, 241, 241);</string>
         <x>0</x>
         <y>80</y>
         <width>751</width>
-        <height>20</height>
+        <height>23</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
@@ -1893,7 +1893,7 @@ color: rgb(241, 241, 241);</string>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

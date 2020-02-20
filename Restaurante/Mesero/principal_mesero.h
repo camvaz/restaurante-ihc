@@ -21,6 +21,7 @@ public:
     ~Principal_Mesero();
 
     void CargarImagenes();
+    void mesasEstado();
 
 private slots:
     void on_parilla_clicked();
@@ -48,6 +49,30 @@ private slots:
     void on_coctel_clicked();
 
     void on_vino_clicked();
+
+    void on_mesa_1_clicked();
+
+    void on_mesa_2_clicked();
+
+    void on_mesa_3_clicked();
+
+    void on_mesa_4_clicked();
+
+    void on_mesa_5_clicked();
+
+    void on_mesa_6_clicked();
+
+    void on_mesa_7_clicked();
+
+    void on_mesa_8_clicked();
+
+    void on_mesa_9_clicked();
+
+    void on_mesa_10_clicked();
+
+    void on_mesa_11_clicked();
+
+    void on_mesa_12_clicked();
 
 private:
     Ui::Principal_Mesero *ui;
