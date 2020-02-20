@@ -21,7 +21,18 @@ public:
     ~Principal_Mesero();
 
     void CargarImagenes();
-    void mesasEstado();
+    void mesasEstado1();
+    void mesasEstado2();
+    void mesasEstado3();
+    void mesasEstado4();
+    void mesasEstado5();
+    void mesasEstado6();
+    void mesasEstado7();
+    void mesasEstado8();
+    void mesasEstado9();
+    void mesasEstado10();
+    void mesasEstado11();
+    void mesasEstado12();
 
 private slots:
     void on_parilla_clicked();

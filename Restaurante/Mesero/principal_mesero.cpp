@@ -19,11 +19,8 @@ Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
     ui->setupUi(this);
     //METODO QUE CARGA LAS IMAGENES
     CargarImagenes();
-    mesasEstado();
+    mesasEstado1();
     identifier = id;
-    ui->comanda->hide();
-    ui->bebidas->hide();
-    ui->cuenta->hide();
 
 }
 
@@ -72,15 +69,15 @@ void Principal_Mesero::CargarImagenes(){
      mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_1(mesa);ui->mesa_1->setIcon(mesas_1);
      mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_2(mesa);ui->mesa_2->setIcon(mesas_2);
      mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_3(mesa);ui->mesa_3->setIcon(mesas_3);
-     mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_4(mesa);ui->mesa_4->setIcon(mesas_4);
-     mesa="C:/Imagenes tamaño pequeño/ocupada";QIcon mesas_5(mesa);ui->mesa_5->setIcon(mesas_5);
-     mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_6(mesa);ui->mesa_6->setIcon(mesas_6);
-     mesa="C:/Imagenes tamaño pequeño/sucia";QIcon mesas_7(mesa);ui->mesa_7->setIcon(mesas_7);
-     mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_8(mesa);ui->mesa_8->setIcon(mesas_8);
-     mesa="C:/Imagenes tamaño pequeño/ocupada";QIcon mesas_9(mesa);ui->mesa_9->setIcon(mesas_9);
-     mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_10(mesa);ui->mesa_10->setIcon(mesas_10);
-     mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_11(mesa);ui->mesa_11->setIcon(mesas_11);
-     mesa="C:/Imagenes tamaño pequeño/disponible";QIcon mesas_12(mesa);ui->mesa_12->setIcon(mesas_12);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_4(mesa);ui->mesa_4->setIcon(mesas_4);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_5(mesa);ui->mesa_5->setIcon(mesas_5);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_6(mesa);ui->mesa_6->setIcon(mesas_6);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_7(mesa);ui->mesa_7->setIcon(mesas_7);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_8(mesa);ui->mesa_8->setIcon(mesas_8);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_9(mesa);ui->mesa_9->setIcon(mesas_9);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_10(mesa);ui->mesa_10->setIcon(mesas_10);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_11(mesa);ui->mesa_11->setIcon(mesas_11);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_12(mesa);ui->mesa_12->setIcon(mesas_12);
 
      //BOTONES
      QString botones;
@@ -91,7 +88,7 @@ void Principal_Mesero::CargarImagenes(){
 
 }
 
-void Principal_Mesero::mesasEstado(){
+void Principal_Mesero::mesasEstado1(){
 
 
     QString mesa1,imagen;
@@ -100,8 +97,7 @@ void Principal_Mesero::mesasEstado(){
     mesa1="select *from mesas where idMesa=1";
     mesa.exec(mesa1);
     mesa.next();
-   // while(mesa.next()){
-    estado=mesa.value(1).toInt();
+   estado=mesa.value(1).toInt();
     qDebug()<<estado;
     if(estado==1){
         qDebug()<<"mesa libre";
@@ -120,8 +116,6 @@ void Principal_Mesero::mesasEstado(){
         QIcon mesas_1(imagen);
         ui->mesa_1->setIcon(mesas_1);
      }
-
-    //}
 
 
 }
