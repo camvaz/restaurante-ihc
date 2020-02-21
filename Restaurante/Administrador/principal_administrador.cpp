@@ -8,6 +8,7 @@ principal_administrador::principal_administrador(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->stackedWidget->insertWidget(0,&perfiles);
+    ui->stackedWidget->insertWidget(1,&piso);
     ui->stackedWidget->setCurrentIndex(0);
 }
 
@@ -21,6 +22,7 @@ void principal_administrador::on_perfiles_clicked()
     ui->stackedWidget->setCurrentIndex(0);
     crear_usuario *u=new crear_usuario();
     u->exec();
+    perfiles.cargarPerfiles();
 
 }
 
@@ -30,6 +32,7 @@ void principal_administrador::on_inventario_clicked()
 
 void principal_administrador::on_mapa_de_piso_clicked()
 {
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 void principal_administrador::on_Reportes_clicked()
@@ -38,4 +41,5 @@ void principal_administrador::on_Reportes_clicked()
 
 void principal_administrador::on_perfil_admi_clicked()
 {
+
 }

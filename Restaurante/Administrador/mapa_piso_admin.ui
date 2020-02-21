@@ -65,7 +65,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="mesa_3">
+   <widget class="QPushButton" name="mesa_4">
     <property name="geometry">
      <rect>
       <x>590</x>
@@ -90,7 +90,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="mesa_4">
+   <widget class="QPushButton" name="mesa_6">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -115,7 +115,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="mesa_5">
+   <widget class="QPushButton" name="mesa_3">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -140,7 +140,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="mesa_6">
+   <widget class="QPushButton" name="mesa_5">
     <property name="geometry">
      <rect>
       <x>70</x>
