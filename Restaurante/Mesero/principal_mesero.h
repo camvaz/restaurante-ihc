@@ -6,6 +6,7 @@
 #include <QtSql/QSqlQuery>
 #include <QtSql/QSqlError>
 #include <QDebug>
+#include <QMessageBox>
 
 namespace Ui {
 class Principal_Mesero;
@@ -19,20 +20,10 @@ public:
     explicit Principal_Mesero(QWidget *parent = nullptr);
     Principal_Mesero(QString id,QWidget *parent = nullptr);
     ~Principal_Mesero();
+    int idmesa;
 
     void CargarImagenes();
-    void mesasEstado1();
-    void mesasEstado2();
-    void mesasEstado3();
-    void mesasEstado4();
-    void mesasEstado5();
-    void mesasEstado6();
-    void mesasEstado7();
-    void mesasEstado8();
-    void mesasEstado9();
-    void mesasEstado10();
-    void mesasEstado11();
-    void mesasEstado12();
+    void mesasEstado();
 
 private slots:
     void on_parilla_clicked();
@@ -84,6 +75,8 @@ private slots:
     void on_mesa_11_clicked();
 
     void on_mesa_12_clicked();
+
+    void on_cuenta_clicked();
 
 private:
     Ui::Principal_Mesero *ui;

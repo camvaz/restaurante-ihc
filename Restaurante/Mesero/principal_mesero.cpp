@@ -10,6 +10,8 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
     //METODO QUE CARGA LAS IMAGENES
     CargarImagenes();
 
+    idmesa=0;
+
 }
 
 Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
@@ -19,8 +21,9 @@ Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
     ui->setupUi(this);
     //METODO QUE CARGA LAS IMAGENES
     CargarImagenes();
-    mesasEstado1();
+    mesasEstado();
     identifier = id;
+    idmesa=0;
 
 }
 
@@ -88,37 +91,257 @@ void Principal_Mesero::CargarImagenes(){
 
 }
 
-void Principal_Mesero::mesasEstado1(){
+void Principal_Mesero::mesasEstado(){
+
+  QString mesa,estado,imagen;
+  QSqlQuery mesas;
+    for(int i=1; i<=12; i++){
+        QString numMesa = QString::number(i);
+        mesa="select *from mesa where idMesa='"+numMesa+"'";
+        mesas.exec(mesa);
+        mesas.next();
+        estado=mesas.value(3).toString();
+        switch (i) {
+        case 1:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_1->setIcon(mesas_1);
+            }if(estado=="ocupada"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_1(imagen);
+                ui->mesa_1->setIcon(mesas_1);
+
+             }if(estado=="sucia") {
+                qDebug()<<"mesa sucuia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_1(imagen);
+                ui->mesa_1->setIcon(mesas_1);
+             }
+            break;
+        case 2:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_2->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_2->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_2->setIcon(mesas_2);
+             }
 
 
-    QString mesa1,imagen;
-    int estado;
-    QSqlQuery mesa;
-    mesa1="select *from mesas where idMesa=1";
-    mesa.exec(mesa1);
-    mesa.next();
-   estado=mesa.value(1).toInt();
-    qDebug()<<estado;
-    if(estado==1){
-        qDebug()<<"mesa libre";
-      imagen="C:/Imagenes tamaño pequeño/disponible";
-      QIcon mesas_1(imagen);
-      ui->mesa_1->setIcon(mesas_1);
-    }if(estado==2){
-        qDebug()<<"mesa ocupada";
-        imagen="C:/Imagenes tamaño pequeño/ocupada";
-        QIcon mesas_1(imagen);
-        ui->mesa_1->setIcon(mesas_1);
+            break;
+        case 3:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_3->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_3->setIcon(mesas_2);
 
-     }if(estado==3) {
-        qDebug()<<"mesa sucuia";
-        imagen="C:/Imagenes tamaño pequeño/sucia";
-        QIcon mesas_1(imagen);
-        ui->mesa_1->setIcon(mesas_1);
-     }
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_3->setIcon(mesas_2);
+             }
 
+            break;
+        case 4:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_4->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_4->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_4->setIcon(mesas_2);
+             }
+            break;
+        case 5:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_5->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_5->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_5->setIcon(mesas_2);
+             }
+            break;
+        case 6:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_6->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_6->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_6->setIcon(mesas_2);
+             }
+            break;
+        case 7:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_7->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_7->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_7->setIcon(mesas_2);
+             }
+            break;
+        case 8:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_8->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_8->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_8->setIcon(mesas_2);
+             }
+            break;
+        case 9:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_9->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_9->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_9->setIcon(mesas_2);
+             }
+            break;
+        case 10:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_10->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_10->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_10->setIcon(mesas_2);
+             }
+            break;
+        case 11:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_11->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_11->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_11->setIcon(mesas_2);
+             }
+            break;
+        case 12:
+            if(estado=="disponible"){
+                qDebug()<<"mesa libre";
+              imagen="C:/Imagenes tamaño pequeño/disponible";
+              QIcon mesas_1(imagen);
+              ui->mesa_12->setIcon(mesas_1);
+            }if(estado=="ocupado"){
+                qDebug()<<"mesa ocupada";
+                imagen="C:/Imagenes tamaño pequeño/ocupada";
+                QIcon mesas_2(imagen);
+                ui->mesa_12->setIcon(mesas_2);
+
+             }if(estado=="sucio") {
+                qDebug()<<"mesa sucia";
+                imagen="C:/Imagenes tamaño pequeño/sucia";
+                QIcon mesas_2(imagen);
+                ui->mesa_12->setIcon(mesas_2);
+             }
+            break;
+
+        }
+
+
+
+    }
 
 }
+
 
 //SLOT DE PLATILLOS
 void Principal_Mesero::on_parilla_clicked()
@@ -1101,6 +1324,12 @@ void Principal_Mesero::on_vino_clicked()
 //SLOT DE MENU DE NAVEGACION
 void Principal_Mesero::on_comanda_clicked()
 {
+    QMessageBox informacion;
+    informacion.setWindowTitle("Informacion");
+            informacion.setText ("Por favor seleccione una mesa.");
+            informacion.setStandardButtons( QMessageBox::Ok) ;
+            informacion.setDefaultButton (QMessageBox ::Ok ) ;
+            informacion.setButtonText( QMessageBox::Ok,"Aceptar");
     //agrego joaquin
     clearLayout(ui->menuParrila1);
     clearLayout(ui->menuMar);
@@ -1111,17 +1340,49 @@ void Principal_Mesero::on_comanda_clicked()
     clearLayout(ui->menuGuarnicion);
     clearLayout(ui->menuReposteria);
     //agrego joaquin
-    ui->paginas->setCurrentIndex(1);
+    if(idmesa==0){
+        informacion.exec();
+     qDebug()<<"seleciona una mesa";
+    }if(idmesa==1){
+        ui->comanda->setStyleSheet("background-color:rgb(201, 37, 49)");
+         ui->bebidas->setStyleSheet("background-color:#1d1d1d");
+         ui->mesas->setStyleSheet("background-color:#1d1d1d");
+          ui->cuenta->setStyleSheet("background-color:#1d1d1d");
+        ui->paginas->setCurrentIndex(1);
+    }
+
 }
 
-void Principal_Mesero::on_mesas_clicked(){ui->paginas->setCurrentIndex(0);}
+void Principal_Mesero::on_mesas_clicked(){
+    ui->paginas->setCurrentIndex(0);
+    ui->comanda->setStyleSheet("background-color:#1d1d1d");
+    ui->bebidas->setStyleSheet("background-color:#1d1d1d");
+    ui->cuenta->setStyleSheet("background-color:#1d1d1d");
+    ui->mesas->setStyleSheet("background-color:rgb(201, 37, 49)");
+}
 
 void Principal_Mesero::on_bebidas_clicked()
 { 
     //codigo agregado joaquin
     clearLayout(ui->menuVinos);
      clearLayout(ui->menuCoteles);
-     ui->paginas->setCurrentIndex(10);
+     QMessageBox informacion;
+     informacion.setWindowTitle("Informacion");
+             informacion.setText ("Por favor seleccione una mesa.");
+             informacion.setStandardButtons( QMessageBox::Ok) ;
+             informacion.setDefaultButton (QMessageBox ::Ok ) ;
+             informacion.setButtonText( QMessageBox::Ok,"Aceptar");
+     if(idmesa==0){
+      qDebug()<<"seleciona una mesa";
+
+     }if(idmesa==1){
+         ui->comanda->setStyleSheet("background-color:#1d1d1d");
+         ui->bebidas->setStyleSheet("background-color:rgb(201, 37, 49)");
+         ui->mesas->setStyleSheet("background-color:#1d1d1d");
+         ui->cuenta->setStyleSheet("background-color:#1d1d1d");
+         ui->paginas->setCurrentIndex(10);
+     }
+
 }
 
 
@@ -1129,60 +1390,260 @@ void Principal_Mesero::on_bebidas_clicked()
 void Principal_Mesero::on_mesa_1_clicked()
 {
 
-ui->paginas->setCurrentIndex(1);
+  idmesa=1;
+
+  QString mesa,estado;
+  QSqlQuery mesas;
+  mesa="select *from mesa where idMesa=1";
+  mesas.exec(mesa);
+  mesas.next();
+  estado=mesas.value(3).toString();
+  if(estado=="disponible"){
+      qDebug()<<"mesa libre";
+     ui->paginas->setCurrentIndex(1);
+  }if(estado=="ocupado"){
+      qDebug()<<"mesa ocupada";
+       ui->paginas->setCurrentIndex(13);
+   }if(estado=="sucia") {
+      qDebug()<<"mesa sucuia";
+   }
+
 }
 
 void Principal_Mesero::on_mesa_2_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=2";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_3_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=3";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
+
 }
 
 void Principal_Mesero::on_mesa_4_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=4";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupada"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_5_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=5";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_6_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=6";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_7_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=7";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_8_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=8";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_9_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=9";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_10_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=10";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_11_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=11";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
 }
 
 void Principal_Mesero::on_mesa_12_clicked()
 {
-ui->paginas->setCurrentIndex(1);
+    idmesa=1;
+    QString mesa,estado;
+    QSqlQuery mesas;
+    mesa="select *from mesa where idMesa=12";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+    if(estado=="disponible"){
+        qDebug()<<"mesa libre";
+       ui->paginas->setCurrentIndex(1);
+    }if(estado=="ocupado"){
+        qDebug()<<"mesa ocupada";
+         ui->paginas->setCurrentIndex(13);
+     }if(estado=="sucia") {
+        qDebug()<<"mesa sucuia";
+     }
+}
+
+void Principal_Mesero::on_cuenta_clicked()
+{
+
+    if(idmesa==0){
+
+     qDebug()<<"seleciona una mesa";
+    }if(idmesa==1){
+         ui->comanda->setStyleSheet("background-color:#1d1d1d");
+        ui->bebidas->setStyleSheet("background-color:#1d1d1d ");
+        ui->mesas->setStyleSheet("background-color:#1d1d1d");
+        ui->cuenta->setStyleSheet("background-color:rgb(201, 37, 49)");
+        ui->paginas->setCurrentIndex(13);
+    }
+
 }
