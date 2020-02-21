@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>811</width>
-    <height>600</height>
+    <width>831</width>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,12 +16,12 @@
   <property name="styleSheet">
    <string notr="true">background-color:#0c0c0c;</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>10</x>
      <y>30</y>
-     <width>753</width>
+     <width>791</width>
      <height>541</height>
     </rect>
    </property>
@@ -38,15 +38,16 @@
         </property>
         <property name="font">
          <font>
-          <family>Arial</family>
-          <pointsize>23</pointsize>
-          <weight>50</weight>
+          <family>Noto Serif</family>
+          <pointsize>18</pointsize>
+          <weight>9</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 0, 18, 255), stop:1 rgba(255, 255, 255, 255));</string>
+         <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;
+font: 75 18pt &quot;Noto Serif&quot;;</string>
         </property>
         <property name="text">
          <string>Perfiles de empleados</string>
@@ -63,7 +64,7 @@
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>30</width>
+          <width>15</width>
           <height>20</height>
          </size>
         </property>
@@ -77,9 +78,14 @@
           <height>0</height>
          </size>
         </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>3</height>
+         </size>
+        </property>
         <property name="styleSheet">
-         <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(12, 12, 12, 255), stop:1 rgba(255, 255, 255, 255));</string>
+         <string notr="true">background-color:#707070;</string>
         </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -123,6 +129,14 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgb
           <width>210</width>
           <height>30</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Sans Serif</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
         <property name="styleSheet">
          <string notr="true">border-bottom: 2px solid #707070;
@@ -187,7 +201,7 @@ text-align:center;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>751</width>
+         <width>789</width>
          <height>431</height>
         </rect>
        </property>

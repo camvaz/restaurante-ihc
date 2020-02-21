@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>811</width>
-    <height>600</height>
+    <width>831</width>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>90</y>
+     <y>100</y>
      <width>751</width>
      <height>451</height>
     </rect>
@@ -352,7 +352,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(201, 37, 49);font: 16pt &quot;MS Shell Dlg 2&quot;;
-font: 75 16pt &quot;Noto Serif&quot;;</string>
+font: 75 18pt &quot;Noto Serif&quot;;</string>
    </property>
    <property name="text">
     <string>Mapa de piso </string>
@@ -361,10 +361,10 @@ font: 75 16pt &quot;Noto Serif&quot;;</string>
   <widget class="Line" name="line_2">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>220</x>
      <y>40</y>
      <width>601</width>
-     <height>1</height>
+     <height>3</height>
     </rect>
    </property>
    <property name="styleSheet">

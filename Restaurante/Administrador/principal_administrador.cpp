@@ -7,6 +7,11 @@ principal_administrador::principal_administrador(QWidget *parent) :
     ui(new Ui::principal_administrador)
 {
     ui->setupUi(this);
+    QString botones;
+    botones="C:/Imagenes tamaño pequeño/account";QIcon boton_users(botones);ui->perfiles->setIcon(boton_users);
+    botones="C:/Imagenes tamaño pequeño/trolley";QIcon boton_inventario(botones);ui->inventario->setIcon(boton_inventario);
+    botones="C:/Imagenes tamaño pequeño/dining-table";QIcon boton_mesas(botones);ui->mapa_de_piso->setIcon(boton_mesas);
+    botones="C:/Imagenes tamaño pequeño/money";QIcon boton_reportes(botones);ui->Reportes->setIcon(boton_reportes);
     ui->stackedWidget->insertWidget(0,&perfiles);
     ui->stackedWidget->insertWidget(1,&piso);
     ui->stackedWidget->setCurrentIndex(0);
