@@ -94,7 +94,7 @@ void Principal_Mesero::CargarImagenes(){
      QString pedido;
      pedido="C:/Imagenes tamaño pequeño/pedido";
      QPixmap pedidos(pedido);
-     ui->label_pedido->setPixmap(pedidos);
+     //ui->label_pedido->setPixmap(pedidos);
     /*
      QString menos;
      QString mas;
