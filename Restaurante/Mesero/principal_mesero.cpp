@@ -8,9 +8,8 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
 {
     ui->setupUi(this);
     //METODO QUE CARGA LAS IMAGENES
-    CargarImagenes();
-
-    idmesa=0;
+    //CargarImagenes();
+    //idmesa=0;
 
 }
 
@@ -81,6 +80,9 @@ void Principal_Mesero::CargarImagenes(){
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_10(mesa);ui->mesa_10->setIcon(mesas_10);
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_11(mesa);ui->mesa_11->setIcon(mesas_11);
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_12(mesa);ui->mesa_12->setIcon(mesas_12);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_13(mesa);ui->mesa_13->setIcon(mesas_13);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_14(mesa);ui->mesa_14->setIcon(mesas_14);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_15(mesa);ui->mesa_15->setIcon(mesas_15);
 
      //BOTONES
      QString botones;
@@ -89,13 +91,28 @@ void Principal_Mesero::CargarImagenes(){
      botones="C:/Imagenes tamaño pequeño/Platillos";QIcon boton_comida(botones);ui->comanda->setIcon(boton_comida);
      botones="C:/Imagenes tamaño pequeño/Ordenes";QIcon boton_comanda(botones);ui->cuenta->setIcon(boton_comanda);
 
+     QString pedido;
+     pedido="C:/Imagenes tamaño pequeño/pedido";
+     QPixmap pedidos(pedido);
+     ui->label_pedido->setPixmap(pedidos);
+    /*
+     QString menos;
+     QString mas;
+     menos="C:/Imagenes tamaño pequeño/minus";
+     mas="C:/Imagenes tamaño pequeño/add";
+     QPixmap meno(menos);
+     QPixmap mass(mas);
+    ui->label_mas->setPixmap(mass);
+    ui->label_menos->setPixmap(meno);
+*/
+
 }
 
 void Principal_Mesero::mesasEstado(){
 
   QString mesa,estado,imagen;
   QSqlQuery mesas;
-    for(int i=1; i<=12; i++){
+    for(int i=1; i<=15; i++){
         QString numMesa = QString::number(i);
         mesa="select *from mesa where idMesa='"+numMesa+"'";
         mesas.exec(mesa);
@@ -162,6 +179,7 @@ void Principal_Mesero::mesasEstado(){
              }
 
             break;
+            /*
         case 4:
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
@@ -333,7 +351,7 @@ void Principal_Mesero::mesasEstado(){
                 ui->mesa_12->setIcon(mesas_2);
              }
             break;
-
+*/
         }
 
 
@@ -1373,6 +1391,7 @@ void Principal_Mesero::on_bebidas_clicked()
              informacion.setDefaultButton (QMessageBox ::Ok ) ;
              informacion.setButtonText( QMessageBox::Ok,"Aceptar");
      if(idmesa==0){
+         informacion.exec();
       qDebug()<<"seleciona una mesa";
 
      }if(idmesa==1){
@@ -1384,12 +1403,28 @@ void Principal_Mesero::on_bebidas_clicked()
      }
 
 }
+void Principal_Mesero::on_cuenta_clicked()
+{
+    QMessageBox informacion;
+    informacion.setWindowTitle("Informacion");
+            informacion.setText ("Por favor seleccione una mesa.");
+            informacion.setStandardButtons( QMessageBox::Ok) ;
+            informacion.setDefaultButton (QMessageBox ::Ok ) ;
+            informacion.setButtonText( QMessageBox::Ok,"Aceptar");
+    if(idmesa==0){
+    informacion.exec();
+     qDebug()<<"seleciona una mesa";
+    }if(idmesa==1){
+         ui->comanda->setStyleSheet("background-color:#1d1d1d");
+        ui->bebidas->setStyleSheet("background-color:#1d1d1d ");
+        ui->mesas->setStyleSheet("background-color:#1d1d1d");
+        ui->cuenta->setStyleSheet("background-color:rgb(201, 37, 49)");
+        ui->paginas->setCurrentIndex(13);
+    }
 
-
-
+}
 void Principal_Mesero::on_mesa_1_clicked()
 {
-
   idmesa=1;
 
   QString mesa,estado;
@@ -1409,6 +1444,7 @@ void Principal_Mesero::on_mesa_1_clicked()
    }
 
 }
+
 
 void Principal_Mesero::on_mesa_2_clicked()
 {
@@ -1632,18 +1668,4 @@ void Principal_Mesero::on_mesa_12_clicked()
      }
 }
 
-void Principal_Mesero::on_cuenta_clicked()
-{
 
-    if(idmesa==0){
-
-     qDebug()<<"seleciona una mesa";
-    }if(idmesa==1){
-         ui->comanda->setStyleSheet("background-color:#1d1d1d");
-        ui->bebidas->setStyleSheet("background-color:#1d1d1d ");
-        ui->mesas->setStyleSheet("background-color:#1d1d1d");
-        ui->cuenta->setStyleSheet("background-color:rgb(201, 37, 49)");
-        ui->paginas->setCurrentIndex(13);
-    }
-
-}
