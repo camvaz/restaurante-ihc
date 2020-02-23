@@ -64,17 +64,17 @@ void Login::on_btn_inicioSesion_clicked()
         }
         else{
             if(rola == "Mesero"){
-                Principal_Mesero *Mesero = new Principal_Mesero(query.value(2).toString());
+                Principal_Mesero *Mesero = new Principal_Mesero(query.value(0).toString());
                 Mesero->show();
             }
             else{
                 if(rola == "Cajero"){
-                    principal_cajero *Cajero = new principal_cajero(query.value(2).toString());
+                    principal_cajero *Cajero = new principal_cajero(query.value(0).toString());
                     Cajero->show();
                 }
                 else{
                     if(rola == "Cocinero"){
-                        principal_cocinero *Cocinero = new principal_cocinero(query.value(2).toString());
+                        principal_cocinero *Cocinero = new principal_cocinero(query.value(0).toString());
                         Cocinero->show();
                     }
                     else{
@@ -85,12 +85,12 @@ void Login::on_btn_inicioSesion_clicked()
                         else{
                             if(rola == "Hostess")
                             {
-                                principal_hostess *Hostes = new principal_hostess(query.value(2).toString());
+                                principal_hostess *Hostes = new principal_hostess(query.value(0).toString());
                                 Hostes->show();
                             }
                             else{
                                 if(rola == "Garrotero"){
-                                    principal_garrotero *Garrotero = new principal_garrotero(query.value(2).toString());
+                                    principal_garrotero *Garrotero = new principal_garrotero(query.value(0).toString());
                                     Garrotero->show();
                                 }
                             }

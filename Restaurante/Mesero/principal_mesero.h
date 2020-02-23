@@ -20,7 +20,9 @@ public:
     explicit Principal_Mesero(QWidget *parent = nullptr);
     Principal_Mesero(QString id,QWidget *parent = nullptr);
     ~Principal_Mesero();
-    int idmesa;
+    int idmesa;//PARA SABER SI EL MESERO YA SELECIONO UNA MESA ANTES.
+    QString identifier = ""; //ID DE USUARIO QUE ESTA EN SECION.
+    int numMesa; //SABER EL NUMERO DE LA MESA QUE SE ESTA TABAJANDO.
 
     void CargarImagenes();
     void mesasEstado();
@@ -78,9 +80,15 @@ private slots:
 
     void on_cuenta_clicked();
 
+    void on_mesa_13_clicked();
+
+    void on_mesa_14_clicked();
+
+    void on_mesa_15_clicked();
+
 private:
     Ui::Principal_Mesero *ui;
-    QString identifier = "";
+
 };
 
 #endif // PRINCIPAL_MESERO_H
