@@ -87,6 +87,8 @@ private slots:
 
     void on_mesa_15_clicked();
 
+    void orden(QString);
+
 private:
     Ui::Principal_Mesero *ui;
     mensaje *advertencia;
