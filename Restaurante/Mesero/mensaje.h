@@ -16,6 +16,9 @@ public:
     explicit mensaje(QWidget *parent = nullptr);
     ~mensaje();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::mensaje *ui;
 };

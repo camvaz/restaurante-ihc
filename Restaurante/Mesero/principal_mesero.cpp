@@ -14,6 +14,7 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
 
 }
 
+
 Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Principal_Mesero)
@@ -98,17 +99,7 @@ void Principal_Mesero::CargarImagenes(){
      QString pedido;
      pedido="C:/Imagenes tamaño pequeño/pedido";
      QPixmap pedidos(pedido);
-     //ui->label_pedido->setPixmap(pedidos);
-    /*
-     QString menos;
-     QString mas;
-     menos="C:/Imagenes tamaño pequeño/minus";
-     mas="C:/Imagenes tamaño pequeño/add";
-     QPixmap meno(menos);
-     QPixmap mass(mas);
-    ui->label_mas->setPixmap(mass);
-    ui->label_menos->setPixmap(meno);
-*/
+
 
 }
 
@@ -421,8 +412,17 @@ void Principal_Mesero::mesasEstado(){
 
 void Principal_Mesero::orden(QString id)
 {
-    qDebug()<<"ID DEL PLATO"<<id;
+    QSqlQuery platillo;
+    QString  busPlatillo;
+    busPlatillo="select *from Platillos where idPlatillo='"+id+"'";
 
+    platillo.exec(busPlatillo);
+    platillo.next();
+
+     qDebug()<<"id Platillo: "<<platillo.value(0).toString();
+     qDebug()<<"Nombre: "<<platillo.value(1).toString();
+     qDebug()<<"Ingredientes: "<<platillo.value(4).toString();
+     qDebug()<<"Categoria: "<<platillo.value(5).toString();
 
 }
 
