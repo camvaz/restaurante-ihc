@@ -26,6 +26,8 @@ Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
     //qDebug()<<"id mesero: "<<identifier.toInt();
     idmesa=0;
 
+    advertencia=new mensaje();
+
 }
 
 
@@ -1425,12 +1427,6 @@ void Principal_Mesero::on_vino_clicked()
 //SLOT DE MENU DE NAVEGACION
 void Principal_Mesero::on_comanda_clicked()
 {
-    QMessageBox informacion;
-    informacion.setWindowTitle("Informacion");
-            informacion.setText ("Por favor seleccione una mesa.");
-            informacion.setStandardButtons( QMessageBox::Ok) ;
-            informacion.setDefaultButton (QMessageBox ::Ok ) ;
-            informacion.setButtonText( QMessageBox::Ok,"Aceptar");
     //agrego joaquin
     clearLayout(ui->menuParrila1);
     clearLayout(ui->menuMar);
@@ -1442,7 +1438,8 @@ void Principal_Mesero::on_comanda_clicked()
     clearLayout(ui->menuReposteria);
     //agrego joaquin
     if(idmesa==0){
-        informacion.exec();
+        advertencia->setModal(true);
+        advertencia->show();
      qDebug()<<"seleciona una mesa";
     }if(idmesa==1){
         ui->comanda->setStyleSheet("background-color:rgb(201, 37, 49)");
@@ -1467,14 +1464,9 @@ void Principal_Mesero::on_bebidas_clicked()
     //codigo agregado joaquin
     clearLayout(ui->menuVinos);
      clearLayout(ui->menuCoteles);
-     QMessageBox informacion;
-     informacion.setWindowTitle("Informacion");
-             informacion.setText ("Por favor seleccione una mesa.");
-             informacion.setStandardButtons( QMessageBox::Ok) ;
-             informacion.setDefaultButton (QMessageBox ::Ok ) ;
-             informacion.setButtonText( QMessageBox::Ok,"Aceptar");
      if(idmesa==0){
-         informacion.exec();
+         advertencia->setModal(true);
+         advertencia->show();
       qDebug()<<"seleciona una mesa";
 
      }if(idmesa==1){
@@ -1489,14 +1481,10 @@ void Principal_Mesero::on_bebidas_clicked()
 
 void Principal_Mesero::on_cuenta_clicked()
 {
-    QMessageBox informacion;
-    informacion.setWindowTitle("Informacion");
-            informacion.setText ("Por favor seleccione una mesa.");
-            informacion.setStandardButtons( QMessageBox::Ok) ;
-            informacion.setDefaultButton (QMessageBox ::Ok ) ;
-            informacion.setButtonText( QMessageBox::Ok,"Aceptar");
+
     if(idmesa==0){
-    informacion.exec();
+     advertencia->setModal(true);
+     advertencia->show();
      qDebug()<<"seleciona una mesa";
     }if(idmesa==1){
          ui->comanda->setStyleSheet("background-color:#1d1d1d");

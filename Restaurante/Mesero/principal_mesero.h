@@ -7,6 +7,7 @@
 #include <QtSql/QSqlError>
 #include <QDebug>
 #include <QMessageBox>
+#include <Mesero/mensaje.h>
 
 namespace Ui {
 class Principal_Mesero;
@@ -88,7 +89,7 @@ private slots:
 
 private:
     Ui::Principal_Mesero *ui;
-
+    mensaje *advertencia;
 };
 
 #endif // PRINCIPAL_MESERO_H

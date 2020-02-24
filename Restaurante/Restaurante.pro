@@ -44,6 +44,7 @@ SOURCES += \
     Login/LoginCuentas.cpp \
     Login/TarjetaCuentas.cpp \
     Mesero/confirmacion_comanda.cpp \
+    Mesero/mensaje.cpp \
         Mesero/principal_mesero.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -68,6 +69,7 @@ HEADERS += \
     Login/LoginCuentas.h \
     Login/TarjetaCuentas.h \
     Mesero/confirmacion_comanda.h \
+    Mesero/mensaje.h \
         Mesero/principal_mesero.h \
         mainwindow.h \
 
@@ -91,6 +93,7 @@ FORMS += \
     Login/LoginCuentas.ui \
     Login/TarjetaCuentas.ui \
     Mesero/confirmacion_comanda.ui \
+    Mesero/mensaje.ui \
         Mesero/principal_mesero.ui \
         mainwindow.ui \
 
