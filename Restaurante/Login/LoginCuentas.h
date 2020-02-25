@@ -1,6 +1,7 @@
 #ifndef LOGINCUENTAS_H
 #define LOGINCUENTAS_H
 #include <QSqlQuery>
+#include <QSqlError>
 
 #include <./Login/TarjetaCuentas.h>
 #include "Login.h"

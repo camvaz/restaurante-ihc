@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     database.setDatabaseName("restaurante");
     database.setHostName("localhost");
     database.setUserName("root");
-    database.setPassword("");
+    database.setPassword("password");
     database.setPort(3306);
     if(!database.open()){
         qDebug()<<database.lastError().text();
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         qDebug()<<"Base de datos conectada";
     }
 
-    Login w;
+    LoginCuentas w;
     w.show();
 
 

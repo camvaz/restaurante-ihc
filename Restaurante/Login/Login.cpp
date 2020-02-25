@@ -16,8 +16,10 @@ Login::Login(QWidget *parent) :
   {
       ui->setupUi(this);
 
+      //Manera de saber que Query usar x es vacio
+      id = "x";
       QPixmap imagen;
-      imagen.load("C:/imagenes/logo.png");
+      imagen.load("/home/roberthlml/Descargas/logo.png");
       ui->IMG->setFixedSize(ui->IMG->width(),ui->IMG->height());
       ui->IMG->setPixmap(imagen);
       ui->IMG->setScaledContents(true);
@@ -26,17 +28,19 @@ Login::Login(QWidget *parent) :
 
 //CONTRUCTOR INICIALIZADO POR LAS TARJETAS
 
-Login::Login(QString img,QWidget *parent) :
+Login::Login(QString _id,QString img, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Login)
   {
       ui->setupUi(this);
-
+      qDebug()<<"id de tarjeta: "+_id;
+      id = _id;
       QPixmap imagen;
       imagen.load(img);
       ui->IMG->setFixedSize(ui->IMG->width(),ui->IMG->height());
       ui->IMG->setPixmap(imagen);
       ui->IMG->setScaledContents(true);
+      ui->ln_user->hide();
 
   }
 
@@ -49,7 +53,10 @@ void Login::on_btn_inicioSesion_clicked()
     QSqlQuery query;
     int rol;
 
+    if(id=="x")
     query.prepare("select idUsuario, contrasena,rol from Usuario where idUsuario = '" + ui->ln_user->text() + "' and contrasena = '" + ui->ln_password->text() + "'");
+    else
+    query.prepare("select idUsuario, contrasena,rol from Usuario where idUsuario = '" + id + "' and contrasena = '" + ui->ln_password->text() + "'");
     query.exec();
     if(query.next()){
         qDebug()<<"felicidades entraste";

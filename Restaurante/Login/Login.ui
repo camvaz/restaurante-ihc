@@ -21,9 +21,9 @@ color:white;</string>
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>120</y>
+     <y>80</y>
      <width>261</width>
-     <height>161</height>
+     <height>201</height>
     </rect>
    </property>
    <property name="text">
