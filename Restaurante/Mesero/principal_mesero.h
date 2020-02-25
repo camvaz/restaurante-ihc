@@ -8,6 +8,7 @@
 #include <QDebug>
 #include <QMessageBox>
 #include <Mesero/mensaje.h>
+#include <Mesero/confirmacion_comanda.h>
 
 namespace Ui {
 class Principal_Mesero;
@@ -92,6 +93,7 @@ private slots:
 private:
     Ui::Principal_Mesero *ui;
     mensaje *advertencia;
+    confirmacion_comanda *comanda;
 };
 
 #endif // PRINCIPAL_MESERO_H
