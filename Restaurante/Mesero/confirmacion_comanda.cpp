@@ -36,13 +36,51 @@ void confirmacion_comanda::on_btn_aceptar_clicked()
     query.exec(busqueda);
     query.next();
 
+
     qDebug()<<"id Platillo: "<<query.value(0).toString();
     qDebug()<<"Nombre: "<<query.value(1).toString();
     qDebug()<<"Tiempo: "<<query.value(3).toString();
     qDebug()<<"Categoria: "<<query.value(4).toString();
 
 
-   // if()
+     if(categotia=="1")
+    {
+
+
+
+
+    }
+
+     if(categotia=="2")
+    {
+
+    }
+     if(categotia=="3")
+    {
+
+    }
+     if(categotia=="4")
+    {
+
+    }
+     if(categotia=="5")
+    {
+
+    }
+     if(categotia=="6")
+    {
+
+    }
+     if(categotia=="7")
+    {
+
+    }
+
+     if(categotia=="8")
+     {
+
+     }
+
 
 
 }
