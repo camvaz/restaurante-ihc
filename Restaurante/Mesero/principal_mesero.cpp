@@ -28,7 +28,7 @@ Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
     idmesa=0;
 
     advertencia=new mensaje();
-    comanda=new confirmacion_comanda();
+
 
 }
 
@@ -425,6 +425,7 @@ void Principal_Mesero::orden(QString id)
      qDebug()<<"Tiempo: "<<platillo.value(3).toString();
      qDebug()<<"Categoria: "<<platillo.value(4).toString();
 
+     comanda=new confirmacion_comanda(id);
      comanda->setModal(true);
      comanda->show();
 
