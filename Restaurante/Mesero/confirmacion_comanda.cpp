@@ -29,7 +29,7 @@ void confirmacion_comanda::comandaPedido(){
 
    qDebug()<<"id comanda desde dialogo: "<<idPlatillos;
    QSqlQuery query;
-   QString busqueda,categotia,ruta;
+   QString busqueda,categoria,ruta,nombre,tiempo;
 
    busqueda="select *from Platillos where idPlatillo='"+idPlatillos+"'";
 
@@ -37,10 +37,14 @@ void confirmacion_comanda::comandaPedido(){
    query.next();
 
 
+   nombre=query.value(1).toString();
+   tiempo=query.value(3).toString();
+   categoria=query.value(4).toString();
+
    qDebug()<<"id Platillo: "<<query.value(0).toString();
-   qDebug()<<"Nombre: "<<query.value(1).toString();
-   qDebug()<<"Tiempo: "<<query.value(3).toString();
-   qDebug()<<"Categoria: "<<query.value(4).toString();
+   qDebug()<<"Nombre: "<<nombre;
+   qDebug()<<"Tiempo: "<<tiempo;
+   qDebug()<<"Categoria: "<<categoria;
 
 
 
@@ -48,7 +52,7 @@ void confirmacion_comanda::comandaPedido(){
 
 
    //entradas
-    if(categotia=="1")
+    if(categoria=="1")
    {
 
     ruta="C:/Imagenes tamaño pequeño/molletito";QPixmap entrada(ruta);ui->lbl_img_platillo->setPixmap(entrada);
@@ -57,14 +61,14 @@ void confirmacion_comanda::comandaPedido(){
    }
 
     //parilla
-    if(categotia=="2")
+    if(categoria=="2")
    {
    ruta="C:/Imagenes tamaño pequeño/verduras quemadas idk";QPixmap parilla(ruta);ui->lbl_img_platillo->setPixmap(parilla);
 
     }
 
     //mar
-    if(categotia=="3")
+    if(categoria=="3")
    {
 
    ruta="C:/Imagenes tamaño pequeño/pasta2";QPixmap mar(ruta);ui->lbl_img_platillo->setPixmap(mar);
@@ -73,7 +77,7 @@ void confirmacion_comanda::comandaPedido(){
    }
 
     //postres
-    if(categotia=="4")
+    if(categoria=="4")
    {
 
         ruta="C:/Imagenes tamaño pequeño/frutas";QPixmap reposteria(ruta);ui->lbl_img_platillo->setPixmap(reposteria);
@@ -81,7 +85,7 @@ void confirmacion_comanda::comandaPedido(){
    }
 
     //ensaladas
-    if(categotia=="5")
+    if(categoria=="5")
    {
   ruta="C:/Imagenes tamaño pequeño/ensalada";QPixmap ensalada(ruta);ui->lbl_img_platillo->setPixmap(ensalada);
 
@@ -89,7 +93,7 @@ void confirmacion_comanda::comandaPedido(){
    }
 
     //sopas
-    if(categotia=="6")
+    if(categoria=="6")
    {
 
      ruta="C:/Imagenes tamaño pequeño/camaroncio";QPixmap sopa(ruta);ui->lbl_img_platillo->setPixmap(sopa);
@@ -97,7 +101,7 @@ void confirmacion_comanda::comandaPedido(){
    }
 
     //guarniciones
-    if(categotia=="7")
+    if(categoria=="7")
    {
 
    ruta="C:/Imagenes tamaño pequeño/ensalada2";QPixmap guarnicio(ruta);ui->lbl_img_platillo->setPixmap(guarnicio);
@@ -106,7 +110,7 @@ void confirmacion_comanda::comandaPedido(){
 
 
     //infantil
-    if(categotia=="8")
+    if(categoria=="8")
     {
 
         ruta="C:/Imagenes tamaño pequeño/potato&burger";QPixmap infantil(ruta);ui->lbl_img_platillo->setPixmap(infantil);

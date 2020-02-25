@@ -678,8 +678,8 @@ void Principal_Mesero::on_mar_clicked()
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
-
-        ui->menuMar->addWidget(dishN,Cr,0,1,1);
+        tarjetaPlatillo *una=new tarjetaPlatillo();
+        ui->menuMar->addWidget(una,Cr,0);
         ui->menuMar->addWidget(dishP,Cr+1,0,1,1);
         ui->menuMar->addWidget(agre,Cr+2,0,1,1);
 
@@ -698,6 +698,7 @@ void Principal_Mesero::on_mar_clicked()
 
         QLabel *esp3=new QLabel();
         esp3->setFixedSize(QSize(50,50));
+
 
         ui->menuMar->addWidget(esp,Cr,1,1,1);
         ui->menuMar->addWidget(esp2,Cr+1,1,1,1);
@@ -735,7 +736,9 @@ void Principal_Mesero::on_mar_clicked()
         agre2->setStyleSheet("background-color:rgb(201, 37, 49)");
         connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
 
-        ui->menuMar->addWidget(dishN2,Cr,2,1,1);
+        tarjetaPlatillo *dos=new tarjetaPlatillo();
+        dos->show();
+        ui->menuMar->addWidget(dos,Cr,2);
         ui->menuMar->addWidget(dishP2,Cr+1,2,1,1);
         ui->menuMar->addWidget(agre2,Cr+2,2,1,1);
         Cr=Cr+3;

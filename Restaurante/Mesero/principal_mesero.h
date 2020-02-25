@@ -9,6 +9,7 @@
 #include <QMessageBox>
 #include <Mesero/mensaje.h>
 #include <Mesero/confirmacion_comanda.h>
+#include <Mesero/tarjetaplatillo.h>
 
 namespace Ui {
 class Principal_Mesero;

@@ -46,6 +46,7 @@ SOURCES += \
     Mesero/confirmacion_comanda.cpp \
     Mesero/mensaje.cpp \
         Mesero/principal_mesero.cpp \
+    Mesero/tarjetaplatillo.cpp \
         main.cpp \
         mainwindow.cpp \
 
@@ -71,6 +72,7 @@ HEADERS += \
     Mesero/confirmacion_comanda.h \
     Mesero/mensaje.h \
         Mesero/principal_mesero.h \
+    Mesero/tarjetaplatillo.h \
         mainwindow.h \
 
 FORMS += \
@@ -95,6 +97,7 @@ FORMS += \
     Mesero/confirmacion_comanda.ui \
     Mesero/mensaje.ui \
         Mesero/principal_mesero.ui \
+    Mesero/tarjetaplatillo.ui \
         mainwindow.ui \
 
 
