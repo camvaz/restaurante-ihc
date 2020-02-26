@@ -19,6 +19,7 @@ void tarjetaPlatillo::llenar(QString nombre, QString precio, QString id)
     ui->idPro->setText(id);
     ui->Precio->setText(precio);
 }
+
 void tarjetaPlatillo::orden(QString id)
 {
     QSqlQuery platillo;

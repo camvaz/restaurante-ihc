@@ -29,28 +29,28 @@ void confirmacion_comanda::comandaPedido(){
 
    qDebug()<<"id comanda desde dialogo: "<<idPlatillos;
    QSqlQuery query;
-   QString busqueda,categoria,ruta,nombre,tiempo;
+   QString busqueda,categoria,ruta,nombre,precio,menuCate;
 
-   busqueda="select *from Platillos where idPlatillo='"+idPlatillos+"'";
+   busqueda="select *from Platillos as p inner join CategoriaMenu as c on p.idCategoriaMenu=c.idCategoriaMenu where idPlatillo='"+idPlatillos+"'";
 
    query.exec(busqueda);
    query.next();
 
-
    nombre=query.value(1).toString();
-   tiempo=query.value(3).toString();
+   precio=query.value(2).toString();
    categoria=query.value(4).toString();
+   menuCate=query.value(6).toString();
 
-   qDebug()<<"id Platillo: "<<query.value(0).toString();
-   qDebug()<<"Nombre: "<<nombre;
-   qDebug()<<"Tiempo: "<<tiempo;
-   qDebug()<<"Categoria: "<<categoria;
+   qDebug()<<"id Platillo-->: "<<query.value(0).toString();
+   qDebug()<<"Nombre-->: "<<nombre;
+   qDebug()<<"Tiempo-->: "<<precio;
+   qDebug()<<"Categoria-->: "<<categoria;
 
+   ui->lbl_nombre_Platillo->setText(nombre);
+   ui->lbl_precio->setText(precio);
+   ui->lbl_categoria->setText(menuCate);
 
-
-
-
-
+   if(categoria<"9"){
    //entradas
     if(categoria=="1")
    {
@@ -117,7 +117,17 @@ void confirmacion_comanda::comandaPedido(){
 
     }
 
+   }else {
+       if(categoria=="9"){
+           ruta="C:/Imagenes tamaño pequeño/bebidaNaranja";QPixmap infantil(ruta);ui->lbl_img_platillo->setPixmap(infantil);
+       }
 
+       if(categoria=="10"){
+           ruta="C:/Imagenes tamaño pequeño/vino";QPixmap infantil(ruta);ui->lbl_img_platillo->setPixmap(infantil);
+
+       }
+
+}
 
 }
 

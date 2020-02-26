@@ -269,7 +269,7 @@ border-radius: 15px;
              <rect>
               <x>10</x>
               <y>0</y>
-              <width>121</width>
+              <width>129</width>
               <height>32</height>
              </rect>
             </property>
@@ -341,7 +341,7 @@ border:none;</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
-                <string>2</string>
+                <string>0</string>
                </property>
               </widget>
              </item>
