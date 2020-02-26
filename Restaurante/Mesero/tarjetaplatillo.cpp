@@ -15,7 +15,7 @@ tarjetaPlatillo::~tarjetaPlatillo()
 
 void tarjetaPlatillo::llenar(QString nombre, QString precio, QString id)
 {
-    ui->nombrePro->setText(nombre);
+    ui->nombrePro->setPlainText(nombre);
     ui->idPro->setText(id);
     ui->Precio->setText(precio);
 }
