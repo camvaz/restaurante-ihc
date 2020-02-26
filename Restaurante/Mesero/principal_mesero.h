@@ -91,6 +91,26 @@ private slots:
 
     void orden(QString);
 
+    void on_chilenos_clicked();
+
+    void on_argentinos_clicked();
+
+    void on_mexicanos_clicked();
+
+    void on_blanco_mexi_clicked();
+
+    void on_otro_paises_clicked();
+
+    void on_espumuso_clicked();
+
+    void on_espanol_clicked();
+
+    void on_blanco_clicked();
+
+    void on_rosado_clicked();
+
+    void on_postre_clicked();
+
 private:
     Ui::Principal_Mesero *ui;
     mensaje *advertencia;

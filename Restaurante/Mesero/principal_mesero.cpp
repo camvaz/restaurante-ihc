@@ -917,132 +917,6 @@ void Principal_Mesero::on_coctel_clicked(){
 void Principal_Mesero::on_vino_clicked()
 {
     ui->paginas->setCurrentIndex(12);
-    //joaquin codigo
-    clearLayout(ui->menuVinos);
-
-    QString origen;
-    QSqlQuery origen1;
-    origen="select OrigenVino from Vinos group by OrigenVino;";
-    origen1.exec(origen);
-    QString Norig;
-    int Cr=0;
-    while(origen1.next())
-    {
-        //QString *id=new QString(origen1.value(0).toString());
-        Norig=origen1.value(0).toString();
-        QString vino;
-
-        QSqlQuery vino1;
-        vino="select *from Vinos where idCategoriaMenu=10 and OrigenVino='"+Norig+"';";
-        vino1.exec(vino);
-
-        QLabel *Or=new QLabel;
-        Or->setText(Norig);
-        Or->setFixedSize(QSize(300,25));
-        Or->setStyleSheet("background-color: rgb(227,84,17)");
-        ui->menuVinos->addWidget(Or,Cr,0,1,1);
-       //ui->menuVinos->addWidget(Or,Cr,1,1,1);
-       //ui->menuVinos->addWidget(Or,Cr,2,1,1);
-            Cr=Cr+1;
-       while(vino1.next())
-        {
-            //primera columna
-
-           QLabel *dishN=new QLabel;
-            dishN->setText(vino1.value(1).toString());
-            dishN->setFixedSize(QSize(300,25));
-            dishN->setStyleSheet("color:rgb(241, 241, 241)");
-            //fol->setStyleSheet("background-color: rgb("+rgb+")");
-
-
-
-            QLabel *dishP=new QLabel;
-            dishP->setText(vino1.value(2).toString());
-            dishP->setFixedSize(QSize(300,25));
-            dishP->setStyleSheet("color:rgb(241, 241, 241)");
-            //m->setStyleSheet("background-color: rgb("+rgb+")");
-
-
-            QPushButton *agre=new QPushButton();
-            agre->setText("Agregar");
-            agre->setFixedSize(QSize(300,50));
-            agre->setStyleSheet("background-color:rgb(201, 37, 49)");
-            //agre->setStyleSheet("background-color: rgb(138,198,242)");
-           // QSignalMapper *mapper1=new QSignalMapper(this);
-            //connect(q,SIGNAL(clicked(bool)),mapper1,SLOT(map()));
-            //mapper1->setMapping(q,folio);
-            //connect(mapper1,SIGNAL(mapped(QString)),this,SLOT(PonerCitas(QString)));
-
-            ui->menuVinos->addWidget(dishN,Cr,0,1,1);
-            ui->menuVinos->addWidget(dishP,Cr+1,0,1,1);
-            ui->menuVinos->addWidget(agre,Cr+2,0,1,1);
-
-            //espacio entre las columnas
-            QLabel *esp=new QLabel;
-
-            esp->setFixedSize(QSize(50,25));
-            //fol->setStyleSheet("background-color: rgb("+rgb+")");
-
-
-
-            QLabel *esp2=new QLabel;
-            esp2->setFixedSize(QSize(50,25));
-            //m->setStyleSheet("background-color: rgb("+rgb+")");
-
-
-            QLabel *esp3=new QLabel();
-            esp3->setFixedSize(QSize(50,50));
-
-            ui->menuVinos->addWidget(esp,Cr,1,1,1);
-            ui->menuVinos->addWidget(esp2,Cr+1,1,1,1);
-            ui->menuVinos->addWidget(esp3,Cr+2,1,1,1);
-
-
-
-            //seguna columna
-            if(!vino1.next())
-            {
-               // ui->menuVinos->addWidget(esp,Cr,2,1,1);
-            //    ui->menuVinos->addWidget(esp2,Cr+1,2,1,1);
-              //  ui->menuVinos->addWidget(esp3,Cr+2,2,1,1);
-             Cr=Cr+3;
-            }
-            else {
-
-
-            QLabel *dishN2=new QLabel;
-            dishN2->setText(vino1.value(1).toString());
-            dishN2->setFixedSize(QSize(300,25));
-            dishN2->setStyleSheet("color:rgb(241, 241, 241)");
-            //fol->setStyleSheet("background-color: rgb("+rgb+")");
-
-
-
-            QLabel *dishP2=new QLabel;
-            dishP2->setText(vino1.value(2).toString());
-            dishP2->setFixedSize(QSize(300,25));
-            dishP2->setStyleSheet("color:rgb(241, 241, 241)");
-            //m->setStyleSheet("background-color: rgb("+rgb+")");
-
-
-            QPushButton *agre2=new QPushButton();
-            agre2->setText("Agregar");
-            agre2->setFixedSize(QSize(300,50));
-            agre2->setStyleSheet("background-color:rgb(201, 37, 49)");
-            ui->menuVinos->addWidget(dishN2,Cr,2,1,1);
-            ui->menuVinos->addWidget(dishP2,Cr+1,2,1,1);
-            ui->menuVinos->addWidget(agre2,Cr+2,2,1,1);
-            Cr=Cr+3;
-
-            }
-
-        }
-
-
-    }
-
-
-
 
 }
 
@@ -1452,5 +1326,565 @@ void Principal_Mesero::on_mesa_15_clicked()
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
+     }
+}
+
+void Principal_Mesero::on_chilenos_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="VINO CHILENO";
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"'";
+    QslVino.exec(vinos);
+
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        qDebug()<<"con alcohol";
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+       ui->menuVinos->addWidget(vinos,Cr,0);
+
+      if(!QslVino.next())
+    {
+
+    }
+    else {
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+       ui->menuVinos->addWidget(vinos,Cr,2);
+
+    }
+
+    Cr++;
+    }
+}
+
+void Principal_Mesero::on_argentinos_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="VINO ARGENTINO";
+
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
+     }
+
+}
+
+void Principal_Mesero::on_mexicanos_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="VINO TINTO MEXICANO";
+
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
+     }
+}
+
+void Principal_Mesero::on_blanco_mexi_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    //clearLayout(ui->menuVinos);
+    QString origen="VINO BLANCO MEXICANO";
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
+     }
+}
+
+void Principal_Mesero::on_otro_paises_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="TINTO DE OTROS PAISES";
+
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
+     }
+}
+
+void Principal_Mesero::on_espumuso_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="TINTO ESPUMOSO";
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
+     }
+}
+
+void Principal_Mesero::on_espanol_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="VINO TINTO ESPAÑOL";
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
+     }
+}
+
+void Principal_Mesero::on_blanco_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="VINO BLANCO";
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
+     }
+}
+
+void Principal_Mesero::on_rosado_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="VINO ROSADO";
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
+     }
+}
+
+void Principal_Mesero::on_postre_clicked()
+{
+    ui->paginas->setCurrentIndex(14);
+    clearLayout(ui->menuVinos);
+    QString origen="VINO DE POSTRE";
+    QString vinos;
+    QSqlQuery QslVino;
+    vinos="select *from Vinos where OrigenVino='"+origen+"';";
+     QslVino.exec(vinos);
+    int Cr=0;
+    while(QslVino.next()){
+
+        QString *id=new QString(QslVino.value(0).toString());
+        //qDebug()<<"con alcohol";
+
+
+       QPushButton *agregar=new QPushButton();
+       agregar->setText("Agregar");
+       agregar->setFixedSize(QSize(80,25));
+       agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+       //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+       connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+       tarjetaPlatillo *vinos=new tarjetaPlatillo();
+       vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+       ui->menuVinos->addWidget(vinos,Cr,0);
+       if(!QslVino.next())
+     {
+
+     }
+     else {
+
+         QString *id=new QString(QslVino.value(0).toString());
+         //qDebug()<<"con alcohol";
+
+
+        QPushButton *agregar=new QPushButton();
+        agregar->setText("Agregar");
+        agregar->setFixedSize(QSize(80,25));
+        agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
+        //agregar->setStyleSheet("color:rgb(241, 241, 241)");
+
+        connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *vinos=new tarjetaPlatillo();
+        vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString());
+
+        ui->menuVinos->addWidget(vinos,Cr,2);
+
+     }
+
+     Cr++;
      }
 }

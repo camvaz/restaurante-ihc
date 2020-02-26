@@ -3077,84 +3077,6 @@ color: rgb(201, 37, 49);</string>
      </layout>
     </widget>
     <widget class="QWidget" name="page_13">
-     <layout class="QGridLayout" name="gridLayout_17">
-      <item row="2" column="0">
-       <widget class="QScrollArea" name="scrollArea_5">
-        <property name="widgetResizable">
-         <bool>true</bool>
-        </property>
-        <widget class="QWidget" name="scrollAreaWidgetContents_5">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>55</width>
-           <height>24</height>
-          </rect>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_6">
-          <item row="0" column="0">
-           <layout class="QGridLayout" name="menuVinos"/>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_26">
-        <item>
-         <widget class="QLabel" name="label_540">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-font: 75 16pt &quot;Noto Serif&quot;;
-color: rgb(201, 37, 49);</string>
-          </property>
-          <property name="text">
-           <string>Vinos</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="Line" name="line_26">
-          <property name="minimumSize">
-           <size>
-            <width>670</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(112, 112, 112);</string>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item row="0" column="0">
-       <spacer name="verticalSpacer_9">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>15</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-     </layout>
      <widget class="Line" name="line_27">
       <property name="geometry">
        <rect>
@@ -3166,6 +3088,216 @@ color: rgb(201, 37, 49);</string>
       </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chilenos">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>140</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>Chilenos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="argentinos">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>140</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>argentinos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mexicanos">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>140</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>mexicanos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="blanco_mexi">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>140</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);
+</string>
+      </property>
+      <property name="text">
+       <string>blanco mexi</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="otro_paises">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>140</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>otros paises</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="postre">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>310</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>postre</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="espumuso">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>310</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>espumoso</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rosado">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>310</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>rosado</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="espanol">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>310</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>español</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="blanco">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>310</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>blanco</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_540">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>34</y>
+        <width>64</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+font: 75 16pt &quot;Noto Serif&quot;;
+color: rgb(201, 37, 49);</string>
+      </property>
+      <property name="text">
+       <string>Vinos</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_26">
+      <property name="geometry">
+       <rect>
+        <x>83</x>
+        <y>49</y>
+        <width>670</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>670</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(112, 112, 112);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </widget>
@@ -4036,6 +4168,76 @@ color: rgb(255, 255, 255);
         </widget>
        </item>
       </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_15">
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>781</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_41">
+       <item>
+        <widget class="QLabel" name="label_30">
+         <property name="styleSheet">
+          <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+font: 75 16pt &quot;Noto Serif&quot;;
+color: rgb(201, 37, 49);</string>
+         </property>
+         <property name="text">
+          <string>Vinos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_20">
+         <property name="minimumSize">
+          <size>
+           <width>670</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#707070;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>779</width>
+        <height>470</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>777</width>
+         <height>468</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="menuVinos"/>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </widget>
    </widget>
