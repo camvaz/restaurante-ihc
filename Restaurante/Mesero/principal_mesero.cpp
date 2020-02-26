@@ -86,9 +86,9 @@ void Principal_Mesero::CargarImagenes(){
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_10(mesa);ui->mesa_10->setIcon(mesas_10);
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_11(mesa);ui->mesa_11->setIcon(mesas_11);
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_12(mesa);ui->mesa_12->setIcon(mesas_12);
-     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_13(mesa);ui->mesa_13->setIcon(mesas_13);
-     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_14(mesa);ui->mesa_14->setIcon(mesas_14);
-     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_15(mesa);ui->mesa_15->setIcon(mesas_15);
+//     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_13(mesa);ui->mesa_13->setIcon(mesas_13);
+//     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_14(mesa);ui->mesa_14->setIcon(mesas_14);
+ //    mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_15(mesa);ui->mesa_15->setIcon(mesas_15);
 
      //BOTONES
      QString botones;
@@ -353,18 +353,18 @@ void Principal_Mesero::mesasEstado(){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
-              ui->mesa_13->setIcon(mesas_1);
+   //           ui->mesa_13->setIcon(mesas_1);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
-                ui->mesa_13->setIcon(mesas_2);
+//                ui->mesa_13->setIcon(mesas_2);
 
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
-                ui->mesa_13->setIcon(mesas_2);
+  //              ui->mesa_13->setIcon(mesas_2);
              }
             break;
         case 14:
@@ -372,18 +372,18 @@ void Principal_Mesero::mesasEstado(){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
-              ui->mesa_14->setIcon(mesas_1);
+    //          ui->mesa_14->setIcon(mesas_1);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
-                ui->mesa_14->setIcon(mesas_2);
+      //          ui->mesa_14->setIcon(mesas_2);
 
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
-                ui->mesa_14->setIcon(mesas_2);
+        //        ui->mesa_14->setIcon(mesas_2);
              }
             break;
         case 15:
@@ -391,17 +391,17 @@ void Principal_Mesero::mesasEstado(){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
-              ui->mesa_15->setIcon(mesas_1);
+          //    ui->mesa_15->setIcon(mesas_1);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
-                ui->mesa_15->setIcon(mesas_2);
+            //    ui->mesa_15->setIcon(mesas_2);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
-                ui->mesa_15->setIcon(mesas_2);
+              //  ui->mesa_15->setIcon(mesas_2);
              }
             break;
 
@@ -679,9 +679,10 @@ void Principal_Mesero::on_mar_clicked()
 
         connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *una=new tarjetaPlatillo();
+        una->llenar(mar1.value(1).toString(),mar1.value(2).toString(),mar1.value(0).toString());
         ui->menuMar->addWidget(una,Cr,0);
-        ui->menuMar->addWidget(dishP,Cr+1,0,1,1);
-        ui->menuMar->addWidget(agre,Cr+2,0,1,1);
+ //       ui->menuMar->addWidget(dishP,Cr+1,0,1,1);
+//        ui->menuMar->addWidget(agre,Cr+2,0,1,1);
 
         //espacio entre las columnas
         QLabel *esp=new QLabel;
@@ -700,9 +701,9 @@ void Principal_Mesero::on_mar_clicked()
         esp3->setFixedSize(QSize(50,50));
 
 
-        ui->menuMar->addWidget(esp,Cr,1,1,1);
-        ui->menuMar->addWidget(esp2,Cr+1,1,1,1);
-        ui->menuMar->addWidget(esp3,Cr+2,1,1,1);
+        //ui->menuMar->addWidget(esp,Cr,1);
+        //ui->menuMar->addWidget(esp2,Cr+1,1,1,1);
+//        ui->menuMar->addWidget(esp3,Cr+2,1,1,1);
 
 
 
@@ -737,10 +738,10 @@ void Principal_Mesero::on_mar_clicked()
         connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
 
         tarjetaPlatillo *dos=new tarjetaPlatillo();
-        dos->show();
+        dos->llenar(mar1.value(1).toString(),mar1.value(2).toString(),mar1.value(0).toString());
         ui->menuMar->addWidget(dos,Cr,2);
-        ui->menuMar->addWidget(dishP2,Cr+1,2,1,1);
-        ui->menuMar->addWidget(agre2,Cr+2,2,1,1);
+        //ui->menuMar->addWidget(dishP2,Cr+1,2,1,1);
+        //ui->menuMar->addWidget(agre2,Cr+2,2,1,1);
         Cr=Cr+3;
 
         }
@@ -1385,6 +1386,7 @@ void Principal_Mesero::on_vino_clicked()
 //SLOT DE MENU DE NAVEGACION
 void Principal_Mesero::on_comanda_clicked()
 {
+    //aqui le movi para que me dejara usarla 0 por 1 y viceversa
     //agrego joaquin
     clearLayout(ui->menuParrila1);
     clearLayout(ui->menuMar);
@@ -1440,6 +1442,7 @@ void Principal_Mesero::on_bebidas_clicked()
 void Principal_Mesero::on_cuenta_clicked()
 {
 
+    qDebug()<<"hola";
     if(idmesa==0){
      advertencia->setModal(true);
      advertencia->show();
@@ -1456,6 +1459,7 @@ void Principal_Mesero::on_cuenta_clicked()
 
 void Principal_Mesero::on_mesa_1_clicked()
 {
+
   idmesa=1;
   numMesa=1;
   qDebug()<<"numero de mesa:"<<numMesa;
@@ -1465,6 +1469,7 @@ void Principal_Mesero::on_mesa_1_clicked()
   mesas.exec(mesa);
   mesas.next();
   estado=mesas.value(3).toString();
+  qDebug()<<estado;
   if(estado=="disponible"){
       qDebug()<<"mesa libre";
      ui->paginas->setCurrentIndex(1);

@@ -18,7 +18,9 @@ INPUT(
 ./release\LoginCuentas.o
 ./release\TarjetaCuentas.o
 ./release\confirmacion_comanda.o
+./release\mensaje.o
 ./release\principal_mesero.o
+./release\tarjetaplatillo.o
 ./release\main.o
 ./release\mainwindow.o
 ./release\moc_GraficaVentas.o
@@ -40,6 +42,8 @@ INPUT(
 ./release\moc_LoginCuentas.o
 ./release\moc_TarjetaCuentas.o
 ./release\moc_confirmacion_comanda.o
+./release\moc_mensaje.o
 ./release\moc_principal_mesero.o
+./release\moc_tarjetaplatillo.o
 ./release\moc_mainwindow.o
 );

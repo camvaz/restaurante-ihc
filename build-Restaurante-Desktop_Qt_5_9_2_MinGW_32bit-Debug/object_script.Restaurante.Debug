@@ -18,7 +18,9 @@ INPUT(
 ./debug\LoginCuentas.o
 ./debug\TarjetaCuentas.o
 ./debug\confirmacion_comanda.o
+./debug\mensaje.o
 ./debug\principal_mesero.o
+./debug\tarjetaplatillo.o
 ./debug\main.o
 ./debug\mainwindow.o
 ./debug\moc_GraficaVentas.o
@@ -40,6 +42,8 @@ INPUT(
 ./debug\moc_LoginCuentas.o
 ./debug\moc_TarjetaCuentas.o
 ./debug\moc_confirmacion_comanda.o
+./debug\moc_mensaje.o
 ./debug\moc_principal_mesero.o
+./debug\moc_tarjetaplatillo.o
 ./debug\moc_mainwindow.o
 );

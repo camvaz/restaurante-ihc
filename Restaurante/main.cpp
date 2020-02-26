@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     database.setDatabaseName("restaurante");
     database.setHostName("localhost");
     database.setUserName("root");
-    database.setPassword("1234");
+    database.setPassword("deop21");
     database.setPort(3306);
     if(!database.open()){
         qDebug()<<database.lastError().text();
