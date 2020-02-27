@@ -86,9 +86,21 @@ void Principal_Mesero::CargarImagenes(){
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_10(mesa);ui->mesa_10->setIcon(mesas_10);
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_11(mesa);ui->mesa_11->setIcon(mesas_11);
      mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_12(mesa);ui->mesa_12->setIcon(mesas_12);
-//     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_13(mesa);ui->mesa_13->setIcon(mesas_13);
-//     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_14(mesa);ui->mesa_14->setIcon(mesas_14);
- //    mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_15(mesa);ui->mesa_15->setIcon(mesas_15);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_13(mesa);ui->mesa_13->setIcon(mesas_13);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_14(mesa);ui->mesa_14->setIcon(mesas_14);
+     mesa="C:/Imagenes tamaño pequeño/meeting-black";QIcon mesas_15(mesa);ui->mesa_15->setIcon(mesas_15);
+
+     //TIPOS DE VINOS
+
+     QString vinos;
+     vinos="C:/Imagenes tamaño pequeño/argentina";QIcon boton_argentinos(vinos);ui->argentinos->setIcon(boton_argentinos);
+     vinos="C:/Imagenes tamaño pequeño/mexico";QIcon boton_mexicanos(vinos);ui->mexicanos->setIcon(boton_mexicanos);
+     vinos="C:/Imagenes tamaño pequeño/internacional";QIcon boton_internacionales(vinos);ui->otro_paises->setIcon(boton_internacionales);
+     vinos="C:/Imagenes tamaño pequeño/chile";QIcon boton_chilesnos(vinos);ui->chilenos->setIcon(boton_chilesnos);
+     vinos="C:/Imagenes tamaño pequeño/vinoEspumoso";QIcon boton_espumoso(vinos);ui->espumuso->setIcon(boton_espumoso);
+     vinos="C:/Imagenes tamaño pequeño/vinoRosado";QIcon boton_rosado(vinos);ui->rosado->setIcon(boton_rosado);
+     vinos="C:/Imagenes tamaño pequeño/vinoBlanco";QIcon boton_blanco(vinos);ui->blanco->setIcon(boton_blanco);
+     vinos="C:/Imagenes tamaño pequeño/spain";QIcon boton_spain(vinos);ui->espanol->setIcon(boton_spain);
 
      //BOTONES
      QString botones;

@@ -231,7 +231,7 @@ background-color:#F1F1F1;</string>
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>12</number>
     </property>
     <widget class="QWidget" name="page">
      <layout class="QGridLayout" name="gridLayout_26">
@@ -3095,60 +3095,87 @@ color: rgb(201, 37, 49);</string>
        <rect>
         <x>40</x>
         <y>140</y>
-        <width>93</width>
-        <height>28</height>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
       <property name="cursor">
        <cursorShape>OpenHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>Chilenos</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>180</width>
+        <height>140</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="argentinos">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>190</x>
         <y>140</y>
-        <width>93</width>
-        <height>28</height>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>argentinos</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>150</width>
+        <height>140</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="mexicanos">
       <property name="geometry">
        <rect>
-        <x>360</x>
+        <x>350</x>
         <y>140</y>
-        <width>93</width>
-        <height>28</height>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>mexicanos</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>150</width>
+        <height>140</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="blanco_mexi">
       <property name="geometry">
        <rect>
-        <x>500</x>
-        <y>140</y>
-        <width>93</width>
-        <height>28</height>
+        <x>200</x>
+        <y>310</y>
+        <width>121</width>
+        <height>111</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(0, 170, 255);
@@ -3161,27 +3188,39 @@ color: rgb(201, 37, 49);</string>
      <widget class="QPushButton" name="otro_paises">
       <property name="geometry">
        <rect>
-        <x>620</x>
+        <x>630</x>
         <y>140</y>
-        <width>93</width>
-        <height>28</height>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>otros paises</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>150</width>
+        <height>140</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="postre">
       <property name="geometry">
        <rect>
-        <x>630</x>
+        <x>640</x>
         <y>310</y>
-        <width>93</width>
-        <height>28</height>
+        <width>121</width>
+        <height>111</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(0, 170, 255);</string>
@@ -3193,17 +3232,26 @@ color: rgb(201, 37, 49);</string>
      <widget class="QPushButton" name="espumuso">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>40</x>
         <y>310</y>
-        <width>93</width>
-        <height>28</height>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>espumoso</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="rosado">
@@ -3211,47 +3259,74 @@ color: rgb(201, 37, 49);</string>
        <rect>
         <x>500</x>
         <y>310</y>
-        <width>93</width>
-        <height>28</height>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>rosado</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="espanol">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>310</y>
-        <width>93</width>
-        <height>28</height>
+        <x>490</x>
+        <y>140</y>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>español</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>150</width>
+        <height>140</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="blanco">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>350</x>
         <y>310</y>
-        <width>93</width>
-        <height>28</height>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 170, 255);</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>blanco</string>
+       <string> </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
       </property>
      </widget>
      <widget class="QLabel" name="label_540">
@@ -3298,6 +3373,125 @@ color: rgb(201, 37, 49);</string>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>260</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Chilenos</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_42">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>260</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Argentinos</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>260</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Mexicanos</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_44">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>260</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Internacionales</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_45">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>430</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Espumosos</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_46">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>260</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Españoles</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_47">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>430</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Blancos</string>
       </property>
      </widget>
     </widget>
@@ -4335,6 +4529,23 @@ color: rgb(201, 37, 49);</string>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_48">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>430</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Rosados</string>
     </property>
    </widget>
   </widget>
