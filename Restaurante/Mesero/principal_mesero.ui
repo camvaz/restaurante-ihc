@@ -231,7 +231,7 @@ background-color:#F1F1F1;</string>
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>12</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <layout class="QGridLayout" name="gridLayout_26">
@@ -2137,7 +2137,17 @@ color: rgb(201, 37, 49);</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuParrila1"/>
+           <layout class="QGridLayout" name="menuParrila1" rowminimumheight="0" columnminimumwidth="0">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>3</number>
+            </property>
+           </layout>
           </item>
          </layout>
         </widget>
@@ -3494,6 +3504,23 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
        <string>Blancos</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_48">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>430</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rosados</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_14">
      <widget class="QWidget" name="layoutWidget">
@@ -4529,23 +4556,6 @@ color: rgb(201, 37, 49);</string>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_48">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>430</y>
-      <width>90</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Rosados</string>
     </property>
    </widget>
   </widget>

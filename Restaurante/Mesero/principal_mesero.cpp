@@ -469,10 +469,15 @@ void Principal_Mesero::on_parilla_clicked()
         agre->setFixedSize(QSize(300,50));
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
 
+        QLabel *espacio=new QLabel();
+        espacio->setFixedSize(QSize(150,10));
+        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
        connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
        tarjetaPlatillo *parilla=new tarjetaPlatillo();
        parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString());
        ui->menuParrila1->addWidget(parilla,Cr,0);
+       ui->menuParrila1->addWidget(espacio,Cr,1);
 
 
          //seguna columna
