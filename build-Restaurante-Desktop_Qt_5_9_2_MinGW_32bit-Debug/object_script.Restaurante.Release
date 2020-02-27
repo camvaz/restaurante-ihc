@@ -11,7 +11,9 @@ INPUT(
 ./release\principal_bartender.o
 ./release\principal_cajero.o
 ./release\principal_cocinero.o
+./release\mapa_piso_garrotero.o
 ./release\principal_garrotero.o
+./release\asignar_mesa.o
 ./release\mapa_de_piso.o
 ./release\principal_hostess.o
 ./release\Login.o
@@ -33,7 +35,9 @@ INPUT(
 ./release\moc_principal_bartender.o
 ./release\moc_principal_cajero.o
 ./release\moc_principal_cocinero.o
+./release\moc_mapa_piso_garrotero.o
 ./release\moc_principal_garrotero.o
+./release\moc_asignar_mesa.o
 ./release\moc_mapa_de_piso.o
 ./release\moc_principal_hostess.o
 ./release\moc_Login.o

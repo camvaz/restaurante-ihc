@@ -37,7 +37,9 @@ SOURCES += \
         Bartender/principal_bartender.cpp \
         Cajero/principal_cajero.cpp \
         Cocinero/principal_cocinero.cpp \
+    Garrotero/mapa_piso_garrotero.cpp \
     Garrotero/principal_garrotero.cpp \
+    Hostess/asignar_mesa.cpp \
     Hostess/mapa_de_piso.cpp \
         Hostess/principal_hostess.cpp \
     Login/Login.cpp \
@@ -61,7 +63,9 @@ HEADERS += \
         Bartender/principal_bartender.h \
         Cajero/principal_cajero.h \
         Cocinero/principal_cocinero.h \
+    Garrotero/mapa_piso_garrotero.h \
     Garrotero/principal_garrotero.h \
+    Hostess/asignar_mesa.h \
     Hostess/mapa_de_piso.h \
         Hostess/principal_hostess.h \
     Login/Login.h \
@@ -84,7 +88,9 @@ FORMS += \
         Bartender/principal_bartender.ui \
         Cajero/principal_cajero.ui \
         Cocinero/principal_cocinero.ui \
+    Garrotero/mapa_piso_garrotero.ui \
     Garrotero/principal_garrotero.ui \
+    Hostess/asignar_mesa.ui \
     Hostess/mapa_de_piso.ui \
         Hostess/principal_hostess.ui \
     Login/Login.ui \

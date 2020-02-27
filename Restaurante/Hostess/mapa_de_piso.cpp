@@ -65,6 +65,15 @@ void Mapa_de_Piso::cargarMesas()
             if(query.value(0).toInt()==12)
                 ui->mesa_12->setIcon(mesas_1);
 
+            if(query.value(0).toInt()==13)
+                ui->mesa_13->setIcon(mesas_1);
+
+            if(query.value(0).toInt()==14)
+                ui->mesa_14->setIcon(mesas_1);
+
+            if(query.value(0).toInt()==15)
+                ui->mesa_15->setIcon(mesas_1);
+
         }else {
             if(query.value(3).toString()=="ocupado")
             {
@@ -103,6 +112,15 @@ void Mapa_de_Piso::cargarMesas()
 
                 if(query.value(0).toInt()==12)
                     ui->mesa_12->setIcon(mesas_2);
+
+                if(query.value(0).toInt()==13)
+                    ui->mesa_13->setIcon(mesas_2);
+
+                if(query.value(0).toInt()==14)
+                    ui->mesa_14->setIcon(mesas_2);
+
+                if(query.value(0).toInt()==15)
+                    ui->mesa_15->setIcon(mesas_2);
             }else
             {
                 if(query.value(3).toString()=="sucio")
@@ -142,6 +160,15 @@ void Mapa_de_Piso::cargarMesas()
 
                     if(query.value(0).toInt()==12)
                         ui->mesa_12->setIcon(mesas_3);
+
+                    if(query.value(0).toInt()==13)
+                        ui->mesa_13->setIcon(mesas_3);
+
+                    if(query.value(0).toInt()==14)
+                        ui->mesa_14->setIcon(mesas_3);
+
+                    if(query.value(0).toInt()==15)
+                        ui->mesa_15->setIcon(mesas_3);
 
                 }
             }

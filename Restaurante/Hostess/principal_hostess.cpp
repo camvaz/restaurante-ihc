@@ -5,6 +5,8 @@ principal_hostess::principal_hostess(QWidget *parent) :
     ui(new Ui::principal_hostess)
 {
     ui->setupUi(this);
+    ui->stackedWidget->insertWidget(0,&piso);
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 principal_hostess::principal_hostess(QString id, QWidget *parent) :
@@ -14,7 +16,7 @@ principal_hostess::principal_hostess(QString id, QWidget *parent) :
     ui->setupUi(this);
     identifier = id;
      ui->stackedWidget->insertWidget(0,&piso);
-    ui->stackedWidget->setCurrentIndex(0);
+     ui->stackedWidget->setCurrentIndex(0);
 
 }
 
