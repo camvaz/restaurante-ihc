@@ -101,6 +101,8 @@ void Principal_Mesero::CargarImagenes(){
      vinos="C:/Imagenes tamaño pequeño/vinoRosado";QIcon boton_rosado(vinos);ui->rosado->setIcon(boton_rosado);
      vinos="C:/Imagenes tamaño pequeño/vinoBlanco";QIcon boton_blanco(vinos);ui->blanco->setIcon(boton_blanco);
      vinos="C:/Imagenes tamaño pequeño/spain";QIcon boton_spain(vinos);ui->espanol->setIcon(boton_spain);
+     vinos="C:/Imagenes tamaño pequeño/vinoPostre";QIcon boton_vinpostres(vinos);ui->postre->setIcon(boton_vinpostres);
+     vinos="C:/Imagenes tamaño pequeño/vinoBlanco-Mexicano";QIcon boton_mexblaco(vinos);ui->blanco_mexi->setIcon(boton_mexblaco);
 
      //BOTONES
      QString botones;
@@ -534,10 +536,17 @@ void Principal_Mesero::on_ensalada_clicked()
         agre->setText("Agregar");
         agre->setFixedSize(QSize(300,50));
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+        QLabel *espacio=new QLabel();
+        espacio->setFixedSize(QSize(150,10));
+        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
          connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
+
          tarjetaPlatillo *ensalada=new tarjetaPlatillo();
          ensalada->llenar(ensalada1.value(1).toString(),ensalada1.value(2).toString(),ensalada1.value(0).toString());
          ui->menuEnsalada->addWidget(ensalada,Cr,0);
+         ui->menuEnsalada->addWidget(espacio,Cr,1);
 
         //seguna columna
         if(!ensalada1.next())
@@ -590,11 +599,15 @@ void Principal_Mesero::on_mar_clicked()
         agre->setFixedSize(QSize(300,50));
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
 
+        QLabel *espacio=new QLabel();
+        espacio->setFixedSize(QSize(150,10));
+        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
         connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *una=new tarjetaPlatillo();
         una->llenar(mar1.value(1).toString(),mar1.value(2).toString(),mar1.value(0).toString());
         ui->menuMar->addWidget(una,Cr,0);
-
+        ui->menuMar->addWidget(espacio,Cr,1);
 
         //seguna columna
         if(!mar1.next())
@@ -643,10 +656,15 @@ void Principal_Mesero::on_sopa_clicked()
         agre->setFixedSize(QSize(300,50));
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
 
+        QLabel *espacio=new QLabel();
+        espacio->setFixedSize(QSize(150,10));
+        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
         connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *sopa=new tarjetaPlatillo();
         sopa->llenar(sopa1.value(1).toString(),sopa1.value(2).toString(),sopa1.value(0).toString());
         ui->menuSopa->addWidget(sopa,Cr,0);
+        ui->menuSopa->addWidget(espacio,Cr,1);
 
 
         //seguna columna
@@ -694,10 +712,15 @@ void Principal_Mesero::on_entrada_clicked(){
          agregar1->setFixedSize(QSize(80,25));
          agregar1->setStyleSheet("background-color:rgb(201, 37, 49)");
 
+         QLabel *espacio=new QLabel();
+         espacio->setFixedSize(QSize(150,10));
+         //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
          connect(agregar1,&QPushButton::clicked,[=](){emit orden(*id);});
          tarjetaPlatillo *entrada=new tarjetaPlatillo();
          entrada->llenar(QslEntradas.value(1).toString(),QslEntradas.value(2).toString(),QslEntradas.value(0).toString());
          ui->menuEntradas->addWidget(entrada,Cr,0);
+         ui->menuEntradas->addWidget(espacio,Cr,1);
 
 
          if(!QslEntradas.next())
@@ -743,10 +766,15 @@ void Principal_Mesero::on_guarnicion_clicked(){
         agregar->setFixedSize(QSize(170,50));
         agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
 
+        QLabel *espacio=new QLabel();
+        espacio->setFixedSize(QSize(150,10));
+        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
         connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *guarnicion=new tarjetaPlatillo();
         guarnicion->llenar(QslGuarni.value(1).toString(),QslGuarni.value(2).toString(),QslGuarni.value(0).toString());
         ui->menuGuarnicion->addWidget(guarnicion,Cr,0);
+        ui->menuGuarnicion->addWidget(espacio,Cr,1);
 
         //seguna columna
         if(!QslGuarni.next())
@@ -794,10 +822,15 @@ void Principal_Mesero::on_reposteria_clicked(){
         agregar1->setFixedSize(QSize(180,50));
         agregar1->setStyleSheet("background-color:rgb(201, 37, 49)");
 
+        QLabel *espacio=new QLabel();
+        espacio->setFixedSize(QSize(150,10));
+        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
         connect(agregar1,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *postres=new tarjetaPlatillo();
         postres->llenar(QslPostres.value(1).toString(),QslPostres.value(2).toString(),QslPostres.value(0).toString());
         ui->menuReposteria->addWidget(postres,Cr,0);
+        ui->menuReposteria->addWidget(espacio,Cr,1);
 
 
         if(!QslPostres.next()){
@@ -843,10 +876,15 @@ void Principal_Mesero::on_infantil_clicked(){
         agregar->setFixedSize(QSize(180,50));
         agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
 
+        QLabel *espacio=new QLabel();
+        espacio->setFixedSize(QSize(150,10));
+        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
         connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *infatil=new tarjetaPlatillo();
         infatil->llenar(QslInfantil.value(1).toString(),QslInfantil.value(2).toString(),QslInfantil.value(0).toString());
         ui->menuInfantil->addWidget(infatil,Cr,0);
+        ui->menuInfantil->addWidget(espacio,Cr,1);
 
         //seguna columna
         if(!QslInfantil.next())
@@ -867,6 +905,7 @@ void Principal_Mesero::on_infantil_clicked(){
             tarjetaPlatillo *infatil=new tarjetaPlatillo();
             infatil->llenar(QslInfantil.value(1).toString(),QslInfantil.value(2).toString(),QslInfantil.value(0).toString());
             ui->menuInfantil->addWidget(infatil,Cr,2);
+
 
 
         }
@@ -898,10 +937,16 @@ void Principal_Mesero::on_coctel_clicked(){
         agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
         //agregar->setStyleSheet("color:rgb(241, 241, 241)");
 
+
+        QLabel *espacio=new QLabel();
+        espacio->setFixedSize(QSize(150,10));
+        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+
         connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *coctel=new tarjetaPlatillo();
         coctel->llenar(QslCoctel.value(1).toString(),QslCoctel.value(2).toString(),QslCoctel.value(0).toString());
         ui->menuCoteles->addWidget(coctel,Cr,0);
+        ui->menuCoteles->addWidget(espacio,Cr,1);
 
 
     }
@@ -921,6 +966,7 @@ void Principal_Mesero::on_coctel_clicked(){
             tarjetaPlatillo *coctel=new tarjetaPlatillo();
             coctel->llenar(QslCoctel.value(1).toString(),QslCoctel.value(2).toString(),QslCoctel.value(0).toString());
             ui->menuCoteles->addWidget(coctel,cr,2);
+
             cr++;
     }
 
