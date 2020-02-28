@@ -86,7 +86,7 @@ color: rgb(255, 255, 255);</string>
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -153,7 +153,7 @@ border: 2px solid #707070;</string>
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -214,6 +214,7 @@ border: 2px solid #707070;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);
+color:black;
 border: 2px solid #707070;</string>
       </property>
       <item>

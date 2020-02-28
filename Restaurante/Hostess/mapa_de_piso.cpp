@@ -1,5 +1,6 @@
 #include "mapa_de_piso.h"
 #include "ui_mapa_de_piso.h"
+#include "asignar_mesa.h"
 
 Mapa_de_Piso::Mapa_de_Piso(QWidget *parent) :
     QWidget(parent),
@@ -175,4 +176,109 @@ void Mapa_de_Piso::cargarMesas()
         }
 
     }
+}
+
+void Mapa_de_Piso::on_mesa_1_clicked()
+{
+    Asignar_mesa asignar("1");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_2_clicked()
+{
+    Asignar_mesa asignar("2");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_3_clicked()
+{
+    Asignar_mesa asignar("3");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_4_clicked()
+{
+    Asignar_mesa asignar("4");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_5_clicked()
+{
+    Asignar_mesa asignar("5");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_6_clicked()
+{
+    Asignar_mesa asignar("6");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_7_clicked()
+{
+    Asignar_mesa asignar("7");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_8_clicked()
+{
+    Asignar_mesa asignar("8");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_9_clicked()
+{
+    Asignar_mesa asignar("9");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_10_clicked()
+{
+    Asignar_mesa asignar("10");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_11_clicked()
+{
+    Asignar_mesa asignar("11");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_12_clicked()
+{
+    Asignar_mesa asignar("12");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_13_clicked()
+{
+    Asignar_mesa asignar("13");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_14_clicked()
+{
+    Asignar_mesa asignar("14");
+    asignar.exec();
+    cargarMesas();
+}
+
+void Mapa_de_Piso::on_mesa_15_clicked()
+{
+    Asignar_mesa asignar("15");
+    asignar.exec();
+    cargarMesas();
 }
