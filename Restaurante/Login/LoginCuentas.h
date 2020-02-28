@@ -3,7 +3,7 @@
 #include <QSqlQuery>
 #include <QSqlError>
 
-#include <./Login/TarjetaCuentas.h>
+#include <Login/TarjetaCuentas.h>
 #include "Login.h"
 
 namespace Ui {
