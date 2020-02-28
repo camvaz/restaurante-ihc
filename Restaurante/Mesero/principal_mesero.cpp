@@ -471,15 +471,14 @@ void Principal_Mesero::on_parilla_clicked()
         agre->setFixedSize(QSize(300,50));
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-        QLabel *espacio=new QLabel();
-        espacio->setFixedSize(QSize(150,10));
+
         //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
        connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
        tarjetaPlatillo *parilla=new tarjetaPlatillo();
        parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString());
        ui->menuParrila1->addWidget(parilla,Cr,0);
-       ui->menuParrila1->addWidget(espacio,Cr,1);
+       //ui->menuParrila1->addWidget(espacio,Cr,1);
 
 
          //seguna columna
@@ -501,9 +500,45 @@ void Principal_Mesero::on_parilla_clicked()
 
         tarjetaPlatillo *parilla=new tarjetaPlatillo();
         parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString());
-        ui->menuParrila1->addWidget(parilla,Cr,2);
+        ui->menuParrila1->addWidget(parilla,Cr,1);
 
-        Cr=Cr+3;
+
+        //tercera columna
+        if(!parrilla1.next())
+        {
+            QLabel *espacio=new QLabel();
+            espacio->setFixedSize(QSize(150,10));
+            ui->menuParrila1->addWidget(espacio,Cr,2);
+            Cr=Cr+3;
+        }
+        else{
+
+
+
+        tarjetaPlatillo *parilla=new tarjetaPlatillo();
+        parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString());
+        ui->menuParrila1->addWidget(parilla,Cr,2);
+        if(!parrilla1.next())
+        {
+            QLabel *espacio=new QLabel();
+            espacio->setFixedSize(QSize(150,10));
+            ui->menuParrila1->addWidget(espacio,Cr,3);
+            Cr=Cr+4;
+        }
+        else{
+
+
+
+        tarjetaPlatillo *parilla=new tarjetaPlatillo();
+        parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString());
+        ui->menuParrila1->addWidget(parilla,Cr,3);
+        Cr=Cr+5;
+
+        }
+
+        }
+
+
            }
 
     }
@@ -537,8 +572,7 @@ void Principal_Mesero::on_ensalada_clicked()
         agre->setFixedSize(QSize(300,50));
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-        QLabel *espacio=new QLabel();
-        espacio->setFixedSize(QSize(150,10));
+
         //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
          connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
@@ -546,7 +580,8 @@ void Principal_Mesero::on_ensalada_clicked()
          tarjetaPlatillo *ensalada=new tarjetaPlatillo();
          ensalada->llenar(ensalada1.value(1).toString(),ensalada1.value(2).toString(),ensalada1.value(0).toString());
          ui->menuEnsalada->addWidget(ensalada,Cr,0);
-         ui->menuEnsalada->addWidget(espacio,Cr,1);
+
+
 
         //seguna columna
         if(!ensalada1.next())
@@ -566,9 +601,60 @@ void Principal_Mesero::on_ensalada_clicked()
         connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *ensalada=new tarjetaPlatillo();
         ensalada->llenar(ensalada1.value(1).toString(),ensalada1.value(2).toString(),ensalada1.value(0).toString());
+        ui->menuEnsalada->addWidget(ensalada,Cr,1);
+
+        if(!ensalada1.next())
+        {
+            QLabel *espacio=new QLabel();
+            espacio->setFixedSize(QSize(150,10));
+            ui->menuEnsalada->addWidget(espacio,Cr,2);
+            Cr=Cr+3;
+        }
+        else {
+
+       QString *id=new QString(ensalada1.value(0).toString());
+
+
+        QPushButton *agre2=new QPushButton();
+        agre2->setText("Agregar");
+        agre2->setFixedSize(QSize(300,50));
+        agre2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+        connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
+        tarjetaPlatillo *ensalada=new tarjetaPlatillo();
+        ensalada->llenar(ensalada1.value(1).toString(),ensalada1.value(2).toString(),ensalada1.value(0).toString());
         ui->menuEnsalada->addWidget(ensalada,Cr,2);
 
-        Cr=Cr+3;
+        if(!ensalada1.next())
+        {
+            QLabel *espacio=new QLabel();
+            espacio->setFixedSize(QSize(150,10));
+            ui->menuEnsalada->addWidget(espacio,Cr,3);
+            Cr=Cr+4;
+        }
+        else {
+
+       QString *id=new QString(ensalada1.value(0).toString());
+
+
+        QPushButton *agre2=new QPushButton();
+        agre2->setText("Agregar");
+        agre2->setFixedSize(QSize(300,50));
+        agre2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+        connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
+        tarjetaPlatillo *ensalada=new tarjetaPlatillo();
+        ensalada->llenar(ensalada1.value(1).toString(),ensalada1.value(2).toString(),ensalada1.value(0).toString());
+        ui->menuEnsalada->addWidget(ensalada,Cr,3);
+
+        Cr=Cr+5;
+
+        }
+
+
+        }
+
+
         }
     }
 
@@ -599,15 +685,16 @@ void Principal_Mesero::on_mar_clicked()
         agre->setFixedSize(QSize(300,50));
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-        QLabel *espacio=new QLabel();
-        espacio->setFixedSize(QSize(150,10));
+        //QLabel *espacio=new QLabel();
+        //espacio->setFixedSize(QSize(150,10));
+         //ui->menuMar->addWidget(espacio,Cr,1);
         //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *una=new tarjetaPlatillo();
         una->llenar(mar1.value(1).toString(),mar1.value(2).toString(),mar1.value(0).toString());
         ui->menuMar->addWidget(una,Cr,0);
-        ui->menuMar->addWidget(espacio,Cr,1);
+
 
         //seguna columna
         if(!mar1.next())
@@ -626,8 +713,56 @@ void Principal_Mesero::on_mar_clicked()
 
         tarjetaPlatillo *dos=new tarjetaPlatillo();
         dos->llenar(mar1.value(1).toString(),mar1.value(2).toString(),mar1.value(0).toString());
+        ui->menuMar->addWidget(dos,Cr,1);
+
+
+        if(!mar1.next())
+        {
+            QLabel *espacio=new QLabel();
+            espacio->setFixedSize(QSize(150,10));
+             ui->menuMar->addWidget(espacio,Cr,2);
+            Cr=Cr+3;
+        }
+        else {
+
+       QString *id=new QString(mar1.value(0).toString());
+
+        QPushButton *agre2=new QPushButton();
+        agre2->setText("Agregar");
+        agre2->setFixedSize(QSize(300,50));
+        agre2->setStyleSheet("background-color:rgb(201, 37, 49)");
+        connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *dos=new tarjetaPlatillo();
+        dos->llenar(mar1.value(1).toString(),mar1.value(2).toString(),mar1.value(0).toString());
         ui->menuMar->addWidget(dos,Cr,2);
-        Cr=Cr+3;
+
+        if(!mar1.next())
+        {
+            QLabel *espacio=new QLabel();
+            espacio->setFixedSize(QSize(150,10));
+             ui->menuMar->addWidget(espacio,Cr,3);
+            Cr=Cr+4;
+        }
+        else {
+
+       QString *id=new QString(mar1.value(0).toString());
+
+        QPushButton *agre2=new QPushButton();
+        agre2->setText("Agregar");
+        agre2->setFixedSize(QSize(300,50));
+        agre2->setStyleSheet("background-color:rgb(201, 37, 49)");
+        connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
+
+        tarjetaPlatillo *dos=new tarjetaPlatillo();
+        dos->llenar(mar1.value(1).toString(),mar1.value(2).toString(),mar1.value(0).toString());
+        ui->menuMar->addWidget(dos,Cr,3);
+
+        Cr=Cr+5;
+
+        }
+
+        }
 
         }
     }
@@ -656,15 +791,15 @@ void Principal_Mesero::on_sopa_clicked()
         agre->setFixedSize(QSize(300,50));
         agre->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-        QLabel *espacio=new QLabel();
-        espacio->setFixedSize(QSize(150,10));
+       // QLabel *espacio=new QLabel();
+       // espacio->setFixedSize(QSize(150,10));
         //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *sopa=new tarjetaPlatillo();
         sopa->llenar(sopa1.value(1).toString(),sopa1.value(2).toString(),sopa1.value(0).toString());
         ui->menuSopa->addWidget(sopa,Cr,0);
-        ui->menuSopa->addWidget(espacio,Cr,1);
+        //ui->menuSopa->addWidget(espacio,Cr,1);
 
 
         //seguna columna
@@ -684,9 +819,57 @@ void Principal_Mesero::on_sopa_clicked()
         connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *sopa=new tarjetaPlatillo();
         sopa->llenar(sopa1.value(1).toString(),sopa1.value(2).toString(),sopa1.value(0).toString());
+        ui->menuSopa->addWidget(sopa,Cr,1);
+
+
+
+        if(!sopa1.next())
+        {
+            QLabel *espacio=new QLabel();
+            espacio->setFixedSize(QSize(150,10));
+             ui->menuMar->addWidget(espacio,Cr,2);
+             Cr=Cr+3;
+        }
+        else {
+
+        QString *id=new QString(sopa1.value(0).toString());
+
+        QPushButton *agre2=new QPushButton();
+        agre2->setText("Agregar");
+        agre2->setFixedSize(QSize(300,50));
+        agre2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+        connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
+        tarjetaPlatillo *sopa=new tarjetaPlatillo();
+        sopa->llenar(sopa1.value(1).toString(),sopa1.value(2).toString(),sopa1.value(0).toString());
         ui->menuSopa->addWidget(sopa,Cr,2);
 
-        Cr=Cr+3;
+        if(!sopa1.next())
+        {
+            QLabel *espacio=new QLabel();
+            espacio->setFixedSize(QSize(150,10));
+             ui->menuMar->addWidget(espacio,Cr,3);
+             Cr=Cr+4;
+        }
+        else {
+
+        QString *id=new QString(sopa1.value(0).toString());
+
+        QPushButton *agre2=new QPushButton();
+        agre2->setText("Agregar");
+        agre2->setFixedSize(QSize(300,50));
+        agre2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+        connect(agre2,&QPushButton::clicked,[=](){emit orden(*id);});
+        tarjetaPlatillo *sopa=new tarjetaPlatillo();
+        sopa->llenar(sopa1.value(1).toString(),sopa1.value(2).toString(),sopa1.value(0).toString());
+        ui->menuSopa->addWidget(sopa,Cr,3);
+        Cr=Cr+5;
+
+
+        }
+
+        }
 
         }
     }
@@ -712,19 +895,19 @@ void Principal_Mesero::on_entrada_clicked(){
          agregar1->setFixedSize(QSize(80,25));
          agregar1->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-         QLabel *espacio=new QLabel();
-         espacio->setFixedSize(QSize(150,10));
+
+
          //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
          connect(agregar1,&QPushButton::clicked,[=](){emit orden(*id);});
          tarjetaPlatillo *entrada=new tarjetaPlatillo();
          entrada->llenar(QslEntradas.value(1).toString(),QslEntradas.value(2).toString(),QslEntradas.value(0).toString());
          ui->menuEntradas->addWidget(entrada,Cr,0);
-         ui->menuEntradas->addWidget(espacio,Cr,1);
 
 
          if(!QslEntradas.next())
      {
+
 
        }else {
         //seguna columna
@@ -739,10 +922,58 @@ void Principal_Mesero::on_entrada_clicked(){
              connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
              tarjetaPlatillo *entrada=new tarjetaPlatillo();
              entrada->llenar(QslEntradas.value(1).toString(),QslEntradas.value(2).toString(),QslEntradas.value(0).toString());
-             ui->menuEntradas->addWidget(entrada,Cr,2);
+             ui->menuEntradas->addWidget(entrada,Cr,1);
 
+
+
+            if(!QslEntradas.next())
+        {
+                QLabel *espacio=new QLabel();
+                espacio->setFixedSize(QSize(150,10));
+                ui->menuEntradas->addWidget(espacio,Cr,2);
+                 Cr=Cr+3;
+          }else {
+           //seguna columna
+
+                QString *id=new QString(QslEntradas.value(0).toString());
+
+                QPushButton *agregar2=new QPushButton();
+                agregar2->setText("Agregar");
+                agregar2->setFixedSize(QSize(80,25));
+                agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+                connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
+                tarjetaPlatillo *entrada=new tarjetaPlatillo();
+                entrada->llenar(QslEntradas.value(1).toString(),QslEntradas.value(2).toString(),QslEntradas.value(0).toString());
+                ui->menuEntradas->addWidget(entrada,Cr,2);
+
+
+                if(!QslEntradas.next())
+            {
+                    QLabel *espacio=new QLabel();
+                    espacio->setFixedSize(QSize(150,10));
+                    ui->menuEntradas->addWidget(espacio,Cr,3);
+                     Cr=Cr+4;
+              }else {
+               //seguna columna
+
+                    QString *id=new QString(QslEntradas.value(0).toString());
+
+                    QPushButton *agregar2=new QPushButton();
+                    agregar2->setText("Agregar");
+                    agregar2->setFixedSize(QSize(80,25));
+                    agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+                    connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
+                    tarjetaPlatillo *entrada=new tarjetaPlatillo();
+                    entrada->llenar(QslEntradas.value(1).toString(),QslEntradas.value(2).toString(),QslEntradas.value(0).toString());
+                    ui->menuEntradas->addWidget(entrada,Cr,3);
+                   Cr=Cr+5;
+                   }
+
+               }
             }
-           Cr=Cr+5;
+
      }
 
 }
@@ -766,15 +997,14 @@ void Principal_Mesero::on_guarnicion_clicked(){
         agregar->setFixedSize(QSize(170,50));
         agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-        QLabel *espacio=new QLabel();
-        espacio->setFixedSize(QSize(150,10));
+
         //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *guarnicion=new tarjetaPlatillo();
         guarnicion->llenar(QslGuarni.value(1).toString(),QslGuarni.value(2).toString(),QslGuarni.value(0).toString());
         ui->menuGuarnicion->addWidget(guarnicion,Cr,0);
-        ui->menuGuarnicion->addWidget(espacio,Cr,1);
+
 
         //seguna columna
         if(!QslGuarni.next())
@@ -794,12 +1024,61 @@ void Principal_Mesero::on_guarnicion_clicked(){
             connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
             tarjetaPlatillo *guarnicion=new tarjetaPlatillo();
             guarnicion->llenar(QslGuarni.value(1).toString(),QslGuarni.value(2).toString(),QslGuarni.value(0).toString());
-            ui->menuGuarnicion->addWidget(guarnicion,Cr,2);
+            ui->menuGuarnicion->addWidget(guarnicion,Cr,1);
 
 
+            if(!QslGuarni.next())
+            {
+                QLabel *espacio=new QLabel();
+                espacio->setFixedSize(QSize(150,10));
+                ui->menuGuarnicion->addWidget(espacio,Cr,2);
+                Cr=Cr+3;
+            }
+            else {
+
+                QString *id=new QString(QslGuarni.value(0).toString());
+
+
+                QPushButton *agregar2=new QPushButton();
+                agregar2->setText("Agregar");
+                agregar2->setFixedSize(QSize(180,50));
+                agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+                connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
+                tarjetaPlatillo *guarnicion=new tarjetaPlatillo();
+                guarnicion->llenar(QslGuarni.value(1).toString(),QslGuarni.value(2).toString(),QslGuarni.value(0).toString());
+                ui->menuGuarnicion->addWidget(guarnicion,Cr,2);
+
+
+                if(!QslGuarni.next())
+                {
+                    QLabel *espacio=new QLabel();
+                    espacio->setFixedSize(QSize(150,10));
+                    ui->menuGuarnicion->addWidget(espacio,Cr,3);
+                    Cr=Cr+4;
+                }
+                else {
+
+                    QString *id=new QString(QslGuarni.value(0).toString());
+
+
+                    QPushButton *agregar2=new QPushButton();
+                    agregar2->setText("Agregar");
+                    agregar2->setFixedSize(QSize(180,50));
+                    agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+                    connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
+                    tarjetaPlatillo *guarnicion=new tarjetaPlatillo();
+                    guarnicion->llenar(QslGuarni.value(1).toString(),QslGuarni.value(2).toString(),QslGuarni.value(0).toString());
+                    ui->menuGuarnicion->addWidget(guarnicion,Cr,3);
+
+                    Cr=Cr+5;
+
+                }
+
+            }
         }
 
-     Cr+=4;
     }
 
 }
@@ -822,15 +1101,13 @@ void Principal_Mesero::on_reposteria_clicked(){
         agregar1->setFixedSize(QSize(180,50));
         agregar1->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-        QLabel *espacio=new QLabel();
-        espacio->setFixedSize(QSize(150,10));
         //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         connect(agregar1,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *postres=new tarjetaPlatillo();
         postres->llenar(QslPostres.value(1).toString(),QslPostres.value(2).toString(),QslPostres.value(0).toString());
         ui->menuReposteria->addWidget(postres,Cr,0);
-        ui->menuReposteria->addWidget(espacio,Cr,1);
+
 
 
         if(!QslPostres.next()){
@@ -849,10 +1126,67 @@ void Principal_Mesero::on_reposteria_clicked(){
             connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
             tarjetaPlatillo *postres=new tarjetaPlatillo();
             postres->llenar(QslPostres.value(1).toString(),QslPostres.value(2).toString(),QslPostres.value(0).toString());
-            ui->menuReposteria->addWidget(postres,Cr,2);
+            ui->menuReposteria->addWidget(postres,Cr,1);
 
-           }
-          Cr=Cr+5;
+
+            if(!QslPostres.next()){
+
+
+                QLabel *espacio=new QLabel();
+                espacio->setFixedSize(QSize(150,10));
+                 ui->menuReposteria->addWidget(espacio,Cr,2);
+
+                Cr=Cr+3;
+
+          }else {
+           //seguna columna
+
+                QString *id=new QString(QslPostres.value(0).toString());
+
+
+                QPushButton *agregar2=new QPushButton();
+                agregar2->setText("Agregar");
+                agregar2->setFixedSize(QSize(180,50));
+                agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+                connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
+                tarjetaPlatillo *postres=new tarjetaPlatillo();
+                postres->llenar(QslPostres.value(1).toString(),QslPostres.value(2).toString(),QslPostres.value(0).toString());
+                ui->menuReposteria->addWidget(postres,Cr,2);
+
+
+
+                if(!QslPostres.next()){
+
+
+                    QLabel *espacio=new QLabel();
+                    espacio->setFixedSize(QSize(150,10));
+                     ui->menuReposteria->addWidget(espacio,Cr,3);
+
+                    Cr=Cr+4;
+
+              }else {
+               //seguna columna
+
+                    QString *id=new QString(QslPostres.value(0).toString());
+
+
+                    QPushButton *agregar2=new QPushButton();
+                    agregar2->setText("Agregar");
+                    agregar2->setFixedSize(QSize(180,50));
+                    agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+                    connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
+                    tarjetaPlatillo *postres=new tarjetaPlatillo();
+                    postres->llenar(QslPostres.value(1).toString(),QslPostres.value(2).toString(),QslPostres.value(0).toString());
+                    ui->menuReposteria->addWidget(postres,Cr,3);
+
+                    Cr=Cr+5;
+                   }
+
+               }
+        }
+
     }
 
 }
@@ -876,15 +1210,12 @@ void Principal_Mesero::on_infantil_clicked(){
         agregar->setFixedSize(QSize(180,50));
         agregar->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-        QLabel *espacio=new QLabel();
-        espacio->setFixedSize(QSize(150,10));
         //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
         connect(agregar,&QPushButton::clicked,[=](){emit orden(*id);});
         tarjetaPlatillo *infatil=new tarjetaPlatillo();
         infatil->llenar(QslInfantil.value(1).toString(),QslInfantil.value(2).toString(),QslInfantil.value(0).toString());
         ui->menuInfantil->addWidget(infatil,Cr,0);
-        ui->menuInfantil->addWidget(espacio,Cr,1);
 
         //seguna columna
         if(!QslInfantil.next())
@@ -904,13 +1235,68 @@ void Principal_Mesero::on_infantil_clicked(){
 
             tarjetaPlatillo *infatil=new tarjetaPlatillo();
             infatil->llenar(QslInfantil.value(1).toString(),QslInfantil.value(2).toString(),QslInfantil.value(0).toString());
-            ui->menuInfantil->addWidget(infatil,Cr,2);
+            ui->menuInfantil->addWidget(infatil,Cr,1);
 
 
+
+         if(!QslInfantil.next())
+         {
+
+             QLabel *espacio=new QLabel();
+             espacio->setFixedSize(QSize(150,10));
+
+             ui->menuInfantil->addWidget(espacio,Cr,2);
+             Cr=Cr+3;
+         }
+         else {
+
+             QString *id=new QString(QslInfantil.value(0).toString());
+
+             QPushButton *agregar2=new QPushButton();
+             agregar2->setText("Agregar");
+             agregar2->setFixedSize(QSize(180,50));
+             agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+             connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
+
+             tarjetaPlatillo *infatil=new tarjetaPlatillo();
+             infatil->llenar(QslInfantil.value(1).toString(),QslInfantil.value(2).toString(),QslInfantil.value(0).toString());
+             ui->menuInfantil->addWidget(infatil,Cr,2);
+
+
+             if(!QslInfantil.next())
+             {
+
+                 QLabel *espacio=new QLabel();
+                 espacio->setFixedSize(QSize(150,10));
+
+                 ui->menuInfantil->addWidget(espacio,Cr,3);
+                 Cr=Cr+4;
+             }
+             else {
+
+                 QString *id=new QString(QslInfantil.value(0).toString());
+
+                 QPushButton *agregar2=new QPushButton();
+                 agregar2->setText("Agregar");
+                 agregar2->setFixedSize(QSize(180,50));
+                 agregar2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+                 connect(agregar2,&QPushButton::clicked,[=](){emit orden(*id);});
+
+                 tarjetaPlatillo *infatil=new tarjetaPlatillo();
+                 infatil->llenar(QslInfantil.value(1).toString(),QslInfantil.value(2).toString(),QslInfantil.value(0).toString());
+                 ui->menuInfantil->addWidget(infatil,Cr,3);
+                Cr=Cr+5;
+
+
+             }
+
+         }
 
         }
 
-     Cr+=4;
+
     }
 
 

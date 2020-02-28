@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>201</width>
+    <width>160</width>
     <height>180</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>201</width>
+    <width>160</width>
     <height>180</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>205</width>
+    <width>160</width>
     <height>180</height>
    </size>
   </property>
@@ -35,14 +35,14 @@ color: white;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>201</width>
-     <height>181</height>
+     <width>160</width>
+     <height>180</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>201</width>
-     <height>181</height>
+     <width>160</width>
+     <height>180</height>
     </size>
    </property>
    <property name="styleSheet">
@@ -56,13 +56,13 @@ border-radius:20px;</string>
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>181</width>
-      <height>161</height>
+      <width>202</width>
+      <height>170</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -70,13 +70,13 @@ border-radius:20px;</string>
       <widget class="QPlainTextEdit" name="nombrePro">
        <property name="minimumSize">
         <size>
-         <width>181</width>
+         <width>160</width>
          <height>111</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>181</width>
+         <width>160</width>
          <height>111</height>
         </size>
        </property>
@@ -140,13 +140,13 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
          </property>
          <property name="minimumSize">
           <size>
-           <width>20</width>
+           <width>10</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>16777215</width>
+           <width>100</width>
            <height>21</height>
           </size>
          </property>
@@ -187,6 +187,18 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <pointsize>12</pointsize>
@@ -211,6 +223,12 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
            <height>0</height>
           </size>
          </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <pointsize>12</pointsize>
@@ -233,19 +251,19 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>201</width>
+      <width>160</width>
       <height>180</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>201</width>
+      <width>160</width>
       <height>180</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
-      <width>201</width>
+      <width>160</width>
       <height>180</height>
      </size>
     </property>
@@ -258,11 +276,6 @@ border:none;</string>
     </property>
    </widget>
   </widget>
-  <zorder>frame</zorder>
-  <zorder>Precio</zorder>
-  <zorder>idPro</zorder>
-  <zorder>nombrePro</zorder>
-  <zorder>horizontalSpacer</zorder>
  </widget>
  <resources/>
  <connections/>

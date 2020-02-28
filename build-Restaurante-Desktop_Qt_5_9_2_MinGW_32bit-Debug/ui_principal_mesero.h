@@ -272,6 +272,7 @@ public:
     QGridLayout *gridLayout;
     QLabel *label_8;
     QLabel *label_24;
+    QSpacerItem *verticalSpacer_18;
     QScrollArea *scrollArea_10;
     QWidget *scrollAreaWidgetContents_10;
     QGridLayout *gridLayout_11;
@@ -279,24 +280,71 @@ public:
     QHBoxLayout *horizontalLayout_25;
     QLabel *label_273;
     QFrame *line_13;
-    QSpacerItem *verticalSpacer_18;
+    QSpacerItem *verticalSpacer_32;
     QWidget *page_13;
-    QFrame *line_27;
     QGridLayout *gridLayout_17;
-    QScrollArea *scrollArea_5;
-    QWidget *scrollAreaWidgetContents_5;
-    QGridLayout *gridLayout_6;
-    QGridLayout *menuVinos;
+    QFrame *line_27;
     QHBoxLayout *horizontalLayout_26;
     QLabel *label_540;
     QFrame *line_26;
+    QSpacerItem *verticalSpacer_26;
     QSpacerItem *verticalSpacer_9;
+    QSpacerItem *verticalSpacer_27;
+    QVBoxLayout *verticalLayout_24;
+    QHBoxLayout *horizontalLayout_52;
+    QSpacerItem *horizontalSpacer_92;
+    QVBoxLayout *verticalLayout_19;
+    QPushButton *chilenos;
+    QLabel *label_31;
+    QSpacerItem *horizontalSpacer_96;
+    QVBoxLayout *verticalLayout_20;
+    QPushButton *argentinos;
+    QLabel *label_42;
+    QSpacerItem *horizontalSpacer_97;
+    QVBoxLayout *verticalLayout_21;
+    QPushButton *mexicanos;
+    QLabel *label_43;
+    QSpacerItem *horizontalSpacer_98;
+    QVBoxLayout *verticalLayout_22;
+    QPushButton *espanol;
+    QLabel *label_46;
+    QSpacerItem *horizontalSpacer_99;
+    QVBoxLayout *verticalLayout_23;
+    QPushButton *otro_paises;
+    QLabel *label_44;
+    QSpacerItem *horizontalSpacer_93;
+    QSpacerItem *verticalSpacer_25;
+    QHBoxLayout *horizontalLayout_53;
+    QSpacerItem *horizontalSpacer_94;
+    QVBoxLayout *verticalLayout_18;
+    QPushButton *espumuso;
+    QLabel *label_45;
+    QSpacerItem *horizontalSpacer_100;
+    QVBoxLayout *verticalLayout_17;
+    QPushButton *blanco_mexi;
+    QLabel *label_50;
+    QSpacerItem *horizontalSpacer_101;
+    QVBoxLayout *verticalLayout_16;
+    QPushButton *blanco;
+    QLabel *label_47;
+    QSpacerItem *horizontalSpacer_102;
+    QVBoxLayout *verticalLayout_15;
+    QPushButton *rosado;
+    QLabel *label_48;
+    QSpacerItem *horizontalSpacer_103;
+    QVBoxLayout *verticalLayout_14;
+    QPushButton *postre;
+    QLabel *label_49;
+    QSpacerItem *horizontalSpacer_95;
     QWidget *page_14;
-    QWidget *layoutWidget;
+    QGridLayout *gridLayout_29;
+    QSpacerItem *verticalSpacer_29;
     QHBoxLayout *horizontalLayout_40;
     QLabel *label_27;
     QFrame *line_19;
-    QWidget *layoutWidget1;
+    QSpacerItem *verticalSpacer_30;
+    QHBoxLayout *horizontalLayout_42;
+    QSpacerItem *horizontalSpacer_72;
     QVBoxLayout *verticalLayout_13;
     QGridLayout *gridLayout_12;
     QLabel *label_25;
@@ -351,6 +399,18 @@ public:
     QPushButton *pushButton;
     QSpacerItem *horizontalSpacer_7;
     QSpacerItem *verticalSpacer_22;
+    QSpacerItem *horizontalSpacer_73;
+    QSpacerItem *verticalSpacer_31;
+    QWidget *page_15;
+    QGridLayout *gridLayout_28;
+    QHBoxLayout *horizontalLayout_41;
+    QLabel *label_30;
+    QFrame *line_20;
+    QScrollArea *scrollArea_5;
+    QWidget *scrollAreaWidgetContents_5;
+    QGridLayout *gridLayout_6;
+    QGridLayout *menuVinos;
+    QSpacerItem *verticalSpacer_28;
     QFrame *line;
     QFrame *line_14;
     QFrame *line_15;
@@ -428,7 +488,7 @@ public:
 "background-color:#F1F1F1;"));
         paginas = new QStackedWidget(centralwidget);
         paginas->setObjectName(QStringLiteral("paginas"));
-        paginas->setGeometry(QRect(80, 0, 801, 583));
+        paginas->setGeometry(QRect(80, 0, 801, 581));
         paginas->setMinimumSize(QSize(801, 581));
         paginas->setMaximumSize(QSize(801, 16777215));
         paginas->setStyleSheet(QStringLiteral(""));
@@ -1194,14 +1254,18 @@ public:
 
         scrollArea = new QScrollArea(page_3);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setStyleSheet(QStringLiteral("border:none;"));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 781, 509));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 57, 24));
         gridLayout_2 = new QGridLayout(scrollAreaWidgetContents);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
         menuParrila1 = new QGridLayout();
+        menuParrila1->setSpacing(3);
         menuParrila1->setObjectName(QStringLiteral("menuParrila1"));
+        menuParrila1->setSizeConstraint(QLayout::SetDefaultConstraint);
+        menuParrila1->setContentsMargins(-1, -1, 0, -1);
 
         gridLayout_2->addLayout(menuParrila1, 0, 0, 1, 1);
 
@@ -1242,10 +1306,11 @@ public:
 
         scrollArea_2 = new QScrollArea(page_4);
         scrollArea_2->setObjectName(QStringLiteral("scrollArea_2"));
+        scrollArea_2->setStyleSheet(QStringLiteral("border:none;"));
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QStringLiteral("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 781, 509));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 57, 24));
         gridLayout_3 = new QGridLayout(scrollAreaWidgetContents_2);
         gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
         menuEnsalada = new QGridLayout();
@@ -1268,10 +1333,11 @@ public:
         gridLayout_22->setObjectName(QStringLiteral("gridLayout_22"));
         scrollArea_3 = new QScrollArea(page_5);
         scrollArea_3->setObjectName(QStringLiteral("scrollArea_3"));
+        scrollArea_3->setStyleSheet(QStringLiteral("border:none;"));
         scrollArea_3->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QStringLiteral("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 781, 509));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 57, 24));
         gridLayout_4 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
         menuMar = new QGridLayout();
@@ -1316,10 +1382,11 @@ public:
         gridLayout_21->setObjectName(QStringLiteral("gridLayout_21"));
         scrollArea_4 = new QScrollArea(page_6);
         scrollArea_4->setObjectName(QStringLiteral("scrollArea_4"));
+        scrollArea_4->setStyleSheet(QStringLiteral("border:none;"));
         scrollArea_4->setWidgetResizable(true);
         scrollAreaWidgetContents_4 = new QWidget();
         scrollAreaWidgetContents_4->setObjectName(QStringLiteral("scrollAreaWidgetContents_4"));
-        scrollAreaWidgetContents_4->setGeometry(QRect(0, 0, 63, 20));
+        scrollAreaWidgetContents_4->setGeometry(QRect(0, 0, 57, 24));
         gridLayout_5 = new QGridLayout(scrollAreaWidgetContents_4);
         gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
         menuSopa = new QGridLayout();
@@ -1364,10 +1431,11 @@ public:
         gridLayout_20->setObjectName(QStringLiteral("gridLayout_20"));
         scrollArea_6 = new QScrollArea(page_7);
         scrollArea_6->setObjectName(QStringLiteral("scrollArea_6"));
+        scrollArea_6->setStyleSheet(QStringLiteral("border:none;"));
         scrollArea_6->setWidgetResizable(true);
         scrollAreaWidgetContents_6 = new QWidget();
         scrollAreaWidgetContents_6->setObjectName(QStringLiteral("scrollAreaWidgetContents_6"));
-        scrollAreaWidgetContents_6->setGeometry(QRect(0, 0, 63, 20));
+        scrollAreaWidgetContents_6->setGeometry(QRect(0, 0, 57, 24));
         gridLayout_7 = new QGridLayout(scrollAreaWidgetContents_6);
         gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
         menuEntradas = new QGridLayout();
@@ -1433,10 +1501,11 @@ public:
 
         scrollArea_7 = new QScrollArea(page_8);
         scrollArea_7->setObjectName(QStringLiteral("scrollArea_7"));
+        scrollArea_7->setStyleSheet(QStringLiteral("border:none;"));
         scrollArea_7->setWidgetResizable(true);
         scrollAreaWidgetContents_7 = new QWidget();
         scrollAreaWidgetContents_7->setObjectName(QStringLiteral("scrollAreaWidgetContents_7"));
-        scrollAreaWidgetContents_7->setGeometry(QRect(0, 0, 63, 20));
+        scrollAreaWidgetContents_7->setGeometry(QRect(0, 0, 57, 24));
         gridLayout_8 = new QGridLayout(scrollAreaWidgetContents_7);
         gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
         menuGuarnicion = new QGridLayout();
@@ -1481,10 +1550,11 @@ public:
 
         scrollArea_8 = new QScrollArea(page_9);
         scrollArea_8->setObjectName(QStringLiteral("scrollArea_8"));
+        scrollArea_8->setStyleSheet(QStringLiteral("border:none;"));
         scrollArea_8->setWidgetResizable(true);
         scrollAreaWidgetContents_8 = new QWidget();
         scrollAreaWidgetContents_8->setObjectName(QStringLiteral("scrollAreaWidgetContents_8"));
-        scrollAreaWidgetContents_8->setGeometry(QRect(0, 0, 63, 20));
+        scrollAreaWidgetContents_8->setGeometry(QRect(0, 0, 57, 24));
         gridLayout_9 = new QGridLayout(scrollAreaWidgetContents_8);
         gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
         menuReposteria = new QGridLayout();
@@ -1529,10 +1599,11 @@ public:
 
         scrollArea_9 = new QScrollArea(page_10);
         scrollArea_9->setObjectName(QStringLiteral("scrollArea_9"));
+        scrollArea_9->setStyleSheet(QStringLiteral("border:none;"));
         scrollArea_9->setWidgetResizable(true);
         scrollAreaWidgetContents_9 = new QWidget();
         scrollAreaWidgetContents_9->setObjectName(QStringLiteral("scrollAreaWidgetContents_9"));
-        scrollAreaWidgetContents_9->setGeometry(QRect(0, 0, 63, 20));
+        scrollAreaWidgetContents_9->setGeometry(QRect(0, 0, 57, 24));
         gridLayout_10 = new QGridLayout(scrollAreaWidgetContents_9);
         gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
         menuInfantil = new QGridLayout();
@@ -1703,7 +1774,11 @@ public:
         gridLayout->addWidget(label_24, 0, 1, 1, 1);
 
 
-        gridLayout_24->addLayout(gridLayout, 2, 0, 1, 1);
+        gridLayout_24->addLayout(gridLayout, 3, 0, 1, 1);
+
+        verticalSpacer_18 = new QSpacerItem(20, 14, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout_24->addItem(verticalSpacer_18, 0, 0, 1, 1);
 
         scrollArea_10 = new QScrollArea(page_12);
         scrollArea_10->setObjectName(QStringLiteral("scrollArea_10"));
@@ -1711,7 +1786,7 @@ public:
         scrollArea_10->setWidgetResizable(true);
         scrollAreaWidgetContents_10 = new QWidget();
         scrollAreaWidgetContents_10->setObjectName(QStringLiteral("scrollAreaWidgetContents_10"));
-        scrollAreaWidgetContents_10->setGeometry(QRect(0, 0, 783, 487));
+        scrollAreaWidgetContents_10->setGeometry(QRect(0, 0, 779, 434));
         gridLayout_11 = new QGridLayout(scrollAreaWidgetContents_10);
         gridLayout_11->setObjectName(QStringLiteral("gridLayout_11"));
         menuCoteles = new QGridLayout();
@@ -1721,7 +1796,7 @@ public:
 
         scrollArea_10->setWidget(scrollAreaWidgetContents_10);
 
-        gridLayout_24->addWidget(scrollArea_10, 3, 0, 1, 1);
+        gridLayout_24->addWidget(scrollArea_10, 4, 0, 1, 1);
 
         horizontalLayout_25 = new QHBoxLayout();
         horizontalLayout_25->setObjectName(QStringLiteral("horizontalLayout_25"));
@@ -1746,36 +1821,21 @@ public:
 
         gridLayout_24->addLayout(horizontalLayout_25, 1, 0, 1, 1);
 
-        verticalSpacer_18 = new QSpacerItem(20, 15, QSizePolicy::Minimum, QSizePolicy::Fixed);
+        verticalSpacer_32 = new QSpacerItem(20, 25, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
-        gridLayout_24->addItem(verticalSpacer_18, 0, 0, 1, 1);
+        gridLayout_24->addItem(verticalSpacer_32, 2, 0, 1, 1);
 
         paginas->addWidget(page_12);
         page_13 = new QWidget();
         page_13->setObjectName(QStringLiteral("page_13"));
-        line_27 = new QFrame(page_13);
-        line_27->setObjectName(QStringLiteral("line_27"));
-        line_27->setGeometry(QRect(180, 372, 16, 18));
-        line_27->setFrameShape(QFrame::VLine);
-        line_27->setFrameShadow(QFrame::Sunken);
         gridLayout_17 = new QGridLayout(page_13);
         gridLayout_17->setObjectName(QStringLiteral("gridLayout_17"));
-        scrollArea_5 = new QScrollArea(page_13);
-        scrollArea_5->setObjectName(QStringLiteral("scrollArea_5"));
-        scrollArea_5->setWidgetResizable(true);
-        scrollAreaWidgetContents_5 = new QWidget();
-        scrollAreaWidgetContents_5->setObjectName(QStringLiteral("scrollAreaWidgetContents_5"));
-        scrollAreaWidgetContents_5->setGeometry(QRect(0, 0, 781, 509));
-        gridLayout_6 = new QGridLayout(scrollAreaWidgetContents_5);
-        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
-        menuVinos = new QGridLayout();
-        menuVinos->setObjectName(QStringLiteral("menuVinos"));
+        line_27 = new QFrame(page_13);
+        line_27->setObjectName(QStringLiteral("line_27"));
+        line_27->setFrameShape(QFrame::VLine);
+        line_27->setFrameShadow(QFrame::Sunken);
 
-        gridLayout_6->addLayout(menuVinos, 0, 0, 1, 1);
-
-        scrollArea_5->setWidget(scrollAreaWidgetContents_5);
-
-        gridLayout_17->addWidget(scrollArea_5, 2, 0, 1, 1);
+        gridLayout_17->addWidget(line_27, 4, 1, 1, 1);
 
         horizontalLayout_26 = new QHBoxLayout();
         horizontalLayout_26->setObjectName(QStringLiteral("horizontalLayout_26"));
@@ -1795,6 +1855,7 @@ public:
         line_26 = new QFrame(page_13);
         line_26->setObjectName(QStringLiteral("line_26"));
         line_26->setMinimumSize(QSize(670, 0));
+        line_26->setMaximumSize(QSize(16777215, 3));
         line_26->setStyleSheet(QStringLiteral("background-color: rgb(112, 112, 112);"));
         line_26->setFrameShape(QFrame::HLine);
         line_26->setFrameShadow(QFrame::Sunken);
@@ -1802,30 +1863,353 @@ public:
         horizontalLayout_26->addWidget(line_26);
 
 
-        gridLayout_17->addLayout(horizontalLayout_26, 1, 0, 1, 1);
+        gridLayout_17->addLayout(horizontalLayout_26, 1, 0, 1, 2);
 
-        verticalSpacer_9 = new QSpacerItem(20, 15, QSizePolicy::Minimum, QSizePolicy::Fixed);
+        verticalSpacer_26 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout_17->addItem(verticalSpacer_9, 0, 0, 1, 1);
+        gridLayout_17->addItem(verticalSpacer_26, 5, 0, 1, 1);
+
+        verticalSpacer_9 = new QSpacerItem(20, 30, QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+        gridLayout_17->addItem(verticalSpacer_9, 2, 0, 1, 1);
+
+        verticalSpacer_27 = new QSpacerItem(20, 15, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout_17->addItem(verticalSpacer_27, 0, 0, 1, 1);
+
+        verticalLayout_24 = new QVBoxLayout();
+        verticalLayout_24->setObjectName(QStringLiteral("verticalLayout_24"));
+        horizontalLayout_52 = new QHBoxLayout();
+        horizontalLayout_52->setObjectName(QStringLiteral("horizontalLayout_52"));
+        horizontalSpacer_92 = new QSpacerItem(20, 20, QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);
+
+        horizontalLayout_52->addItem(horizontalSpacer_92);
+
+        verticalLayout_19 = new QVBoxLayout();
+        verticalLayout_19->setObjectName(QStringLiteral("verticalLayout_19"));
+        chilenos = new QPushButton(page_13);
+        chilenos->setObjectName(QStringLiteral("chilenos"));
+        chilenos->setMinimumSize(QSize(121, 111));
+        chilenos->setMaximumSize(QSize(121, 111));
+        chilenos->setCursor(QCursor(Qt::OpenHandCursor));
+        chilenos->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        chilenos->setIconSize(QSize(180, 140));
+
+        verticalLayout_19->addWidget(chilenos);
+
+        label_31 = new QLabel(page_13);
+        label_31->setObjectName(QStringLiteral("label_31"));
+        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(label_31->sizePolicy().hasHeightForWidth());
+        label_31->setSizePolicy(sizePolicy2);
+        label_31->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_19->addWidget(label_31, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_52->addLayout(verticalLayout_19);
+
+        horizontalSpacer_96 = new QSpacerItem(25, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_52->addItem(horizontalSpacer_96);
+
+        verticalLayout_20 = new QVBoxLayout();
+        verticalLayout_20->setObjectName(QStringLiteral("verticalLayout_20"));
+        argentinos = new QPushButton(page_13);
+        argentinos->setObjectName(QStringLiteral("argentinos"));
+        argentinos->setMinimumSize(QSize(121, 111));
+        argentinos->setMaximumSize(QSize(121, 111));
+        argentinos->setCursor(QCursor(Qt::OpenHandCursor));
+        argentinos->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        argentinos->setIconSize(QSize(150, 140));
+
+        verticalLayout_20->addWidget(argentinos);
+
+        label_42 = new QLabel(page_13);
+        label_42->setObjectName(QStringLiteral("label_42"));
+        sizePolicy2.setHeightForWidth(label_42->sizePolicy().hasHeightForWidth());
+        label_42->setSizePolicy(sizePolicy2);
+        label_42->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_20->addWidget(label_42, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_52->addLayout(verticalLayout_20);
+
+        horizontalSpacer_97 = new QSpacerItem(25, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_52->addItem(horizontalSpacer_97);
+
+        verticalLayout_21 = new QVBoxLayout();
+        verticalLayout_21->setObjectName(QStringLiteral("verticalLayout_21"));
+        mexicanos = new QPushButton(page_13);
+        mexicanos->setObjectName(QStringLiteral("mexicanos"));
+        mexicanos->setMinimumSize(QSize(121, 111));
+        mexicanos->setMaximumSize(QSize(121, 111));
+        mexicanos->setCursor(QCursor(Qt::OpenHandCursor));
+        mexicanos->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        mexicanos->setIconSize(QSize(150, 140));
+
+        verticalLayout_21->addWidget(mexicanos);
+
+        label_43 = new QLabel(page_13);
+        label_43->setObjectName(QStringLiteral("label_43"));
+        sizePolicy2.setHeightForWidth(label_43->sizePolicy().hasHeightForWidth());
+        label_43->setSizePolicy(sizePolicy2);
+        label_43->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_21->addWidget(label_43, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_52->addLayout(verticalLayout_21);
+
+        horizontalSpacer_98 = new QSpacerItem(25, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_52->addItem(horizontalSpacer_98);
+
+        verticalLayout_22 = new QVBoxLayout();
+        verticalLayout_22->setObjectName(QStringLiteral("verticalLayout_22"));
+        espanol = new QPushButton(page_13);
+        espanol->setObjectName(QStringLiteral("espanol"));
+        espanol->setMinimumSize(QSize(121, 111));
+        espanol->setMaximumSize(QSize(121, 111));
+        espanol->setCursor(QCursor(Qt::OpenHandCursor));
+        espanol->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        espanol->setIconSize(QSize(150, 140));
+
+        verticalLayout_22->addWidget(espanol);
+
+        label_46 = new QLabel(page_13);
+        label_46->setObjectName(QStringLiteral("label_46"));
+        sizePolicy2.setHeightForWidth(label_46->sizePolicy().hasHeightForWidth());
+        label_46->setSizePolicy(sizePolicy2);
+        label_46->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_22->addWidget(label_46, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_52->addLayout(verticalLayout_22);
+
+        horizontalSpacer_99 = new QSpacerItem(25, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_52->addItem(horizontalSpacer_99);
+
+        verticalLayout_23 = new QVBoxLayout();
+        verticalLayout_23->setObjectName(QStringLiteral("verticalLayout_23"));
+        otro_paises = new QPushButton(page_13);
+        otro_paises->setObjectName(QStringLiteral("otro_paises"));
+        otro_paises->setMinimumSize(QSize(121, 111));
+        otro_paises->setMaximumSize(QSize(121, 111));
+        otro_paises->setCursor(QCursor(Qt::OpenHandCursor));
+        otro_paises->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        otro_paises->setIconSize(QSize(150, 140));
+
+        verticalLayout_23->addWidget(otro_paises);
+
+        label_44 = new QLabel(page_13);
+        label_44->setObjectName(QStringLiteral("label_44"));
+        sizePolicy1.setHeightForWidth(label_44->sizePolicy().hasHeightForWidth());
+        label_44->setSizePolicy(sizePolicy1);
+        label_44->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_23->addWidget(label_44, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_52->addLayout(verticalLayout_23);
+
+        horizontalSpacer_93 = new QSpacerItem(20, 20, QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);
+
+        horizontalLayout_52->addItem(horizontalSpacer_93);
+
+
+        verticalLayout_24->addLayout(horizontalLayout_52);
+
+        verticalSpacer_25 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_24->addItem(verticalSpacer_25);
+
+        horizontalLayout_53 = new QHBoxLayout();
+        horizontalLayout_53->setObjectName(QStringLiteral("horizontalLayout_53"));
+        horizontalSpacer_94 = new QSpacerItem(20, 20, QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);
+
+        horizontalLayout_53->addItem(horizontalSpacer_94);
+
+        verticalLayout_18 = new QVBoxLayout();
+        verticalLayout_18->setObjectName(QStringLiteral("verticalLayout_18"));
+        espumuso = new QPushButton(page_13);
+        espumuso->setObjectName(QStringLiteral("espumuso"));
+        espumuso->setMinimumSize(QSize(121, 111));
+        espumuso->setMaximumSize(QSize(121, 111));
+        espumuso->setCursor(QCursor(Qt::OpenHandCursor));
+        espumuso->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        espumuso->setIconSize(QSize(100, 100));
+
+        verticalLayout_18->addWidget(espumuso);
+
+        label_45 = new QLabel(page_13);
+        label_45->setObjectName(QStringLiteral("label_45"));
+        sizePolicy2.setHeightForWidth(label_45->sizePolicy().hasHeightForWidth());
+        label_45->setSizePolicy(sizePolicy2);
+        label_45->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_18->addWidget(label_45, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_53->addLayout(verticalLayout_18);
+
+        horizontalSpacer_100 = new QSpacerItem(25, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_53->addItem(horizontalSpacer_100);
+
+        verticalLayout_17 = new QVBoxLayout();
+        verticalLayout_17->setObjectName(QStringLiteral("verticalLayout_17"));
+        blanco_mexi = new QPushButton(page_13);
+        blanco_mexi->setObjectName(QStringLiteral("blanco_mexi"));
+        blanco_mexi->setMinimumSize(QSize(121, 111));
+        blanco_mexi->setMaximumSize(QSize(121, 111));
+        blanco_mexi->setCursor(QCursor(Qt::OpenHandCursor));
+        blanco_mexi->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        blanco_mexi->setIconSize(QSize(100, 100));
+
+        verticalLayout_17->addWidget(blanco_mexi);
+
+        label_50 = new QLabel(page_13);
+        label_50->setObjectName(QStringLiteral("label_50"));
+        sizePolicy1.setHeightForWidth(label_50->sizePolicy().hasHeightForWidth());
+        label_50->setSizePolicy(sizePolicy1);
+        label_50->setMaximumSize(QSize(107, 16777215));
+        label_50->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_17->addWidget(label_50, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_53->addLayout(verticalLayout_17);
+
+        horizontalSpacer_101 = new QSpacerItem(25, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_53->addItem(horizontalSpacer_101);
+
+        verticalLayout_16 = new QVBoxLayout();
+        verticalLayout_16->setObjectName(QStringLiteral("verticalLayout_16"));
+        blanco = new QPushButton(page_13);
+        blanco->setObjectName(QStringLiteral("blanco"));
+        blanco->setMinimumSize(QSize(121, 111));
+        blanco->setMaximumSize(QSize(121, 111));
+        blanco->setCursor(QCursor(Qt::OpenHandCursor));
+        blanco->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        blanco->setIconSize(QSize(100, 100));
+
+        verticalLayout_16->addWidget(blanco);
+
+        label_47 = new QLabel(page_13);
+        label_47->setObjectName(QStringLiteral("label_47"));
+        sizePolicy2.setHeightForWidth(label_47->sizePolicy().hasHeightForWidth());
+        label_47->setSizePolicy(sizePolicy2);
+        label_47->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_16->addWidget(label_47, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_53->addLayout(verticalLayout_16);
+
+        horizontalSpacer_102 = new QSpacerItem(25, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_53->addItem(horizontalSpacer_102);
+
+        verticalLayout_15 = new QVBoxLayout();
+        verticalLayout_15->setObjectName(QStringLiteral("verticalLayout_15"));
+        rosado = new QPushButton(page_13);
+        rosado->setObjectName(QStringLiteral("rosado"));
+        rosado->setMinimumSize(QSize(121, 111));
+        rosado->setMaximumSize(QSize(121, 111));
+        rosado->setCursor(QCursor(Qt::OpenHandCursor));
+        rosado->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        rosado->setIconSize(QSize(100, 100));
+
+        verticalLayout_15->addWidget(rosado);
+
+        label_48 = new QLabel(page_13);
+        label_48->setObjectName(QStringLiteral("label_48"));
+        sizePolicy2.setHeightForWidth(label_48->sizePolicy().hasHeightForWidth());
+        label_48->setSizePolicy(sizePolicy2);
+        label_48->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_15->addWidget(label_48, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_53->addLayout(verticalLayout_15);
+
+        horizontalSpacer_103 = new QSpacerItem(25, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_53->addItem(horizontalSpacer_103);
+
+        verticalLayout_14 = new QVBoxLayout();
+        verticalLayout_14->setObjectName(QStringLiteral("verticalLayout_14"));
+        postre = new QPushButton(page_13);
+        postre->setObjectName(QStringLiteral("postre"));
+        postre->setMinimumSize(QSize(121, 111));
+        postre->setMaximumSize(QSize(121, 111));
+        postre->setCursor(QCursor(Qt::OpenHandCursor));
+        postre->setStyleSheet(QStringLiteral("background-color: transparent;"));
+        postre->setIconSize(QSize(100, 100));
+
+        verticalLayout_14->addWidget(postre);
+
+        label_49 = new QLabel(page_13);
+        label_49->setObjectName(QStringLiteral("label_49"));
+        sizePolicy2.setHeightForWidth(label_49->sizePolicy().hasHeightForWidth());
+        label_49->setSizePolicy(sizePolicy2);
+        label_49->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_14->addWidget(label_49, 0, Qt::AlignHCenter);
+
+
+        horizontalLayout_53->addLayout(verticalLayout_14);
+
+        horizontalSpacer_95 = new QSpacerItem(20, 20, QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);
+
+        horizontalLayout_53->addItem(horizontalSpacer_95);
+
+
+        verticalLayout_24->addLayout(horizontalLayout_53);
+
+
+        gridLayout_17->addLayout(verticalLayout_24, 3, 0, 2, 1);
 
         paginas->addWidget(page_13);
         page_14 = new QWidget();
         page_14->setObjectName(QStringLiteral("page_14"));
-        layoutWidget = new QWidget(page_14);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 20, 781, 35));
-        horizontalLayout_40 = new QHBoxLayout(layoutWidget);
+        gridLayout_29 = new QGridLayout(page_14);
+        gridLayout_29->setObjectName(QStringLiteral("gridLayout_29"));
+        verticalSpacer_29 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_29->addItem(verticalSpacer_29, 4, 0, 1, 1);
+
+        horizontalLayout_40 = new QHBoxLayout();
         horizontalLayout_40->setObjectName(QStringLiteral("horizontalLayout_40"));
-        horizontalLayout_40->setContentsMargins(0, 0, 0, 0);
-        label_27 = new QLabel(layoutWidget);
+        label_27 = new QLabel(page_14);
         label_27->setObjectName(QStringLiteral("label_27"));
+        sizePolicy2.setHeightForWidth(label_27->sizePolicy().hasHeightForWidth());
+        label_27->setSizePolicy(sizePolicy2);
         label_27->setStyleSheet(QLatin1String("font: 16pt \"MS Shell Dlg 2\";\n"
 "font: 75 16pt \"Noto Serif\";\n"
 "color: rgb(201, 37, 49);"));
 
         horizontalLayout_40->addWidget(label_27);
 
-        line_19 = new QFrame(layoutWidget);
+        line_19 = new QFrame(page_14);
         line_19->setObjectName(QStringLiteral("line_19"));
         line_19->setMinimumSize(QSize(670, 0));
         line_19->setStyleSheet(QStringLiteral("background-color:#707070;"));
@@ -1834,15 +2218,24 @@ public:
 
         horizontalLayout_40->addWidget(line_19);
 
-        layoutWidget1 = new QWidget(page_14);
-        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(50, 60, 701, 326));
-        verticalLayout_13 = new QVBoxLayout(layoutWidget1);
+
+        gridLayout_29->addLayout(horizontalLayout_40, 1, 0, 1, 1);
+
+        verticalSpacer_30 = new QSpacerItem(20, 15, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout_29->addItem(verticalSpacer_30, 0, 0, 1, 1);
+
+        horizontalLayout_42 = new QHBoxLayout();
+        horizontalLayout_42->setObjectName(QStringLiteral("horizontalLayout_42"));
+        horizontalSpacer_72 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_42->addItem(horizontalSpacer_72);
+
+        verticalLayout_13 = new QVBoxLayout();
         verticalLayout_13->setObjectName(QStringLiteral("verticalLayout_13"));
-        verticalLayout_13->setContentsMargins(0, 0, 0, 0);
         gridLayout_12 = new QGridLayout();
         gridLayout_12->setObjectName(QStringLiteral("gridLayout_12"));
-        label_25 = new QLabel(layoutWidget1);
+        label_25 = new QLabel(page_14);
         label_25->setObjectName(QStringLiteral("label_25"));
         label_25->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
 "font: 11pt ;"));
@@ -1853,7 +2246,7 @@ public:
 
         gridLayout_12->addItem(horizontalSpacer, 0, 1, 1, 1);
 
-        label_26 = new QLabel(layoutWidget1);
+        label_26 = new QLabel(page_14);
         label_26->setObjectName(QStringLiteral("label_26"));
         label_26->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
 "font: 11pt ;"));
@@ -1864,7 +2257,7 @@ public:
 
         gridLayout_12->addItem(horizontalSpacer_2, 0, 3, 1, 1);
 
-        label_28 = new QLabel(layoutWidget1);
+        label_28 = new QLabel(page_14);
         label_28->setObjectName(QStringLiteral("label_28"));
         label_28->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
 "font: 11pt ;"));
@@ -1875,7 +2268,7 @@ public:
 
         gridLayout_12->addItem(horizontalSpacer_3, 0, 5, 1, 1);
 
-        label_29 = new QLabel(layoutWidget1);
+        label_29 = new QLabel(page_14);
         label_29->setObjectName(QStringLiteral("label_29"));
         label_29->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
 "font: 11pt ;"));
@@ -1889,7 +2282,7 @@ public:
 
         verticalLayout_13->addItem(verticalSpacer_24);
 
-        frame_2 = new QFrame(layoutWidget1);
+        frame_2 = new QFrame(page_14);
         frame_2->setObjectName(QStringLiteral("frame_2"));
         frame_2->setMinimumSize(QSize(650, 200));
         frame_2->setStyleSheet(QLatin1String("QFrame{background-color: rgba(112,112,112,0.6); border: 1px solid rgba(112,112,112,0.6); border-radius: 10px;}\n"
@@ -2171,7 +2564,72 @@ public:
 
         verticalLayout_13->addWidget(frame_2);
 
+
+        horizontalLayout_42->addLayout(verticalLayout_13);
+
+        horizontalSpacer_73 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_42->addItem(horizontalSpacer_73);
+
+
+        gridLayout_29->addLayout(horizontalLayout_42, 3, 0, 1, 1);
+
+        verticalSpacer_31 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+        gridLayout_29->addItem(verticalSpacer_31, 2, 0, 1, 1);
+
         paginas->addWidget(page_14);
+        page_15 = new QWidget();
+        page_15->setObjectName(QStringLiteral("page_15"));
+        gridLayout_28 = new QGridLayout(page_15);
+        gridLayout_28->setObjectName(QStringLiteral("gridLayout_28"));
+        horizontalLayout_41 = new QHBoxLayout();
+        horizontalLayout_41->setObjectName(QStringLiteral("horizontalLayout_41"));
+        label_30 = new QLabel(page_15);
+        label_30->setObjectName(QStringLiteral("label_30"));
+        sizePolicy2.setHeightForWidth(label_30->sizePolicy().hasHeightForWidth());
+        label_30->setSizePolicy(sizePolicy2);
+        label_30->setStyleSheet(QLatin1String("font: 16pt \"MS Shell Dlg 2\";\n"
+"font: 75 16pt \"Noto Serif\";\n"
+"color: rgb(201, 37, 49);"));
+
+        horizontalLayout_41->addWidget(label_30);
+
+        line_20 = new QFrame(page_15);
+        line_20->setObjectName(QStringLiteral("line_20"));
+        line_20->setMinimumSize(QSize(670, 0));
+        line_20->setStyleSheet(QStringLiteral("background-color:#707070;"));
+        line_20->setFrameShape(QFrame::HLine);
+        line_20->setFrameShadow(QFrame::Sunken);
+
+        horizontalLayout_41->addWidget(line_20);
+
+
+        gridLayout_28->addLayout(horizontalLayout_41, 1, 0, 1, 1);
+
+        scrollArea_5 = new QScrollArea(page_15);
+        scrollArea_5->setObjectName(QStringLiteral("scrollArea_5"));
+        scrollArea_5->setStyleSheet(QStringLiteral("border:none;"));
+        scrollArea_5->setWidgetResizable(true);
+        scrollAreaWidgetContents_5 = new QWidget();
+        scrollAreaWidgetContents_5->setObjectName(QStringLiteral("scrollAreaWidgetContents_5"));
+        scrollAreaWidgetContents_5->setGeometry(QRect(0, 0, 57, 24));
+        gridLayout_6 = new QGridLayout(scrollAreaWidgetContents_5);
+        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
+        menuVinos = new QGridLayout();
+        menuVinos->setObjectName(QStringLiteral("menuVinos"));
+
+        gridLayout_6->addLayout(menuVinos, 0, 0, 1, 1);
+
+        scrollArea_5->setWidget(scrollAreaWidgetContents_5);
+
+        gridLayout_28->addWidget(scrollArea_5, 2, 0, 1, 1);
+
+        verticalSpacer_28 = new QSpacerItem(20, 15, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout_28->addItem(verticalSpacer_28, 0, 0, 1, 1);
+
+        paginas->addWidget(page_15);
         line = new QFrame(centralwidget);
         line->setObjectName(QStringLiteral("line"));
         line->setGeometry(QRect(60, 0, 1, 601));
@@ -2215,7 +2673,7 @@ public:
 
         retranslateUi(Principal_Mesero);
 
-        paginas->setCurrentIndex(11);
+        paginas->setCurrentIndex(12);
 
 
         QMetaObject::connectSlotsByName(Principal_Mesero);
@@ -2283,6 +2741,26 @@ public:
         label_24->setText(QApplication::translate("Principal_Mesero", "                                      Sin alcohol", Q_NULLPTR));
         label_273->setText(QApplication::translate("Principal_Mesero", "Cocteles", Q_NULLPTR));
         label_540->setText(QApplication::translate("Principal_Mesero", "Vinos", Q_NULLPTR));
+        chilenos->setText(QString());
+        label_31->setText(QApplication::translate("Principal_Mesero", "Chilenos", Q_NULLPTR));
+        argentinos->setText(QString());
+        label_42->setText(QApplication::translate("Principal_Mesero", "Argentinos", Q_NULLPTR));
+        mexicanos->setText(QString());
+        label_43->setText(QApplication::translate("Principal_Mesero", "Mexicanos", Q_NULLPTR));
+        espanol->setText(QString());
+        label_46->setText(QApplication::translate("Principal_Mesero", "Espa\303\261oles", Q_NULLPTR));
+        otro_paises->setText(QString());
+        label_44->setText(QApplication::translate("Principal_Mesero", "Internacionales", Q_NULLPTR));
+        espumuso->setText(QString());
+        label_45->setText(QApplication::translate("Principal_Mesero", "Espumosos", Q_NULLPTR));
+        blanco_mexi->setText(QString());
+        label_50->setText(QApplication::translate("Principal_Mesero", "Blancos mexicanos", Q_NULLPTR));
+        blanco->setText(QString());
+        label_47->setText(QApplication::translate("Principal_Mesero", "Blancos", Q_NULLPTR));
+        rosado->setText(QString());
+        label_48->setText(QApplication::translate("Principal_Mesero", "Rosados", Q_NULLPTR));
+        postre->setText(QString());
+        label_49->setText(QApplication::translate("Principal_Mesero", "Para postre", Q_NULLPTR));
         label_27->setText(QApplication::translate("Principal_Mesero", "Pedido", Q_NULLPTR));
         label_25->setText(QApplication::translate("Principal_Mesero", "ID: 10001", Q_NULLPTR));
         label_26->setText(QApplication::translate("Principal_Mesero", "Mesa: 4", Q_NULLPTR));
@@ -2303,6 +2781,7 @@ public:
         label_33->setText(QApplication::translate("Principal_Mesero", "1", Q_NULLPTR));
         label_32->setText(QApplication::translate("Principal_Mesero", "Pulpo a los 4 chiles", Q_NULLPTR));
         pushButton->setText(QApplication::translate("Principal_Mesero", "Eliminar", Q_NULLPTR));
+        label_30->setText(QApplication::translate("Principal_Mesero", "Vinos", Q_NULLPTR));
     } // retranslateUi
 
 };

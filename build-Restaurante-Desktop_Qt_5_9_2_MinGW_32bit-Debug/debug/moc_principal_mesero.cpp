@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Principal_Mesero_t {
-    QByteArrayData data[32];
-    char stringdata0[560];
+    QByteArrayData data[42];
+    char stringdata0[762];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -62,7 +62,17 @@ QT_MOC_LITERAL(27, 479, 17), // "on_cuenta_clicked"
 QT_MOC_LITERAL(28, 497, 18), // "on_mesa_13_clicked"
 QT_MOC_LITERAL(29, 516, 18), // "on_mesa_14_clicked"
 QT_MOC_LITERAL(30, 535, 18), // "on_mesa_15_clicked"
-QT_MOC_LITERAL(31, 554, 5) // "orden"
+QT_MOC_LITERAL(31, 554, 5), // "orden"
+QT_MOC_LITERAL(32, 560, 19), // "on_chilenos_clicked"
+QT_MOC_LITERAL(33, 580, 21), // "on_argentinos_clicked"
+QT_MOC_LITERAL(34, 602, 20), // "on_mexicanos_clicked"
+QT_MOC_LITERAL(35, 623, 22), // "on_blanco_mexi_clicked"
+QT_MOC_LITERAL(36, 646, 22), // "on_otro_paises_clicked"
+QT_MOC_LITERAL(37, 669, 19), // "on_espumuso_clicked"
+QT_MOC_LITERAL(38, 689, 18), // "on_espanol_clicked"
+QT_MOC_LITERAL(39, 708, 17), // "on_blanco_clicked"
+QT_MOC_LITERAL(40, 726, 17), // "on_rosado_clicked"
+QT_MOC_LITERAL(41, 744, 17) // "on_postre_clicked"
 
     },
     "Principal_Mesero\0on_parilla_clicked\0"
@@ -80,7 +90,12 @@ QT_MOC_LITERAL(31, 554, 5) // "orden"
     "on_mesa_11_clicked\0on_mesa_12_clicked\0"
     "on_cuenta_clicked\0on_mesa_13_clicked\0"
     "on_mesa_14_clicked\0on_mesa_15_clicked\0"
-    "orden"
+    "orden\0on_chilenos_clicked\0"
+    "on_argentinos_clicked\0on_mexicanos_clicked\0"
+    "on_blanco_mexi_clicked\0on_otro_paises_clicked\0"
+    "on_espumuso_clicked\0on_espanol_clicked\0"
+    "on_blanco_clicked\0on_rosado_clicked\0"
+    "on_postre_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -90,7 +105,7 @@ static const uint qt_meta_data_Principal_Mesero[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      30,   14, // methods
+      40,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -98,36 +113,46 @@ static const uint qt_meta_data_Principal_Mesero[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  164,    2, 0x08 /* Private */,
-       3,    0,  165,    2, 0x08 /* Private */,
-       4,    0,  166,    2, 0x08 /* Private */,
-       5,    0,  167,    2, 0x08 /* Private */,
-       6,    0,  168,    2, 0x08 /* Private */,
-       7,    0,  169,    2, 0x08 /* Private */,
-       8,    0,  170,    2, 0x08 /* Private */,
-       9,    0,  171,    2, 0x08 /* Private */,
-      10,    0,  172,    2, 0x08 /* Private */,
-      11,    0,  173,    2, 0x08 /* Private */,
-      12,    0,  174,    2, 0x08 /* Private */,
-      13,    0,  175,    2, 0x08 /* Private */,
-      14,    0,  176,    2, 0x08 /* Private */,
-      15,    0,  177,    2, 0x08 /* Private */,
-      16,    0,  178,    2, 0x08 /* Private */,
-      17,    0,  179,    2, 0x08 /* Private */,
-      18,    0,  180,    2, 0x08 /* Private */,
-      19,    0,  181,    2, 0x08 /* Private */,
-      20,    0,  182,    2, 0x08 /* Private */,
-      21,    0,  183,    2, 0x08 /* Private */,
-      22,    0,  184,    2, 0x08 /* Private */,
-      23,    0,  185,    2, 0x08 /* Private */,
-      24,    0,  186,    2, 0x08 /* Private */,
-      25,    0,  187,    2, 0x08 /* Private */,
-      26,    0,  188,    2, 0x08 /* Private */,
-      27,    0,  189,    2, 0x08 /* Private */,
-      28,    0,  190,    2, 0x08 /* Private */,
-      29,    0,  191,    2, 0x08 /* Private */,
-      30,    0,  192,    2, 0x08 /* Private */,
-      31,    1,  193,    2, 0x08 /* Private */,
+       1,    0,  214,    2, 0x08 /* Private */,
+       3,    0,  215,    2, 0x08 /* Private */,
+       4,    0,  216,    2, 0x08 /* Private */,
+       5,    0,  217,    2, 0x08 /* Private */,
+       6,    0,  218,    2, 0x08 /* Private */,
+       7,    0,  219,    2, 0x08 /* Private */,
+       8,    0,  220,    2, 0x08 /* Private */,
+       9,    0,  221,    2, 0x08 /* Private */,
+      10,    0,  222,    2, 0x08 /* Private */,
+      11,    0,  223,    2, 0x08 /* Private */,
+      12,    0,  224,    2, 0x08 /* Private */,
+      13,    0,  225,    2, 0x08 /* Private */,
+      14,    0,  226,    2, 0x08 /* Private */,
+      15,    0,  227,    2, 0x08 /* Private */,
+      16,    0,  228,    2, 0x08 /* Private */,
+      17,    0,  229,    2, 0x08 /* Private */,
+      18,    0,  230,    2, 0x08 /* Private */,
+      19,    0,  231,    2, 0x08 /* Private */,
+      20,    0,  232,    2, 0x08 /* Private */,
+      21,    0,  233,    2, 0x08 /* Private */,
+      22,    0,  234,    2, 0x08 /* Private */,
+      23,    0,  235,    2, 0x08 /* Private */,
+      24,    0,  236,    2, 0x08 /* Private */,
+      25,    0,  237,    2, 0x08 /* Private */,
+      26,    0,  238,    2, 0x08 /* Private */,
+      27,    0,  239,    2, 0x08 /* Private */,
+      28,    0,  240,    2, 0x08 /* Private */,
+      29,    0,  241,    2, 0x08 /* Private */,
+      30,    0,  242,    2, 0x08 /* Private */,
+      31,    1,  243,    2, 0x08 /* Private */,
+      32,    0,  246,    2, 0x08 /* Private */,
+      33,    0,  247,    2, 0x08 /* Private */,
+      34,    0,  248,    2, 0x08 /* Private */,
+      35,    0,  249,    2, 0x08 /* Private */,
+      36,    0,  250,    2, 0x08 /* Private */,
+      37,    0,  251,    2, 0x08 /* Private */,
+      38,    0,  252,    2, 0x08 /* Private */,
+      39,    0,  253,    2, 0x08 /* Private */,
+      40,    0,  254,    2, 0x08 /* Private */,
+      41,    0,  255,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -160,6 +185,16 @@ static const uint qt_meta_data_Principal_Mesero[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    2,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -200,6 +235,16 @@ void Principal_Mesero::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         case 27: _t->on_mesa_14_clicked(); break;
         case 28: _t->on_mesa_15_clicked(); break;
         case 29: _t->orden((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 30: _t->on_chilenos_clicked(); break;
+        case 31: _t->on_argentinos_clicked(); break;
+        case 32: _t->on_mexicanos_clicked(); break;
+        case 33: _t->on_blanco_mexi_clicked(); break;
+        case 34: _t->on_otro_paises_clicked(); break;
+        case 35: _t->on_espumuso_clicked(); break;
+        case 36: _t->on_espanol_clicked(); break;
+        case 37: _t->on_blanco_clicked(); break;
+        case 38: _t->on_rosado_clicked(); break;
+        case 39: _t->on_postre_clicked(); break;
         default: ;
         }
     }
@@ -230,13 +275,13 @@ int Principal_Mesero::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 30)
+        if (_id < 40)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 30;
+        _id -= 40;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 30)
+        if (_id < 40)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 30;
+        _id -= 40;
     }
     return _id;
 }
