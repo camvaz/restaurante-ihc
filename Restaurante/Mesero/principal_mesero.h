@@ -25,7 +25,7 @@ public:
     ~Principal_Mesero();
     int idmesa;//PARA SABER SI EL MESERO YA SELECIONO UNA MESA ANTES.
     QString identifier = ""; //ID DE USUARIO QUE ESTA EN SECION.
-    int numMesa; //SABER EL NUMERO DE LA MESA QUE SE ESTA TABAJANDO.
+    QString numMesa; //SABER EL NUMERO DE LA MESA QUE SE ESTA TABAJANDO.
 
     void CargarImagenes();
     void mesasEstado();
