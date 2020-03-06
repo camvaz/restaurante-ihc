@@ -89,8 +89,6 @@ private slots:
 
     void on_mesa_15_clicked();
 
-    void orden(QString);
-
     void on_chilenos_clicked();
 
     void on_argentinos_clicked();
