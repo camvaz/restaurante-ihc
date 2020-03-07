@@ -4,7 +4,7 @@
 #include <QDialog>
 #include <QSqlQuery>
 #include <QtDebug>
-#include <iostream>
+#include <QDate>
 
 namespace Ui {
 class confirmacion_comanda;

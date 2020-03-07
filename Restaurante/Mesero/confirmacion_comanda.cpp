@@ -103,13 +103,28 @@ void confirmacion_comanda::comandaPedido(){
 
 void confirmacion_comanda::on_btn_aceptar_clicked()
 {
-  QString cantidad;
+  QString cantidad,pedido,comanda,pedidoActual,ulti;
+  QSqlQuery queryPedido,queryComanda,queryPActual,queryUlti;
   cantidad=ui->lbl_cantidad_platillo->text();
-  qDebug()<<"cantidad:"<<cantidad;
 
    /*hay que realizar 3 insert pedido,comanda,PedidosActuales*/
+   QDate fecha=QDate::currentDate();QString fecha_Actual=fecha.toString("yyyy-MM-dd");
 
+   qDebug()<<"cantidad:"<<cantidad;
    qDebug()<<"numero mesa: "<<nummesa;
+   qDebug()<<"fecha actual: "<<fecha_Actual;
+
+   pedido="insert into Pedido(Mesa_idMesa,fecha)values('"+nummesa+"','"+fecha_Actual+"')";
+   queryPedido.exec(pedido);queryPedido.next();
+
+   ulti="SELECT  max(idPedido) AS id FROM Pedido";
+   queryUlti.exec(ulti);queryUlti.next();
+   ulti=queryUlti.value(0).toString();
+
+   qDebug()<<"ultimo id: "<<ulti;
+
+   comanda="insert into Comanda(Pedido_idPedido)value('"+ulti+"')";
+   queryComanda.exec(comanda);queryComanda.next();
 
 }
 

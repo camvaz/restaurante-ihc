@@ -115,7 +115,10 @@ void Principal_Mesero::CargarImagenes(){
      pedido="C:/Imagenes tamaño pequeño/pedido";
      QPixmap pedidos(pedido);
 
-
+      ui->mesa_1->setEnabled(false);ui->mesa_2->setEnabled(false);ui->mesa_3->setEnabled(false);ui->mesa_4->setEnabled(false);
+      ui->mesa_5->setEnabled(false);ui->mesa_6->setEnabled(false);ui->mesa_7->setEnabled(false);ui->mesa_8->setEnabled(false);
+      ui->mesa_9->setEnabled(false);ui->mesa_10->setEnabled(false);ui->mesa_11->setEnabled(false);ui->mesa_12->setEnabled(false);
+      ui->mesa_13->setEnabled(false);ui->mesa_14->setEnabled(false);ui->mesa_15->setEnabled(false);
 }
 
 void Principal_Mesero::mesasEstado(){
@@ -131,6 +134,7 @@ void Principal_Mesero::mesasEstado(){
         estado=mesas.value(3).toString();
         switch (i) {
         case 1:
+            ui->mesa_1->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -150,6 +154,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 2:
+            ui->mesa_2->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -171,6 +176,7 @@ void Principal_Mesero::mesasEstado(){
 
             break;
         case 3:
+            ui->mesa_3->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -192,6 +198,7 @@ void Principal_Mesero::mesasEstado(){
             break;
 
         case 4:
+            //ui->mesa_4->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -211,6 +218,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 5:
+            //ui->mesa_5->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -230,6 +238,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 6:
+            //ui->mesa_6->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -249,6 +258,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 7:
+            //ui->mesa_7->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -268,6 +278,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 8:
+            //ui->mesa_8->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -287,6 +298,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 9:
+            //ui->mesa_9->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -306,6 +318,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 10:
+            //ui->mesa_10->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -325,6 +338,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 11:
+            //ui->mesa_11->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -344,6 +358,7 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 12:
+            //ui->mesa_12->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
@@ -363,59 +378,62 @@ void Principal_Mesero::mesasEstado(){
              }
             break;
         case 13:
+            //ui->mesa_13->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
-   //           ui->mesa_13->setIcon(mesas_1);
+              ui->mesa_13->setIcon(mesas_1);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
-//                ui->mesa_13->setIcon(mesas_2);
+               ui->mesa_13->setIcon(mesas_2);
 
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
-  //              ui->mesa_13->setIcon(mesas_2);
+                ui->mesa_13->setIcon(mesas_2);
              }
             break;
         case 14:
+            //ui->mesa_14->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
-    //          ui->mesa_14->setIcon(mesas_1);
+              ui->mesa_14->setIcon(mesas_1);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
-      //          ui->mesa_14->setIcon(mesas_2);
+                ui->mesa_14->setIcon(mesas_2);
 
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
-        //        ui->mesa_14->setIcon(mesas_2);
+                ui->mesa_14->setIcon(mesas_2);
              }
             break;
         case 15:
+            //ui->mesa_15->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
-          //    ui->mesa_15->setIcon(mesas_1);
+              ui->mesa_15->setIcon(mesas_1);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
-            //    ui->mesa_15->setIcon(mesas_2);
+                ui->mesa_15->setIcon(mesas_2);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
-              //  ui->mesa_15->setIcon(mesas_2);
+                ui->mesa_15->setIcon(mesas_2);
              }
             break;
 
@@ -434,17 +452,15 @@ void Principal_Mesero::on_parilla_clicked()
     ui->paginas->setCurrentIndex(2);
 
     //joaquin codigo
-
     QString parrilla;
     QSqlQuery parrilla1;
     parrilla="select *from Platillos where idCategoriaMenu=2;";
     parrilla1.exec(parrilla);
     int Cr=0;
-
     while(parrilla1.next())
     {
 
-        //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+      //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
 
       // connect(agre,&QPushButton::clicked,[=](){emit orden(*id);});
        tarjetaPlatillo *parilla=new tarjetaPlatillo();
