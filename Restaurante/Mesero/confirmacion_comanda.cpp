@@ -27,7 +27,7 @@ confirmacion_comanda::~confirmacion_comanda()
 
 void confirmacion_comanda::comandaPedido(){
 
-   qDebug()<<"id comanda desde dialogo: "<<idPlatillos;
+  // qDebug()<<"id comanda desde dialogo: "<<idPlatillos;
    QSqlQuery query;
    QString busqueda,categoria,ruta,nombre,precio,menuCate,ingredientes,ingrediente1;
 
@@ -103,28 +103,43 @@ void confirmacion_comanda::comandaPedido(){
 
 void confirmacion_comanda::on_btn_aceptar_clicked()
 {
-  QString cantidad,pedido,comanda,pedidoActual,ulti;
-  QSqlQuery queryPedido,queryComanda,queryPActual,queryUlti;
+  QString cantidad,pedido,pedidoActual,ulti,descripcion;
+  QSqlQuery queryPedido,queryComaPedi,queryUlti;
   cantidad=ui->lbl_cantidad_platillo->text();
+  descripcion=ui->plainTextEdit->toPlainText();
 
-   /*hay que realizar 3 insert pedido,comanda,PedidosActuales*/
-   QDate fecha=QDate::currentDate();QString fecha_Actual=fecha.toString("yyyy-MM-dd");
+  if(cantidad!='0')
+  {
+           /*hay que realizar 3 insert pedido,comanda,PedidosActuales*/
+           QDate fecha=QDate::currentDate();QString fecha_Actual=fecha.toString("yyyy-MM-dd");
 
-   qDebug()<<"cantidad:"<<cantidad;
-   qDebug()<<"numero mesa: "<<nummesa;
-   qDebug()<<"fecha actual: "<<fecha_Actual;
+           qDebug()<<"cantidad:"<<cantidad;
+           qDebug()<<"numero mesa: "<<nummesa;
+           qDebug()<<"fecha actual: "<<fecha_Actual;
+           qDebug()<<"id comanda desde dialogo: "<<idPlatillos;
+           qDebug()<<"Descripcion del platillo"<<descripcion;
 
-   pedido="insert into Pedido(Mesa_idMesa,fecha)values('"+nummesa+"','"+fecha_Actual+"')";
-   queryPedido.exec(pedido);queryPedido.next();
+           pedido="insert into Pedido(Mesa_idMesa,fecha)values('"+nummesa+"','"+fecha_Actual+"')";
+           queryPedido.exec(pedido);queryPedido.next();
 
-   ulti="SELECT  max(idPedido) AS id FROM Pedido";
-   queryUlti.exec(ulti);queryUlti.next();
-   ulti=queryUlti.value(0).toString();
+           ulti="SELECT  max(idPedido) AS id FROM Pedido";
+           queryUlti.exec(ulti);queryUlti.next();ulti=queryUlti.value(0).toString();
 
-   qDebug()<<"ultimo id: "<<ulti;
+           qDebug()<<"ultimo id: "<<ulti;
 
-   comanda="insert into Comanda(Pedido_idPedido)value('"+ulti+"')";
-   queryComanda.exec(comanda);queryComanda.next();
+           pedidoActual="insert into Comanda_has_Platillo(idPedido,idPlatillo,cantidad,describcion)"
+                        "values('"+ulti+"','"+idPlatillos+"','"+cantidad+"','"+descripcion+"')";
+           queryComaPedi.exec(pedidoActual);
+           queryComaPedi.next();
+           close();
+
+   }else {
+         // crear un dialogo que notifique que tiene que agregar una cantidad de platos a pedir
+          qDebug()<<"hola";
+
+
+
+   }
 
 }
 
