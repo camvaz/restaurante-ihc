@@ -49,6 +49,8 @@ SOURCES += \
     Mesero/tarjetaplatillo.cpp \
         main.cpp \
         mainwindow.cpp \
+    Mesero/mensajeconfirmar.cpp \
+    Mesero/mensajecantidad.cpp
 
 HEADERS += \
     Administrador/Reportes/GraficaVentas.h \
@@ -74,6 +76,8 @@ HEADERS += \
         Mesero/principal_mesero.h \
     Mesero/tarjetaplatillo.h \
         mainwindow.h \
+    Mesero/mensajeconfirmar.h \
+    Mesero/mensajecantidad.h
 
 FORMS += \
     Administrador/Reportes/GraficaVentas.ui \
@@ -99,6 +103,8 @@ FORMS += \
         Mesero/principal_mesero.ui \
     Mesero/tarjetaplatillo.ui \
         mainwindow.ui \
+    Mesero/mensajeconfirmar.ui \
+    Mesero/mensajecantidad.ui
 
 
 #INCLUDEPATH += "C:/Users/rober/Downloads/OChart/include"
