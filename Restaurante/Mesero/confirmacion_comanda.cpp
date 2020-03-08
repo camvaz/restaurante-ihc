@@ -108,39 +108,15 @@ void confirmacion_comanda::on_btn_aceptar_clicked()
   cantidad=ui->lbl_cantidad_platillo->text();
   descripcion=ui->plainTextEdit->toPlainText();
 
-           /*hay que realizar 3 insert pedido,comanda,PedidosActuales*/
-           QDate fecha=QDate::currentDate();QString fecha_Actual=fecha.toString("yyyy-MM-dd");
-
+        /*
            qDebug()<<"cantidad:"<<cantidad;
            qDebug()<<"numero mesa: "<<nummesa;
-           qDebug()<<"fecha actual: "<<fecha_Actual;
            qDebug()<<"id comanda desde dialogo: "<<idPlatillos;
            qDebug()<<"Descripcion del platillo"<<descripcion;
-
-           pedido="insert into Pedido(Mesa_idMesa,fecha)values('"+nummesa+"','"+fecha_Actual+"')";
-           queryPedido.exec(pedido);queryPedido.next();
-
-           ulti="SELECT  max(idPedido) AS id FROM Pedido";
-           queryUlti.exec(ulti);queryUlti.next();ulti=queryUlti.value(0).toString();
-
-           qDebug()<<"ultimo id: "<<ulti;
-
-           pedidoActual="insert into Comanda_has_Platillo(idPedido,idPlatillo,cantidad,describcion)"
-                        "values('"+ulti+"','"+idPlatillos+"','"+cantidad+"','"+descripcion+"')";
-           queryComaPedi.exec(pedidoActual);
-           queryComaPedi.next();
-           close();
-           mesa="select *from mesa where idMesa='"+nummesa+"'";
-           mesas.exec(mesa);
-           mesas.next();
-           estado=mesas.value(3).toString();
-
-           if(estado=="disponible"){
-               qDebug()<<"mesa pasa a ocupada";
-             estado="UPDATE mesa SET Estado='ocupado' WHERE idMesa='"+nummesa+"'";
-             queryUpdate.exec(estado);
-             queryUpdate.next();
-            }
+          */
+   mensajeCorfirmar *hola=new mensajeCorfirmar(ulti,idPlatillos,cantidad,descripcion,nummesa);
+   hola->setModal(true);
+   hola->show();
 
 
 }

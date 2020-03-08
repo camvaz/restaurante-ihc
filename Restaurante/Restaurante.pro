@@ -45,11 +45,11 @@ SOURCES += \
     Login/TarjetaCuentas.cpp \
     Mesero/confirmacion_comanda.cpp \
     Mesero/mensaje.cpp \
+    Mesero/mensajecorfirmar.cpp \
         Mesero/principal_mesero.cpp \
     Mesero/tarjetaplatillo.cpp \
         main.cpp \
         mainwindow.cpp \
-    Mesero/mensajeconfirmar.cpp \
     Mesero/mensajecantidad.cpp
 
 HEADERS += \
@@ -73,10 +73,10 @@ HEADERS += \
     Login/TarjetaCuentas.h \
     Mesero/confirmacion_comanda.h \
     Mesero/mensaje.h \
+    Mesero/mensajecorfirmar.h \
         Mesero/principal_mesero.h \
     Mesero/tarjetaplatillo.h \
         mainwindow.h \
-    Mesero/mensajeconfirmar.h \
     Mesero/mensajecantidad.h
 
 FORMS += \
@@ -100,10 +100,10 @@ FORMS += \
     Login/TarjetaCuentas.ui \
     Mesero/confirmacion_comanda.ui \
     Mesero/mensaje.ui \
+    Mesero/mensajecorfirmar.ui \
         Mesero/principal_mesero.ui \
     Mesero/tarjetaplatillo.ui \
         mainwindow.ui \
-    Mesero/mensajeconfirmar.ui \
     Mesero/mensajecantidad.ui
 
 

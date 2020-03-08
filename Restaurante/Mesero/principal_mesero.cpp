@@ -1166,6 +1166,11 @@ void Principal_Mesero::mostrarPedido(){
     qDebug()<<"cantidad: "<<cantidad;
     qDebug()<<"fecha: "<<fecha;
 
+    ui->fecha->setText(fecha);
+    ui->numComanda->setText(numPedido);
+    ui->numMesa->setText(numMesa);
+
+
 }
 
 void Principal_Mesero::on_cuenta_clicked()

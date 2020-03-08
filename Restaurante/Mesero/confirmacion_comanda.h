@@ -5,6 +5,7 @@
 #include <QSqlQuery>
 #include <QtDebug>
 #include <QDate>
+#include "Mesero/mensajecorfirmar.h"
 
 namespace Ui {
 class confirmacion_comanda;
