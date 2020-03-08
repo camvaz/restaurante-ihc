@@ -22,6 +22,8 @@ public:
 
     void comandaPedido();
 
+
+
 private slots:
     void on_btn_aceptar_clicked();
 

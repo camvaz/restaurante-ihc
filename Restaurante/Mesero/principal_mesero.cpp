@@ -1147,22 +1147,58 @@ void Principal_Mesero::on_bebidas_clicked()
 
 }
 
+void Principal_Mesero::mostrarPedido(){
+
+    QString busqueda,fecha,cantidad,nombre,numPedido;
+    QSqlQuery resultado;
+
+    busqueda="select *from Pedido as p inner join Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
+             " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"'";
+    resultado.exec(busqueda);
+    resultado.next();
+    numPedido=resultado.value(0).toString();
+    nombre=resultado.value(9).toString();
+    cantidad=resultado.value(6).toString();
+    fecha=resultado.value(2).toString();
+
+    qDebug()<<"numero de pedido: "<<numPedido;
+    qDebug()<<"nombre del platillo: "<<nombre;
+    qDebug()<<"cantidad: "<<cantidad;
+    qDebug()<<"fecha: "<<fecha;
+
+}
+
 void Principal_Mesero::on_cuenta_clicked()
 {
 
-    //select *from
 
     qDebug()<<"hola";
     if(idmesa==0){
      advertencia->setModal(true);
      advertencia->show();
      qDebug()<<"seleciona una mesa";
-    }if(idmesa==1){
-         ui->comanda->setStyleSheet("background-color:#1d1d1d");
+    }
+    //SI LA MESA ESTA SELECCIONADA SE ACEPTA EL IF
+    if(idmesa==1)
+    {
+        ui->comanda->setStyleSheet("background-color:#1d1d1d");
         ui->bebidas->setStyleSheet("background-color:#1d1d1d ");
         ui->mesas->setStyleSheet("background-color:#1d1d1d");
         ui->cuenta->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+        QString mesa,estado;
+        QSqlQuery mesas;
+        mesa="select *from mesa where idMesa='"+numMesa+"'";
+        mesas.exec(mesa);
+        mesas.next();
+        estado=mesas.value(3).toString();
+
+        //SI ESTA OCUPADA MOSTRAMOS LO QUE A PEDIDO
+        if(estado=="ocupado"){
+         mostrarPedido();
+         }
         ui->paginas->setCurrentIndex(13);
+
     }
 
 }
@@ -1185,6 +1221,7 @@ void Principal_Mesero::on_mesa_1_clicked()
      ui->paginas->setCurrentIndex(1);
   }if(estado=="ocupado"){
       qDebug()<<"mesa ocupada";
+      mostrarPedido();
        ui->paginas->setCurrentIndex(13);
    }if(estado=="sucia") {
       qDebug()<<"mesa sucuia";
@@ -1208,6 +1245,7 @@ void Principal_Mesero::on_mesa_2_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1230,6 +1268,7 @@ void Principal_Mesero::on_mesa_3_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1253,6 +1292,7 @@ void Principal_Mesero::on_mesa_4_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupada"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1275,6 +1315,7 @@ void Principal_Mesero::on_mesa_5_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1298,6 +1339,7 @@ void Principal_Mesero::on_mesa_6_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1320,6 +1362,7 @@ void Principal_Mesero::on_mesa_7_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1342,6 +1385,7 @@ void Principal_Mesero::on_mesa_8_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1364,6 +1408,7 @@ void Principal_Mesero::on_mesa_9_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1386,6 +1431,7 @@ void Principal_Mesero::on_mesa_10_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1408,6 +1454,7 @@ void Principal_Mesero::on_mesa_11_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1430,6 +1477,7 @@ void Principal_Mesero::on_mesa_12_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1452,6 +1500,7 @@ void Principal_Mesero::on_mesa_13_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1474,6 +1523,7 @@ void Principal_Mesero::on_mesa_14_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";
@@ -1496,6 +1546,7 @@ void Principal_Mesero::on_mesa_15_clicked()
        ui->paginas->setCurrentIndex(1);
     }if(estado=="ocupado"){
         qDebug()<<"mesa ocupada";
+        mostrarPedido();
          ui->paginas->setCurrentIndex(13);
      }if(estado=="sucia") {
         qDebug()<<"mesa sucuia";

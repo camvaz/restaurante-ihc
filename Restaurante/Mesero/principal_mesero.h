@@ -28,7 +28,10 @@ public:
     QString numMesa; //SABER EL NUMERO DE LA MESA QUE SE ESTA TABAJANDO.
 
     void CargarImagenes();
+
     void mesasEstado();
+
+     void mostrarPedido();
 
 private slots:
     void on_parilla_clicked();
