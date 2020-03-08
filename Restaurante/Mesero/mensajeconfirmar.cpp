@@ -12,3 +12,10 @@ mensajeConfirmar::~mensajeConfirmar()
 {
     delete ui;
 }
+
+int mensajeConfirmar::on_pushButton_2_clicked()
+{
+
+    return 1;
+    qDebug()<<"hola";
+}

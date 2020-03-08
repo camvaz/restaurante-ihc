@@ -108,8 +108,6 @@ void confirmacion_comanda::on_btn_aceptar_clicked()
   cantidad=ui->lbl_cantidad_platillo->text();
   descripcion=ui->plainTextEdit->toPlainText();
 
-  if(cantidad!='0')
-  {
            /*hay que realizar 3 insert pedido,comanda,PedidosActuales*/
            QDate fecha=QDate::currentDate();QString fecha_Actual=fecha.toString("yyyy-MM-dd");
 
@@ -144,12 +142,6 @@ void confirmacion_comanda::on_btn_aceptar_clicked()
              queryUpdate.next();
             }
 
-   }else {
-         // crear un dialogo que notifique que tiene que agregar una cantidad de platos a pedir
-          qDebug()<<"hola";
-
-
-   }
 
 }
 
@@ -158,7 +150,7 @@ void confirmacion_comanda::on_btn_menos_clicked()
     QString numMen=ui->lbl_cantidad_platillo->text();
     int num=numMen.toInt();
     //qDebug()<<num;
-    if(num!=0){
+    if(num!=1){
     num=num-1;
     QString numMenos=QString::number(num);
     ui->lbl_cantidad_platillo->setText(numMenos);

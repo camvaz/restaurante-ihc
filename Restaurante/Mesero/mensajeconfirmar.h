@@ -2,6 +2,7 @@
 #define MENSAJECONFIRMAR_H
 
 #include <QMainWindow>
+#include <QDebug>
 
 namespace Ui {
 class mensajeConfirmar;
@@ -14,6 +15,9 @@ class mensajeConfirmar : public QMainWindow
 public:
     explicit mensajeConfirmar(QWidget *parent = nullptr);
     ~mensajeConfirmar();
+
+private slots:
+    int on_pushButton_2_clicked();
 
 private:
     Ui::mensajeConfirmar *ui;
