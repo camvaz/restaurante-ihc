@@ -134,296 +134,310 @@ void Principal_Mesero::mesasEstado(){
         estado=mesas.value(3).toString();
         switch (i) {
         case 1:
-            ui->mesa_1->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_1->setIcon(mesas_1);
-            }if(estado=="ocupada"){
+               ui->mesa_1->setEnabled(true);
+            }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_1(imagen);
                 ui->mesa_1->setIcon(mesas_1);
-
-             }if(estado=="sucia") {
+                ui->mesa_1->setEnabled(true);
+             }if(estado=="sucio") {
                 qDebug()<<"mesa sucuia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_1(imagen);
                 ui->mesa_1->setIcon(mesas_1);
+                 ui->mesa_1->setEnabled(true);
              }
             break;
         case 2:
-            ui->mesa_2->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_2->setIcon(mesas_1);
+               ui->mesa_2->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_2->setIcon(mesas_2);
-
+                 ui->mesa_2->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_2->setIcon(mesas_2);
+                 ui->mesa_2->setEnabled(true);
              }
 
 
             break;
         case 3:
-            ui->mesa_3->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_3->setIcon(mesas_1);
+               ui->mesa_3->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_3->setIcon(mesas_2);
-
+                 ui->mesa_3->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_3->setIcon(mesas_2);
+                 ui->mesa_3->setEnabled(true);
              }
 
             break;
 
         case 4:
-            //ui->mesa_4->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_4->setIcon(mesas_1);
+              ui->mesa_4->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_4->setIcon(mesas_2);
-
+                 ui->mesa_4->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_4->setIcon(mesas_2);
+                 ui->mesa_4->setEnabled(true);
              }
             break;
         case 5:
-            //ui->mesa_5->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_5->setIcon(mesas_1);
+               ui->mesa_5->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_5->setIcon(mesas_2);
-
+                 ui->mesa_5->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_5->setIcon(mesas_2);
+                ui->mesa_5->setEnabled(true);
              }
             break;
         case 6:
-            //ui->mesa_6->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_6->setIcon(mesas_1);
+               ui->mesa_6->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_6->setIcon(mesas_2);
-
+                ui->mesa_6->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_6->setIcon(mesas_2);
+                 ui->mesa_6->setEnabled(true);
              }
             break;
         case 7:
-            //ui->mesa_7->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_7->setIcon(mesas_1);
+               ui->mesa_7->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_7->setIcon(mesas_2);
-
+             ui->mesa_7->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_7->setIcon(mesas_2);
+                 ui->mesa_7->setEnabled(true);
              }
             break;
         case 8:
-            //ui->mesa_8->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_8->setIcon(mesas_1);
+               ui->mesa_8->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_8->setIcon(mesas_2);
-
+                 ui->mesa_8->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_8->setIcon(mesas_2);
+                 ui->mesa_8->setEnabled(true);
              }
             break;
         case 9:
-            //ui->mesa_9->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_9->setIcon(mesas_1);
+               ui->mesa_9->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_9->setIcon(mesas_2);
-
+                 ui->mesa_9->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_9->setIcon(mesas_2);
+                 ui->mesa_9->setEnabled(true);
              }
             break;
         case 10:
-            //ui->mesa_10->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_10->setIcon(mesas_1);
+               ui->mesa_10->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_10->setIcon(mesas_2);
-
+             ui->mesa_10->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_10->setIcon(mesas_2);
+                 ui->mesa_10->setEnabled(true);
              }
             break;
         case 11:
-            //ui->mesa_11->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_11->setIcon(mesas_1);
+               ui->mesa_11->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_11->setIcon(mesas_2);
-
+                 ui->mesa_11->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_11->setIcon(mesas_2);
+                 ui->mesa_11->setEnabled(true);
              }
             break;
         case 12:
-            //ui->mesa_12->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_12->setIcon(mesas_1);
+               ui->mesa_12->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_12->setIcon(mesas_2);
-
+                 ui->mesa_12->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_12->setIcon(mesas_2);
+                 ui->mesa_12->setEnabled(true);
              }
             break;
         case 13:
-            //ui->mesa_13->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_13->setIcon(mesas_1);
+               ui->mesa_13->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                ui->mesa_13->setIcon(mesas_2);
-
+                 ui->mesa_13->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_13->setIcon(mesas_2);
+                 ui->mesa_13->setEnabled(true);
              }
             break;
         case 14:
-            //ui->mesa_14->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_14->setIcon(mesas_1);
+               ui->mesa_14->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
                 QIcon mesas_2(imagen);
                 ui->mesa_14->setIcon(mesas_2);
-
+                 ui->mesa_14->setEnabled(true);
              }if(estado=="sucio") {
                 qDebug()<<"mesa sucia";
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_14->setIcon(mesas_2);
+                 ui->mesa_14->setEnabled(true);
              }
             break;
         case 15:
-            //ui->mesa_15->setEnabled(true);
             if(estado=="disponible"){
                 qDebug()<<"mesa libre";
               imagen="C:/Imagenes tamaño pequeño/disponible";
               QIcon mesas_1(imagen);
               ui->mesa_15->setIcon(mesas_1);
+               ui->mesa_15->setEnabled(true);
             }if(estado=="ocupado"){
                 qDebug()<<"mesa ocupada";
                 imagen="C:/Imagenes tamaño pequeño/ocupada";
@@ -434,6 +448,7 @@ void Principal_Mesero::mesasEstado(){
                 imagen="C:/Imagenes tamaño pequeño/sucia";
                 QIcon mesas_2(imagen);
                 ui->mesa_15->setIcon(mesas_2);
+                 ui->mesa_15->setEnabled(true);
              }
             break;
 
@@ -1104,6 +1119,7 @@ void Principal_Mesero::on_comanda_clicked()
 }
 
 void Principal_Mesero::on_mesas_clicked(){
+    mesasEstado();
     ui->paginas->setCurrentIndex(0);
     ui->comanda->setStyleSheet("background-color:#1d1d1d");
     ui->bebidas->setStyleSheet("background-color:#1d1d1d");
@@ -1133,6 +1149,8 @@ void Principal_Mesero::on_bebidas_clicked()
 
 void Principal_Mesero::on_cuenta_clicked()
 {
+
+    //select *from
 
     qDebug()<<"hola";
     if(idmesa==0){
@@ -1816,8 +1834,6 @@ void Principal_Mesero::on_postre_clicked()
 
      }
      else {
-
-
         tarjetaPlatillo *vinos=new tarjetaPlatillo();
         vinos->llenar(QslVino.value(1).toString(),QslVino.value(2).toString(),QslVino.value(0).toString(),numMesa);
 

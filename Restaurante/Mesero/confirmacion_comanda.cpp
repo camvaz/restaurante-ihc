@@ -103,8 +103,8 @@ void confirmacion_comanda::comandaPedido(){
 
 void confirmacion_comanda::on_btn_aceptar_clicked()
 {
-  QString cantidad,pedido,pedidoActual,ulti,descripcion;
-  QSqlQuery queryPedido,queryComaPedi,queryUlti;
+  QString cantidad,pedido,pedidoActual,ulti,descripcion,mesa,estado;
+  QSqlQuery queryPedido,queryComaPedi,queryUlti,queryUpdate,mesas;
   cantidad=ui->lbl_cantidad_platillo->text();
   descripcion=ui->plainTextEdit->toPlainText();
 
@@ -132,11 +132,21 @@ void confirmacion_comanda::on_btn_aceptar_clicked()
            queryComaPedi.exec(pedidoActual);
            queryComaPedi.next();
            close();
+           mesa="select *from mesa where idMesa='"+nummesa+"'";
+           mesas.exec(mesa);
+           mesas.next();
+           estado=mesas.value(3).toString();
+
+           if(estado=="disponible"){
+               qDebug()<<"mesa pasa a ocupada";
+             estado="UPDATE mesa SET Estado='ocupado' WHERE idMesa='"+nummesa+"'";
+             queryUpdate.exec(estado);
+             queryUpdate.next();
+            }
 
    }else {
          // crear un dialogo que notifique que tiene que agregar una cantidad de platos a pedir
           qDebug()<<"hola";
-
 
 
    }
