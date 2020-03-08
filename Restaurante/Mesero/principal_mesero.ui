@@ -2134,8 +2134,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
@@ -2221,8 +2221,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
@@ -2266,8 +2266,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
@@ -2343,8 +2343,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
@@ -2420,8 +2420,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_7">
@@ -2528,8 +2528,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_8">
@@ -2605,8 +2605,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_9">
@@ -2682,8 +2682,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_10">
@@ -3061,8 +3061,8 @@ color: rgb(241, 241, 241);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>434</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_11">
@@ -4060,29 +4060,42 @@ color: rgb(201, 37, 49);</string>
          <layout class="QVBoxLayout" name="verticalLayout_13">
           <item>
            <layout class="QGridLayout" name="gridLayout_12">
-            <item row="0" column="0">
-             <widget class="QLabel" name="numComanda">
+            <item row="0" column="8">
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="7">
+             <widget class="QLabel" name="numComensales">
               <property name="styleSheet">
                <string notr="true">color: rgb(255, 255, 255);
 font: 11pt ;</string>
               </property>
               <property name="text">
-               <string>ID: 10001</string>
+               <string>4</string>
               </property>
              </widget>
             </item>
-            <item row="0" column="6">
+            <item row="0" column="10">
              <widget class="QLabel" name="fecha">
               <property name="styleSheet">
                <string notr="true">color: rgb(255, 255, 255);
 font: 11pt ;</string>
               </property>
               <property name="text">
-               <string> Fecha: 20/02/2020</string>
+               <string>20/02/2020</string>
               </property>
              </widget>
             </item>
-            <item row="0" column="1">
+            <item row="0" column="2">
              <spacer name="horizontalSpacer">
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
@@ -4096,6 +4109,76 @@ font: 11pt ;</string>
              </spacer>
             </item>
             <item row="0" column="3">
+             <widget class="QLabel" name="label_26">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white;
+background-color:transparent;</string>
+              </property>
+              <property name="text">
+               <string>Mesa:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="numComanda">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+font: 11pt ;</string>
+              </property>
+              <property name="text">
+               <string>00000</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="6">
+             <widget class="QLabel" name="label_28">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white;
+background-color:transparent;</string>
+              </property>
+              <property name="text">
+               <string>Comensales:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QLabel" name="numMesa">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+font: 11pt ;</string>
+              </property>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_25">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: white;
+background-color:transparent;</string>
+              </property>
+              <property name="text">
+               <string>ID:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
              <spacer name="horizontalSpacer_2">
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
@@ -4108,38 +4191,19 @@ font: 11pt ;</string>
               </property>
              </spacer>
             </item>
-            <item row="0" column="5">
-             <spacer name="horizontalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
+            <item row="0" column="9">
+             <widget class="QLabel" name="label_29">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
               </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item row="0" column="2">
-             <widget class="QLabel" name="numMesa">
               <property name="styleSheet">
-               <string notr="true">color: rgb(255, 255, 255);
-font: 11pt ;</string>
+               <string notr="true">color: white;
+background-color:transparent;</string>
               </property>
               <property name="text">
-               <string>Mesa: 4</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="4">
-             <widget class="QLabel" name="numComensales">
-              <property name="styleSheet">
-               <string notr="true">color: rgb(255, 255, 255);
-font: 11pt ;</string>
-              </property>
-              <property name="text">
-               <string>Numero de comensles: 4</string>
+               <string>Fecha:</string>
               </property>
              </widget>
             </item>
@@ -4961,8 +5025,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>82</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_6">
