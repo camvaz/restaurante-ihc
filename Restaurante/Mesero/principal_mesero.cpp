@@ -1157,7 +1157,7 @@ void Principal_Mesero::mostrarPedido(){
 
     resultado.exec(busqueda);
     while(resultado.next()){
-    numPedido=resultado.value(0).toString();
+    //numPedido=resultado.value(0).toString();
     nombre=resultado.value(1).toString();
     cantidad=resultado.value(3).toString();
     fecha=resultado.value(2).toString();
