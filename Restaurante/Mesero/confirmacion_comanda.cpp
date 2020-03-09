@@ -44,7 +44,7 @@ void confirmacion_comanda::comandaPedido(){
 
    qDebug()<<"id Platillo-->: "<<query.value(2).toString();
    qDebug()<<"Nombre-->: "<<nombre;
-   qDebug()<<"Tiempo-->: "<<precio;
+   qDebug()<<"precio-->: "<<precio;
    qDebug()<<"Categoria-->: "<<categoria;
    qDebug()<<"ingrediente2: "<<ingrediente1;
 

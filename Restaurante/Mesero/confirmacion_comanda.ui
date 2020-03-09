@@ -306,10 +306,8 @@ border-radius: 15px;
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">/*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(12, 12, 12, 255), stop:1 rgba(255, 255, 255, 255));
-bacground-color:transparent;
-border:none;*/
-background-color: rgb(255, 255, 255);</string>
+                 <string notr="true">bacground-color:transparent;
+border:none;</string>
                 </property>
                 <property name="text">
                  <string/>
@@ -400,11 +398,8 @@ background-color: rgb(255, 255, 255);</string>
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">/*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(12, 12, 12, 255), stop:1 rgba(255, 255, 255, 255));
-bacground-color:transparent;
-border:none;*/
-
-background-color: rgb(255, 255, 255);</string>
+                 <string notr="true">bacground-color:transparent;
+border:none;</string>
                 </property>
                 <property name="text">
                  <string/>

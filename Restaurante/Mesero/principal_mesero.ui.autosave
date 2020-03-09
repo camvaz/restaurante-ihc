@@ -2134,8 +2134,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
@@ -2221,8 +2221,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
@@ -2266,8 +2266,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
@@ -2343,8 +2343,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
@@ -2420,8 +2420,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_7">
@@ -2528,8 +2528,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_8">
@@ -2605,8 +2605,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_9">
@@ -2682,8 +2682,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_10">
@@ -3061,8 +3061,8 @@ color: rgb(241, 241, 241);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>57</width>
+           <height>24</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_11">
@@ -4003,6 +4003,19 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
         </item>
        </layout>
       </widget>
+     </widget>
+     <widget class="QPushButton" name="ticket">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>530</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Imprimir tivket</string>
+      </property>
      </widget>
      <widget class="QWidget" name="">
       <layout class="QHBoxLayout" name="horizontalLayout_40">
