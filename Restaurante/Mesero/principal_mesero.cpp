@@ -11,7 +11,6 @@ Principal_Mesero::Principal_Mesero(QWidget *parent) :
     //CargarImagenes();
     //idmesa=0;
 
-
 }
 
 
@@ -20,6 +19,7 @@ Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
     ui(new Ui::Principal_Mesero)
 {
     ui->setupUi(this);
+    ui->paginas->setCurrentIndex(0);
     identifier = id;
     //METODO QUE CARGA LAS IMAGENES
     CargarImagenes();
@@ -29,6 +29,9 @@ Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
 
     advertencia=new mensaje();
 
+    ui->ticket->setStyleSheet("background-color: #F1F1F1");
+    ui->orden->setStyleSheet("background-color: #C92531; border: 1px solid #7C1709; color: white;");
+    ui->mesas->setStyleSheet("background-color: #C92531; border: 1px solid #7C1709;");
 
 }
 
@@ -1154,40 +1157,47 @@ void Principal_Mesero::mostrarPedido(){
 
     resultado.exec(busqueda);
     while(resultado.next()){
-    //numPedido=resultado.value(0).toString();
-    nombre=resultado.value(1).toString();
-    cantidad=resultado.value(3).toString();
-    fecha=resultado.value(2).toString();
+        //numPedido=resultado.value(0).toString();
+        nombre=resultado.value(1).toString();
+        cantidad=resultado.value(3).toString();
+        fecha=resultado.value(2).toString();
 
-    qDebug()<<"numero de pedido: "<<numPedido;
-    qDebug()<<"nombre del platillo: "<<nombre;
-    qDebug()<<"cantidad: "<<cantidad;
-    qDebug()<<"fecha: "<<fecha;
+        qDebug()<<"numero de pedido: "<<numPedido;
+        qDebug()<<"nombre del platillo: "<<nombre;
+        qDebug()<<"cantidad: "<<cantidad;
+        qDebug()<<"fecha: "<<fecha;
 
-    ui->fecha->setText(fecha);
-    ui->numComanda->setText(numPedido);
-    ui->numMesa->setText(numMesa);
+        ui->fecha->setText(fecha);
+        ui->numComanda->setText(numPedido);
+        ui->numMesa->setText(numMesa);
 
-    QLabel *nomPlatillo=new QLabel;
-    nomPlatillo->setText(nombre);
-    nomPlatillo->setStyleSheet("background-color: rgb(138,198,242)");
+        QFont f( "MS Shell Dlg 2", 11, QFont::Normal);
 
-    QLabel *Cantidad=new QLabel;
-    Cantidad->setText("x"+cantidad);
-    Cantidad->setStyleSheet("background-color: rgb(138,198,242)");
+        QLabel *nomPlatillo=new QLabel;
+        nomPlatillo->setText(nombre);
+        nomPlatillo->setStyleSheet("color: white");
+        nomPlatillo->setFont(f);
 
-    QPushButton *cancelar= new QPushButton;
-    icono="C:/Imagenes tamaño pequeño/cross";
-    QIcon canc(icono);
-    cancelar->setIcon(canc);
-    cancelar->setIconSize(QSize(15,15));
-    cancelar->setStyleSheet("background-color: rgb(138,198,242)");
+        QLabel *Cantidad=new QLabel;
+        Cantidad->setText("x"+cantidad);
+        Cantidad->setAlignment(Qt::AlignRight);
+        Cantidad->setStyleSheet("color: white");
+        Cantidad->setFont(f);
 
-    ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
-    ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
-    ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
+        QPushButton *cancelar= new QPushButton;
+        icono="C:/Imagenes tamaño pequeño/cross";
+        QIcon canc(icono);
+        cancelar->setIcon(canc);
+        cancelar->setMaximumWidth(50);
+        cancelar->setMinimumWidth(50);
+        cancelar->setIconSize(QSize(15,15));
+        cancelar->setStyleSheet("background-color: transparent");
 
-      row++;
+        ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
+        ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
+        ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
+
+          row++;
   }
 
 }
