@@ -231,7 +231,7 @@ background-color:#F1F1F1;</string>
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>13</number>
+     <number>11</number>
     </property>
     <widget class="QWidget" name="page">
      <layout class="QGridLayout" name="gridLayout_26">
@@ -2134,8 +2134,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
@@ -2221,8 +2221,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
@@ -2266,8 +2266,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
@@ -2343,8 +2343,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
@@ -2420,8 +2420,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_7">
@@ -2528,8 +2528,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_8">
@@ -2605,8 +2605,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_9">
@@ -2682,8 +2682,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_10">
@@ -3061,8 +3061,8 @@ color: rgb(241, 241, 241);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>57</width>
-           <height>24</height>
+           <width>779</width>
+           <height>434</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_11">
@@ -4036,7 +4036,15 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
        <string>Enviar orden</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>759</width>
+        <height>35</height>
+       </rect>
+      </property>
       <layout class="QHBoxLayout" name="horizontalLayout_40">
        <item>
         <widget class="QLabel" name="label_27">
@@ -4074,7 +4082,7 @@ color: rgb(201, 37, 49);</string>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>110</x>

@@ -1044,13 +1044,13 @@ void Principal_Mesero::on_coctel_clicked(){
     ui->paginas->setCurrentIndex(11);
     clearLayout(ui->menuCoteles);
     QString coctel;             QSqlQuery QslCoctel;
-    coctel="select *from Cocteles;";
+    coctel="select *from Cocteles";
     QslCoctel.exec(coctel);
     int Cr=0;
     int cr=0;
 
     while (QslCoctel.next()) {
-     if(QslCoctel.value(5).toInt()==1){
+     if(QslCoctel.value(4).toInt()==1){
 
          //qDebug()<<"con alcohol";
 
@@ -1066,22 +1066,19 @@ void Principal_Mesero::on_coctel_clicked(){
         ui->menuCoteles->addWidget(espacio,Cr,1);
 
 
-    }
-     else {
+    }else {
 
             tarjetaPlatillo *coctel=new tarjetaPlatillo();
             coctel->llenar(QslCoctel.value(1).toString(),QslCoctel.value(2).toString(),QslCoctel.value(0).toString(),numMesa);
             ui->menuCoteles->addWidget(coctel,cr,2);
 
             cr++;
-    }
-
+         }
      Cr++;
+      }
+
     }
 
-
-
-}
 
 void Principal_Mesero::on_vino_clicked()
 {

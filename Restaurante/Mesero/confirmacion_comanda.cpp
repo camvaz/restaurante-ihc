@@ -88,6 +88,7 @@ void confirmacion_comanda::comandaPedido(){
     //infantil
     if(categoria=="8"){ruta="C:/Imagenes tamaño pequeño/potato&burger";QPixmap infantil(ruta);ui->lbl_img_platillo->setPixmap(infantil);}
    }
+   /*
    else
         {
            if(categoria=="9"){
@@ -99,6 +100,7 @@ void confirmacion_comanda::comandaPedido(){
                }
        }
 
+*/
 }
 
 void confirmacion_comanda::on_btn_aceptar_clicked()
