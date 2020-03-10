@@ -1195,7 +1195,7 @@ void Principal_Mesero::mostrarPedido(){
 void Principal_Mesero::on_cuenta_clicked()
 {
 
-
+    clearLayout(ui->pedidos);
     qDebug()<<"hola";
     if(idmesa==0){
      advertencia->setModal(true);
@@ -1230,7 +1230,7 @@ void Principal_Mesero::on_cuenta_clicked()
 
 void Principal_Mesero::on_mesa_1_clicked()
 {
-
+    clearLayout(ui->pedidos);
   idmesa=1;
   numMesa="1";
   qDebug()<<"numero de mesa:"<<numMesa;
@@ -1256,6 +1256,7 @@ void Principal_Mesero::on_mesa_1_clicked()
 
 void Principal_Mesero::on_mesa_2_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="2";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1303,6 +1304,7 @@ void Principal_Mesero::on_mesa_3_clicked()
 
 void Principal_Mesero::on_mesa_4_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="4";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1326,6 +1328,7 @@ void Principal_Mesero::on_mesa_4_clicked()
 
 void Principal_Mesero::on_mesa_5_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="5";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1349,7 +1352,7 @@ void Principal_Mesero::on_mesa_5_clicked()
 
 void Principal_Mesero::on_mesa_6_clicked()
 {
-
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="6";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1373,6 +1376,7 @@ void Principal_Mesero::on_mesa_6_clicked()
 
 void Principal_Mesero::on_mesa_7_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="7";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1396,6 +1400,7 @@ void Principal_Mesero::on_mesa_7_clicked()
 
 void Principal_Mesero::on_mesa_8_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="8";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1419,6 +1424,7 @@ void Principal_Mesero::on_mesa_8_clicked()
 
 void Principal_Mesero::on_mesa_9_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="9";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1442,6 +1448,7 @@ void Principal_Mesero::on_mesa_9_clicked()
 
 void Principal_Mesero::on_mesa_10_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="10";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1465,6 +1472,7 @@ void Principal_Mesero::on_mesa_10_clicked()
 
 void Principal_Mesero::on_mesa_11_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="11";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1488,6 +1496,7 @@ void Principal_Mesero::on_mesa_11_clicked()
 
 void Principal_Mesero::on_mesa_12_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="12";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1511,6 +1520,7 @@ void Principal_Mesero::on_mesa_12_clicked()
 
 void Principal_Mesero::on_mesa_13_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="13";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1534,6 +1544,7 @@ void Principal_Mesero::on_mesa_13_clicked()
 
 void Principal_Mesero::on_mesa_14_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="14";
     qDebug()<<"numero de mesa:"<<numMesa;
@@ -1557,6 +1568,7 @@ void Principal_Mesero::on_mesa_14_clicked()
 
 void Principal_Mesero::on_mesa_15_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="15";
     qDebug()<<"numero de mesa:"<<numMesa;
