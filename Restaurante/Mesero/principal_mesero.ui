@@ -231,7 +231,7 @@ background-color:#F1F1F1;</string>
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>10</number>
+     <number>12</number>
     </property>
     <widget class="QWidget" name="page">
      <layout class="QGridLayout" name="gridLayout_26">
@@ -2134,8 +2134,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>517</height>
+           <width>779</width>
+           <height>506</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
@@ -2237,8 +2237,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>517</height>
+           <width>779</width>
+           <height>506</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
@@ -2302,8 +2302,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>517</height>
+           <width>779</width>
+           <height>506</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
@@ -2399,8 +2399,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>517</height>
+           <width>779</width>
+           <height>506</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
@@ -2496,8 +2496,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>517</height>
+           <width>779</width>
+           <height>506</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_7">
@@ -2624,8 +2624,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>517</height>
+           <width>779</width>
+           <height>506</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_8">
@@ -2721,8 +2721,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>517</height>
+           <width>779</width>
+           <height>506</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_9">
@@ -2834,8 +2834,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>491</height>
+           <width>779</width>
+           <height>479</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_10">
@@ -3217,8 +3217,8 @@ color: rgb(241, 241, 241);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>461</height>
+           <width>98</width>
+           <height>28</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_11">
@@ -3893,10 +3893,10 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
               </property>
               <property name="styleSheet">
                <string notr="true">color: rgb(255, 255, 255);
-font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
               </property>
               <property name="text">
-               <string>Blancos mexicanos</string>
+               <string>Blanco mexicano</string>
               </property>
              </widget>
             </item>
@@ -3964,7 +3964,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
 font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
               </property>
               <property name="text">
-               <string>Blancos</string>
+               <string>Blanco</string>
               </property>
              </widget>
             </item>
@@ -4432,7 +4432,7 @@ border-radius:20px;</string>
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>689</width>
+             <width>683</width>
              <height>200</height>
             </rect>
            </property>
@@ -4706,8 +4706,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>517</height>
+           <width>779</width>
+           <height>506</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_6">
