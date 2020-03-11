@@ -231,7 +231,7 @@ background-color:#F1F1F1;</string>
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>13</number>
+     <number>10</number>
     </property>
     <widget class="QWidget" name="page">
      <layout class="QGridLayout" name="gridLayout_26">
@@ -2135,11 +2135,11 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>517</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
-          <item row="0" column="0">
+          <item row="1" column="0">
            <layout class="QGridLayout" name="menuParrila1" rowminimumheight="0" columnminimumwidth="0">
             <property name="sizeConstraint">
              <enum>QLayout::SetDefaultConstraint</enum>
@@ -2148,9 +2148,25 @@ color: rgb(201, 37, 49);</string>
              <number>0</number>
             </property>
             <property name="spacing">
-             <number>3</number>
+             <number>15</number>
             </property>
            </layout>
+          </item>
+          <item row="0" column="0">
+           <spacer name="verticalSpacer_34">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -2222,12 +2238,32 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>517</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="menuEnsalada">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+           </layout>
+          </item>
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuEnsalada"/>
+           <spacer name="verticalSpacer_38">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -2267,12 +2303,32 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>517</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="menuMar">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+           </layout>
+          </item>
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuMar"/>
+           <spacer name="verticalSpacer_37">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -2344,12 +2400,32 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>517</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="menuSopa">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+           </layout>
+          </item>
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuSopa"/>
+           <spacer name="verticalSpacer_36">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -2421,12 +2497,32 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>517</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_7">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="menuEntradas">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+           </layout>
+          </item>
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuEntradas"/>
+           <spacer name="verticalSpacer_35">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -2529,12 +2625,32 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>517</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_8">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="menuGuarnicion">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+           </layout>
+          </item>
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuGuarnicion"/>
+           <spacer name="verticalSpacer_39">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -2606,12 +2722,32 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>517</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_9">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="menuReposteria">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+           </layout>
+          </item>
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuReposteria"/>
+           <spacer name="verticalSpacer_40">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -2637,6 +2773,22 @@ color: rgb(201, 37, 49);</string>
     </widget>
     <widget class="QWidget" name="page_10">
      <layout class="QGridLayout" name="gridLayout_15">
+      <item row="0" column="0">
+       <spacer name="verticalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>15</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
       <item row="1" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout_22">
         <item>
@@ -2669,7 +2821,7 @@ color: rgb(201, 37, 49);</string>
         </item>
        </layout>
       </item>
-      <item row="2" column="0">
+      <item row="3" column="0">
        <widget class="QScrollArea" name="scrollArea_9">
         <property name="styleSheet">
          <string notr="true">border:none;</string>
@@ -2683,19 +2835,23 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>491</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_10">
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuInfantil"/>
+           <layout class="QGridLayout" name="menuInfantil">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+           </layout>
           </item>
          </layout>
         </widget>
        </widget>
       </item>
-      <item row="0" column="0">
-       <spacer name="verticalSpacer_7">
+      <item row="2" column="0">
+       <spacer name="verticalSpacer_41">
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
@@ -2705,7 +2861,7 @@ color: rgb(201, 37, 49);</string>
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>15</height>
+          <height>20</height>
          </size>
         </property>
        </spacer>
@@ -3062,7 +3218,7 @@ color: rgb(241, 241, 241);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>455</height>
+           <height>461</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_11">
@@ -3731,7 +3887,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
               </property>
               <property name="maximumSize">
                <size>
-                <width>107</width>
+                <width>150</width>
                 <height>16777215</height>
                </size>
               </property>
@@ -4551,12 +4707,16 @@ color: rgb(201, 37, 49);</string>
            <x>0</x>
            <y>0</y>
            <width>783</width>
-           <height>509</height>
+           <height>517</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_6">
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuVinos"/>
+           <layout class="QGridLayout" name="menuVinos">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+           </layout>
           </item>
          </layout>
         </widget>
