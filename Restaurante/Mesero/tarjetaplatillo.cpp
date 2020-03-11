@@ -22,6 +22,9 @@ void tarjetaPlatillo::llenar(QString nombre, QString precio, QString id,QString 
     nummesa=numMesa;
 }
 
+
+
+
 void tarjetaPlatillo::orden(QString id)
 {
     QSqlQuery platillo;
@@ -41,6 +44,7 @@ void tarjetaPlatillo::orden(QString id)
      comanda->show();
 
 }
+
 
 void tarjetaPlatillo::on_pushButton_clicked()
 {

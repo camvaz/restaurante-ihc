@@ -477,15 +477,26 @@ void Principal_Mesero::on_parilla_clicked()
     int Cr=0;
     while(parrilla1.next())
     {
+        QLabel *espacio1=new QLabel();
+        espacio1->setFixedSize(QSize(40,10));
+        espacio1->setStyleSheet("background-color:rgb(201, 37, 49)");
 
-      //espacio->setStyleSheet("background-color:rgb(201, 37, 49)");
+        QLabel *espacio2=new QLabel();
+        espacio2->setFixedSize(QSize(40,10));
+        espacio2->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+        QLabel *espacio3=new QLabel();
+        espacio3->setFixedSize(QSize(40,10));
+        espacio3->setStyleSheet("background-color:rgb(201, 37, 49)");
+
+        QLabel *espacio4=new QLabel();
+        espacio4->setFixedSize(QSize(40,10));
+        espacio4->setStyleSheet("background-color:rgb(201, 37, 49)");
 
        tarjetaPlatillo *parilla=new tarjetaPlatillo();
        parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString(),numMesa);
-       ui->menuParrila1->addWidget(parilla,Cr,0);
-       //ui->menuParrila1->addWidget(espacio,Cr,1);
-
-
+       //ui->menuParrila1->addWidget(espacio1,Cr,0);
+       ui->menuParrila1->addWidget(parilla,Cr,1);
          //seguna columna
         if(!parrilla1.next())
         {
@@ -493,10 +504,10 @@ void Principal_Mesero::on_parilla_clicked()
         }
         else{
 
-
+        ui->menuParrila1->addWidget(espacio2,Cr,2);
         tarjetaPlatillo *parilla=new tarjetaPlatillo();
         parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString(),numMesa);
-        ui->menuParrila1->addWidget(parilla,Cr,1);
+        ui->menuParrila1->addWidget(parilla,Cr,3);
 
 
         //tercera columna
@@ -504,38 +515,35 @@ void Principal_Mesero::on_parilla_clicked()
         {
             QLabel *espacio=new QLabel();
             espacio->setFixedSize(QSize(150,10));
-            ui->menuParrila1->addWidget(espacio,Cr,2);
+            //ui->menuParrila1->addWidget(espacio,Cr,2);
             Cr=Cr+3;
         }
         else{
-
-
-
+        ui->menuParrila1->addWidget(espacio3,Cr,4);
         tarjetaPlatillo *parilla=new tarjetaPlatillo();
         parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString(),numMesa);
-        ui->menuParrila1->addWidget(parilla,Cr,2);
+        ui->menuParrila1->addWidget(parilla,Cr,5);
+
         if(!parrilla1.next())
         {
             QLabel *espacio=new QLabel();
             espacio->setFixedSize(QSize(150,10));
-            ui->menuParrila1->addWidget(espacio,Cr,3);
+            //ui->menuParrila1->addWidget(espacio,Cr,3);
             Cr=Cr+4;
         }
         else{
+        ui->menuParrila1->addWidget(espacio4,Cr,6);
+                tarjetaPlatillo *parilla=new tarjetaPlatillo();
+                parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString(),numMesa);
+                ui->menuParrila1->addWidget(parilla,Cr,7);
+                Cr=Cr+5;
 
-
-
-        tarjetaPlatillo *parilla=new tarjetaPlatillo();
-        parilla->llenar(parrilla1.value(1).toString(),parrilla1.value(2).toString(),parrilla1.value(0).toString(),numMesa);
-        ui->menuParrila1->addWidget(parilla,Cr,3);
-        Cr=Cr+5;
-
-        }
+         }
 
         }
 
 
-           }
+      }
 
     }
 

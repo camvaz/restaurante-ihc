@@ -31,7 +31,9 @@ void confirmacion_comanda::comandaPedido(){
    QSqlQuery query;
    QString busqueda,categoria,ruta,nombre,precio,menuCate,ingredientes,ingrediente1;
 
-   busqueda="select *from CategoriaMenu as c inner join  Platillos as p on c.idCategoriaMenu=p.idCategoriaMenu inner join ingredientes_platillo as ip  on p.idPlatillo=ip.idPlatillo inner join Ingredientes as i on ip.idIngrediente=i.idIngredientes where p.idPlatillo='"+idPlatillos+"'";
+   busqueda="select *from CategoriaMenu as c inner join  Platillos as p on c.idCategoriaMenu=p.idCategoriaMenu "
+   "inner join ingredientes_platillo as ip  on p.idPlatillo=ip.idPlatillo "
+    "inner join Ingredientes as i on ip.idIngrediente=i.idIngredientes where p.idPlatillo='"+idPlatillos+"'";
 
    query.exec(busqueda);
    query.next();
