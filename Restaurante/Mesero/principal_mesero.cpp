@@ -711,7 +711,6 @@ void Principal_Mesero::on_sopa_clicked()
         ui->menuSopa->addWidget(sopa,Cr,0, Qt::AlignTop);
         //ui->menuSopa->addWidget(espacio,Cr,1);
 
-
         //seguna columna
         if(!sopa1.next())
         {
@@ -722,15 +721,14 @@ void Principal_Mesero::on_sopa_clicked()
         tarjetaPlatillo *sopa=new tarjetaPlatillo();
         sopa->llenar(sopa1.value(1).toString(),sopa1.value(2).toString(),sopa1.value(0).toString(),numMesa);
         ui->menuSopa->addWidget(sopa,Cr,1, Qt::AlignTop);
-
-
-
+   // Cr=Cr+2;
         if(!sopa1.next())
         {
-            QLabel *espacio=new QLabel();
+            /*QLabel *espacio=new QLabel();
             espacio->setFixedSize(QSize(150,10));
              ui->menuMar->addWidget(espacio,Cr,2, Qt::AlignTop);
-             Cr=Cr+3;
+        */
+
         }
         else {
 
@@ -738,13 +736,14 @@ void Principal_Mesero::on_sopa_clicked()
         tarjetaPlatillo *sopa=new tarjetaPlatillo();
         sopa->llenar(sopa1.value(1).toString(),sopa1.value(2).toString(),sopa1.value(0).toString(),numMesa);
         ui->menuSopa->addWidget(sopa,Cr,2, Qt::AlignTop);
-
+       //  Cr=Cr+3;
         if(!sopa1.next())
         {
-            QLabel *espacio=new QLabel();
+           /* QLabel *espacio=new QLabel();
             espacio->setFixedSize(QSize(150,10));
              ui->menuMar->addWidget(espacio,Cr,3, Qt::AlignTop);
-             Cr=Cr+4;
+             */
+
         }
         else {
 
@@ -752,15 +751,16 @@ void Principal_Mesero::on_sopa_clicked()
         tarjetaPlatillo *sopa=new tarjetaPlatillo();
         sopa->llenar(sopa1.value(1).toString(),sopa1.value(2).toString(),sopa1.value(0).toString(),numMesa);
         ui->menuSopa->addWidget(sopa,Cr,3, Qt::AlignTop);
-        Cr=Cr+5;
 
-
-        }
+           }
 
         }
 
-        }
+      }
+      Cr=1;
     }
+
+
 }
 
 void Principal_Mesero::on_entrada_clicked(){
