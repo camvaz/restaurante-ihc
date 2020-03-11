@@ -8,6 +8,8 @@ Asignar_mesa::Asignar_mesa(QString idMesa,QWidget *parent) :
 {
     ui->setupUi(this);
     this->idMesa=idMesa;
+    QString imagen="C:/Imagenes tamaño pequeño/logo";
+    ui->label_logo->setPixmap(imagen);
     cargarCombobox();
 
 }

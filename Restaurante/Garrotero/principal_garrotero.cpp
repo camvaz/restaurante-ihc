@@ -6,6 +6,8 @@ principal_garrotero::principal_garrotero(QWidget *parent) :
     ui(new Ui::principal_garrotero)
 {
     ui->setupUi(this);
+    QString botones;
+    botones="C:/Imagenes tamaño pequeño/dining-table";QIcon boton_users(botones);ui->mesas->setIcon(boton_users);
     ui->stackedWidget->insertWidget(0,&piso);
     ui->stackedWidget->setCurrentIndex(0);
 }
