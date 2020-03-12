@@ -19,9 +19,9 @@ class tarjetaPlatillo : public QWidget
 public:
     explicit tarjetaPlatillo(QWidget *parent = nullptr);
     ~tarjetaPlatillo();
-    void llenar(QString,QString,QString,QString);
+    void llenar(QString,QString,QString,QString,QString);
     void orden(QString );
-    QString nummesa;
+    QString nummesa,categoria;
 
 private slots:
     void on_pushButton_clicked();

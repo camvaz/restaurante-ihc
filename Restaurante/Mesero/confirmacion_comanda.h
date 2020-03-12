@@ -16,10 +16,10 @@ class confirmacion_comanda : public QDialog
     Q_OBJECT
 
 public:
-    explicit confirmacion_comanda(QString ,QString ,QWidget *parent = nullptr);
+    explicit confirmacion_comanda(QString ,QString,QString,QWidget *parent = nullptr);
     ~confirmacion_comanda();
 
-    QString idPlatillos,nummesa;
+    QString idPlatillos,nummesa,Categoria;
 
     void comandaPedido();
 

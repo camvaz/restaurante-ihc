@@ -13,13 +13,15 @@ tarjetaPlatillo::~tarjetaPlatillo()
     delete ui;
 }
 
-void tarjetaPlatillo::llenar(QString nombre, QString precio, QString id,QString numMesa)
+void tarjetaPlatillo::llenar(QString nombre, QString precio, QString id,QString numMesa,QString categoriaPla)
 {
     ui->nombrePro->setPlainText(nombre);
     ui->idPro->setText(id);
     ui->Precio->setText(precio);
     //qDebug()<<"num mesa: "<<numMesa;
+    qDebug()<<"categoria del platillo-->>>>>>>>: "<<categoriaPla;
     nummesa=numMesa;
+    categoria=categoriaPla;
 }
 
 
@@ -39,7 +41,7 @@ void tarjetaPlatillo::orden(QString id)
      //qDebug()<<"Tiempo: "<<platillo.value(3).toString();
      //qDebug()<<"Categoria: "<<platillo.value(4).toString();
 
-     comanda=new confirmacion_comanda(id,nummesa);
+     comanda=new confirmacion_comanda(id,nummesa,categoria);
      comanda->setModal(true);
      comanda->show();
 
