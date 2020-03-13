@@ -54,7 +54,7 @@ color: white;
    <property name="styleSheet">
     <string notr="true">background-color:#707070;
 border: 1px solid #707070;
-border-radius:20px;</string>
+border-radius:10px;</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -82,7 +82,7 @@ border-radius:20px;</string>
         <property name="font">
          <font>
           <family>MS Shell Dlg 2</family>
-          <pointsize>12</pointsize>
+          <pointsize>11</pointsize>
           <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
@@ -92,7 +92,7 @@ border-radius:20px;</string>
          <string notr="true">background-color:transparent;
 border:none;
 
-font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="verticalScrollBarPolicy">
          <enum>Qt::ScrollBarAlwaysOff</enum>
@@ -154,11 +154,15 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
           </property>
           <property name="font">
            <font>
-            <pointsize>10</pointsize>
+            <family>MS Shell Dlg 2</family>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
           </property>
           <property name="text">
            <string>FOLIO</string>
@@ -205,8 +209,15 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
              </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
             </property>
             <property name="text">
              <string>$</string>
@@ -235,11 +246,15 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
             </property>
             <property name="font">
              <font>
-              <pointsize>10</pointsize>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true"/>
+             <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
             </property>
             <property name="text">
              <string>00.00</string>
