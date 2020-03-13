@@ -1150,12 +1150,13 @@ void Principal_Mesero::on_bebidas_clicked()
 
 void Principal_Mesero::mostrarPedido(){
 
-    QString busqueda,fecha,cantidad,nombre,numPedido,icono;
-    QSqlQuery resultado,querycantidad;
+    QString busqueda,fecha,cantidad,nombre,numPedido,icono,categoria;
+    QSqlQuery resultado,querycantidad,querycategoria;
     int row=0;
 
-    busqueda="select p.idPedido,pl.Nombre,p.fecha, sum(cp.cantidad) from Pedido as p inner join Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
-             " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' group by cp.idPlatillo";
+    busqueda="select p.idPedido,pl.Nombre,p.fecha, sum(cp.cantidad) from Pedido as p inner join "
+    "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
+    " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' and p.estado='1' group by cp.idPlatillo";
 
     resultado.exec(busqueda);
     while(resultado.next()){

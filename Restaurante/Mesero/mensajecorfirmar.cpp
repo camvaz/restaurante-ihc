@@ -28,22 +28,31 @@ mensajeCorfirmar::~mensajeCorfirmar()
 
 void mensajeCorfirmar::on_aceptar_clicked()
 {
-    QString pedido,ulti,mesa,estado,pedidoActual;
-    QSqlQuery queryPedido,queryComaPedi,queryUlti,queryUpdate,mesas;
+    QString pedido,ulti,mesa,estado,pedidoActual,estadoMesa,estadomesa;
+    QSqlQuery queryPedido,queryComaPedi,queryUlti,queryUpdate,mesas,queryMesa;
 
-    QDate fecha=QDate::currentDate();QString fecha_Actual=fecha.toString("yyyy-MM-dd");
-    pedido="insert into Pedido(Mesa_idMesa,fecha)values('"+numMesa1+"','"+fecha_Actual+"')";
-    queryPedido.exec(pedido);queryPedido.next();
+    mesa="select *from mesa where idMesa='"+numMesa1+"'";
+    mesas.exec(mesa);
+    mesas.next();
+    estado=mesas.value(3).toString();
+
+    if(estado=="disponible"){
+
+        qDebug()<<"entre ";
+        QDate fecha=QDate::currentDate();QString fecha_Actual=fecha.toString("yyyy-MM-dd");
+        pedido="insert into Pedido(Mesa_idMesa,fecha,estado)values('"+numMesa1+"','"+fecha_Actual+"','1')";
+        queryPedido.exec(pedido);queryPedido.next();
+     }
 
 
     qDebug()<<"cantidad:"<<cantidad1;
     qDebug()<<"numero mesa: "<<numMesa1;
-    qDebug()<<"fecha actual: "<<fecha_Actual;
+    //qDebug()<<"fecha actual: "<<fecha_Actual;
     qDebug()<<"id comanda desde dialogo: "<<idPlatillo1;
     qDebug()<<"Descripcion del platillo"<<descripcion1;
 
 
-    ulti="SELECT  max(idPedido) AS id FROM Pedido";
+    ulti="SELECT  max(idPedido) AS id FROM Pedido  where Mesa_idMesa=1";
     queryUlti.exec(ulti);queryUlti.next();ulti=queryUlti.value(0).toString();
 
     qDebug()<<"ultimo id: "<<ulti;
@@ -53,11 +62,6 @@ void mensajeCorfirmar::on_aceptar_clicked()
     queryComaPedi.exec(pedidoActual);
     queryComaPedi.next();
 
-    mesa="select *from mesa where idMesa='"+numMesa1+"'";
-    mesas.exec(mesa);
-    mesas.next();
-    estado=mesas.value(3).toString();
-
     if(estado=="disponible"){
         qDebug()<<"mesa pasa a ocupada";
       estado="UPDATE mesa SET Estado='ocupado' WHERE idMesa='"+numMesa1+"'";
@@ -65,9 +69,8 @@ void mensajeCorfirmar::on_aceptar_clicked()
       queryUpdate.next();
      }
    close();
-   confirmado=1;
+  // confirmado=1;
    //confirmar();
-
 }
 
 void mensajeCorfirmar::on_cancelar_clicked()
