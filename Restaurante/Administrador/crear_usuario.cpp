@@ -17,6 +17,13 @@ crear_usuario::crear_usuario(QWidget *parent) :
     ui->frame_datos_empleado->hide();
     ui->frame_credenciales->hide();
     id="";
+    ui->ID->setEnabled(false);
+    QSqlQuery query;
+    query.prepare("SELECT idUsuario FROM usuario ORDER BY idUsuario DESC ");
+    query.exec();
+    query.next();
+    int num=query.value(0).toInt()+1;
+    ui->ID->setText(QString::number(num));
 }
 
 crear_usuario::~crear_usuario()

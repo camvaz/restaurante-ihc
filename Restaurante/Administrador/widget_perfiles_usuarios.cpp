@@ -11,8 +11,6 @@ widget_perfiles_usuarios::widget_perfiles_usuarios(QWidget *parent) :
     cargarPerfiles();
 }
 
-
-
 widget_perfiles_usuarios::~widget_perfiles_usuarios()
 {
     delete ui;
@@ -29,6 +27,7 @@ void widget_perfiles_usuarios::cargarPerfiles()
     int i = 0;
     int row = 0;
     int col = 0;
+    query.next();
 
     while(query.next())
     {

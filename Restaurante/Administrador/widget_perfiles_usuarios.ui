@@ -132,14 +132,14 @@ font: 75 18pt &quot;Noto Serif&quot;;</string>
         </property>
         <property name="font">
          <font>
-          <family>MS Sans Serif</family>
+          <family>Noto Serif</family>
           <pointsize>-1</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-bottom: 2px solid #707070;
+         <string notr="true">border-bottom: 1px solid #707070;
 border-top:none;
 color: white;
 font-size: 20px;
@@ -149,8 +149,11 @@ text-align:center;</string>
         <property name="text">
          <string/>
         </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
         <property name="placeholderText">
-         <string>             Búsqueda</string>
+         <string>Búsqueda</string>
         </property>
        </widget>
       </item>
@@ -207,7 +210,11 @@ text-align:center;</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="0">
-         <layout class="QGridLayout" name="gridLayout"/>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="spacing">
+           <number>30</number>
+          </property>
+         </layout>
         </item>
        </layout>
       </widget>

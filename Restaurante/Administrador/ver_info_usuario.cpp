@@ -19,6 +19,15 @@ ver_info_usuario::ver_info_usuario(QString id,QWidget *parent) :
     ui->frame_credenciales->hide();
     idUsuario=id;
 
+    QSqlQuery query;
+    query.prepare("SELECT Rol FROM  usuario WHERE idUsuario="+idUsuario);
+    query.exec();
+    query.next();
+    if(query.value(0).toString()!="Mesero")
+    {
+        ui->frame_actividades->hide();
+        ui->frame_3->hide();
+    }
     actualizarDatos();
 
 }

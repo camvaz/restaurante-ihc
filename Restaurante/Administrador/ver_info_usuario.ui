@@ -6,15 +6,34 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>401</width>
-    <height>635</height>
+    <width>381</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>381</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>381</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:#0c0c0c;</string>
+   <string notr="true">background-color:#0c0c0c;
+font: 10pt &quot;Noto Serif&quot;;</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_3">
    <item row="0" column="0">
@@ -206,12 +225,23 @@
       <widget class="QScrollArea" name="scrollArea">
        <property name="minimumSize">
         <size>
-         <width>341</width>
-         <height>345</height>
+         <width>350</width>
+         <height>310</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>360</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="font">
         <font>
+         <family>Noto Serif</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
          <stylestrategy>PreferAntialias</stylestrategy>
         </font>
        </property>
@@ -225,8 +255,8 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-439</y>
-          <width>364</width>
+          <y>-474</y>
+          <width>343</width>
           <height>784</height>
          </rect>
         </property>
@@ -288,6 +318,9 @@ border-radius: 15px;
                      <height>25</height>
                     </size>
                    </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">text-align:left;
 border:none;
@@ -312,6 +345,9 @@ color:white;</string>
                      <width>30</width>
                      <height>25</height>
                     </size>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
                    </property>
                    <property name="styleSheet">
                     <string notr="true">
@@ -745,6 +781,9 @@ border-radius: 15px;
                      <height>25</height>
                     </size>
                    </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">text-align:left;
 border:none;
@@ -769,6 +808,9 @@ color:white;</string>
                      <width>30</width>
                      <height>25</height>
                     </size>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
                    </property>
                    <property name="styleSheet">
                     <string notr="true">
@@ -1108,6 +1150,9 @@ border-radius: 15px;
                    <height>25</height>
                   </size>
                  </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">text-align:left;
 border:none;
@@ -1132,6 +1177,9 @@ color:white;</string>
                    <width>30</width>
                    <height>25</height>
                   </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">
@@ -1363,6 +1411,9 @@ border-radius: 15px;
                      <height>25</height>
                     </size>
                    </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">text-align:left;
 border:none;
@@ -1387,6 +1438,9 @@ color:white;</string>
                      <width>30</width>
                      <height>25</height>
                     </size>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
                    </property>
                    <property name="styleSheet">
                     <string notr="true">
@@ -1599,9 +1653,19 @@ border:none;
            <height>30</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Noto Serif</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
+background-color: rgb(255, 255, 255);
+font: 8pt &quot;Noto Serif&quot;;</string>
          </property>
          <property name="text">
           <string>Editar</string>
