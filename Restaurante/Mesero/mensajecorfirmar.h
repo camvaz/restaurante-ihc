@@ -15,9 +15,9 @@ class mensajeCorfirmar : public QDialog
     Q_OBJECT
 
 public:
-    explicit mensajeCorfirmar(QString,QString,QString,QString,QString,QWidget *parent = nullptr);
+    explicit mensajeCorfirmar(QString,QString,QString,QString,QString,QString,QWidget *parent = nullptr);
     ~mensajeCorfirmar();
-    QString idPedido1,idPlatillo1,cantidad1,descripcion1,numMesa1;
+    QString idPedido1,idPlatillo1,cantidad1,descripcion1,numMesa1,categoria;
     int confirmado=0;
 
     int confirmar();

@@ -155,7 +155,7 @@ void confirmacion_comanda::on_btn_aceptar_clicked()
            qDebug()<<"id comanda desde dialogo: "<<idPlatillos;
            qDebug()<<"Descripcion del platillo"<<descripcion;
           */
-   mensajeCorfirmar *hola=new mensajeCorfirmar(ulti,idPlatillos,cantidad,descripcion,nummesa);
+   mensajeCorfirmar *hola=new mensajeCorfirmar(ulti,idPlatillos,cantidad,descripcion,nummesa,Categoria);
    hola->setModal(true);
    hola->show();
 

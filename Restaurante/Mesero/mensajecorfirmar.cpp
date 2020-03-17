@@ -1,7 +1,7 @@
 #include "mensajecorfirmar.h"
 #include "ui_mensajecorfirmar.h"
 
-mensajeCorfirmar::mensajeCorfirmar(QString idPedido,QString idPlatillo,QString cantidad,QString descripcion,QString numMesa,QWidget *parent) :
+mensajeCorfirmar::mensajeCorfirmar(QString idPedido,QString idPlatillo,QString cantidad,QString descripcion,QString numMesa,QString Categoria,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::mensajeCorfirmar)
 {
@@ -13,6 +13,9 @@ mensajeCorfirmar::mensajeCorfirmar(QString idPedido,QString idPlatillo,QString c
    cantidad1=cantidad;
    descripcion1=descripcion;
    numMesa1=numMesa;
+   categoria=Categoria;
+
+   qDebug()<<"categoria: "<<categoria;
 
    QString imagen;
    imagen="C:/Imagenes tamaño pequeño/Advertencia";
@@ -57,8 +60,8 @@ void mensajeCorfirmar::on_aceptar_clicked()
 
     qDebug()<<"ultimo id: "<<ulti;
 
-    pedidoActual="insert into Comanda_has_Platillo(idPedido,idPlatillo,cantidad,describcion)"
-                 "values('"+ulti+"','"+idPlatillo1+"','"+cantidad1+"','"+descripcion1+"')";
+    pedidoActual="insert into Comanda_has_Platillo(idPedido,idPlatillo,cantidad,describcion,categoria)"
+                 "values('"+ulti+"','"+idPlatillo1+"','"+cantidad1+"','"+descripcion1+"','"+categoria+"')";
     queryComaPedi.exec(pedidoActual);
     queryComaPedi.next();
 

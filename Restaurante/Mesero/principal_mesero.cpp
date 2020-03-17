@@ -1150,64 +1150,169 @@ void Principal_Mesero::on_bebidas_clicked()
 
 void Principal_Mesero::mostrarPedido(){
 
-    QString busqueda,fecha,cantidad,nombre,numPedido,icono,categoria;
-    QSqlQuery resultado,querycantidad,querycategoria;
+    //clearLayout(ui->pedidos);
+    QString busqueda,fecha,cantidad,nombre,numPedido,id,icono,categoria,checkCategoria;
+    QSqlQuery resultado,querycantidad,querycategoria,Querypedido;
     int row=0;
 
-    busqueda="select p.idPedido,pl.Nombre,p.fecha, sum(cp.cantidad) from Pedido as p inner join "
-    "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
-    " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' and p.estado='1' group by cp.idPlatillo";
+   checkCategoria="select *from Comanda_has_Platillo";
+   Querypedido.exec(checkCategoria);
 
-    resultado.exec(busqueda);
-    while(resultado.next()){
-        //numPedido=resultado.value(0).toString();
-        nombre=resultado.value(1).toString();
-        cantidad=resultado.value(3).toString();
-        fecha=resultado.value(2).toString();
+   while(Querypedido.next()){
 
-        qDebug()<<"numero de pedido: "<<numPedido;
-        qDebug()<<"nombre del platillo: "<<nombre;
-        qDebug()<<"cantidad: "<<cantidad;
-        qDebug()<<"fecha: "<<fecha;
+       id=Querypedido.value(2).toString();
+       categoria=Querypedido.value(5).toString();
 
-        ui->fecha->setText(fecha);
-        ui->numComanda->setText(numPedido);
-        ui->numMesa->setText(numMesa);
+       qDebug()<<id<<" -- "<<categoria;
 
-        QFont f( "MS Shell Dlg 2", 11, QFont::Normal);
+       if(categoria<"9")
+       {
+           busqueda="select p.idPedido,pl.Nombre,p.fecha, sum(cp.cantidad) from Pedido as p inner join "
+           "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
+           " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' "
+           "and p.estado='1'and cp.idPlatillo='"+id+"' group by cp.idPlatillo";
 
-        QLabel *nomPlatillo=new QLabel;
-        nomPlatillo->setText(nombre);
-        nomPlatillo->setStyleSheet("color: white");
-        nomPlatillo->setFont(f);
 
-        QLabel *Cantidad=new QLabel;
-        Cantidad->setText("x"+cantidad);
-        Cantidad->setAlignment(Qt::AlignRight);
-        Cantidad->setStyleSheet("color: white");
-        Cantidad->setFont(f);
+          resultado.exec(busqueda);
+          resultado.next();
+          qDebug()<<"platillo";
 
-        QPushButton *cancelar= new QPushButton;
-        icono="C:/Imagenes tamaño pequeño/cross";
-        QIcon canc(icono);
-        cancelar->setIcon(canc);
-        cancelar->setMaximumWidth(50);
-        cancelar->setMinimumWidth(50);
-        cancelar->setIconSize(QSize(15,15));
-        cancelar->setStyleSheet("background-color: transparent");
+          numPedido=resultado.value(0).toString();
+          nombre=resultado.value(1).toString();
+          cantidad=resultado.value(3).toString();
+          fecha=resultado.value(2).toString();
 
-        ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
-        ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
-        ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
+          qDebug()<<"numero de pedido: "<<numPedido;
+          qDebug()<<"nombre del platillo: "<<nombre;
+          qDebug()<<"cantidad: "<<cantidad;
+          qDebug()<<"fecha: "<<fecha;
 
-          row++;
-  }
+          ui->fecha->setText(fecha);
+          ui->numComanda->setText(numPedido);
+          ui->numMesa->setText(numMesa);
 
+          QFont f( "MS Shell Dlg 2", 11, QFont::Normal);
+
+          QLabel *nomPlatillo=new QLabel;
+          nomPlatillo->setText(nombre);
+          nomPlatillo->setStyleSheet("color: white");
+          nomPlatillo->setFont(f);
+
+          QLabel *Cantidad=new QLabel;
+          Cantidad->setText("x"+cantidad);
+          Cantidad->setAlignment(Qt::AlignRight);
+          Cantidad->setStyleSheet("color: white");
+          Cantidad->setFont(f);
+
+          QPushButton *cancelar= new QPushButton;
+          icono="C:/Imagenes tamaño pequeño/cross";
+          QIcon canc(icono);
+          cancelar->setIcon(canc);
+          cancelar->setMaximumWidth(50);
+          cancelar->setMinimumWidth(50);
+          cancelar->setIconSize(QSize(15,15));
+          cancelar->setStyleSheet("background-color: transparent");
+
+          ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
+          ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
+          ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
+
+          //row++;
+
+
+       }if(categoria=="9"){
+
+           qDebug()<<"es un coctel";
+
+           busqueda="select c.Nombre,sum(cp.cantidad) from Pedido as p inner join "
+                    "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido inner"
+                    " join Cocteles as c on cp.idPlatillo=c.idBebida where p.Mesa_idMesa='"+numMesa+"' and cp.idPlatillo='"+id+"'";
+           resultado.exec(busqueda);
+           resultado.next();
+
+           nombre=resultado.value(0).toString();
+           cantidad=resultado.value(1).toString();
+
+
+           qDebug()<<"nombre del platillo: "<<nombre;
+          qDebug()<<"cantidad: "<<cantidad;
+           QFont f( "MS Shell Dlg 2", 11, QFont::Normal);
+
+           QLabel *nomPlatillo=new QLabel;
+           nomPlatillo->setText(nombre);
+           nomPlatillo->setStyleSheet("color: white");
+           nomPlatillo->setFont(f);
+
+           QLabel *Cantidad=new QLabel;
+           Cantidad->setText("x"+cantidad);
+           Cantidad->setAlignment(Qt::AlignRight);
+           Cantidad->setStyleSheet("color: white");
+           Cantidad->setFont(f);
+
+           QPushButton *cancelar= new QPushButton;
+           icono="C:/Imagenes tamaño pequeño/cross";
+           QIcon canc(icono);
+           cancelar->setIcon(canc);
+           cancelar->setMaximumWidth(50);
+           cancelar->setMinimumWidth(50);
+           cancelar->setIconSize(QSize(15,15));
+           cancelar->setStyleSheet("background-color: transparent");
+
+           ui->pedidos->addWidget(nomPlatillo,2,0,Qt::AlignTop);
+           ui->pedidos->addWidget(Cantidad,2,2,Qt::AlignTop);
+           ui->pedidos->addWidget(cancelar,2,3,Qt::AlignTop);
+
+       }if(categoria=="10"){
+           qDebug()<<"es un vino";
+
+  busqueda="select v.Nombre,sum(cp.cantidad) from Pedido as p inner join Comanda_has_Platillo as cp "
+           "on p.idPedido=cp.idPedido inner join Vinos as v "
+           "on cp.idPlatillo=v.idBebida where p.Mesa_idMesa='"+numMesa+"' and cp.idPlatillo='"+id+"'";
+          // qDebug()<<busqueda;
+
+           resultado.exec(busqueda);
+           resultado.next();
+
+           nombre=resultado.value(0).toString();
+           cantidad=resultado.value(1).toString();
+
+           qDebug()<<"nombre del platillo: "<<nombre;
+           qDebug()<<"cantidad: "<<cantidad;
+
+           QFont f( "MS Shell Dlg 2", 11, QFont::Normal);
+
+           QLabel *nomPlatillo=new QLabel;
+           nomPlatillo->setText(nombre);
+           nomPlatillo->setStyleSheet("color: white");
+           nomPlatillo->setFont(f);
+
+           QLabel *Cantidad=new QLabel;
+           Cantidad->setText("x"+cantidad);
+           Cantidad->setAlignment(Qt::AlignRight);
+           Cantidad->setStyleSheet("color: white");
+           Cantidad->setFont(f);
+
+           QPushButton *cancelar= new QPushButton;
+           icono="C:/Imagenes tamaño pequeño/cross";
+           QIcon canc(icono);
+           cancelar->setIcon(canc);
+           cancelar->setMaximumWidth(50);
+           cancelar->setMinimumWidth(50);
+           cancelar->setIconSize(QSize(15,15));
+           cancelar->setStyleSheet("background-color: transparent");
+
+           ui->pedidos->addWidget(nomPlatillo,3,0,Qt::AlignTop);
+           ui->pedidos->addWidget(Cantidad,3,2,Qt::AlignTop);
+           ui->pedidos->addWidget(cancelar,3,3,Qt::AlignTop);
+
+
+       }
+
+   }
 }
 
 void Principal_Mesero::on_cuenta_clicked()
 {
-
     clearLayout(ui->pedidos);
     qDebug()<<"hola";
     if(idmesa==0){
@@ -1293,6 +1398,7 @@ void Principal_Mesero::on_mesa_2_clicked()
 
 void Principal_Mesero::on_mesa_3_clicked()
 {
+    clearLayout(ui->pedidos);
     idmesa=1;
     numMesa="3";
     qDebug()<<"numero de mesa:"<<numMesa;
