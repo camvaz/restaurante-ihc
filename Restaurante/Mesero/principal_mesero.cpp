@@ -1148,10 +1148,18 @@ void Principal_Mesero::on_bebidas_clicked()
 
 }
 
+void Principal_Mesero::EliminarPlatillo(QString id){
+
+
+
+
+
+}
+
 void Principal_Mesero::mostrarPedido(){
 
     //clearLayout(ui->pedidos);
-    QString busqueda,fecha,cantidad,nombre,numPedido,id,icono,categoria,checkCategoria;
+    QString busqueda,fecha,cantidad,nombre,numPedido,id,icono,categoria,checkCategoria,estadoPlatillo,idComanda;
     QSqlQuery resultado,querycantidad,querycategoria,Querypedido;
     int row=0;
 
@@ -1165,12 +1173,14 @@ void Principal_Mesero::mostrarPedido(){
 
        qDebug()<<id<<" -- "<<categoria;
 
-       if(categoria<"9")
+
+
+       if(categoria<="8" && categoria!="10" && categoria!="9")
        {
-           busqueda="select p.idPedido,pl.Nombre,p.fecha, sum(cp.cantidad) from Pedido as p inner join "
+           busqueda="select p.idPedido,pl.Nombre,p.fecha,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join "
            "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
            " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' "
-           "and p.estado='1'and cp.idPlatillo='"+id+"' group by cp.idPlatillo";
+           "and p.estado='1'and cp.idPlatillo='"+id+"'";
 
 
           resultado.exec(busqueda);
@@ -1181,7 +1191,10 @@ void Principal_Mesero::mostrarPedido(){
           nombre=resultado.value(1).toString();
           cantidad=resultado.value(3).toString();
           fecha=resultado.value(2).toString();
+          estadoPlatillo=resultado.value(4).toString();
+          idComanda=resultado.value(5).toString();
 
+          qDebug()<<"idcomanda: "<<idComanda;
           qDebug()<<"numero de pedido: "<<numPedido;
           qDebug()<<"nombre del platillo: "<<nombre;
           qDebug()<<"cantidad: "<<cantidad;
@@ -1204,6 +1217,7 @@ void Principal_Mesero::mostrarPedido(){
           Cantidad->setStyleSheet("color: white");
           Cantidad->setFont(f);
 
+          if(estadoPlatillo=="0"){
           QPushButton *cancelar= new QPushButton;
           icono="C:/Imagenes tamaño pequeño/cross";
           QIcon canc(icono);
@@ -1212,19 +1226,20 @@ void Principal_Mesero::mostrarPedido(){
           cancelar->setMinimumWidth(50);
           cancelar->setIconSize(QSize(15,15));
           cancelar->setStyleSheet("background-color: transparent");
-
+          ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
+        }
           ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
           ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
-          ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
 
-          //row++;
+
+          row++;
 
 
        }if(categoria=="9"){
 
            qDebug()<<"es un coctel";
 
-           busqueda="select c.Nombre,sum(cp.cantidad) from Pedido as p inner join "
+           busqueda="select c.Nombre,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join "
                     "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido inner"
                     " join Cocteles as c on cp.idPlatillo=c.idBebida where p.Mesa_idMesa='"+numMesa+"' and cp.idPlatillo='"+id+"'";
            resultado.exec(busqueda);
@@ -1232,8 +1247,10 @@ void Principal_Mesero::mostrarPedido(){
 
            nombre=resultado.value(0).toString();
            cantidad=resultado.value(1).toString();
+           estadoPlatillo=resultado.value(2).toString();
+           idComanda=resultado.value(3).toString();
 
-
+           qDebug()<<"idcomanda: "<<idComanda;
            qDebug()<<"nombre del platillo: "<<nombre;
           qDebug()<<"cantidad: "<<cantidad;
            QFont f( "MS Shell Dlg 2", 11, QFont::Normal);
@@ -1248,7 +1265,7 @@ void Principal_Mesero::mostrarPedido(){
            Cantidad->setAlignment(Qt::AlignRight);
            Cantidad->setStyleSheet("color: white");
            Cantidad->setFont(f);
-
+           if(estadoPlatillo=="0"){
            QPushButton *cancelar= new QPushButton;
            icono="C:/Imagenes tamaño pequeño/cross";
            QIcon canc(icono);
@@ -1257,15 +1274,16 @@ void Principal_Mesero::mostrarPedido(){
            cancelar->setMinimumWidth(50);
            cancelar->setIconSize(QSize(15,15));
            cancelar->setStyleSheet("background-color: transparent");
+           ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
+            }
+           ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
+           ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
 
-           ui->pedidos->addWidget(nomPlatillo,2,0,Qt::AlignTop);
-           ui->pedidos->addWidget(Cantidad,2,2,Qt::AlignTop);
-           ui->pedidos->addWidget(cancelar,2,3,Qt::AlignTop);
-
-       }if(categoria=="10"){
+            row++;
+       } if(categoria=="10"){
            qDebug()<<"es un vino";
 
-  busqueda="select v.Nombre,sum(cp.cantidad) from Pedido as p inner join Comanda_has_Platillo as cp "
+  busqueda="select v.Nombre,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join Comanda_has_Platillo as cp "
            "on p.idPedido=cp.idPedido inner join Vinos as v "
            "on cp.idPlatillo=v.idBebida where p.Mesa_idMesa='"+numMesa+"' and cp.idPlatillo='"+id+"'";
           // qDebug()<<busqueda;
@@ -1275,7 +1293,10 @@ void Principal_Mesero::mostrarPedido(){
 
            nombre=resultado.value(0).toString();
            cantidad=resultado.value(1).toString();
+           estadoPlatillo=resultado.value(2).toString();
+           idComanda=resultado.value(3).toString();
 
+           qDebug()<<"idcomanda: "<<idComanda;
            qDebug()<<"nombre del platillo: "<<nombre;
            qDebug()<<"cantidad: "<<cantidad;
 
@@ -1292,6 +1313,7 @@ void Principal_Mesero::mostrarPedido(){
            Cantidad->setStyleSheet("color: white");
            Cantidad->setFont(f);
 
+           if(estadoPlatillo=="0"){
            QPushButton *cancelar= new QPushButton;
            icono="C:/Imagenes tamaño pequeño/cross";
            QIcon canc(icono);
@@ -1300,15 +1322,15 @@ void Principal_Mesero::mostrarPedido(){
            cancelar->setMinimumWidth(50);
            cancelar->setIconSize(QSize(15,15));
            cancelar->setStyleSheet("background-color: transparent");
-
-           ui->pedidos->addWidget(nomPlatillo,3,0,Qt::AlignTop);
-           ui->pedidos->addWidget(Cantidad,3,2,Qt::AlignTop);
-           ui->pedidos->addWidget(cancelar,3,3,Qt::AlignTop);
-
+           ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
+           }
+           ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
+           ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
+           row++;
 
        }
 
-   }
+    }
 }
 
 void Principal_Mesero::on_cuenta_clicked()
@@ -2050,4 +2072,13 @@ void Principal_Mesero::on_postre_clicked()
 
      Cr++;
      }
+}
+
+void Principal_Mesero::on_orden_clicked()
+{
+   EnviarPedido  *enviar=new EnviarPedido(numMesa);
+    enviar->setModal(true);
+    enviar->show();
+
+
 }

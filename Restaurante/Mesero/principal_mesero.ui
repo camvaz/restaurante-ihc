@@ -231,7 +231,7 @@ background-color:#F1F1F1;</string>
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>13</number>
     </property>
     <widget class="QWidget" name="page">
      <layout class="QGridLayout" name="gridLayout_26">
@@ -2134,8 +2134,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>68</width>
-           <height>46</height>
+           <width>98</width>
+           <height>51</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
@@ -2237,8 +2237,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>68</width>
-           <height>46</height>
+           <width>98</width>
+           <height>51</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
@@ -2302,8 +2302,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>68</width>
-           <height>46</height>
+           <width>98</width>
+           <height>51</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
@@ -2399,8 +2399,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>520</height>
+           <width>98</width>
+           <height>51</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
@@ -2496,8 +2496,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>509</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_7">
@@ -2624,8 +2624,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>509</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_8">
@@ -2721,8 +2721,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>509</height>
+           <width>779</width>
+           <height>495</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_9">
@@ -2834,8 +2834,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>483</height>
+           <width>779</width>
+           <height>468</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_10">
@@ -3217,8 +3217,8 @@ color: rgb(241, 241, 241);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>783</width>
-           <height>455</height>
+           <width>779</width>
+           <height>434</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_11">
@@ -4500,7 +4500,7 @@ border-radius:20px;</string>
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>689</width>
+             <width>683</width>
              <height>200</height>
             </rect>
            </property>
@@ -4703,8 +4703,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>68</width>
-           <height>20</height>
+           <width>98</width>
+           <height>28</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_6">

@@ -44,13 +44,13 @@ SOURCES += \
     Login/LoginCuentas.cpp \
     Login/TarjetaCuentas.cpp \
     Mesero/confirmacion_comanda.cpp \
+    Mesero/enviarpedido.cpp \
     Mesero/mensaje.cpp \
     Mesero/mensajecorfirmar.cpp \
         Mesero/principal_mesero.cpp \
     Mesero/tarjetaplatillo.cpp \
         main.cpp \
-        mainwindow.cpp \
-    Mesero/mensajecantidad.cpp
+        mainwindow.cpp
 
 HEADERS += \
     Administrador/Reportes/GraficaVentas.h \
@@ -72,12 +72,12 @@ HEADERS += \
     Login/LoginCuentas.h \
     Login/TarjetaCuentas.h \
     Mesero/confirmacion_comanda.h \
+    Mesero/enviarpedido.h \
     Mesero/mensaje.h \
     Mesero/mensajecorfirmar.h \
         Mesero/principal_mesero.h \
     Mesero/tarjetaplatillo.h \
-        mainwindow.h \
-    Mesero/mensajecantidad.h
+        mainwindow.h
 
 FORMS += \
     Administrador/Reportes/GraficaVentas.ui \
@@ -99,12 +99,12 @@ FORMS += \
     Login/LoginCuentas.ui \
     Login/TarjetaCuentas.ui \
     Mesero/confirmacion_comanda.ui \
+    Mesero/enviarpedido.ui \
     Mesero/mensaje.ui \
     Mesero/mensajecorfirmar.ui \
         Mesero/principal_mesero.ui \
     Mesero/tarjetaplatillo.ui \
-        mainwindow.ui \
-    Mesero/mensajecantidad.ui
+        mainwindow.ui
 
 
 #INCLUDEPATH += "C:/Users/rober/Downloads/OChart/include"

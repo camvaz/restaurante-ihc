@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EnviarPedido</class>
+ <widget class="QDialog" name="EnviarPedido">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>70</y>
+     <width>191</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>segro de enviar pedido</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="enviar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>enviar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelar">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>200</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

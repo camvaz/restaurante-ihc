@@ -10,6 +10,7 @@
 #include <Mesero/mensaje.h>
 #include <Mesero/confirmacion_comanda.h>
 #include <Mesero/tarjetaplatillo.h>
+#include <Mesero/enviarpedido.h>
 
 namespace Ui {
 class Principal_Mesero;
@@ -111,6 +112,10 @@ private slots:
     void on_rosado_clicked();
 
     void on_postre_clicked();
+
+    void on_orden_clicked();
+
+    void EliminarPlatillo(QString);
 
 private:
     Ui::Principal_Mesero *ui;
