@@ -1,5 +1,7 @@
 #include "enviarpedido.h"
 #include "ui_enviarpedido.h"
+#include <Mesero/principal_mesero.h>
+
 
 EnviarPedido::EnviarPedido(QString numMesa,QWidget *parent) :
     QDialog(parent),
@@ -7,6 +9,7 @@ EnviarPedido::EnviarPedido(QString numMesa,QWidget *parent) :
 {
     ui->setupUi(this);
     NumMesa=numMesa;
+
 }
 
 EnviarPedido::~EnviarPedido()
@@ -28,6 +31,8 @@ void EnviarPedido::on_enviar_clicked()
     enviar.exec(pedido);
     enviar.next();
     qDebug()<<"actualizado"<<NumMesa;
+    //static Principal_Mesero obj;
+    //obj.mostrarPedido();
     close();
 
 }

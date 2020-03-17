@@ -1148,17 +1148,22 @@ void Principal_Mesero::on_bebidas_clicked()
 
 }
 
+
 void Principal_Mesero::EliminarPlatillo(QString id){
 
+    QString eliminar;
+    QSqlQuery QsqlEliminar;
 
+    eliminar="DELETE FROM Comanda_has_Platillo where idComanda='"+id+"'";
 
-
-
+    QsqlEliminar.exec(eliminar);
+    QsqlEliminar.next();
+    clearLayout(ui->pedidos);
+    mostrarPedido();
 }
 
 void Principal_Mesero::mostrarPedido(){
 
-    //clearLayout(ui->pedidos);
     QString busqueda,fecha,cantidad,nombre,numPedido,id,icono,categoria,checkCategoria,estadoPlatillo,idComanda;
     QSqlQuery resultado,querycantidad,querycategoria,Querypedido;
     int row=0;
@@ -1217,7 +1222,8 @@ void Principal_Mesero::mostrarPedido(){
           Cantidad->setStyleSheet("color: white");
           Cantidad->setFont(f);
 
-          if(estadoPlatillo=="0"){
+      if(estadoPlatillo=="0")
+      {
           QPushButton *cancelar= new QPushButton;
           icono="C:/Imagenes tamaño pequeño/cross";
           QIcon canc(icono);
@@ -1227,7 +1233,8 @@ void Principal_Mesero::mostrarPedido(){
           cancelar->setIconSize(QSize(15,15));
           cancelar->setStyleSheet("background-color: transparent");
           ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
-        }
+          connect(cancelar,&QPushButton::clicked,[=](){emit EliminarPlatillo(idComanda);});
+      }
           ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
           ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
 
@@ -1265,7 +1272,9 @@ void Principal_Mesero::mostrarPedido(){
            Cantidad->setAlignment(Qt::AlignRight);
            Cantidad->setStyleSheet("color: white");
            Cantidad->setFont(f);
-           if(estadoPlatillo=="0"){
+
+       if(estadoPlatillo=="0")
+       {
            QPushButton *cancelar= new QPushButton;
            icono="C:/Imagenes tamaño pequeño/cross";
            QIcon canc(icono);
@@ -1275,7 +1284,8 @@ void Principal_Mesero::mostrarPedido(){
            cancelar->setIconSize(QSize(15,15));
            cancelar->setStyleSheet("background-color: transparent");
            ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
-            }
+           connect(cancelar,&QPushButton::clicked,[=](){emit EliminarPlatillo(idComanda);});
+       }
            ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
            ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
 
@@ -1313,7 +1323,8 @@ void Principal_Mesero::mostrarPedido(){
            Cantidad->setStyleSheet("color: white");
            Cantidad->setFont(f);
 
-           if(estadoPlatillo=="0"){
+      if(estadoPlatillo=="0")
+      {
            QPushButton *cancelar= new QPushButton;
            icono="C:/Imagenes tamaño pequeño/cross";
            QIcon canc(icono);
@@ -1323,7 +1334,8 @@ void Principal_Mesero::mostrarPedido(){
            cancelar->setIconSize(QSize(15,15));
            cancelar->setStyleSheet("background-color: transparent");
            ui->pedidos->addWidget(cancelar,row,3,Qt::AlignTop);
-           }
+           connect(cancelar,&QPushButton::clicked,[=](){emit EliminarPlatillo(idComanda);});
+      }
            ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
            ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
            row++;
