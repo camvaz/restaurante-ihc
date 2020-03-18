@@ -9,7 +9,10 @@ EnviarPedido::EnviarPedido(QString numMesa,QWidget *parent) :
 {
     ui->setupUi(this);
     NumMesa=numMesa;
-
+    QString imagen;
+    imagen="C:/Imagenes tamaño pequeño/Advertencia";
+    QPixmap adver(imagen);
+   ui->Advertencia_2->setPixmap(adver);
 }
 
 EnviarPedido::~EnviarPedido()
