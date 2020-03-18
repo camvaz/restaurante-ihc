@@ -231,7 +231,7 @@ background-color:#F1F1F1;</string>
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>13</number>
+     <number>11</number>
     </property>
     <widget class="QWidget" name="page">
      <layout class="QGridLayout" name="gridLayout_26">
@@ -2134,8 +2134,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>51</height>
+           <width>68</width>
+           <height>46</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
@@ -2237,8 +2237,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>51</height>
+           <width>68</width>
+           <height>46</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
@@ -2302,8 +2302,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>51</height>
+           <width>68</width>
+           <height>46</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
@@ -2399,8 +2399,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>51</height>
+           <width>68</width>
+           <height>46</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
@@ -2496,8 +2496,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>68</width>
+           <height>46</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_7">
@@ -2624,8 +2624,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>68</width>
+           <height>46</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_8">
@@ -2721,8 +2721,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>495</height>
+           <width>68</width>
+           <height>46</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_9">
@@ -2834,8 +2834,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>468</height>
+           <width>68</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_10">
@@ -3164,27 +3164,69 @@ color: rgb(201, 37, 49);</string>
      <layout class="QGridLayout" name="gridLayout_24">
       <item row="3" column="0">
        <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="0">
+        <item row="0" column="1">
          <widget class="QLabel" name="label_8">
           <property name="styleSheet">
            <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
 color: rgb(241, 241, 241);</string>
           </property>
           <property name="text">
-           <string>                                      Con alcohol</string>
+           <string>Con alcohol</string>
           </property>
          </widget>
         </item>
-        <item row="0" column="1">
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_13">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="3" alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label_24">
           <property name="styleSheet">
            <string notr="true">font: 75 italic 10pt &quot;Noto Serif&quot;;
 color: rgb(241, 241, 241);</string>
           </property>
           <property name="text">
-           <string>                                      Sin alcohol</string>
+           <string>Sin alcohol</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
+        </item>
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_14">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="4">
+         <spacer name="horizontalSpacer_15">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </item>
@@ -3217,13 +3259,20 @@ color: rgb(241, 241, 241);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>779</width>
-           <height>434</height>
+           <width>783</width>
+           <height>448</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_11">
           <item row="0" column="0">
-           <layout class="QGridLayout" name="menuCoteles"/>
+           <layout class="QGridLayout" name="menuCoteles">
+            <property name="leftMargin">
+             <number>20</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>160</number>
+            </property>
+           </layout>
           </item>
          </layout>
         </widget>
@@ -4500,7 +4549,7 @@ border-radius:20px;</string>
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>683</width>
+             <width>689</width>
              <height>200</height>
             </rect>
            </property>
@@ -4703,8 +4752,8 @@ color: rgb(201, 37, 49);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>68</width>
+           <height>20</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_6">
