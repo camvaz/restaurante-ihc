@@ -2,6 +2,11 @@
 #define PRINCIPAL_COCINERO_H
 
 #include <QMainWindow>
+#include <QSqlQuery>
+#include <QDebug>
+#include <QString>
+#include <QLine>
+#include <QPushButton>
 
 namespace Ui {
 class principal_cocinero;
@@ -15,6 +20,8 @@ public:
     explicit principal_cocinero(QWidget *parent = nullptr);
     principal_cocinero(QString id, QWidget *parent = nullptr);
     ~principal_cocinero();
+    void MostrarOrdenes();
+
 
 private:
     Ui::principal_cocinero *ui;
