@@ -1,5 +1,6 @@
 #include "principal_cocinero.h"
 #include "ui_principal_cocinero.h"
+#include "elementocola.h"
 
 principal_cocinero::principal_cocinero(QWidget *parent) :
     QMainWindow(parent),
@@ -39,24 +40,22 @@ void principal_cocinero::MostrarOrdenes(){
 
     while(queryOrden.next()){
 
-     nombre=queryOrden.value(0).toString();
-     descripcion=queryOrden.value(1).toString();
-     cantidad=queryOrden.value(2).toString();
+        nombre=queryOrden.value(0).toString();
+        descripcion=queryOrden.value(1).toString();
+        cantidad=queryOrden.value(2).toString();
 
-     qDebug()<<"Nombre: "<<nombre;
-     qDebug()<<"Descipcion: "<<descripcion;
-     qDebug()<<"Cantidad: "<<cantidad;
+        elementoCola *platillo = new elementoCola();
+        platillo->editaLabels(nombre, cantidad, descripcion);
 
+     //QLabel *titulo=new QLabel();
+     //titulo->setText(nombre+"                           "+descripcion+"                          "+"x"+cantidad);
+     //QPushButton *boton=new  QPushButton();
 
-     QLabel *titulo=new QLabel();
-     titulo->setText(nombre+"                           "+descripcion+"                          "+"x"+cantidad);
-     QPushButton *boton=new  QPushButton();
-
-     boton->setText(nombre+"                           "+descripcion+"                          "+"x"+cantidad);
-     boton->setStyleSheet("background-color: blue");
-     boton->setIconSize(QSize(15,15));
+     //boton->setText(nombre+"                           "+descripcion+"                          "+"x"+cantidad);
+     //boton->setStyleSheet("background-color: blue");
+     //boton->setIconSize(QSize(15,15));
      //ui->observarPlatillos->addWidget(titulo,row,1,1,Qt::AlignTop);
-     ui->observarPlatillos->addWidget(boton,row,1,1,Qt::AlignTop);
+     ui->observarPlatillos->addWidget(platillo,row,1,1, Qt::AlignTop);
      //ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
 
      row++;
