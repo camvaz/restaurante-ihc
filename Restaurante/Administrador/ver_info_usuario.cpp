@@ -9,6 +9,17 @@ ver_info_usuario::ver_info_usuario(QString id,QWidget *parent) :
     ui(new Ui::ver_info_usuario)
 {
     ui->setupUi(this);
+
+    QString botones;
+    botones="C:/Imagenes tamaño pequeño/menu";QIcon boton_users(botones);
+    ui->btn_actividad2->setIcon(boton_users);
+    ui->btn_InfoPersonal2->setIcon(boton_users);
+    ui->btn_credenciales_2->setIcon(boton_users);
+    ui->btn_datosEmpleado2->setIcon(boton_users);
+    ui->lbl_imagen->setPixmap(QPixmap("C:/Imagenes tamaño pequeño/account"));
+
+    //botones="C:/Ibotonesmagenes tamaño pequeño/account";QIcon boton_users(botones);ui->perfiles->setIcon(boton_users);
+
     bandera_info_personal=0;
     bandera_datos_empleado=0;
     bandera_actividades=0;

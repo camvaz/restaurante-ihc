@@ -10,6 +10,13 @@ crear_usuario::crear_usuario(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    QString botones;
+    botones="C:/Imagenes tamaño pequeño/menu";QIcon boton_users(botones);
+    ui->btn_InfoPersonal2->setIcon(boton_users);
+    ui->btn_credenciales_2->setIcon(boton_users);
+    ui->btn_datosEmpleado2->setIcon(boton_users);
+    ui->lbl_imagen->setPixmap(QPixmap("C:/Imagenes tamaño pequeño/account"));
+
     bandera_info_personal=0;
     bandera_datos_empleado=0;
     bandera_datos_credencial=0;

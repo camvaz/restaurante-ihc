@@ -220,6 +220,7 @@ border: 2px solid #707070;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);
+alternate-background-color: rgb(255, 255, 255);
 color:black;
 border: 2px solid #707070;</string>
       </property>

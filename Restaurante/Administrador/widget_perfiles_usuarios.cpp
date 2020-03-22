@@ -2,6 +2,7 @@
 #include "ui_widget_perfiles_usuarios.h"
 #include <QDebug>
 #include "tarjeta_perfil_empleado.h"
+#include "Administrador/crear_usuario.h"
 
 widget_perfiles_usuarios::widget_perfiles_usuarios(QWidget *parent) :
     QWidget(parent),
@@ -9,6 +10,11 @@ widget_perfiles_usuarios::widget_perfiles_usuarios(QWidget *parent) :
 {
     ui->setupUi(this);
     cargarPerfiles();
+    QString imagen;
+    imagen="C:/Imagenes tamaño pequeño/more";QIcon boton_users(imagen);ui->btnAgregarEmpleadoPerfiles->setIcon(boton_users);
+    imagen="C:/Imagenes tamaño pequeño/search";
+    QPixmap map=imagen;
+    ui->label_2->setPixmap(map);
 }
 
 widget_perfiles_usuarios::~widget_perfiles_usuarios()
@@ -51,4 +57,11 @@ void widget_perfiles_usuarios::limpiarCatalogo()
         delete item->widget();
         delete item;
     }
+}
+
+void widget_perfiles_usuarios::on_btnAgregarEmpleadoPerfiles_clicked()
+{
+    crear_usuario *u=new crear_usuario();
+    u->exec();
+    cargarPerfiles();
 }

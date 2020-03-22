@@ -10,7 +10,7 @@ tarjeta_perfil_empleado::tarjeta_perfil_empleado(QString id,QWidget *parent) :
 {
     ui->setupUi(this);
     idUsuario=id;
-
+    ui->label->setPixmap(QPixmap("C:/Imagenes tamaño pequeño/account"));
     QSqlQuery query;
     query.prepare("SELECT Nombre FROM `informacionpersonal` WHERE Usuario_idUsuario="+idUsuario);
     query.exec();

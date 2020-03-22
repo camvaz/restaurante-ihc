@@ -115,6 +115,9 @@ boder:none;</string>
             <property name="text">
              <string/>
             </property>
+            <property name="pixmap">
+             <pixmap>../../../../../../../Imagenes tamaño pequeño/search.png</pixmap>
+            </property>
             <property name="scaledContents">
              <bool>true</bool>
             </property>
@@ -197,6 +200,10 @@ border:none;</string>
        </property>
        <property name="text">
         <string>Agregar empleado</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../../../../../Imagenes tamaño pequeño/more.png</normaloff>../../../../../../../Imagenes tamaño pequeño/more.png</iconset>
        </property>
       </widget>
      </item>

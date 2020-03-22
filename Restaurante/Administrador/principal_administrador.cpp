@@ -24,12 +24,8 @@ principal_administrador::~principal_administrador()
 
 void principal_administrador::on_perfiles_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(0);
-    crear_usuario *u=new crear_usuario();
-    this->setVisible(false);
-    u->exec();
     perfiles.cargarPerfiles();
-    this->setVisible(true);
+    ui->stackedWidget->setCurrentIndex(0);
 
 }
 

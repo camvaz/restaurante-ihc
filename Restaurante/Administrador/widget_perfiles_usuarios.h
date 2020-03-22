@@ -19,6 +19,9 @@ public:
     void cargarPerfiles();
     void limpiarCatalogo();
 
+private slots:
+    void on_btnAgregarEmpleadoPerfiles_clicked();
+
 private:
     Ui::widget_perfiles_usuarios *ui;
 };
