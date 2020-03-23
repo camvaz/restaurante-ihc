@@ -20,6 +20,7 @@ public:
     void editaLabels(QString, QString, QString,QString);
     ~elementoCola();
 
+
     void platilloListo(QString);
 
 private slots:

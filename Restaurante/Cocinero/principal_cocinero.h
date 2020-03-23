@@ -7,6 +7,8 @@
 #include <QString>
 #include <QLine>
 #include <QPushButton>
+#include <QTimer>
+#include <QTime>
 
 namespace Ui {
 class principal_cocinero;
@@ -21,6 +23,9 @@ public:
     principal_cocinero(QString id, QWidget *parent = nullptr);
     ~principal_cocinero();
     void MostrarOrdenes();
+
+private slots:
+    void hora();
 
 
 private:

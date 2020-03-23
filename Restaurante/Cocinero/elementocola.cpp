@@ -1,11 +1,13 @@
 #include "elementocola.h"
 #include "ui_elementocola.h"
 
+
 elementoCola::elementoCola(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::elementoCola)
 {
     ui->setupUi(this);
+
 }
 
 elementoCola::~elementoCola()
@@ -14,17 +16,12 @@ elementoCola::~elementoCola()
 }
 
 void elementoCola::platilloListo(QString id){
-
-    qDebug()<<id;
+   qDebug()<<"Paltillo: "<<id;
     QString pedido;
     QSqlQuery enviar;
     pedido="update Comanda_has_Platillo set estadoPlatillo=2 where idComanda='"+id+"'";
     enviar.exec(pedido);
     enviar.next();
-    static principal_cocinero *hola=new principal_cocinero;
-
-    hola->MostrarOrdenes();
-
 }
 
 void elementoCola::editaLabels(QString nomPlato, QString cant, QString comentarios,QString idComanda){
@@ -34,11 +31,12 @@ void elementoCola::editaLabels(QString nomPlato, QString cant, QString comentari
     ui->lblComentario->setText(comentarios);
     ui->idcomanda->hide();
     ui->idcomanda->setText(idComanda);
-    qDebug()<<idComanda;
+   // qDebug()<<idComanda;
 
 }
 
 void elementoCola::on_btnPlatillo_clicked()
 {
     platilloListo(ui->idcomanda->text());
+
 }
