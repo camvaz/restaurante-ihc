@@ -15,10 +15,7 @@ principal_cocinero::principal_cocinero(QString id, QWidget *parent) :
 {
     ui->setupUi(this);
     identifier = id;
-
     MostrarOrdenes();
-
-
 }
 
 principal_cocinero::~principal_cocinero()
@@ -26,40 +23,43 @@ principal_cocinero::~principal_cocinero()
     delete ui;
 }
 
+void clearLayout2(QLayout *layout) {
+    QLayoutItem *item;
+    while((item = layout->takeAt(0))) {
+        if (item->layout()) {
+            clearLayout2(item->layout());
+            delete item->layout();
+        }
+        if (item->widget()) {
+            delete item->widget();
+        }
+        delete item;
+    }
+}
 
 void principal_cocinero::MostrarOrdenes(){
 
-    QString ordenes,nombre,descripcion,cantidad;
+    qDebug()<<"entre";
+    clearLayout2(ui->observarPlatillos);
+    QString ordenes,nombre,descripcion,cantidad,idComanda;
     QSqlQuery queryOrden;
     int row=0;
-    ordenes="select p.Nombre,cp.describcion,cp.cantidad from  Comanda_has_Platillo as cp inner join"
+    ordenes="select p.Nombre,cp.describcion,cp.cantidad,cp.idComanda  from  Comanda_has_Platillo as cp inner join"
          " Platillos as p on cp.idPlatillo=p.idPlatillo where cp.categoria<9 and cp.estadoPlatillo=1;";
 
+    //qDebug()<<ordenes;
+
     queryOrden.exec(ordenes);
-
-
     while(queryOrden.next()){
-
+        qDebug()<<"entre2";
         nombre=queryOrden.value(0).toString();
         descripcion=queryOrden.value(1).toString();
         cantidad=queryOrden.value(2).toString();
-
+        idComanda=queryOrden.value(3).toString();
         elementoCola *platillo = new elementoCola();
-        platillo->editaLabels(nombre, cantidad, descripcion);
-
-     //QLabel *titulo=new QLabel();
-     //titulo->setText(nombre+"                           "+descripcion+"                          "+"x"+cantidad);
-     //QPushButton *boton=new  QPushButton();
-
-     //boton->setText(nombre+"                           "+descripcion+"                          "+"x"+cantidad);
-     //boton->setStyleSheet("background-color: blue");
-     //boton->setIconSize(QSize(15,15));
-     //ui->observarPlatillos->addWidget(titulo,row,1,1,Qt::AlignTop);
-     ui->observarPlatillos->addWidget(platillo,row,1,1, Qt::AlignTop);
-     //ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
-
+        platillo->editaLabels(nombre, cantidad, descripcion,idComanda);
+        ui->observarPlatillos->addWidget(platillo,row,1,1, Qt::AlignTop);
      row++;
-
     }
 
 

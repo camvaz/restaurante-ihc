@@ -88,12 +88,12 @@ border-radius:0px;
     <string/>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>751</width>
+     <width>818</width>
      <height>51</height>
     </rect>
    </property>
@@ -114,7 +114,85 @@ border-radius:0px;
       </property>
      </spacer>
     </item>
+    <item row="0" column="4">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>75</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
     <item row="0" column="2">
+     <widget class="QLabel" name="lblPlatillo">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>323</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>323</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 11pt &quot;Noto Serif&quot;;
+color:#D0CDE0;
+border:none;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>QUESO PROVOLONE ESTILO ALFARO</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLabel" name="lblComentario">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 11pt &quot;Noto Serif&quot;;
+color:#D0CDE0;
+border:none;
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Ninguno</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <property name="spacing">
        <number>3</number>
@@ -177,69 +255,7 @@ background-color:transparent;</string>
       </item>
      </layout>
     </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="lblPlatillo">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>323</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>323</width>
-        <height>16777215</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 11pt &quot;Noto Serif&quot;;
-color:#D0CDE0;
-border:none;
-background-color:transparent;</string>
-      </property>
-      <property name="text">
-       <string>QUESO PROVOLONE ESTILO ALFARO</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="4">
-     <widget class="QLabel" name="lblComentario">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>250</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>250</width>
-        <height>16777215</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 11pt &quot;Noto Serif&quot;;
-color:#D0CDE0;
-border:none;
-background-color:transparent;</string>
-      </property>
-      <property name="text">
-       <string>Ninguno</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="5">
+    <item row="0" column="6">
      <spacer name="horizontalSpacer">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -255,24 +271,21 @@ background-color:transparent;</string>
       </property>
      </spacer>
     </item>
-    <item row="0" column="3">
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+    <item row="0" column="1">
+     <widget class="QLabel" name="idcomanda">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
       </property>
-      <property name="sizeType">
-       <enum>QSizePolicy::Fixed</enum>
+      <property name="text">
+       <string>1</string>
       </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>75</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
+     </widget>
     </item>
    </layout>
   </widget>
+  <zorder>line_2</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>btnPlatillo</zorder>
  </widget>
  <resources/>
  <connections/>
