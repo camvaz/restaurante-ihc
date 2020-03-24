@@ -65,3 +65,30 @@ void widget_perfiles_usuarios::on_btnAgregarEmpleadoPerfiles_clicked()
     u->exec();
     cargarPerfiles();
 }
+
+void widget_perfiles_usuarios::on_lineEdit_textChanged(const QString &arg1)
+{
+    QSqlQuery query;
+    char caracter = '%';
+    query.prepare("select * from informacionpersonal where nombre like '"+ arg1 + caracter +"'");
+    query.exec();
+
+    limpiarCatalogo();
+
+    int i = 0;
+    int row = 0;
+    int col = 0;
+
+    while(query.next())
+    {
+        QString idUsuario=query.value(6).toString();
+
+        row = i / 3;
+        col = i % 3;
+
+        tarjeta_perfil_empleado *tarjeta=new tarjeta_perfil_empleado(idUsuario);
+
+        i++;
+        ui->gridLayout->addWidget(tarjeta, row, col);
+    }
+}

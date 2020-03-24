@@ -256,7 +256,7 @@ font: 10pt &quot;Noto Serif&quot;;</string>
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>346</width>
+          <width>343</width>
           <height>784</height>
          </rect>
         </property>
@@ -1640,7 +1640,7 @@ border:none;
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="btn_eliminar">
          <property name="minimumSize">
           <size>
            <width>110</width>
@@ -1652,6 +1652,9 @@ border:none;
            <width>110</width>
            <height>30</height>
           </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">color:white;
@@ -1702,6 +1705,9 @@ border:none;</string>
            <italic>false</italic>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);

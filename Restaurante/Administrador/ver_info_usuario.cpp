@@ -3,6 +3,7 @@
 #include <QSqlDatabase>
 #include <QDebug>
 #include "crear_usuario.h"
+#include "qmessagebox.h"
 
 ver_info_usuario::ver_info_usuario(QString id,QWidget *parent) :
     QDialog(parent),
@@ -198,4 +199,42 @@ void ver_info_usuario::on_btn_credenciales_2_clicked()
          bandera_credenciales=0;
     }
 
+}
+
+void ver_info_usuario::on_btn_eliminar_clicked()
+{
+    QMessageBox msgBox(QMessageBox::Question,"Confimacion","¿Estás seguro de eliminar a este usuario?",QMessageBox::Yes|QMessageBox::No);
+    msgBox.setButtonText(QMessageBox::Yes,"Sí");
+    msgBox.setButtonText(QMessageBox::No,"No");
+
+     if(msgBox.exec()==QMessageBox::Yes){
+         QSqlQuery query;
+         query.prepare("DELETE FROM informacionpersonal WHERE Usuario_idUsuario="+idUsuario);
+         query.exec();
+
+         query.prepare("DELETE FROM nomina WHERE Usuario_idUsuario="+idUsuario);
+         query.exec();
+
+         query.prepare("DELETE FROM usuario WHERE idUsuario="+idUsuario);
+         if(query.exec())
+         {
+             QMessageBox info;
+             info.setWindowTitle("Información");
+             info.setText("El usuario ha sido eliminado con éxito.");
+             info.setStandardButtons(QMessageBox::Ok);
+             info.setDefaultButton(QMessageBox::Ok);
+             info.setButtonText(QMessageBox::Ok,"Aceptar");
+             info.exec();
+         }else
+         {
+             QMessageBox info;
+             info.setWindowTitle("Información");
+             info.setText("Ocurrió un problema al eliminar al usuario, inténtelo nuevamente.");
+             info.setStandardButtons(QMessageBox::Ok);
+             info.setDefaultButton(QMessageBox::Ok);
+             info.setButtonText(QMessageBox::Ok,"Aceptar");
+             info.exec();
+         }
+
+     }
 }

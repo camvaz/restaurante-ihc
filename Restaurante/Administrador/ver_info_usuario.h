@@ -38,6 +38,8 @@ private slots:
 
     void on_btn_credenciales_2_clicked();
 
+    void on_btn_eliminar_clicked();
+
 private:
     Ui::ver_info_usuario *ui;
     bool bandera_info_personal;

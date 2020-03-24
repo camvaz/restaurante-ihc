@@ -1542,6 +1542,9 @@ color: #909090;</string>
            <height>30</height>
           </size>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);
