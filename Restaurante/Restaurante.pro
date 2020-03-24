@@ -51,8 +51,7 @@ SOURCES += \
     Mesero/tarjetaplatillo.cpp \
         main.cpp \
         mainwindow.cpp \
-    Cocinero/elementocola.cpp \
-    Bartender/elementobar.cpp
+    Cocinero/elementocola.cpp
 
 HEADERS += \
     Administrador/Reportes/GraficaVentas.h \
@@ -80,8 +79,7 @@ HEADERS += \
         Mesero/principal_mesero.h \
     Mesero/tarjetaplatillo.h \
         mainwindow.h \
-    Cocinero/elementocola.h \
-    Bartender/elementobar.h
+    Cocinero/elementocola.h
 
 FORMS += \
     Administrador/Reportes/GraficaVentas.ui \
@@ -109,8 +107,7 @@ FORMS += \
         Mesero/principal_mesero.ui \
     Mesero/tarjetaplatillo.ui \
         mainwindow.ui \
-    Cocinero/elementocola.ui \
-    Bartender/elementobar.ui
+    Cocinero/elementocola.ui
 
 
 #INCLUDEPATH += "C:/Users/rober/Downloads/OChart/include"

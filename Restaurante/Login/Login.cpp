@@ -79,7 +79,7 @@ void Login::on_btn_inicioSesion_clicked()
                     }
                     else{
                         if(rola == "Bartender"){
-                            principal_bartender *Bartender = new principal_bartender();
+                            principal_bartender *Bartender = new principal_bartender(query.value(0).toString());
                             Bartender->show();
                         }
                         else{

@@ -1,13 +1,13 @@
 #include "principal_cocinero.h"
 #include "ui_principal_cocinero.h"
-#include "elementocola.h"
+
 
 principal_cocinero::principal_cocinero(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::principal_cocinero)
 {
     ui->setupUi(this);
-    MostrarOrdenes();
+    //MostrarOrdenes();
 }
 
 principal_cocinero::principal_cocinero(QString id, QWidget *parent) :
@@ -29,7 +29,6 @@ principal_cocinero::~principal_cocinero()
 }
 
 void principal_cocinero::hora(){
-     qDebug()<<"hola";
         QTime time=QTime::currentTime();
         QString time_text=time.toString("h:m:s ap");
 
@@ -38,11 +37,11 @@ void principal_cocinero::hora(){
         }
 }
 
-void clearLayout2(QLayout *layout) {
+void clearLayout3(QLayout *layout) {
     QLayoutItem *item;
     while((item = layout->takeAt(0))) {
         if (item->layout()) {
-            clearLayout2(item->layout());
+            clearLayout3(item->layout());
             delete item->layout();
         }
         if (item->widget()) {
@@ -53,7 +52,7 @@ void clearLayout2(QLayout *layout) {
 }
 
 void principal_cocinero::MostrarOrdenes(){
-    clearLayout2(ui->observarPlatillos);
+    clearLayout3(ui->observarPlatillos);
     QString ordenes,nombre,descripcion,cantidad,idComanda;
     QSqlQuery queryOrden;
     int row=0;
@@ -69,7 +68,9 @@ void principal_cocinero::MostrarOrdenes(){
         descripcion=queryOrden.value(1).toString();
         cantidad=queryOrden.value(2).toString();
         idComanda=queryOrden.value(3).toString();
+
         elementoCola *platillo = new elementoCola();
+
         platillo->editaLabels(nombre, cantidad, descripcion,idComanda);
         ui->observarPlatillos->addWidget(platillo,row,1,Qt::AlignTop);
 

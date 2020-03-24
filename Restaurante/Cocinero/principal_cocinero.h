@@ -9,6 +9,7 @@
 #include <QPushButton>
 #include <QTimer>
 #include <QTime>
+#include "elementocola.h"
 
 namespace Ui {
 class principal_cocinero;

@@ -318,48 +318,48 @@ color:#505050;</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QScrollArea" name="scrollArea_10">
-         <property name="minimumSize">
-          <size>
-           <width>770</width>
-           <height>300</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;</string>
-         </property>
-         <property name="lineWidth">
-          <number>0</number>
-         </property>
-         <property name="widgetResizable">
-          <bool>true</bool>
-         </property>
-         <widget class="QWidget" name="scrollAreaWidgetContents_10">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>780</width>
-            <height>406</height>
-           </rect>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_11">
-           <item row="0" column="0">
-            <layout class="QGridLayout" name="observarPlatillos">
-             <property name="leftMargin">
-              <number>0</number>
-             </property>
-             <property name="spacing">
-              <number>0</number>
-             </property>
-            </layout>
-           </item>
-          </layout>
-         </widget>
-        </widget>
-       </item>
       </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QScrollArea" name="scrollArea_10">
+       <property name="minimumSize">
+        <size>
+         <width>770</width>
+         <height>300</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_10">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>782</width>
+          <height>402</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_11">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="observarbar">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>0</number>
+           </property>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
      </item>
     </layout>
    </widget>

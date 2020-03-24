@@ -5,7 +5,7 @@
 #include <QString>
 #include <QDebug>
 #include <QSqlQuery>
-#include <Cocinero/principal_cocinero.h>
+
 
 namespace Ui {
 class elementoCola;

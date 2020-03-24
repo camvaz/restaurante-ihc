@@ -16,7 +16,7 @@ elementoCola::~elementoCola()
 }
 
 void elementoCola::platilloListo(QString id){
-   qDebug()<<"Paltillo: "<<id;
+   //qDebug()<<"Paltillo: "<<id;
     QString pedido;
     QSqlQuery enviar;
     pedido="update Comanda_has_Platillo set estadoPlatillo=2 where idComanda='"+id+"'";
@@ -32,7 +32,6 @@ void elementoCola::editaLabels(QString nomPlato, QString cant, QString comentari
     ui->idcomanda->hide();
     ui->idcomanda->setText(idComanda);
    // qDebug()<<idComanda;
-
 }
 
 void elementoCola::on_btnPlatillo_clicked()
