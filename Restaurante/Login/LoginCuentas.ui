@@ -51,44 +51,47 @@ color: white;</string>
     <rect>
      <x>210</x>
      <y>310</y>
-     <width>461</width>
+     <width>481</width>
      <height>291</height>
     </rect>
    </property>
-   <widget class="QScrollArea" name="scrollArea">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>10</y>
-      <width>141</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents_2">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>139</width>
-       <height>99</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>741</width>
+      <width>481</width>
       <height>291</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="lay_cuentas"/>
    </widget>
+  </widget>
+  <widget class="QPushButton" name="btnMostrar_izq">
+   <property name="geometry">
+    <rect>
+     <x>148</x>
+     <y>310</y>
+     <width>51</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnMostrar_der">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>310</y>
+     <width>51</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-&gt;</string>
+   </property>
   </widget>
  </widget>
  <resources/>

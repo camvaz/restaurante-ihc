@@ -20,14 +20,19 @@ LoginCuentas::LoginCuentas(QWidget *parent) :
         while(query.next()){
             QString id = query.value(0).toString();
             qDebug()<<id;
+
             TarjetaCuentas *tarjeta = new TarjetaCuentas(id);
-            ui->lay_cuentas->addWidget(tarjeta,1,i);
+            if(i<4){
+                ui->lay_cuentas->addWidget(tarjeta,1,i);
+                ids_ = id;
+            }
             i++;
         }
     }else{
         qDebug()<<"Query puto, EL culero no jala";
         qDebug()<<query.lastError();
     }
+
 /*
     QSqlQuery query;
     query.prepare("select idUsuario from Usuario");
@@ -55,3 +60,49 @@ void LoginCuentas::on_btn_OtraCuenta_clicked()
 }
 
 
+
+void LoginCuentas::on_btnMostrar_izq_clicked()
+{
+    QSqlQuery query;
+    query.prepare("select idUsuario from Usuario where idUsuario < '"+ids_+"'");
+    if (query.exec()){
+        int i=1;
+        while(query.next()){
+            QString id = query.value(0).toString();
+            qDebug()<<id;
+
+            TarjetaCuentas *tarjeta = new TarjetaCuentas(id);
+            if(i<4){
+                ui->lay_cuentas->addWidget(tarjeta,1,i);
+                ids_ = id;
+            }
+            i++;
+        }
+    }else{
+        qDebug()<<"Query puto, EL culero no jala";
+        qDebug()<<query.lastError();
+    }
+}
+
+void LoginCuentas::on_btnMostrar_der_clicked()
+{
+    QSqlQuery query;
+    query.prepare("select idUsuario from Usuario where idUsuario > '"+ids_+"'");
+    if (query.exec()){
+        int i=1;
+        while(query.next()){
+            QString id = query.value(0).toString();
+            qDebug()<<id;
+
+            TarjetaCuentas *tarjeta = new TarjetaCuentas(id);
+            if(i<4){
+                ui->lay_cuentas->addWidget(tarjeta,1,i);
+                ids_ = id;
+            }
+            i++;
+        }
+    }else{
+        qDebug()<<"Query puto, EL culero no jala";
+        qDebug()<<query.lastError();
+    }
+}
