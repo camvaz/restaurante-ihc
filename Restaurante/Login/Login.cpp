@@ -65,6 +65,8 @@ void Login::on_btn_inicioSesion_clicked()
             case 1:{ //Case ADministrador
                     LoginCuentas w;
                     w.show();
+                    principal_administrador *Admin = new principal_administrador();
+                    Admin->show();
                     break;
                 }
             case 2:
