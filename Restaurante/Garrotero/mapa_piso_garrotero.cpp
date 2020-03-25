@@ -195,18 +195,6 @@ void mapa_piso_garrotero::on_mesa_1_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -229,18 +217,6 @@ void mapa_piso_garrotero::on_mesa_2_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -261,18 +237,6 @@ void mapa_piso_garrotero::on_mesa_3_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -293,18 +257,6 @@ void mapa_piso_garrotero::on_mesa_4_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -325,18 +277,6 @@ void mapa_piso_garrotero::on_mesa_5_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -357,18 +297,6 @@ void mapa_piso_garrotero::on_mesa_6_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -389,18 +317,6 @@ void mapa_piso_garrotero::on_mesa_7_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -421,18 +337,6 @@ void mapa_piso_garrotero::on_mesa_8_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -453,18 +357,6 @@ void mapa_piso_garrotero::on_mesa_9_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -485,18 +377,6 @@ void mapa_piso_garrotero::on_mesa_10_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -517,18 +397,6 @@ void mapa_piso_garrotero::on_mesa_11_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -549,18 +417,6 @@ void mapa_piso_garrotero::on_mesa_12_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -581,18 +437,6 @@ void mapa_piso_garrotero::on_mesa_13_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -613,18 +457,6 @@ void mapa_piso_garrotero::on_mesa_14_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
 
@@ -646,17 +478,5 @@ void mapa_piso_garrotero::on_mesa_15_clicked()
               query.exec();
               cargarMesas();
           }
-    }else
-    {
-        if(query.value(0).toString()=="ocupado")
-        {
-            QMessageBox info;
-            info.setWindowTitle("Información");
-            info.setText("No puedes cambiar el estado de una mesa ocupada.");
-            info.setStandardButtons(QMessageBox::Ok);
-            info.setDefaultButton(QMessageBox::Ok);
-            info.setButtonText(QMessageBox::Ok,"Aceptar");
-            info.exec();
-        }
     }
 }
