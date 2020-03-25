@@ -11,7 +11,9 @@ INPUT(
 ./debug\principal_bartender.o
 ./debug\principal_cajero.o
 ./debug\principal_cocinero.o
+./debug\mapa_piso_garrotero.o
 ./debug\principal_garrotero.o
+./debug\asignar_mesa.o
 ./debug\mapa_de_piso.o
 ./debug\principal_hostess.o
 ./debug\Login.o
@@ -35,7 +37,9 @@ INPUT(
 ./debug\moc_principal_bartender.o
 ./debug\moc_principal_cajero.o
 ./debug\moc_principal_cocinero.o
+./debug\moc_mapa_piso_garrotero.o
 ./debug\moc_principal_garrotero.o
+./debug\moc_asignar_mesa.o
 ./debug\moc_mapa_de_piso.o
 ./debug\moc_principal_hostess.o
 ./debug\moc_Login.o

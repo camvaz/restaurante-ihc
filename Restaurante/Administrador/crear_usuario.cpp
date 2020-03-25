@@ -10,6 +10,13 @@ crear_usuario::crear_usuario(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    QString botones;
+    botones="C:/Imagenes tamaño pequeño/menu";QIcon boton_users(botones);
+    ui->btn_InfoPersonal2->setIcon(boton_users);
+    ui->btn_credenciales_2->setIcon(boton_users);
+    ui->btn_datosEmpleado2->setIcon(boton_users);
+    ui->lbl_imagen->setPixmap(QPixmap("C:/Imagenes tamaño pequeño/account"));
+
     bandera_info_personal=0;
     bandera_datos_empleado=0;
     bandera_datos_credencial=0;
@@ -17,6 +24,13 @@ crear_usuario::crear_usuario(QWidget *parent) :
     ui->frame_datos_empleado->hide();
     ui->frame_credenciales->hide();
     id="";
+    ui->ID->setEnabled(false);
+    QSqlQuery query;
+    query.prepare("SELECT idUsuario FROM usuario ORDER BY idUsuario DESC ");
+    query.exec();
+    query.next();
+    int num=query.value(0).toInt()+1;
+    ui->ID->setText(QString::number(num));
 }
 
 crear_usuario::~crear_usuario()
@@ -146,7 +160,7 @@ void crear_usuario::on_btn_guardar_clicked()
     {
         if(ui->lineEdit_password->text() == ui->lineEdit_confirmaPass->text())
         {
-           QMessageBox msgBox(QMessageBox::Question,"Confimacion","¿Estas seguro de guardar los datos de este usuario?",QMessageBox::Yes|QMessageBox::No);
+           QMessageBox msgBox(QMessageBox::Question,"Confimacion","¿Estás seguro de guardar los datos de este usuario?",QMessageBox::Yes|QMessageBox::No);
             msgBox.setButtonText(QMessageBox::Yes,"Sí");
             msgBox.setButtonText(QMessageBox::No,"No");
 

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <Administrador/widget_perfiles_usuarios.h>
+#include <Administrador/mapa_piso_admin.h>
 
 namespace Ui {
 class principal_administrador;
@@ -30,6 +31,7 @@ private slots:
 private:
     Ui::principal_administrador *ui;
     widget_perfiles_usuarios perfiles;
+    mapa_piso_admin piso;
 };
 
 #endif // PRINCIPAL_ADMINISTRADOR_H

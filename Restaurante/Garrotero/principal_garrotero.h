@@ -2,6 +2,7 @@
 #define PRINCIPAL_GARROTERO_H
 
 #include <QMainWindow>
+#include <Garrotero/mapa_piso_garrotero.h>
 
 namespace Ui {
 class principal_garrotero;
@@ -19,6 +20,7 @@ public:
 private:
     Ui::principal_garrotero *ui;
     QString identifier  =   "";
+    mapa_piso_garrotero piso;
 };
 
 #endif // PRINCIPAL_GARROTERO_H

@@ -17,6 +17,7 @@ public:
     explicit ver_info_usuario(QString id, QWidget *parent = nullptr);
     ~ver_info_usuario();
     void actualizarDatos();
+    void cargarTablaActividades();
 
 
 private slots:
@@ -37,6 +38,8 @@ private slots:
     void on_btn_credenciales_clicked();
 
     void on_btn_credenciales_2_clicked();
+
+    void on_btn_eliminar_clicked();
 
 private:
     Ui::ver_info_usuario *ui;

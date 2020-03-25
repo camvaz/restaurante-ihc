@@ -445,7 +445,7 @@ public:
 "	background-color:#C92531;\n"
 "}\n"
 ""));
-        mesas->setIconSize(QSize(40, 40));
+        mesas->setIconSize(QSize(45, 45));
         comanda = new QPushButton(centralwidget);
         comanda->setObjectName(QStringLiteral("comanda"));
         comanda->setGeometry(QRect(0, 60, 60, 60));

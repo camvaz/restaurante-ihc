@@ -19,6 +19,11 @@ public:
     void cargarPerfiles();
     void limpiarCatalogo();
 
+private slots:
+    void on_btnAgregarEmpleadoPerfiles_clicked();
+
+    void on_lineEdit_textChanged(const QString &arg1);
+
 private:
     Ui::widget_perfiles_usuarios *ui;
 };

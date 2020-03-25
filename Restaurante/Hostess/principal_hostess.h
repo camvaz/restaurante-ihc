@@ -2,6 +2,7 @@
 #define PRINCIPAL_HOSTESS_H
 
 #include <QMainWindow>
+#include <Hostess/mapa_de_piso.h>
 
 namespace Ui {
 class principal_hostess;
@@ -18,6 +19,7 @@ public:
 
 private:
     Ui::principal_hostess *ui;
+    Mapa_de_Piso piso;
     QString identifier = "";
 };
 
