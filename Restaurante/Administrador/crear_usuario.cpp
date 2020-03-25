@@ -160,7 +160,7 @@ void crear_usuario::on_btn_guardar_clicked()
     {
         if(ui->lineEdit_password->text() == ui->lineEdit_confirmaPass->text())
         {
-           QMessageBox msgBox(QMessageBox::Question,"Confimacion","¿Estas seguro de guardar los datos de este usuario?",QMessageBox::Yes|QMessageBox::No);
+           QMessageBox msgBox(QMessageBox::Question,"Confimacion","¿Estás seguro de guardar los datos de este usuario?",QMessageBox::Yes|QMessageBox::No);
             msgBox.setButtonText(QMessageBox::Yes,"Sí");
             msgBox.setButtonText(QMessageBox::No,"No");
 

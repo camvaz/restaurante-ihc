@@ -39,7 +39,9 @@ ver_info_usuario::ver_info_usuario(QString id,QWidget *parent) :
     {
         ui->frame_actividades->hide();
         ui->frame_3->hide();
-    }
+    }else
+        cargarTablaActividades();
+
     actualizarDatos();
 
 }
@@ -225,6 +227,7 @@ void ver_info_usuario::on_btn_eliminar_clicked()
              info.setDefaultButton(QMessageBox::Ok);
              info.setButtonText(QMessageBox::Ok,"Aceptar");
              info.exec();
+             this->close();
          }else
          {
              QMessageBox info;
@@ -237,4 +240,20 @@ void ver_info_usuario::on_btn_eliminar_clicked()
          }
 
      }
+}
+
+
+void ver_info_usuario::cargarTablaActividades()
+{
+    QSqlQuery query;
+    query.prepare("select * from mesa where Usuario_idUsuario="+idUsuario);
+    query.exec();
+    ui->tableWidget->setColumnCount(1);
+    QString aux;
+    while(query.next())
+    {
+        aux="Atendiendo la mesa "+query.value(0).toString();
+        ui->tableWidget->insertRow(ui->tableWidget->rowCount());
+        ui->tableWidget->setItem(ui->tableWidget->rowCount()-1,0,new QTableWidgetItem(aux));
+    }
 }

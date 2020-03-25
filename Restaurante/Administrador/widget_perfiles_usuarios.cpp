@@ -42,7 +42,7 @@ void widget_perfiles_usuarios::cargarPerfiles()
         row = i / 3;
         col = i % 3;
 
-        tarjeta_perfil_empleado *tarjeta=new tarjeta_perfil_empleado(idUsuario);
+        tarjeta_perfil_empleado *tarjeta=new tarjeta_perfil_empleado(idUsuario,this);
 
         i++;
         ui->gridLayout->addWidget(tarjeta, row, col);
@@ -86,7 +86,7 @@ void widget_perfiles_usuarios::on_lineEdit_textChanged(const QString &arg1)
         row = i / 3;
         col = i % 3;
 
-        tarjeta_perfil_empleado *tarjeta=new tarjeta_perfil_empleado(idUsuario);
+        tarjeta_perfil_empleado *tarjeta=new tarjeta_perfil_empleado(idUsuario,this);
 
         i++;
         ui->gridLayout->addWidget(tarjeta, row, col);

@@ -255,7 +255,7 @@ font: 10pt &quot;Noto Serif&quot;;</string>
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-474</y>
           <width>343</width>
           <height>784</height>
          </rect>
@@ -1520,36 +1520,6 @@ border:none;
                   <attribute name="verticalHeaderMinimumSectionSize">
                    <number>10</number>
                   </attribute>
-                  <row>
-                   <property name="text">
-                    <string>1</string>
-                   </property>
-                  </row>
-                  <column>
-                   <property name="text">
-                    <string>desc</string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
-                    <string>void</string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
-                    <string>fecha</string>
-                   </property>
-                  </column>
-                  <item row="0" column="0">
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </item>
-                  <item row="0" column="2">
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </item>
                  </widget>
                 </item>
                 <item row="0" column="0">
