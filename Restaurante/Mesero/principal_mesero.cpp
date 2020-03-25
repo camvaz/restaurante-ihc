@@ -1164,11 +1164,15 @@ void Principal_Mesero::EliminarPlatillo(QString id){
 
 void Principal_Mesero::mostrarPedido(){
 
+    qDebug()<<"numero de mesa: "<<numMesa;
+
     QString busqueda,fecha,cantidad,nombre,numPedido,id,icono,categoria,checkCategoria,estadoPlatillo,idComanda;
     QSqlQuery resultado,querycantidad,querycategoria,Querypedido;
     int row=0;
 
-   checkCategoria="select *from Comanda_has_Platillo";
+   checkCategoria="select * from Pedido as p inner join Comanda_has_Platillo as cp on "
+                  "p.idPedido=cp.idPedido where p.Mesa_idMesa='"+numMesa+"'";
+
    Querypedido.exec(checkCategoria);
 
    while(Querypedido.next()){
@@ -1185,7 +1189,7 @@ void Principal_Mesero::mostrarPedido(){
            busqueda="select p.idPedido,pl.Nombre,p.fecha,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join "
            "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
            " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' "
-           "and p.estado='1'and cp.idPlatillo='"+id+"'";
+           "and p.estado='1'";
 
 
           resultado.exec(busqueda);
@@ -1239,7 +1243,6 @@ void Principal_Mesero::mostrarPedido(){
           ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
 
 
-          row++;
 
 
        }if(categoria=="9"){
@@ -1248,7 +1251,7 @@ void Principal_Mesero::mostrarPedido(){
 
            busqueda="select c.Nombre,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join "
                     "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido inner"
-                    " join Cocteles as c on cp.idPlatillo=c.idBebida where p.Mesa_idMesa='"+numMesa+"' and cp.idPlatillo='"+id+"'";
+                    " join Cocteles as c on cp.idPlatillo=c.idBebida where p.Mesa_idMesa='"+numMesa+"' and p.estado='1' ";
            resultado.exec(busqueda);
            resultado.next();
 
@@ -1289,13 +1292,13 @@ void Principal_Mesero::mostrarPedido(){
            ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
            ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
 
-            row++;
+
        } if(categoria=="10"){
            qDebug()<<"es un vino";
 
   busqueda="select v.Nombre,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join Comanda_has_Platillo as cp "
            "on p.idPedido=cp.idPedido inner join Vinos as v "
-           "on cp.idPlatillo=v.idBebida where p.Mesa_idMesa='"+numMesa+"' and cp.idPlatillo='"+id+"'";
+           "on cp.idPlatillo=v.idBebida where p.Mesa_idMesa='"+numMesa+"' and and p.estado='1'";
           // qDebug()<<busqueda;
 
            resultado.exec(busqueda);
@@ -1338,10 +1341,9 @@ void Principal_Mesero::mostrarPedido(){
       }
            ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
            ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
-           row++;
 
        }
-
+        row++;
     }
 }
 
