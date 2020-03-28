@@ -45,22 +45,21 @@ void statusPlatillos::MostrarOrdenes(){
 
     clearLayout4(ui->observarPlatillos);
     QString ordenes,nombre,idComanda,mesa;
-    QSqlQuery queryOrden;
+    QSqlQuery queryOrden,queryOrden2,queryOrden3;
 
-    QString ordenes2,descripcion,cantidad;
-    QSqlQuery queryOrden2;
+    QString ordenes2,ordenes3,descripcion,cantidad;
 
     int row=0;
 
+    //PARA PLATILLOS
     ordenes="select pl.Nombre,cp.describcion,cp.cantidad,cp.idComanda,m.idMesa from Mesa as m inner join  Pedido as p on m.idMesa=p.Mesa_idMesa inner join "
             " Comanda_has_Platillo as cp on  p.idPedido=cp.idPedido "
-            "inner join Platillos as pl on cp.idPlatillo=pl.idPlatillo where cp.categoria<9 and cp.estadoPlatillo=2;";
-
-    //qDebug()<<ordenes;
+            "inner join Platillos as pl on cp.idPlatillo=pl.idPlatillo where cp.categoria<9 and cp.estadoPlatillo=2";
 
     queryOrden.exec(ordenes);
-    while(queryOrden.next()){
 
+    while(queryOrden.next()){
+        qDebug()<<"Platillo";
         nombre=queryOrden.value(0).toString();
         idComanda=queryOrden.value(3).toString();
         mesa=queryOrden.value(4).toString();
@@ -71,21 +70,16 @@ void statusPlatillos::MostrarOrdenes(){
      row++;
     }
 
-
-    ordenes="select c.Nombre,cp.describcion,cp.cantidad,cp.idComanda from  Comanda_has_Platillo as cp inner join"
-            " Cocteles as c on cp.idPlatillo=c.idBebida where cp.categoria=9 and cp.estadoPlatillo=1";
-
-    queryOrden.exec(ordenes);
-
-    ordenes2="select  v.Nombre,cp.describcion,cp.cantidad,cp.idComanda from  Comanda_has_Platillo as cp inner join"
-             " Vinos as v on cp.idPlatillo=v.idBebida where cp.categoria=10 and  cp.estadoPlatillo=1";
+    // PARA COCTELES
+    ordenes2="select c.Nombre,cp.describcion,cp.cantidad,cp.idComanda from  Comanda_has_Platillo as cp inner join"
+            " Cocteles as c on cp.idPlatillo=c.idBebida where cp.categoria=9 and cp.estadoPlatillo=2";
 
     queryOrden2.exec(ordenes2);
 
-    while(queryOrden.next()){
-
-        nombre=queryOrden.value(0).toString();
-        idComanda=queryOrden.value(3).toString();
+    while(queryOrden2.next()){
+        qDebug()<<"coctel";
+        nombre=queryOrden2.value(0).toString();
+        idComanda=queryOrden2.value(3).toString();
          //qDebug()<<"coctel"<<nombre<<descripcion<<cantidad<<idComanda;
          ElementoStatus *platillo = new ElementoStatus();
         platillo->editaLabels(nombre,idComanda,"1");
@@ -94,10 +88,16 @@ void statusPlatillos::MostrarOrdenes(){
 
     }
 
-    while(queryOrden2.next()){
+    //PARA VINOS
+    ordenes3="select  v.Nombre,cp.describcion,cp.cantidad,cp.idComanda from  Comanda_has_Platillo as cp inner join"
+             " Vinos as v on cp.idPlatillo=v.idBebida where cp.categoria=10 and  cp.estadoPlatillo=2";
 
-        nombre=queryOrden2.value(0).toString();
-        idComanda=queryOrden2.value(3).toString();
+     queryOrden3.exec(ordenes3);
+
+    while(queryOrden3.next()){
+    qDebug()<<"Vinos";
+        nombre=queryOrden3.value(0).toString();
+        idComanda=queryOrden3.value(3).toString();
         //qDebug()<<"vinos"<<nombre<<descripcion<<cantidad<<idComanda;
         ElementoStatus *bebida = new ElementoStatus();
         bebida->editaLabels(nombre,idComanda,"2");
