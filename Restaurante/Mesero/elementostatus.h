@@ -2,6 +2,8 @@
 #define ELEMENTOSTATUS_H
 
 #include <QWidget>
+#include <QSqlQuery>
+#include <qdebug.h>
 
 namespace Ui {
 class ElementoStatus;
@@ -13,7 +15,13 @@ class ElementoStatus : public QWidget
 
 public:
     explicit ElementoStatus(QWidget *parent = nullptr);
+    void editaLabels(QString, QString,QString);
     ~ElementoStatus();
+
+    void platilloListo(QString);
+
+private slots:
+    void on_btnActo_clicked();
 
 private:
     Ui::ElementoStatus *ui;

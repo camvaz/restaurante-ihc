@@ -81,7 +81,6 @@ void principal_bartender::MostrarOrdenes(){
          elementoCola *bebida = new elementoCola();
         bebida->editaLabels(nombre, cantidad, descripcion,idComanda);
         ui->observarbar->addWidget(bebida,row,1,Qt::AlignTop);
-
      row++;
 
     }

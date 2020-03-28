@@ -241,17 +241,6 @@ color:#505050;</string>
           </spacer>
          </item>
          <item>
-          <widget class="QLabel" name="label_5">
-           <property name="styleSheet">
-            <string notr="true">font: 75 11pt &quot;Noto Serif&quot;;
-color:#505050;</string>
-           </property>
-           <property name="text">
-            <string>Hora</string>
-           </property>
-          </widget>
-         </item>
-         <item>
           <spacer name="horizontalSpacer_7">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -392,7 +381,7 @@ color:#505050;</string>
             <x>0</x>
             <y>0</y>
             <width>780</width>
-            <height>406</height>
+            <height>404</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_11">

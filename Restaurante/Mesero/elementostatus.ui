@@ -58,7 +58,7 @@ border:none;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -118,31 +118,6 @@ background-color:transparent;</string>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="lblHora">
-        <property name="minimumSize">
-         <size>
-          <width>35</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>35</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 75 11pt &quot;Noto Serif&quot;;
-color:#D0CDE0;
-border:none;
-background-color:transparent;</string>
-        </property>
-        <property name="text">
-         <string>99:99</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <spacer name="horizontalSpacer_3">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -154,25 +129,6 @@ background-color:transparent;</string>
          </size>
         </property>
        </spacer>
-      </item>
-      <item>
-       <widget class="QLabel" name="label">
-        <property name="minimumSize">
-         <size>
-          <width>10</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>10</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>C</string>
-        </property>
-       </widget>
       </item>
       <item>
        <widget class="QLabel" name="label_3">
@@ -207,6 +163,29 @@ background-color:transparent;</string>
         <property name="sizeHint" stdset="0">
          <size>
           <width>47</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_mesa">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string> mesa</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
           <height>20</height>
          </size>
         </property>
@@ -273,6 +252,8 @@ background-color:transparent;</string>
     </item>
    </layout>
   </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>btnActo</zorder>
  </widget>
  <resources/>
  <connections/>

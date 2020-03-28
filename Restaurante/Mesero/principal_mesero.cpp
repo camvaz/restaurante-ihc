@@ -1165,7 +1165,7 @@ void Principal_Mesero::EliminarPlatillo(QString id){
 void Principal_Mesero::mostrarPedido(){
 
     qDebug()<<"numero de mesa: "<<numMesa;
-
+    //clearLayout(ui->pedidos);
     QString busqueda,fecha,cantidad,nombre,numPedido,id,icono,categoria,checkCategoria,estadoPlatillo,idComanda;
     QSqlQuery resultado,querycantidad,querycategoria,Querypedido;
     int row=0;
@@ -1180,16 +1180,12 @@ void Principal_Mesero::mostrarPedido(){
        id=Querypedido.value(2).toString();
        categoria=Querypedido.value(5).toString();
 
-       qDebug()<<id<<" -- "<<categoria;
-
-
+       qDebug()<<id<<" -- "<<"categoria: "<<categoria;
 
        if(categoria<="8" && categoria!="10" && categoria!="9")
        {
-           busqueda="select p.idPedido,pl.Nombre,p.fecha,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join "
-           "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
-           " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' "
-           "and p.estado='1'";
+           busqueda="select p.idPedido,pl.Nombre,p.fecha,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
+                    " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' and p.estado='1'";
 
 
           resultado.exec(busqueda);
@@ -1241,8 +1237,6 @@ void Principal_Mesero::mostrarPedido(){
       }
           ui->pedidos->addWidget(nomPlatillo,row,0,Qt::AlignTop);
           ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
-
-
 
 
        }if(categoria=="9"){

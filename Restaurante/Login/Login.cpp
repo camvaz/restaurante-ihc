@@ -9,6 +9,7 @@
 #include "Login/LoginCuentas.h"
 #include "Hostess/principal_hostess.h"
 #include "LoginCuentas.h"
+#include <Mesero/statusplatillos.h>
 
 Login::Login(QWidget *parent) :
     QWidget(parent),
@@ -66,6 +67,8 @@ void Login::on_btn_inicioSesion_clicked()
             if(rola == "Mesero"){
                 Principal_Mesero *Mesero = new Principal_Mesero(query.value(0).toString());
                 Mesero->show();
+                //statusPlatillos *status = new statusPlatillos();
+                //status->show();
             }
             else{
                 if(rola == "Cajero"){
@@ -76,6 +79,7 @@ void Login::on_btn_inicioSesion_clicked()
                     if(rola == "Cocinero"){
                         principal_cocinero *Cocinero = new principal_cocinero(query.value(0).toString());
                         Cocinero->show();
+
                     }
                     else{
                         if(rola == "Bartender"){
