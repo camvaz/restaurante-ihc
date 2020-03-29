@@ -29,7 +29,7 @@ Principal_Mesero::Principal_Mesero(QString id, QWidget *parent) :
 
     advertencia=new mensaje();
 
-    ui->ticket->setStyleSheet("background-color: #F1F1F1");
+    //ui->ticket->setStyleSheet("background-color: #F1F1F1");
     ui->orden->setStyleSheet("background-color: #C92531; border: 1px solid #7C1709; color: white;");
     ui->mesas->setStyleSheet("background-color: #C92531; border: 1px solid #7C1709;");
 

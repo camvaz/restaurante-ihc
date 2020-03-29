@@ -65,10 +65,10 @@ void Login::on_btn_inicioSesion_clicked()
         }
         else{
             if(rola == "Mesero"){
-                Principal_Mesero *Mesero = new Principal_Mesero(query.value(0).toString());
-                Mesero->show();
-                //statusPlatillos *status = new statusPlatillos();
-                //status->show();
+                //Principal_Mesero *Mesero = new Principal_Mesero(query.value(0).toString());
+                //Mesero->show();
+                statusPlatillos *status = new statusPlatillos();
+                status->show();
             }
             else{
                 if(rola == "Cajero"){
