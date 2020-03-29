@@ -71,26 +71,26 @@ void statusPlatillos::MostrarOrdenes(){
     }
 
     // PARA COCTELES
-    ordenes2="select c.Nombre,cp.describcion,cp.cantidad,cp.idComanda from  Comanda_has_Platillo as cp inner join"
-            " Cocteles as c on cp.idPlatillo=c.idBebida where cp.categoria=9 and cp.estadoPlatillo=2";
-
+    ordenes2="select c.Nombre,cp.describcion,cp.cantidad,cp.idComanda,m.idMesa from Mesa as m inner join  Pedido as p on m.idMesa=p.Mesa_idMesa inner join  Comanda_has_Platillo as cp on  p.idPedido=cp.idPedido "
+             "inner join Cocteles as c on cp.idPlatillo=c.idBebida where cp.categoria=9 and cp.estadoPlatillo=2;";
     queryOrden2.exec(ordenes2);
 
     while(queryOrden2.next()){
         qDebug()<<"coctel";
         nombre=queryOrden2.value(0).toString();
         idComanda=queryOrden2.value(3).toString();
+        mesa=queryOrden2.value(4).toString();
          //qDebug()<<"coctel"<<nombre<<descripcion<<cantidad<<idComanda;
          ElementoStatus *platillo = new ElementoStatus();
-        platillo->editaLabels(nombre,idComanda,"1");
+        platillo->editaLabels(nombre,idComanda,mesa);
         ui->observarPlatillos->addWidget(platillo,row,1,Qt::AlignTop);
      row++;
 
     }
 
     //PARA VINOS
-    ordenes3="select  v.Nombre,cp.describcion,cp.cantidad,cp.idComanda from  Comanda_has_Platillo as cp inner join"
-             " Vinos as v on cp.idPlatillo=v.idBebida where cp.categoria=10 and  cp.estadoPlatillo=2";
+    ordenes3="select v.Nombre,cp.describcion,cp.cantidad,cp.idComanda,m.idMesa from Mesa as m inner join  Pedido as p on m.idMesa=p.Mesa_idMesa inner join  Comanda_has_Platillo as cp on  p.idPedido=cp.idPedido "
+             "inner join Vinos as v on cp.idPlatillo=v.idBebida where cp.categoria=10 and  cp.estadoPlatillo=2;";
 
      queryOrden3.exec(ordenes3);
 
@@ -98,9 +98,10 @@ void statusPlatillos::MostrarOrdenes(){
     qDebug()<<"Vinos";
         nombre=queryOrden3.value(0).toString();
         idComanda=queryOrden3.value(3).toString();
+        mesa=queryOrden3.value(4).toString();
         //qDebug()<<"vinos"<<nombre<<descripcion<<cantidad<<idComanda;
         ElementoStatus *bebida = new ElementoStatus();
-        bebida->editaLabels(nombre,idComanda,"2");
+        bebida->editaLabels(nombre,idComanda,mesa);
         ui->observarPlatillos->addWidget(bebida,row,1,Qt::AlignTop);
         row++;
     }
