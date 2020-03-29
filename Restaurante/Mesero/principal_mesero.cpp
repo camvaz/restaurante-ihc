@@ -1165,7 +1165,9 @@ void Principal_Mesero::EliminarPlatillo(QString id){
 void Principal_Mesero::mostrarPedido(){
 
     qDebug()<<"numero de mesa: "<<numMesa;
+     ui->numMesa->setText(numMesa);
 
+    //clearLayout(ui->pedidos);
     QString busqueda,fecha,cantidad,nombre,numPedido,id,icono,categoria,checkCategoria,estadoPlatillo,idComanda;
     QSqlQuery resultado,querycantidad,querycategoria,Querypedido;
     int row=0;
@@ -1177,20 +1179,15 @@ void Principal_Mesero::mostrarPedido(){
 
    while(Querypedido.next()){
 
-       id=Querypedido.value(2).toString();
-       categoria=Querypedido.value(5).toString();
+       id=Querypedido.value(7).toString();
+       categoria=Querypedido.value(10).toString();
 
-       qDebug()<<id<<" -- "<<categoria;
-
-
+       qDebug()<<"id del platillo: "<<id<<" -- "<<"categoria del platillo: "<<categoria;
 
        if(categoria<="8" && categoria!="10" && categoria!="9")
        {
-           busqueda="select p.idPedido,pl.Nombre,p.fecha,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join "
-           "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
-           " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' "
-           "and p.estado='1'";
-
+           busqueda="select p.idPedido,pl.Nombre,p.fecha,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join Comanda_has_Platillo as cp on p.idPedido=cp.idPedido"
+                    " inner join Platillos as pl on pl.idPlatillo=cp.idPlatillo where p.Mesa_idMesa='"+numMesa+"' and p.estado='1' and pl.idPlatillo='"+id+"'";
 
           resultado.exec(busqueda);
           resultado.next();
@@ -1211,7 +1208,7 @@ void Principal_Mesero::mostrarPedido(){
 
           ui->fecha->setText(fecha);
           ui->numComanda->setText(numPedido);
-          ui->numMesa->setText(numMesa);
+
 
           QFont f( "MS Shell Dlg 2", 11, QFont::Normal);
 
@@ -1225,7 +1222,7 @@ void Principal_Mesero::mostrarPedido(){
           Cantidad->setAlignment(Qt::AlignRight);
           Cantidad->setStyleSheet("color: white");
           Cantidad->setFont(f);
-
+      row++;
       if(estadoPlatillo=="0")
       {
           QPushButton *cancelar= new QPushButton;
@@ -1243,15 +1240,13 @@ void Principal_Mesero::mostrarPedido(){
           ui->pedidos->addWidget(Cantidad,row,2,Qt::AlignTop);
 
 
-
-
        }if(categoria=="9"){
 
            qDebug()<<"es un coctel";
 
            busqueda="select c.Nombre,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join "
                     "Comanda_has_Platillo as cp on p.idPedido=cp.idPedido inner"
-                    " join Cocteles as c on cp.idPlatillo=c.idBebida where p.Mesa_idMesa='"+numMesa+"' and p.estado='1' ";
+                    " join Cocteles as c on cp.idPlatillo=c.idBebida where p.Mesa_idMesa='"+numMesa+"' and p.estado='1' and cp.categoria='9' and c.idBebida='"+id+"'";
            resultado.exec(busqueda);
            resultado.next();
 
@@ -1298,7 +1293,7 @@ void Principal_Mesero::mostrarPedido(){
 
   busqueda="select v.Nombre,cp.cantidad,cp.estadoPlatillo,cp.idComanda from Pedido as p inner join Comanda_has_Platillo as cp "
            "on p.idPedido=cp.idPedido inner join Vinos as v "
-           "on cp.idPlatillo=v.idBebida where p.Mesa_idMesa='"+numMesa+"' and and p.estado='1'";
+           "on cp.idPlatillo=v.idBebida where p.Mesa_idMesa='"+numMesa+"' and p.estado='1' and cp.categoria='10' and v.idBebida='"+id+"'";
           // qDebug()<<busqueda;
 
            resultado.exec(busqueda);

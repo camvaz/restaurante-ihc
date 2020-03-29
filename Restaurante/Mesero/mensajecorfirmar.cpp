@@ -55,8 +55,11 @@ void mensajeCorfirmar::on_aceptar_clicked()
     qDebug()<<"Descripcion del platillo"<<descripcion1;
 
 
-    ulti="SELECT  max(idPedido) AS id FROM Pedido  where Mesa_idMesa=1";
-    queryUlti.exec(ulti);queryUlti.next();ulti=queryUlti.value(0).toString();
+    ulti="SELECT  max(idPedido) AS id FROM Pedido  where Mesa_idMesa='"+numMesa1+"'";
+    queryUlti.exec(ulti);
+    queryUlti.next();
+
+    ulti=queryUlti.value(0).toString();
 
     qDebug()<<"ultimo id: "<<ulti;
 
