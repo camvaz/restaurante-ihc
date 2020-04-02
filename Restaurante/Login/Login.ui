@@ -43,7 +43,7 @@ color:white;</string>
     <enum>QLineEdit::Password</enum>
    </property>
    <property name="placeholderText">
-    <string>                                    CONTRASEÑA</string>
+    <string>                              CONTRASEÑA</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="ln_user">
@@ -59,7 +59,7 @@ color:white;</string>
     <enum>QLineEdit::Password</enum>
    </property>
    <property name="placeholderText">
-    <string>                                       USUARIO</string>
+    <string>                                   USUARIO</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_inicioSesion">
