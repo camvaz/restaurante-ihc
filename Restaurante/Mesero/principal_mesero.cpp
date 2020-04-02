@@ -133,6 +133,7 @@ void Principal_Mesero::mesasEstado(){
         mesa="select *from mesa where idMesa='"+numMesa+"' and Usuario_idUsuario='"+identifier+"'";
        // qDebug()<<mesa;
         mesas.exec(mesa);
+        mesas.first();
         mesas.next();
         estado=mesas.value(3).toString();
         switch (i) {

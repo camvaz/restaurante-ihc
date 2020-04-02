@@ -2,6 +2,10 @@
 #define PRINCIPAL_CAJERO_H
 
 #include <QMainWindow>
+#include <QTimer>
+#include <QTime>
+#include <QSqlQuery>
+#include <Mesero/elementostatus.h>
 
 namespace Ui {
 class principal_cajero;
@@ -15,10 +19,15 @@ public:
     explicit principal_cajero(QWidget *parent = nullptr);
     principal_cajero(QString id, QWidget *parent = nullptr);
     ~principal_cajero();
+    void MostrarOrdenes();
+    void clearLayout(QLayout *);
 
 private:
     Ui::principal_cajero *ui;
     QString identifier = "";
+public slots:
+    void hora();
+
 };
 
 #endif // PRINCIPAL_CAJERO_H
