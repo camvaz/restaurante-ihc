@@ -2,6 +2,8 @@
 #define COBRAR__H
 
 #include <QWidget>
+#include <QString>
+#include <QPrinter>
 
 namespace Ui {
 class cobrar_;
@@ -16,6 +18,7 @@ public:
     explicit cobrar_(QWidget *parent = nullptr);
     cobrar_(QString id,QWidget *parent = nullptr);
     ~cobrar_();
+    QString crear_ticket();
 
 private slots:
     void on_btn_agregar_clicked();

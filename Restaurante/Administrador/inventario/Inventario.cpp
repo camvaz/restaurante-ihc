@@ -11,7 +11,7 @@ Inventario::Inventario(QWidget *parent) :
     ui->TV_inventario->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     //Asignar nombre de la tabla
     tabla_inventario = new QSqlRelationalTableModel(this);
-    tabla_inventario->setTable("Inventario");
+    tabla_inventario->setTable("Ingredientes");
     tabla_inventario->select();
 
     ui->TV_inventario->setModel(tabla_inventario);
@@ -19,7 +19,7 @@ Inventario::Inventario(QWidget *parent) :
     //el segundo de como quiero que aparezca
     tabla_inventario->setHeaderData(tabla_inventario->fieldIndex("id"),Qt::Horizontal,"ID");
     tabla_inventario->setHeaderData(tabla_inventario->fieldIndex("nombre"),Qt::Horizontal,"Nombre del Insumo");
-    tabla_inventario->setHeaderData(tabla_inventario->fieldIndex("cantidad"),Qt::Horizontal,"Cantidad");
+    tabla_inventario->setHeaderData(tabla_inventario->fieldIndex("tipo"),Qt::Horizontal,"Cantidad");
 
      //en caso de tener mas cosas que mostrar se ocultan asi
 /*

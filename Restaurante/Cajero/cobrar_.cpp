@@ -6,6 +6,11 @@
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
+#include <QUrl>
+#include <QPainter>
+#include <QTextDocument>
+#include <QDesktopServices>
+#include <QFileDialog>
 #include <QString>
 
 cobrar_::cobrar_(QWidget *parent) :
@@ -107,4 +112,76 @@ void cobrar_::on_btn_Cobrar_clicked()
 {
     qDebug()<<"Hello World!123456789";
      QMessageBox::information(this,"Operacion Aceptada","\nImprimiendo el ticket.\n");
+     QString tabla = crear_ticket();
+
+     QString html          =
+                 "<STYLE type='text/css'>"
+                    " #logo {text-align: center; margin-bottom: 10px;}"
+
+                     "H1.miclase { border-top: 2px solid  #196A73; "
+                         "border-bottom: 2px solid #196A73;"
+                         "color:#196A73;"
+                         "font-size: 2.4em;"
+                         "line-height: 1.4em;"
+                         "font-weight: normal;"
+                         "text-align: center;"
+                         "margin: 0 0 20px 0;"
+                         "background: url(dimension.png);"
+                         "}"
+                     "#cuerpo{"
+                      "  font-size:12px;"
+                      "   font-family:Tahoma;"
+                     "}"
+                     "#fecha{"
+                         "text-align: right;"
+                         "font-size:12px;"
+                         "font-family:Tahoma;"
+                     "}"
+              "</STYLE>"
+                 "<header>"
+                     "<div id='logo'>"
+                      "   <img src='log.png'>"
+                     "</div>"
+                 "</header>"
+                 "<h1 class ='miclase'>GRACIAS POR SU COMPRA</h1>"
+                 "<div id = 'fecha'>""</div>"
+             "<div id = 'cuerpo'>"
+              "   <p> </p>"
+              "   <p>Presente ticket no genera cargos por impresion, no es un comprobante fiscal.</p>"
+              "   <p></p>"
+               "  <center><p>"+tabla+"</p></center>"
+
+                 "</div>";
+     QTextDocument document;
+     document.setHtml(html);
+     QString filename="/home/roberthlml/Reportex.pdf";
+     //QString filename="C:/Imagenes tamaño pequeño/ticket.pdf";
+     QPrinter printer(QPrinter::PrinterResolution);
+     printer.setOutputFormat(QPrinter::PdfFormat);
+     printer.setPaperSize(QPrinter::A4);
+     printer.setOutputFileName(filename);
+     document.print(&printer);
+     QDesktopServices::openUrl(QUrl::fromLocalFile("/home/roberthlml/Reportex.pdf"));
+}
+
+QString cobrar_::crear_ticket(){
+    QString dato1,dato2,dato3,tabla;
+    int auxtotal,total = 0;
+    tabla = "<table border='1'>";
+    tabla += "<tr><td>Platillo</td><td>Precio</td><td>Cantidad</td> </tr>";
+    QSqlQuery query;
+    query.prepare("select * from pagar_t ");
+    query.exec();
+    while (query.next()){
+        dato1 = query.value("nombre").toString();
+        dato2 = query.value("subtotal").toString();
+        dato3 = query.value("total").toString();
+        auxtotal = dato2.toInt();
+        tabla += "<tr><td> "+ dato1 +" </td> <td>" + dato2 + "</td><td> " + dato3 + "</td> </tr>";
+        total += auxtotal;
+    }
+    QString aux = QString::number(total);
+    tabla += "</table>";
+    tabla += "<center><h1>TOTAL: " + aux +"</h1></center>";
+    return tabla;
 }

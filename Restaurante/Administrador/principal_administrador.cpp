@@ -14,6 +14,7 @@ principal_administrador::principal_administrador(QWidget *parent) :
     botones="C:/Imagenes tamaño pequeño/money";QIcon boton_reportes(botones);ui->Reportes->setIcon(boton_reportes);
     ui->stackedWidget->insertWidget(0,&perfiles);
     ui->stackedWidget->insertWidget(1,&piso);
+    ui->stackedWidget->insertWidget(2,&inv);
     ui->stackedWidget->setCurrentIndex(0);
 }
 
@@ -31,6 +32,7 @@ void principal_administrador::on_perfiles_clicked()
 
 void principal_administrador::on_inventario_clicked()
 {
+    ui->stackedWidget->setCurrentIndex(2);
 }
 
 void principal_administrador::on_mapa_de_piso_clicked()
