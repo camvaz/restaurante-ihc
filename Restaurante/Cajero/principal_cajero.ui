@@ -21,15 +21,15 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>10</y>
+      <y>60</y>
       <width>842</width>
-      <height>551</height>
+      <height>501</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
       <width>842</width>
-      <height>551</height>
+      <height>450</height>
      </size>
     </property>
     <property name="maximumSize">
@@ -375,7 +375,7 @@ color:#505050;</string>
             <x>0</x>
             <y>0</y>
             <width>780</width>
-            <height>406</height>
+            <height>356</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_11">
@@ -397,18 +397,42 @@ color:#505050;</string>
      </item>
     </layout>
    </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>356</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Selecciona la mesa:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btn_consulta">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>20</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONSULTA</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>900</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

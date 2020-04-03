@@ -10,6 +10,7 @@
 #include "Hostess/principal_hostess.h"
 #include "LoginCuentas.h"
 #include <Mesero/statusplatillos.h>
+#include "Cajero/cobrar_.h"
 
 Login::Login(QWidget *parent) :
     QWidget(parent),
@@ -72,7 +73,9 @@ void Login::on_btn_inicioSesion_clicked()
             }
             else{
                 if(rola == "Cajero"){
-                    principal_cajero *Cajero = new principal_cajero(query.value(0).toString());
+                 //   principal_cajero *Cajero = new principal_cajero(query.value(0).toString());
+                 //   Cajero->show();
+                    cobrar_ *Cajero = new cobrar_(query.value(0).toString());
                     Cajero->show();
                 }
                 else{

@@ -1,5 +1,6 @@
 #include "principal_cajero.h"
 #include "ui_principal_cajero.h"
+#include <QDebug>
 
 principal_cajero::principal_cajero(QWidget *parent) :
     QMainWindow(parent),
@@ -17,9 +18,23 @@ principal_cajero::principal_cajero(QString id, QWidget *parent) :
     ui->setupUi(this);
 
     MostrarOrdenes();
-    QTimer *timer=new QTimer(this);
-    connect(timer,SIGNAL(timeout()),this,SLOT(hora()));
-    timer->start(1000);
+    ui->comboBox->addItem("1");
+    ui->comboBox->addItem("2");
+    ui->comboBox->addItem("3");
+    ui->comboBox->addItem("4");
+    ui->comboBox->addItem("5");
+    ui->comboBox->addItem("6");
+    ui->comboBox->addItem("7");
+    ui->comboBox->addItem("8");
+    ui->comboBox->addItem("9");
+    ui->comboBox->addItem("10");
+    ui->comboBox->addItem("11");
+    ui->comboBox->addItem("12");
+    ui->comboBox->addItem("13");
+    ui->comboBox->addItem("14");
+    ui->comboBox->addItem("15");
+
+    qDebug()<<ui->comboBox->currentText();
 }
 
 principal_cajero::~principal_cajero()
@@ -27,14 +42,12 @@ principal_cajero::~principal_cajero()
     delete ui;
 }
 
-void principal_cajero::hora(){
-        QTime time=QTime::currentTime();
-        QString time_text=time.toString("h:m:s ap");
-
-        if((time.second() % 2)==0){
-        MostrarOrdenes();
-        }
+void principal_cajero::on_btn_consulta_clicked(){
+    qDebug()<<"funciono perra te amo";
+    return;
 }
+
+
 
 void principal_cajero::clearLayout(QLayout *layout) {
     QLayoutItem *item;
@@ -115,4 +128,5 @@ void principal_cajero::MostrarOrdenes(){
         row++;
     }
 }
+
 

@@ -25,9 +25,9 @@ public:
 private:
     Ui::principal_cajero *ui;
     QString identifier = "";
-public slots:
-    void hora();
 
+private slots:
+    void on_btn_consulta_clicked();
 };
 
 #endif // PRINCIPAL_CAJERO_H

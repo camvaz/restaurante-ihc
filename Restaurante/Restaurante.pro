@@ -35,6 +35,7 @@ SOURCES += \
     Administrador/ver_info_usuario.cpp \
     Administrador/widget_perfiles_usuarios.cpp \
         Bartender/principal_bartender.cpp \
+    Cajero/cobrar_.cpp \
         Cajero/principal_cajero.cpp \
         Cocinero/principal_cocinero.cpp \
     Garrotero/mapa_piso_garrotero.cpp \
@@ -68,6 +69,7 @@ HEADERS += \
     Administrador/ver_info_usuario.h \
     Administrador/widget_perfiles_usuarios.h \
         Bartender/principal_bartender.h \
+    Cajero/cobrar_.h \
         Cajero/principal_cajero.h \
         Cocinero/principal_cocinero.h \
     Garrotero/mapa_piso_garrotero.h \
@@ -100,6 +102,7 @@ FORMS += \
     Administrador/ver_info_usuario.ui \
     Administrador/widget_perfiles_usuarios.ui \
         Bartender/principal_bartender.ui \
+    Cajero/cobrar_.ui \
         Cajero/principal_cajero.ui \
         Cocinero/principal_cocinero.ui \
     Garrotero/mapa_piso_garrotero.ui \
